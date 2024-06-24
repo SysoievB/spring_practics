@@ -9,11 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com</groupId>
-    <artifactId>spring_practics</artifactId>
+    <artifactId>scheduled</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>spring_practics</name>
-    <description>spring_practics</description>
+    <name>scheduled</name>
+    <description>scheduled</description>
     <url/>
     <licenses>
         <license/>
@@ -21,11 +20,6 @@
     <developers>
         <developer/>
     </developers>
-    <modules>
-        <module>core/bean_configuration</module>
-        <module>core/component_configuration</module>
-        <module>core/import_configuration</module>
-    </modules>
     <scm>
         <connection/>
         <developerConnection/>
@@ -38,9 +32,14 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -53,6 +52,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>

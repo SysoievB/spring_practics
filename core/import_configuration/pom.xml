@@ -10,7 +10,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>component_configuration</artifactId>
+    <artifactId>import_configuration</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
