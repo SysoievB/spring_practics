@@ -25,6 +25,7 @@
         <module>core/bean_configuration</module>
         <module>core/component_configuration</module>
         <module>core/import_configuration</module>
+        <module>data_jpa</module>
     </modules>
     <scm>
         <connection/>
