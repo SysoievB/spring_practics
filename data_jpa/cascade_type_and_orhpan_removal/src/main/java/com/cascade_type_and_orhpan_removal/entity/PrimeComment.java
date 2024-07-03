@@ -8,12 +8,14 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table(name = "prime_comment")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
+@ToString
 public class PrimeComment {
 
     @Id
@@ -21,4 +23,8 @@ public class PrimeComment {
     private Long id;
 
     private String description;
+
+    public PrimeComment(String description) {
+        this.description = description;
+    }
 }
