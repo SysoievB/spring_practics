@@ -12,6 +12,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Collections;
 import java.util.List;
 
 @SpringBootApplication
@@ -45,15 +46,21 @@ public class CascadeTypeAndOrhpanRemovalApplication implements CommandLineRunner
         val articleFromDb = articleRepo.findById(1L).get();
 
         //cascade = REMOVE
-        articleFromDb.setComments(null);
-        //Article(id=1, name=Some article, comments=null, primeComments=[])
+        articleFromDb.setComments(Collections.emptyList());
+        System.out.println(articleRepo.save(articleFromDb));
+        System.out.println(commentRepo.findById(1L).orElse(null));
+        System.out.println(commentRepo.findById(2L).orElse(null));
+        //Article(id=1, name=Some article, comments=[], primeComments=[])
         //Comment(id=1, description=Some comment)
         //Comment(id=2, description=Some another comment)
 
         //orphanRemoval = true
-        articleFromDb.setPrimeComments(null);
+        articleFromDb.setPrimeComments(Collections.emptyList());
         System.out.println(articleRepo.save(articleFromDb));
-        commentRepo.findAll().forEach(System.out::println);
-        primeCommentRepo.findAll().forEach(System.out::println);
+        System.out.println(primeCommentRepo.findById(1L).orElse(null));
+        System.out.println(primeCommentRepo.findById(2L).orElse(null));
+        //Article(id=1, name=Some article, comments=[], primeComments=[])
+        //null
+        //null
     }
 }
