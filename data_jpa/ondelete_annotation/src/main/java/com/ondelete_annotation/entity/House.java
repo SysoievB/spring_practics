@@ -1,9 +1,10 @@
-package com.ondelete_annotation;
+package com.ondelete_annotation.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AccessLevel;
@@ -11,7 +12,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.FieldDefaults;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Table
@@ -19,8 +23,9 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @Getter
 @Setter
+@ToString
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Door {
+public class House {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,6 +33,12 @@ public class Door {
 
     String color;
 
-    @OneToOne(mappedBy = "door")
-    House house;
+    @OneToOne
+    @JoinColumn(name = "door_id", referencedColumnName = "id")
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    Door door;
+
+    public House(String color) {
+        this.color = color;
+    }
 }
