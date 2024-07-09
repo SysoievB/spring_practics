@@ -10,4 +10,5 @@ import org.springframework.context.annotation.Configuration;
 public class SimpleConfigProperties {
     private String hello;
     private int number;
+    //setters used for binding
 }
