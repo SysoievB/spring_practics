@@ -1,16 +1,19 @@
 package com.created_modified_by_transient;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Temporal;
 import jakarta.persistence.Transient;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.annotation.CreatedBy;
@@ -21,7 +24,10 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.util.Date;
 
-@Table
+import static jakarta.persistence.TemporalType.TIMESTAMP;
+
+@Entity
+@Table(name = "person")
 @Getter
 @ToString
 @EqualsAndHashCode
@@ -35,18 +41,23 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
+    @Setter
     @Transient
     String bankAccount;
 
     @CreatedBy
-    Person creator;
+    @Temporal(TIMESTAMP)
+    Date creator;
 
     @LastModifiedBy
-    Person modifier;
+    @Temporal(TIMESTAMP)
+    Date modifier;
 
     @CreatedDate
+    @Temporal(TIMESTAMP)
     Date createdAt;
 
     @LastModifiedDate
+    @Temporal(TIMESTAMP)
     Date modifiedAt;
 }
