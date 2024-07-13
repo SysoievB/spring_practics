@@ -11,7 +11,7 @@ import java.util.List;
 public class UserService {
     private final UserRepository userRepository;
 
-    @Transactional(readOnly = true)
+    @Transactional
     public List<User> findUsersByAge(Integer age) {
         return userRepository.getUsersByAge(age);
     }

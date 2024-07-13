@@ -59,6 +59,10 @@ public class StoredProceduresApplication implements CommandLineRunner {
         );
         userRepository.saveAll(users);
 
-        System.out.println(userService.findUsersByAge(20));//2
+        userService.findUsersByAge(20)
+                .forEach(System.out::println);
+        //Hibernate: {call GET_USERS_BY_AGE(?)}
+        //User(id=1, name=Petia, age=20)
+        //User(id=2, name=Vasia, age=20)
     }
 }
