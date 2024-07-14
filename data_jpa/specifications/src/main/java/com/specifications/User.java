@@ -4,11 +4,20 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.PostLoad;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import java.time.LocalDate;
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
 
 @Entity
 @Table
@@ -24,13 +33,22 @@ public class User {
 
     String name;
     String surname;
-    int age;
-    String address;
+    String country;
 
-    public User(String name, String surname, int age, String address) {
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-        this.address = address;
+    LocalDate birthDate;
+
+    @Transient
+    int age;
+
+    @CreationTimestamp
+    ZonedDateTime createdAt;
+
+    @UpdateTimestamp
+    ZonedDateTime updatedAt;
+
+    @PostLoad
+    public void getAge() {
+        this.age = (int) ChronoUnit.YEARS.between(birthDate, LocalDate.now());
     }
+
 }

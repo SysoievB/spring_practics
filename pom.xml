@@ -26,7 +26,6 @@
         <module>core/component_configuration</module>
         <module>core/import_configuration</module>
         <module>data_jpa</module>
-        <module>webflux</module>
     </modules>
     <scm>
         <connection/>
