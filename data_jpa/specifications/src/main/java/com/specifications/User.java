@@ -45,8 +45,8 @@ public class User {
     @UpdateTimestamp
     ZonedDateTime updatedAt;
 
-    @PostLoad
+   /* @PostLoad
     public void getAge() {
         this.age = (int) ChronoUnit.YEARS.between(birthDate, LocalDate.now());
-    }
+    }*/
 }

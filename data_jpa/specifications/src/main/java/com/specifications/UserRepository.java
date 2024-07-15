@@ -69,7 +69,7 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
         }
     }
 
-    interface UserNameAndStatus {
+    interface UserNameAndStatusProjection {
         String getName();
         String getStatus();
     }
