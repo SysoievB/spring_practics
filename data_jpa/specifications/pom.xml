@@ -28,7 +28,7 @@
     </scm>
     <properties>
         <java.version>21</java.version>
-        <hibernate.version>6.5.2.Final</hibernate.version>
+        <hibernate.version>6.6.0.CR1</hibernate.version>
     </properties>
     <dependencies>
         <dependency>

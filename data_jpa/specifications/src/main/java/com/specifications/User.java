@@ -10,7 +10,6 @@ import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import lombok.ToString;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -50,5 +49,4 @@ public class User {
     public void getAge() {
         this.age = (int) ChronoUnit.YEARS.between(birthDate, LocalDate.now());
     }
-
 }
