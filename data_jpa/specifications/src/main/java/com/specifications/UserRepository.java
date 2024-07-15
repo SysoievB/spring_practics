@@ -5,7 +5,6 @@ import lombok.val;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
-import com.specifications.User_;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
@@ -16,6 +15,7 @@ import static org.springframework.data.jpa.domain.Specification.where;
 
 public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificationExecutor<User> {
 
+    //List<UserNameAndStatus> users = userRepository.findAll(spec, UserNameAndStatus.class);
     Specification<User> eligibleForCampaign = Specification.where(UserSpecifications.hasStatus("ACTIVE"))
             .and(UserSpecifications.isWithinAgeRange(18, 35))
             .and(UserSpecifications.hasInterests(Arrays.asList("books", "technology")));
