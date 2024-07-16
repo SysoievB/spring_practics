@@ -1,11 +1,13 @@
 create table user
 (
-    id         bigint not null auto_increment,
+    age        integer not null,
     birth_date date,
-    country    varchar(255),
+    is_adult   bit     not null,
     created_at datetime(6),
+    id         bigint  not null auto_increment,
+    updated_at datetime(6),
+    country    varchar(255),
     name       varchar(255),
     surname    varchar(255),
-    updated_at datetime(6),
     primary key (id)
 );
