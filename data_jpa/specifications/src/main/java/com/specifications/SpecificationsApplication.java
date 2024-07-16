@@ -41,8 +41,8 @@ public class SpecificationsApplication {
 
             repository.getUserDtoByName("John")
                     .forEach(System.out::println);
-            //User(id=1, name=John, surname=Doe, country=USA, birthDate=1990-01-01, age=34, isAdult=true, createdAt=2024-07-15T18:29:04.575937Z, updatedAt=2024-07-15T18:29:04.575937Z)
-            //User(id=2, name=John, surname=Smith, country=Canada, birthDate=1995-02-02, age=29, isAdult=true, createdAt=2024-07-15T18:29:04.651937Z, updatedAt=2024-07-15T18:29:04.651937Z)
+//User(id=1, name=John, surname=Doe, country=USA, birthDate=1990-01-01, age=34, isAdult=true, createdAt=2024-07-15T18:29:04.575937Z, updatedAt=2024-07-15T18:29:04.575937Z)
+//User(id=2, name=John, surname=Smith, country=Canada, birthDate=1995-02-02, age=29, isAdult=true, createdAt=2024-07-15T18:29:04.651937Z, updatedAt=2024-07-15T18:29:04.651937Z)
 
             repository.findAllWithingAgeRangeInclusive(30, 40)
                     .stream()
@@ -52,7 +52,16 @@ public class SpecificationsApplication {
 
             repository.findByNameAndSurnameAndAdult("John", "Garcia")
                     .ifPresent(System.out::println);
+//User(id=9, name=John, surname=Garcia, country=Italy, birthDate=2000-08-08, age=23, isAdult=true, createdAt=2024-07-16T04:14:50.614836Z, updatedAt=2024-07-16T04:14:50.614836Z)
 
+            repository.findByNameAndCountryAndNotAdult("John", "Italy")
+                    .ifPresent(System.out::println);
+//User(id=8, name=John, surname=Garcia, country=Italy, birthDate=2022-08-08, age=1, isAdult=false, createdAt=2024-07-16T04:14:50.611833Z, updatedAt=2024-07-16T04:14:50.611833Z)
+
+            repository.findByCountryAndBirthDateBetween("USA", null, null)
+                    .forEach(System.out::println);
+//User(id=1, name=John, surname=Doe, country=USA, birthDate=1990-01-01, age=34, isAdult=true, createdAt=2024-07-16T04:14:50.497242Z, updatedAt=2024-07-16T04:14:50.498245Z)
+//User(id=10, name=John, surname=Benson, country=USA, birthDate=2012-08-08, age=11, isAdult=false, createdAt=2024-07-16T04:14:50.617832Z, updatedAt=2024-07-16T04:14:50.617832Z)
         };
     }
 }
