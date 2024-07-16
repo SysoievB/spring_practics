@@ -39,9 +39,9 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
         return findOne(specification);
     }
 
-    default List<User> findAllWithingAgeRangeExcluded(int min, int max) {
+    default List<User> findAllWithingAgeRangeInclusive(int min, int max) {
         val specification = where(isWithinAgeRange(min, max));
-        return findAll(specification, Sort.by(Sort.Direction.DESC));
+        return findAll(specification, Sort.by(Sort.Direction.DESC, "age"));
     }
 
     //specification with projection
