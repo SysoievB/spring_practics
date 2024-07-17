@@ -60,6 +60,7 @@ public class SpecificationsApplication {
                     .ifPresent(System.out::println);
 //User(id=8, name=John, surname=Garcia, country=Italy, birthDate=2022-08-08, age=1, isAdult=false, createdAt=2024-07-16T04:14:50.611833Z, updatedAt=2024-07-16T04:14:50.611833Z)
 
+            System.out.println("------------------Both dates absent -------------------------");
             repository.findByCountryAndBirthDateBetween("USA", null, null)
                     .forEach(System.out::println);
 //User(id=1, name=John, surname=Doe, country=USA, birthDate=1990-01-01, age=34, isAdult=true, createdAt=2024-07-16T04:14:50.497242Z, updatedAt=2024-07-16T04:14:50.498245Z)
@@ -70,7 +71,7 @@ public class SpecificationsApplication {
                     .forEach(System.out::println);
 
             System.out.println("-------------------To date -------------------------");
-            repository.findByCountryAndBirthDateBetween("USA", null, LocalDate.now())
+            repository.findByCountryAndBirthDateBetween("USA",  null, LocalDate.now())
                     .forEach(System.out::println);
 
             System.out.println("------------------ From and to date -------------------------");
