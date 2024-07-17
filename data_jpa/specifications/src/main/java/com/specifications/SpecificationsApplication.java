@@ -63,20 +63,29 @@ public class SpecificationsApplication {
             System.out.println("------------------Both dates absent -------------------------");
             repository.findByCountryAndBirthDateBetween("USA", null, null)
                     .forEach(System.out::println);
-//User(id=1, name=John, surname=Doe, country=USA, birthDate=1990-01-01, age=34, isAdult=true, createdAt=2024-07-16T04:14:50.497242Z, updatedAt=2024-07-16T04:14:50.498245Z)
-//User(id=10, name=John, surname=Benson, country=USA, birthDate=2012-08-08, age=11, isAdult=false, createdAt=2024-07-16T04:14:50.617832Z, updatedAt=2024-07-16T04:14:50.617832Z)
+//User(id=1, name=John, surname=Doe, country=USA, birthDate=1990-01-01, age=34, isAdult=true, createdAt=2024-07-17T03:47:02.742168Z, updatedAt=2024-07-17T03:47:02.742168Z)
+//User(id=10, name=John, surname=Benson, country=USA, birthDate=2012-08-08, age=11, isAdult=false, createdAt=2024-07-17T03:47:02.844396Z, updatedAt=2024-07-17T03:47:02.844396Z)
+//User(id=11, name=Sam, surname=Benson, country=USA, birthDate=1990-08-08, age=33, isAdult=true, createdAt=2024-07-17T03:47:02.846395Z, updatedAt=2024-07-17T03:47:02.846395Z)
+//User(id=12, name=Sam, surname=Benson, country=USA, birthDate=2012-08-08, age=11, isAdult=false, createdAt=2024-07-17T03:47:02.849398Z, updatedAt=2024-07-17T03:47:02.849398Z)
 
             System.out.println("------------------From date -------------------------");
-            repository.findByCountryAndBirthDateBetween("USA", LocalDate.parse("1990-01-01"), null)
+            repository.findByCountryAndBirthDateBetween("USA", LocalDate.parse("1990-08-08"), null)
                     .forEach(System.out::println);
+//User(id=10, name=John, surname=Benson, country=USA, birthDate=2012-08-08, age=11, isAdult=false, createdAt=2024-07-17T03:47:02.844396Z, updatedAt=2024-07-17T03:47:02.844396Z)
+//User(id=11, name=Sam, surname=Benson, country=USA, birthDate=1990-08-08, age=33, isAdult=true, createdAt=2024-07-17T03:47:02.846395Z, updatedAt=2024-07-17T03:47:02.846395Z)
+//User(id=12, name=Sam, surname=Benson, country=USA, birthDate=2012-08-08, age=11, isAdult=false, createdAt=2024-07-17T03:47:02.849398Z, updatedAt=2024-07-17T03:47:02.849398Z)
 
             System.out.println("-------------------To date -------------------------");
-            repository.findByCountryAndBirthDateBetween("USA",  null, LocalDate.now())
+            repository.findByCountryAndBirthDateBetween("USA",  null, LocalDate.parse("1990-01-01"))
                     .forEach(System.out::println);
+//User(id=1, name=John, surname=Doe, country=USA, birthDate=1990-01-01, age=34, isAdult=true, createdAt=2024-07-17T03:47:02.742168Z, updatedAt=2024-07-17T03:47:02.742168Z)
 
             System.out.println("------------------ From and to date -------------------------");
-            repository.findByCountryAndBirthDateBetween("USA", LocalDate.parse("1990-01-01"), LocalDate.now())
+            repository.findByCountryAndBirthDateBetween("USA", LocalDate.parse("1990-08-08"), LocalDate.now())
                     .forEach(System.out::println);
+//User(id=10, name=John, surname=Benson, country=USA, birthDate=2012-08-08, age=11, isAdult=false, createdAt=2024-07-17T03:47:02.844396Z, updatedAt=2024-07-17T03:47:02.844396Z)
+//User(id=11, name=Sam, surname=Benson, country=USA, birthDate=1990-08-08, age=33, isAdult=true, createdAt=2024-07-17T03:47:02.846395Z, updatedAt=2024-07-17T03:47:02.846395Z)
+//User(id=12, name=Sam, surname=Benson, country=USA, birthDate=2012-08-08, age=11, isAdult=false, createdAt=2024-07-17T03:47:02.849398Z, updatedAt=2024-07-17T03:47:02.849398Z)
         };
     }
 }
