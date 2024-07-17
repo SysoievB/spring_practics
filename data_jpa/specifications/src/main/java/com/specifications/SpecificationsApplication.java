@@ -65,9 +65,15 @@ public class SpecificationsApplication {
 //User(id=1, name=John, surname=Doe, country=USA, birthDate=1990-01-01, age=34, isAdult=true, createdAt=2024-07-16T04:14:50.497242Z, updatedAt=2024-07-16T04:14:50.498245Z)
 //User(id=10, name=John, surname=Benson, country=USA, birthDate=2012-08-08, age=11, isAdult=false, createdAt=2024-07-16T04:14:50.617832Z, updatedAt=2024-07-16T04:14:50.617832Z)
 
+            System.out.println("------------------From date -------------------------");
             repository.findByCountryAndBirthDateBetween("USA", LocalDate.parse("1990-01-01"), null)
                     .forEach(System.out::println);
 
+            System.out.println("-------------------To date -------------------------");
+            repository.findByCountryAndBirthDateBetween("USA", null, LocalDate.now())
+                    .forEach(System.out::println);
+
+            System.out.println("------------------ From and to date -------------------------");
             repository.findByCountryAndBirthDateBetween("USA", LocalDate.parse("1990-01-01"), LocalDate.now())
                     .forEach(System.out::println);
         };
