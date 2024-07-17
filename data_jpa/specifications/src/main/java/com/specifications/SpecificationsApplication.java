@@ -33,6 +33,8 @@ public class SpecificationsApplication {
                     new User("John", "Garcia", "Italy", LocalDate.of(2022, 8, 8), 1),
                     new User("John", "Garcia", "Italy", LocalDate.of(2000, 8, 8), 23),
                     new User("John", "Benson", "USA", LocalDate.of(2012, 8, 8), 11),
+                    new User("Sam", "Benson", "USA", LocalDate.of(1990, 8, 8), 33),
+                    new User("Sam", "Benson", "USA", LocalDate.of(2012, 8, 8), 11),
                     new User("John", "Miller", "Japan", LocalDate.of(2012, 8, 8), 11),
                     new User("Grace", "Lee", "Japan", LocalDate.of(1994, 9, 9), 30),
                     new User("Hank", "Miller", "China", LocalDate.of(1980, 10, 10), 44)
@@ -62,6 +64,12 @@ public class SpecificationsApplication {
                     .forEach(System.out::println);
 //User(id=1, name=John, surname=Doe, country=USA, birthDate=1990-01-01, age=34, isAdult=true, createdAt=2024-07-16T04:14:50.497242Z, updatedAt=2024-07-16T04:14:50.498245Z)
 //User(id=10, name=John, surname=Benson, country=USA, birthDate=2012-08-08, age=11, isAdult=false, createdAt=2024-07-16T04:14:50.617832Z, updatedAt=2024-07-16T04:14:50.617832Z)
+
+            repository.findByCountryAndBirthDateBetween("USA", LocalDate.parse("1990-01-01"), null)
+                    .forEach(System.out::println);
+
+            repository.findByCountryAndBirthDateBetween("USA", LocalDate.parse("1990-01-01"), LocalDate.now())
+                    .forEach(System.out::println);
         };
     }
 }
