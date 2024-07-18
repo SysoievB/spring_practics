@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AccessLevel;
@@ -18,7 +19,7 @@ import org.hibernate.annotations.FetchMode;
 import java.util.Set;
 
 @Entity
-@Table
+@Table(name = "person")
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
@@ -32,7 +33,8 @@ public class Person {
     String name;
 
     @OneToMany
-    @Fetch(FetchMode.SELECT)
-    @BatchSize(size = 5)
+    //@Fetch(FetchMode.SELECT)
+    @JoinColumn(name = "order_id")
+    //@BatchSize(size = 5)
     Set<Order> orders;
 }

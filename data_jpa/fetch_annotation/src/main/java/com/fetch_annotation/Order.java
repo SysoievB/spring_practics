@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
 @Entity
-@Table
+@Table(name = "order")
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,7 +20,7 @@ import lombok.experimental.FieldDefaults;
 public class Order {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
 
     String name;
