@@ -35,6 +35,8 @@ public class WhereAnnotationApplication {
             System.out.println("All Employees: ");
             repo.findAllEmployees()
                     .forEach(System.out::println);
+            //Employee(id=2, name=Bob, status=EVEN)
+            //Employee(id=4, name=David, status=EVEN)
         };
     }
 }
