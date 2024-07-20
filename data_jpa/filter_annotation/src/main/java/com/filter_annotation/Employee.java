@@ -1,8 +1,6 @@
 package com.filter_annotation;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -13,7 +11,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
-import org.hibernate.annotations.Where;
+import org.hibernate.annotations.Filter;
+import org.hibernate.annotations.FilterDef;
+import org.hibernate.annotations.ParamDef;
 
 @Entity
 @Table
@@ -22,7 +22,11 @@ import org.hibernate.annotations.Where;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Where(clause = "status = 'EVEN'")
+@FilterDef(
+        name = "incomeLevelFilter",
+        parameters = @ParamDef(name = "incomeLimit", type = Integer.class)
+)
+@Filter(name = "incomeLevelFilter", condition = "grossIncome > :incomeLimit")
 public class Employee {
 
     @Id
@@ -31,17 +35,8 @@ public class Employee {
 
     String name;
 
-    @Enumerated(EnumType.STRING)
-    Status status;
+    Integer grossIncome;
 
-    public Employee(Long id, String name) {
-        this.id = id;
-        this.name = name;
-        this.status = id % 2 == 0 ? Status.EVEN : Status.ODD;
-    }
-
-    enum Status {
-        ODD, EVEN
-    }
+    Integer incomeLimit;
 }
 
