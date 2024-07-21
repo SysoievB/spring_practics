@@ -1,0 +1,10 @@
+package com.entity_graph;
+
+import org.springframework.data.jpa.repository.EntityGraph;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CharacteristicsRepository extends JpaRepository<Characteristic, Long> {
+
+    @EntityGraph(attributePaths = {"item"})
+    Characteristic findByType(String type);
+}
