@@ -27,6 +27,7 @@ public class EntityGraphApplication {
             itemRepository.save(item);
 
             System.out.println(characteristicsRepository.findByType("Some type"));
+            //Characteristic(id=1, type=Some type, item=com.entity_graph.Item@166e9c4a)
         };
     }
 }
