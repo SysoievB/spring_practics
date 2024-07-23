@@ -20,4 +20,9 @@ import lombok.experimental.FieldDefaults;
 @DiscriminatorValue("2")
 public class Client extends User {
     String address;
+
+    public Client(String name, String address) {
+        super(name);
+        this.address = address;
+    }
 }

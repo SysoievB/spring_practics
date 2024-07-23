@@ -36,5 +36,9 @@ public class User {
     Long id;
 
     String name;
+
+    public User(String name) {
+        this.name = name;
+    }
 }
 

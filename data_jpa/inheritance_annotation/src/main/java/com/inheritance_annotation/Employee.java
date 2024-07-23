@@ -22,4 +22,10 @@ public class Employee extends User {
 
     String occupation;
     int salary;
+
+    public Employee(String name, String occupation, int salary) {
+        super(name);
+        this.occupation = occupation;
+        this.salary = salary;
+    }
 }
