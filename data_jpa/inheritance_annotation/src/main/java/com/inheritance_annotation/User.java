@@ -19,7 +19,7 @@ import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
 @Entity
-@Table
+@Table(name = "users")
 @Getter
 @ToString
 @EqualsAndHashCode
