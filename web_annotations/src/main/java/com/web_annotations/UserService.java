@@ -1,6 +1,7 @@
 package com.web_annotations;
 
 import lombok.val;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -8,6 +9,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
+import static java.util.Objects.isNull;
+
+@Component
 public class UserService {
     private List<User> users = new ArrayList<>();
 
@@ -43,7 +47,12 @@ public class UserService {
 
     User updateUser(UserDto dto, Long id) {
         val updatedUser = findById(id)
-                .map(user -> user.update(dto.name(), dto.surname(), dto.salary(), dto.birthDate()))
+                .map(user -> user.update(
+                                validate(dto.name()),
+                                validate(dto.surname()),
+                                dto.salary(),
+                                isNull(dto.birthDate()) ? user.getBirthDate() : dto.birthDate())
+                )
                 .orElse(new User(dto.name(), dto.surname(), dto.salary(), dto.birthDate()));
         users.add(updatedUser);
         System.out.println(updatedUser);
@@ -52,5 +61,9 @@ public class UserService {
 
     int deleteUser(Long id) {
         return users.removeIf(user -> user.getId().equals(id)) ? 1 : -1;
+    }
+
+    private String validate(String s) {
+        return s.strip();
     }
 }
