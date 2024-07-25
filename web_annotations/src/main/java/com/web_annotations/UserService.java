@@ -59,8 +59,8 @@ public class UserService {
         return updatedUser;
     }
 
-    int deleteUser(Long id) {
-        return users.removeIf(user -> user.getId().equals(id)) ? 1 : -1;
+    void deleteUser(Long id) {
+        users.removeIf(user -> user.getId().equals(id));
     }
 
     private String validate(String s) {
