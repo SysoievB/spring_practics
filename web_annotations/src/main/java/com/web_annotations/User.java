@@ -15,7 +15,7 @@ import java.time.LocalDate;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @AllArgsConstructor
 public class User {
-    private static long increment = 0;
+    private static long increment = 1;
     Long id;
     String name;
     String surname;

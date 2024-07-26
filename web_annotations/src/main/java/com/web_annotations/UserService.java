@@ -41,7 +41,6 @@ public class UserService {
     User createNewUser(UserDto dto) {
         val user = new User(dto.name(), dto.surname(), dto.salary(), dto.birthDate());
         users.add(user);
-        System.out.println(user);
         return user;
     }
 
@@ -55,7 +54,6 @@ public class UserService {
                 )
                 .orElse(new User(dto.name(), dto.surname(), dto.salary(), dto.birthDate()));
         users.add(updatedUser);
-        System.out.println(updatedUser);
         return updatedUser;
     }
 
