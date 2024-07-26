@@ -47,14 +47,23 @@ public class UserService {
     User updateUser(UserDto dto, Long id) {
         val updatedUser = findById(id)
                 .map(user -> user.update(
-                                validate(dto.name()),
-                                validate(dto.surname()),
-                                dto.salary(),
-                                isNull(dto.birthDate()) ? user.getBirthDate() : dto.birthDate())
+                        validate(dto.name()),
+                        validate(dto.surname()),
+                        dto.salary(),
+                        isNull(dto.birthDate()) ? user.getBirthDate() : dto.birthDate())
                 )
                 .orElse(new User(dto.name(), dto.surname(), dto.salary(), dto.birthDate()));
         users.add(updatedUser);
         return updatedUser;
+    }
+
+    User patchName(String name, Long id) {
+        return findById(id)
+                .map(user -> {
+                    user.setName(name);
+                    return user;
+                })
+                .orElseThrow(RestResponseEntityExceptionHandler.UserNotFoundException::new);
     }
 
     void deleteUser(Long id) {

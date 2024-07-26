@@ -4,6 +4,7 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
@@ -17,6 +18,7 @@ import java.time.LocalDate;
 public class User {
     private static long increment = 1;
     Long id;
+    @Setter
     String name;
     String surname;
     int age;

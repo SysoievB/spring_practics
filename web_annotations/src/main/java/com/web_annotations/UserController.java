@@ -41,7 +41,11 @@ public class UserController {
     ResponseEntity<User> update(@PathVariable Long id, @RequestBody UserDto dto) {
         return ResponseEntity.ok(service.updateUser(dto, id));
     }
-    //todo @PatchMapping
+
+    @PatchMapping("/{id}")
+    ResponseEntity<User> patchByName(@PathVariable Long id, String name) {
+        return ResponseEntity.ok(service.patchName(name, id));
+    }
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
