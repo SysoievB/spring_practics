@@ -1,11 +1,13 @@
 package com.web_annotations;
 
 import lombok.AllArgsConstructor;
+import lombok.val;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -30,15 +32,16 @@ public class UserController {
 
     @GetMapping("/{id}")
     ResponseEntity<User> getById(@PathVariable Long id) {
-        return service.findById(id)
-                .map(ResponseEntity::ok)
-                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
+        val user = service.findById(id)
+                .orElseThrow(RestResponseEntityExceptionHandler.UserNotFoundException::new);
+        return ResponseEntity.ok(user);
     }
 
     @PutMapping("/{id}")
     ResponseEntity<User> update(@PathVariable Long id, @RequestBody UserDto dto) {
         return ResponseEntity.ok(service.updateUser(dto, id));
     }
+    //todo @PatchMapping
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
