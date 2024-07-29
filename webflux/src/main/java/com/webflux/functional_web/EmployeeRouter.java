@@ -21,9 +21,9 @@ public class EmployeeRouter {
     public RouterFunction<ServerResponse> userRoutes() {
         return RouterFunctions
                 .route(GET("/employee"), employeeHandler::getAllEmployees)
-                .andRoute(GET("/employee/{id}"), employeeHandler::getEmployeeById);
-                //.andRoute(POST("/employee"), employeeHandler::createEmployee)
-                //.andRoute(PUT("/employee/{id}"), employeeHandler::updateEmployee)
-                //.andRoute(DELETE("/employee/{id}"), employeeHandler::deleteEmployee);
+                .andRoute(GET("/employee/{id}"), employeeHandler::getEmployeeById)
+                .andRoute(POST("/employee"), employeeHandler::createEmployee)
+                .andRoute(PUT("/employee/{id}"), employeeHandler::updateEmployee)
+                .andRoute(DELETE("/employee/{id}"), employeeHandler::deleteEmployee);
     }
 }
