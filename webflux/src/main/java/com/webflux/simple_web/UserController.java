@@ -1,4 +1,4 @@
-package com.webflux;
+package com.webflux.simple_web;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.webflux;
+package com.webflux.simple_web;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
