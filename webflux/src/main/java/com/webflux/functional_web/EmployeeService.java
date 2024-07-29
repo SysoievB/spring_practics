@@ -25,12 +25,12 @@ public class EmployeeService {
     @Transactional
     Mono<Employee> updateEmployee(EmployeeDto dto, Long id) {
         return findEmployeeById(id)
-                .map(user -> {
-                    user.setName(dto.name());
-                    user.setAge(dto.age());
-                    return user;
+                .flatMap(employee -> {
+                    employee.setName(dto.name());
+                    employee.setAge(dto.age());
+                    return repo.save(employee);
                 })
-                .defaultIfEmpty(new Employee(id, dto.name(), dto.age()));
+                .switchIfEmpty(repo.save(new Employee(id, dto.name(), dto.age())));
     }
 
     @Transactional
