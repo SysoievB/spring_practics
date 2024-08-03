@@ -10,7 +10,29 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-
+/**
+ * Understanding Offset with an Example
+ * Consider a dataset with 100 items and a page size of 10 items per page.
+ * If you want to fetch the first page, the offset is 0 (no items are skipped).
+ * For the second page, the offset is 10 (the first 10 items are skipped), and so on.
+ *
+ * Calculating Offset
+ * The offset is typically calculated using the following formula:
+ * offset = page number × page size
+ * For example:
+ * Page number 0, page size 10: offset = 0 * 10 = 0
+ * Page number 1, page size 10: offset = 1 * 10 = 10
+ * Page number 2, page size 10: offset = 2 * 10 = 20
+ * Using Offset in SQL Queries
+ * In SQL, the offset is used in combination with the LIMIT clause to fetch a specific page of results.
+ * Here's an example SQL query:
+ *
+ * SELECT * FROM address
+ * ORDER BY id ASC
+ * LIMIT 10 OFFSET 20;
+ *
+ * This query retrieves 10 items, starting from the 21st item (offset 20).
+ * */
 @SpringBootApplication
 @AllArgsConstructor
 public class PaginationApplication {
