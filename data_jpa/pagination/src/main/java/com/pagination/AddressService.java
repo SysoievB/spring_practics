@@ -22,8 +22,8 @@ public class AddressService {
         return repo.findByCityContaining(city, pageable);
     }
 
-    public List<Address> findAddressByCityWithPagination(int limit, int offset) {
-        return repo.findAddressByCityWithPagination(limit, offset);
+    public List<Address> findAddressByCityWithPagination(String city, int limit, int offset) {
+        return repo.findAddressByCityWithPagination(city, limit, offset);
     }
 
     public Page<Address> findByCityWithPagination(String city, Pageable pageable) {
