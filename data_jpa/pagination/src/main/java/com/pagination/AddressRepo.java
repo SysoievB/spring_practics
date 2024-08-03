@@ -14,8 +14,8 @@ public interface AddressRepo extends PagingAndSortingRepository<Address, Long> {
 
     Page<Address> findByCityContaining(String city, Pageable pageable);
 
-    @Query(value = "SELECT * FROM pagination.address WHERE city = 'Los Angeles' LIMIT :limit OFFSET :offset", nativeQuery = true)
-    List<Address> findAddressByCityWithPagination(@Param("limit") int limit, @Param("offset") int offset);
+    @Query(value = "SELECT * FROM pagination.address WHERE city = :city LIMIT :limit OFFSET :offset", nativeQuery = true)
+    List<Address> findAddressByCityWithPagination(@Param("city") String city, @Param("limit") int limit, @Param("offset") int offset);
 
     @Query(value = "SELECT * FROM pagination.address WHERE city = :city",
             countQuery = "SELECT count(*) FROM pagination.address WHERE city = :city",
