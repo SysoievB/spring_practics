@@ -81,7 +81,7 @@ public class PaginationApplication {
         int pageNumber = pageable.getPageNumber();
         int pageSize = pageable.getPageSize();
         long offset = pageable.getOffset();
-        Sort sort = pageable.getSort();
+        val sort = pageable.getSort();
 
         System.out.println("Page Number: " + pageNumber);
         System.out.println("Page Size: " + pageSize);
