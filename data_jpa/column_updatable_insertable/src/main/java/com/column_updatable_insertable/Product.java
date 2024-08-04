@@ -8,10 +8,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 /**
@@ -20,11 +23,13 @@ import java.time.LocalDateTime;
  * - when using a composite key
  * - when using a shared primary key
  * - when using cascaded primary keys
- * */
+ */
 
 @Entity
 @Table(name = "products")
 @ToString
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -48,7 +53,16 @@ public class Product {
     /**
      * For a price field with precision = 5 and scale = 2:
      * The largest value you could store would be 999.99 (5 digits total, with 2 digits after the decimal point).
-     * The smallest value would be -999.99.*/
-    @Column(precision = 5, scale = 2)
-    Double price;
+     * The smallest value would be -999.99.
+     */
+    @Column(columnDefinition = "decimal", precision = 5, scale = 2)
+    BigDecimal price;
+
+    public Product(String code, String brand, BigDecimal price) {
+        this.code = code;
+        this.brand = brand;
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+        this.price = price;
+    }
 }
