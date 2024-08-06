@@ -18,9 +18,7 @@ import org.springframework.data.annotation.Id;
 public class Employee {
     @Id
     Long id;
-
     String name;
-
     Integer age;
 
     public Employee(String name, Integer age) {
