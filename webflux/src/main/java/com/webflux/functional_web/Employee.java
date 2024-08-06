@@ -1,10 +1,12 @@
 package com.webflux.functional_web;
 
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.experimental.FieldDefaults;
 import org.springframework.data.annotation.Id;
 
 @AllArgsConstructor
@@ -12,13 +14,14 @@ import org.springframework.data.annotation.Id;
 @Getter
 @Setter
 @ToString
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class Employee {
     @Id
-    private Long id;
+    Long id;
 
-    private String name;
+    String name;
 
-    private Integer age;
+    Integer age;
 
     public Employee(String name, Integer age) {
         this.name = name;
