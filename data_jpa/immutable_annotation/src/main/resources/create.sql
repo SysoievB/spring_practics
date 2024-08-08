@@ -6,7 +6,7 @@ create table address
     flat_number  int
 );
 
-INSERT INTO address (street, city, house_number, flat_number)
+INSERT INTO address (street, city, flat_number)
 VALUES ('Main Street', 'New York', 1),
        ('Broadway', 'Los Angeles', 2),
        ('Broadway', 'Los Angeles', 2),
