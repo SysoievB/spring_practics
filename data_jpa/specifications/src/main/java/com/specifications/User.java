@@ -1,5 +1,6 @@
 package com.specifications;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,7 +30,7 @@ public class User {
 
     String name;
     String surname;
-    String country;
+    @Nullable String country;
     LocalDate birthDate;
     int age;
     boolean isAdult;
@@ -40,7 +41,7 @@ public class User {
     @UpdateTimestamp
     ZonedDateTime updatedAt;
 
-    public User(String name, String surname, String country, LocalDate birthDate, int age) {
+    public User(String name, String surname, @Nullable String country, LocalDate birthDate, int age) {
         this.name = name;
         this.surname = surname;
         this.country = country;

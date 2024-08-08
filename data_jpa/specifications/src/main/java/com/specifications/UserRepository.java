@@ -25,6 +25,39 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
         return findAll(specification);
     }
 
+    default List<User> findByNameContains(@Nullable String nameSubstring) {
+        val specification = where(limitByNameContains(nameSubstring));
+        return findAll(specification);
+    }
+
+    default List<User> findByAgeGreaterThan(int age) {
+        val specification = where(limitByAgeGreaterThan(age));
+        return findAll(specification);
+    }
+
+    default List<User> findByAgeLessThan(int age) {
+        val specification = where(limitByAgeLessThan(age));
+        return findAll(specification);
+    }
+
+    default List<User> findAllByCountryIsNull() {
+        val specification = where(limitByCountryIsNull());
+        return findAll(specification);
+    }
+
+    default List<User> findAllByCountryIsNotNull() {
+        val specification = where(limitByCountryIsNotNull());
+        return findAll(specification);
+    }
+
+    //todo in
+    //todo function
+    //todo currentDate time timestamp
+    //todo count
+    //todo conjunction
+    //todo diff
+    //todo disjunction
+
     default Optional<User> findByNameAndSurnameAndAdult(String name, String surname) {
         val specification = where(limitByName(name))
                 .and(limitBySurname(surname))
@@ -54,6 +87,9 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
         return ((root, query, criteriaBuilder) -> criteriaBuilder.equal(root.get(User_.country), country));
     }
 
+
+    //le == lessThanOrEqualTo && ge == greaterThanOrEqualTo
+    @Nullable
     private static Specification<User> dateBetween(@Nullable LocalDate from, @Nullable LocalDate to) {
         if (isNull(from) && isNull(to)) {
             return null;
@@ -83,5 +119,32 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
 
     private static Specification<User> isTrue(SingularAttribute<User, Boolean> attribute) {
         return (root, query, criteriaBuilder) -> criteriaBuilder.isTrue(root.get(attribute));
+    }
+
+    @Nullable
+    private static Specification<User> limitByNameContains(@Nullable String nameSubstring) {
+        val patternMatching = "%" + nameSubstring + "%";
+        if (isNull(nameSubstring)) {
+            return null;
+        }
+        return (root, query, criteriaBuilder) -> criteriaBuilder.equal(root.get(User_.name), patternMatching);
+    }
+
+    //gt == greaterThan
+    private static Specification<User> limitByAgeGreaterThan(int age) {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.gt(root.get(User_.age), age);
+    }
+
+    //lt == lessThan
+    private static Specification<User> limitByAgeLessThan(int age) {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.lt(root.get(User_.age), age);
+    }
+
+    private static Specification<User> limitByCountryIsNull() {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.isNull(root.get(User_.country));
+    }
+
+    private static Specification<User> limitByCountryIsNotNull() {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.isNotNull(root.get(User_.country));
     }
 }
