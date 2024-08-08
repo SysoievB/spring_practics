@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,6 +23,46 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
     default List<User> findByCountryAndBirthDateBetween(String country, @Nullable LocalDate from, @Nullable LocalDate to) {
         val specification = where(limitByCountry(country))
                 .and(dateBetween(from, to));
+        return findAll(specification);
+    }
+
+    default List<User> findUsersCreatedToday() {
+        val specification = where(limitByCreatedAtToday());
+        return findAll(specification);
+    }
+
+    default long countUsersByCountry(String country) {
+        val specification = where(limitByCountry(country));
+        return count(specification);
+    }
+
+    default List<User> findByCountries(List<String> countries) {
+        val specification = where(limitByCountries(countries));
+        return findAll(specification);
+    }
+
+    //conjunction(and)
+    default List<User> findByNameAndCountryAndAdult(String name, String country) {
+        val specification = where(limitByName(name))
+                .and(limitByCountry(country))
+                .and(isTrue(User_.isAdult));
+        return findAll(specification);
+    }
+
+    //disjunction(or)
+    default List<User> findByNameOrCountry(String name, String country) {
+        val specification = where(limitByName(name))
+                .or(limitByCountry(country));
+        return findAll(specification);
+    }
+
+    default List<User> findUsersByAgeDifference(int minAge, int maxAge) {
+        val specification = where(limitByAgeDifference(minAge, maxAge));
+        return findAll(specification);
+    }
+
+    default List<User> findByBirthYear(int year) {
+        val specification = where(limitByBirthYear(year));
         return findAll(specification);
     }
 
@@ -49,14 +90,6 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
         val specification = where(limitByCountryIsNotNull());
         return findAll(specification);
     }
-
-    //todo in
-    //todo function
-    //todo currentDate time timestamp
-    //todo count
-    //todo conjunction
-    //todo diff
-    //todo disjunction
 
     default Optional<User> findByNameAndSurnameAndAdult(String name, String surname) {
         val specification = where(limitByName(name))
@@ -146,5 +179,30 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
 
     private static Specification<User> limitByCountryIsNotNull() {
         return (root, query, criteriaBuilder) -> criteriaBuilder.isNotNull(root.get(User_.country));
+    }
+
+    private static Specification<User> limitByCountries(List<String> countries) {
+        return (root, query, criteriaBuilder) -> root.get(User_.country).in(countries);
+    }
+
+    private static Specification<User> limitByBirthYear(int year) {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.equal(
+                criteriaBuilder.function("YEAR", Integer.class, root.get(User_.birthDate)), year);
+    }
+
+    private static Specification<User> limitByCreatedAtToday() {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.equal(
+                criteriaBuilder.function("DATE", LocalDate.class, root.get(User_.createdAt)), LocalDate.now());
+    }
+
+    private static Specification<User> limitByAgeDifference(int minAge, int maxAge) {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.between(
+                criteriaBuilder.function(
+                        "TIMESTAMPDIFF",
+                        Integer.class,
+                        criteriaBuilder.literal(ChronoUnit.YEARS.name()),
+                        root.get(User_.birthDate),
+                        criteriaBuilder.currentDate()),
+                minAge, maxAge);
     }
 }
