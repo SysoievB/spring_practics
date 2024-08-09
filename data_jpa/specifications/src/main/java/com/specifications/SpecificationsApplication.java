@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import java.time.LocalDate;
 import java.util.List;
 
+
 @SpringBootApplication
 @AllArgsConstructor
 public class SpecificationsApplication {
@@ -33,13 +34,13 @@ public class SpecificationsApplication {
                     new User("John", "Garcia", "Italy", LocalDate.of(2022, 8, 8), 1),
                     new User("John", "Garcia", "Italy", LocalDate.of(2000, 8, 8), 23),
                     new User("John", "Benson", "USA", LocalDate.of(2012, 8, 8), 11),
-                    new User("Sam", "Benson", "USA", LocalDate.of(1990, 8, 8), 33),
+                    new User("Sam", "Benson", null, LocalDate.of(1990, 8, 8), 33),
                     new User("Sam", "Benson", "USA", LocalDate.of(2012, 8, 8), 11),
                     new User("John", "Miller", "Japan", LocalDate.of(2012, 8, 8), 11),
                     new User("Grace", "Lee", "Japan", LocalDate.of(1994, 9, 9), 30),
                     new User("Hank", "Miller", "China", LocalDate.of(1980, 10, 10), 44)
             );
-            repository.saveAll(users);
+           // repository.saveAll(users);
 
             repository.getUserDtoByName("John")
                     .forEach(System.out::println);
@@ -73,6 +74,31 @@ public class SpecificationsApplication {
 
             System.out.println("------------------ Count by country -------------------------");
             System.out.println(repository.countUsersByCountry("USA"));
+
+            System.out.println("------------------ Find users created today -------------------------");
+            repository.findUsersCreatedToday()
+                    .forEach(System.out::println);
+
+            val nameSubstring = "a";
+            System.out.println("------------------ Find by name contains " + nameSubstring + " -------------------------");
+            repository.findByNameContains(nameSubstring)
+                    .forEach(System.out::println);
+
+            System.out.println("------------------ Find all by country is null -------------------------");
+            repository.findAllByCountryIsNull()
+                    .forEach(System.out::println);
+
+            System.out.println("------------------ Find by birth year -------------------------");
+            repository.findByBirthYear(2000)
+                    .forEach(System.out::println);
+
+            System.out.println("------------------ Find by countries -------------------------");
+            repository.findByCountries(List.of("USA", "Canada"))
+                    .forEach(System.out::println);
+
+            System.out.println("------------------ Find by name or country -------------------------");
+            repository.findByNameOrCountry("Dave", "Canada")
+                    .forEach(System.out::println);
         };
     }
 }
