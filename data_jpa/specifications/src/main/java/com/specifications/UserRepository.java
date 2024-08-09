@@ -9,7 +9,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,7 +17,7 @@ import static java.util.Objects.nonNull;
 import static org.springframework.data.jpa.domain.Specification.not;
 import static org.springframework.data.jpa.domain.Specification.where;
 
-public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificationExecutor<User> {
+interface UserRepository extends JpaRepository<User, Long>, JpaSpecificationExecutor<User> {
 
     default List<User> findByCountryAndBirthDateBetween(String country, @Nullable LocalDate from, @Nullable LocalDate to) {
         val specification = where(limitByCountry(country))
@@ -53,11 +52,6 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
     default List<User> findByNameOrCountry(String name, String country) {
         val specification = where(limitByName(name))
                 .or(limitByCountry(country));
-        return findAll(specification);
-    }
-
-    default List<User> findUsersByAgeDifference(int minAge, int maxAge) {
-        val specification = where(limitByAgeDifference(minAge, maxAge));
         return findAll(specification);
     }
 
@@ -160,7 +154,7 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
         if (isNull(nameSubstring)) {
             return null;
         }
-        return (root, query, criteriaBuilder) -> criteriaBuilder.equal(root.get(User_.name), patternMatching);
+        return (root, query, criteriaBuilder) -> criteriaBuilder.like(root.get(User_.name), patternMatching);
     }
 
     //gt == greaterThan
@@ -193,16 +187,5 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
     private static Specification<User> limitByCreatedAtToday() {
         return (root, query, criteriaBuilder) -> criteriaBuilder.equal(
                 criteriaBuilder.function("DATE", LocalDate.class, root.get(User_.createdAt)), LocalDate.now());
-    }
-
-    private static Specification<User> limitByAgeDifference(int minAge, int maxAge) {
-        return (root, query, criteriaBuilder) -> criteriaBuilder.between(
-                criteriaBuilder.function(
-                        "TIMESTAMPDIFF",
-                        Integer.class,
-                        criteriaBuilder.literal(ChronoUnit.YEARS.name()),
-                        root.get(User_.birthDate),
-                        criteriaBuilder.currentDate()),
-                minAge, maxAge);
     }
 }
