@@ -26,6 +26,11 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
+    /**
+     * Works only when hibernate set by default
+     * spring.jpa.properties.hibernate.validator.apply_to_ddl=true
+     * in order to turn off this feature just change value to false
+     * */
     @NotNull
     String name;
 
