@@ -16,6 +16,7 @@ import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDate;
@@ -23,6 +24,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Getter
+@Setter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
@@ -48,22 +50,23 @@ public class User {
     @Max(value = 150, message = "Age should not be greater than 150")
     private int age;
 
-    @PositiveOrZero
+    @PositiveOrZero(message = "Salary cannot be less than zero")
     private int salary;
 
-    @NegativeOrZero
+    @NegativeOrZero(message = "Debt cannot be greater than zero")
     private int debt;
 
-    @FutureOrPresent
+    @FutureOrPresent(message = "Salary date cannot be in the past")
     private LocalDate nextSalaryDate;
 
-    @PastOrPresent
+    @PastOrPresent(message = "Last salary date cannot be in future")
     private LocalDate lastSalaryDate;
 
-    @Email(message = "Email should be valid")
+    @Email(regexp = "[abc]",
+            message = "Email should be valid")
     private String email;
 
-    List<@NotBlank String> preferences;
+    List<@NotBlank(message = "Cannot be blank") String> preferences;
 
     private LocalDate dateOfBirth;
 
