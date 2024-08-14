@@ -62,7 +62,7 @@ public class User {
     @PastOrPresent(message = "Last salary date cannot be in future")
     private LocalDate lastSalaryDate;
 
-    @Email(regexp = "[abc]",
+    @Email(regexp = "[a-z]",
             message = "Email should be valid")
     private String email;
 
