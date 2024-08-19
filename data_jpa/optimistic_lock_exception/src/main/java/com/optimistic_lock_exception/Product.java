@@ -30,5 +30,10 @@ public class Product {
 
     @Version
     private Integer version;
+
+    public Product(String name, Double price) {
+        this.name = name;
+        this.price = price;
+    }
 }
 

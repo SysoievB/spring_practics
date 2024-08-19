@@ -1,7 +1,6 @@
 package com.optimistic_lock_exception;
 
 import lombok.AllArgsConstructor;
-import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,13 +10,15 @@ public class ProductService {
     private final ProductRepository repository;
 
     public Product createProduct(String name, Double price) {
-        Product product = new Product(null, name, price, null);
-        return repository.save(product);
+        return repository.save(new Product(name, price));
     }
 
+    /**
+     * on front-end we can throw custom exception and refresh the page
+     */
     @Transactional
-    public Product updateProductPrice(Long productId, Double newPrice) {
-        return repository.findById(productId)
+    public void updateProductPrice(Long productId, Double newPrice) {
+        repository.findById(productId)
                 .map(prod -> {
                     prod.setPrice(newPrice);
                     return repository.save(prod);
