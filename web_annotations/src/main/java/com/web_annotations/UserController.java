@@ -36,8 +36,15 @@ public class UserController {
 
     @GetMapping("/{id}")
     ResponseEntity<User> getById(@PathVariable Long id) {
+        return service.findById(id).map(ResponseEntity::ok).orElseGet(() -> ResponseEntity
+                .badRequest()
+                .build());
+    }
+
+    @HeadMapping(path = "/{id}")
+    ResponseEntity<User> getByIdHead(@PathVariable Long id) {
         val user = service.findById(id)
-                .orElseThrow(RestResponseEntityExceptionHandler.UserNotFoundException::new);
+                .orElseThrow(() -> new RestResponseEntityExceptionHandler.UserNotFoundException("User not found with id: " + id));
         return ResponseEntity.ok(user);
     }
 
