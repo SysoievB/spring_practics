@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com</groupId>
-    <artifactId>web_headers</artifactId>
+    <artifactId>web_headers_cookies</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>web_headers</name>
     <description>web_headers</description>
