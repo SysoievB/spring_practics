@@ -1,6 +1,7 @@
 package com.web_headers;
 
 import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.val;
 import org.springframework.web.bind.annotation.CookieValue;
@@ -8,6 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 @RestController
 public class CookieController {
@@ -34,5 +38,18 @@ public class CookieController {
         cookie.setMaxAge(0);
         response.addCookie(cookie);
         return "Cookie deleted";
+    }
+
+    @GetMapping("/all-cookies")
+    public String readAllCookies(HttpServletRequest request) {
+
+        Cookie[] cookies = request.getCookies();
+        if (cookies != null) {
+            return Arrays.stream(cookies)
+                    .map(c -> c.getName() + "=" + c.getValue())
+                    .collect(Collectors.joining(", "));
+        }
+
+        return "No cookies";
     }
 }
