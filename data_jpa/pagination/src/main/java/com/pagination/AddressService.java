@@ -30,7 +30,6 @@ public class AddressService {
     }
 
     public Page<Address> getPageImpl2(@Nullable Pageable pageable) {
-        // Fetch all data
         List<Address> list = repo.findAll(Pageable.unpaged()).getContent();
 
         // Apply pagination manually
@@ -46,12 +45,10 @@ public class AddressService {
             pagedList = list.subList(startItem, toIndex);
         }
 
-        // Return the manually created Page object
         return new PageImpl<>(pagedList, pageable, list.size());
     }
 
     public Page<Address> getPageImpl1(@Nullable Pageable pageable) {
-        // Fetch all records as a list
         val list = repo.findAll(Pageable.unpaged()).getContent();
 
         // Handle the case where pageable is null
@@ -64,7 +61,6 @@ public class AddressService {
             return new PageImpl<>(list);
         }
 
-        // Manually apply pagination
         int start = Math.toIntExact(pageable.getOffset());
         int end = Math.min((start + pageable.getPageSize()), list.size());
         List<Address> pagedList = list.subList(start, end);
