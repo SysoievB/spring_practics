@@ -1,6 +1,5 @@
 package com.dto_projection;
 
-import lombok.ToString;
 import org.springframework.data.repository.Repository;
 
 import java.util.List;
