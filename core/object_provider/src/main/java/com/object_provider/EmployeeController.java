@@ -26,11 +26,11 @@ public class EmployeeController {
 
     @GetMapping("/available")
     public String getIfAvailable() {
-        return employeeServices.getIfAvailable(RemoteEmployeeService::new).toString();
+        return employeeServices.getIfAvailable(RemoteEmployeeService::new).getClass().getSimpleName();
     }//NoUniqueBeanDefinitionException
 
     @GetMapping("/unique")
     public String getIfUnique() {
-        return employeeServices.getIfUnique(OnsiteEmployeeService::new).toString();
+        return employeeServices.getIfUnique(OnsiteEmployeeService::new).getClass().getSimpleName();
     }
 }
