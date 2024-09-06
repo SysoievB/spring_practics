@@ -21,7 +21,7 @@ interface UserRepository extends JpaRepository<User, Long>, JpaSpecificationExec
 
     default List<User> findByCountryAndBirthDateBetween(String country, @Nullable LocalDate from, @Nullable LocalDate to) {
         val specification = where(limitByCountry(country))
-                .and(dateBetween(from, to));
+                .and(dateBetweenOrIsNull(from, to));
         return findAll(specification);
     }
 
@@ -117,18 +117,27 @@ interface UserRepository extends JpaRepository<User, Long>, JpaSpecificationExec
 
     //le == lessThanOrEqualTo && ge == greaterThanOrEqualTo
     @Nullable
-    private static Specification<User> dateBetween(@Nullable LocalDate from, @Nullable LocalDate to) {
+    private static Specification<User> dateBetweenOrIsNull(@Nullable LocalDate from, @Nullable LocalDate to) {
         if (isNull(from) && isNull(to)) {
             return null;
         } else if (nonNull(from) && isNull(to)) {
-            return ((root, query, criteriaBuilder) -> criteriaBuilder.greaterThanOrEqualTo(root.get(User_.birthDate), from));
-        } else if (isNull(from)) {
-            return ((root, query, criteriaBuilder) -> criteriaBuilder.lessThanOrEqualTo(root.get(User_.birthDate), to));
-        } else {
-            return ((root, query, criteriaBuilder) -> criteriaBuilder.and(
+            return (root, query, criteriaBuilder) -> criteriaBuilder.or(
                     criteriaBuilder.greaterThanOrEqualTo(root.get(User_.birthDate), from),
-                    criteriaBuilder.lessThanOrEqualTo(root.get(User_.birthDate), to)
-            ));
+                    criteriaBuilder.isNull(root.get(User_.birthDate))
+            );
+        } else if (isNull(from)) {
+            return (root, query, criteriaBuilder) -> criteriaBuilder.or(
+                    criteriaBuilder.lessThanOrEqualTo(root.get(User_.birthDate), to),
+                    criteriaBuilder.isNull(root.get(User_.birthDate))
+            );
+        } else {
+            return (root, query, criteriaBuilder) -> criteriaBuilder.or(
+                    criteriaBuilder.and(
+                            criteriaBuilder.greaterThanOrEqualTo(root.get(User_.birthDate), from),
+                            criteriaBuilder.lessThanOrEqualTo(root.get(User_.birthDate), to)
+                    ),
+                    criteriaBuilder.isNull(root.get(User_.birthDate))
+            );
         }
     }
 
