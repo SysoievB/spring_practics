@@ -1,12 +1,18 @@
-package com.object_provider;
+package com.object_provider.abstract_factory;
+
+import com.object_provider.Employee;
+import com.object_provider.WorkType;
+import org.springframework.beans.factory.ObjectProvider;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class EmployeeService {
-    private final List<Employee> EMPLOYEES = new ArrayList<>();
+@Component
+public class EmployeeStorage {
+    private static final List<Employee> EMPLOYEES = new ArrayList<>();
 
-    {
+    static {
         EMPLOYEES.add(new Employee("Alice", "Smith", 30, 5, WorkType.REMOTE));
         EMPLOYEES.add(new Employee("Bob", "Johnson", 45, 20, WorkType.ONSITE));
         EMPLOYEES.add(new Employee("Charlie", "Brown", 28, 3, WorkType.ONSITE));
@@ -19,14 +25,7 @@ public abstract class EmployeeService {
         EMPLOYEES.add(new Employee("Jack", "Thomas", 38, 12, WorkType.REMOTE));
     }
 
-    public abstract WorkType getWorkType();
-
-    public abstract String getEmployeeName(Employee employee);
-
-    public Employee getFirstEmployeeByWorkType() {
-        return EMPLOYEES.stream()
-                .filter(employee -> employee.getType().equals(getWorkType()))
-                .findFirst()
-                .orElseThrow(() -> new RuntimeException("Employee with this type is absent"));
+    public List<Employee> getEmployees() {
+        return EMPLOYEES;
     }
 }
