@@ -16,6 +16,4 @@ public interface UserRepository {
     List<User> findByIsAdult(boolean isAdult);
 
     List<User> findByNameContaining(String title);
-
-    int deleteAll();
 }
