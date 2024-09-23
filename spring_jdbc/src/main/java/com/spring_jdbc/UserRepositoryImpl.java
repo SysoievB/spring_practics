@@ -2,10 +2,13 @@ package com.spring_jdbc;
 
 import lombok.RequiredArgsConstructor;
 import lombok.val;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.List;
 
 @Repository
@@ -29,19 +32,19 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public int update(User user) {
+    public int update(Long id, User user) {
         return jdbcTemplate.update(UPDATE,
                 user.getName(),
                 user.getSurname(),
                 user.getDateOfBirth(),
                 user.isAdult(user.getDateOfBirth()),
-                user.getId());
+                id);
     }
 
     @Override
     public User findById(Long id) {
-        val query = "SELECT * FROM users WHERE id=?";
-        return jdbcTemplate.queryForObject(query, new BeanPropertyRowMapper<>(User.class));
+        val query = FIND_ALL + " WHERE id = ?";
+        return jdbcTemplate.queryForObject(query, new UserRowMapper(), id);
     }
 
     @Override
@@ -52,18 +55,31 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public List<User> findAll() {
-        return jdbcTemplate.query(FIND_ALL, new BeanPropertyRowMapper<>(User.class));
+        return jdbcTemplate.query(FIND_ALL, new UserRowMapper());
     }
 
     @Override
     public List<User> findByIsAdult(boolean isAdult) {
         val query = "SELECT * FROM users WHERE adult=?";
-        return jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class));
+        return jdbcTemplate.query(query, new UserRowMapper());
     }
 
     @Override
     public List<User> findByNameContaining(String name) {
         val query = FIND_ALL + " WHERE name LIKE '%\" + name + \"%'";
-        return jdbcTemplate.query(query, new BeanPropertyRowMapper<>(User.class));
+        return jdbcTemplate.query(query, new UserRowMapper());
+    }
+
+    private static final class UserRowMapper implements RowMapper<User> {
+        @Override
+        public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+            User user = new User();
+            user.setId(rs.getLong("id"));
+            user.setName(rs.getString("name"));
+            user.setSurname(rs.getString("surname"));
+            user.setDateOfBirth(rs.getObject("date_of_birth", LocalDate.class));
+            user.setAdult(rs.getBoolean("adult"));
+            return user;
+        }
     }
 }

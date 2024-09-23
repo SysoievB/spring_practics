@@ -9,6 +9,7 @@ import java.time.LocalDate;
 import java.util.Optional;
 
 @Getter
+@Setter
 @ToString
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -40,7 +41,7 @@ public class User {
 
     public boolean isAdult(LocalDate dateOfBirth) {
         return Optional.ofNullable(dateOfBirth)
-                .filter(birth -> birth.getYear() >= 18)
+                .filter(birth -> (LocalDate.now().getYear() - birth.getYear()) >= 18)
                 .isPresent();
     }
 }
