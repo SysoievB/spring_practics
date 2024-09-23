@@ -34,7 +34,7 @@ public class SpringJdbcApplication {
 
             repository.update(user1.getId(), new User("Vasia", "Pupkin", LocalDate.of(2019, 1, 1)));
 
-            System.out.println(repository.findById(user2.getId()));
+            System.out.println(repository.findById(30L));
 
             System.out.println("-------------isAdult--------------");
             repository.findByIsAdult(false).forEach(System.out::println);

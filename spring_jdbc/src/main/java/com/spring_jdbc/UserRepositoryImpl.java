@@ -61,13 +61,13 @@ public class UserRepositoryImpl implements UserRepository {
     @Override
     public List<User> findByIsAdult(boolean isAdult) {
         val query = "SELECT * FROM users WHERE adult=?";
-        return jdbcTemplate.query(query, new UserRowMapper());
+        return jdbcTemplate.query(query, new UserRowMapper(), isAdult);
     }
 
     @Override
     public List<User> findByNameContaining(String name) {
-        val query = FIND_ALL + " WHERE name LIKE '%\" + name + \"%'";
-        return jdbcTemplate.query(query, new UserRowMapper());
+        val query = FIND_ALL + " WHERE name LIKE ?";
+        return jdbcTemplate.query(query, new UserRowMapper(), "%" + name + "%");
     }
 
     private static final class UserRowMapper implements RowMapper<User> {
