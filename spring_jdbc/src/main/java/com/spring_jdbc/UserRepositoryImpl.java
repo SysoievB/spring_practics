@@ -73,7 +73,7 @@ public class UserRepositoryImpl implements UserRepository {
     private static final class UserRowMapper implements RowMapper<User> {
         @Override
         public User mapRow(ResultSet rs, int rowNum) throws SQLException {
-            User user = new User();
+            val user = new User();
             user.setId(rs.getLong("id"));
             user.setName(rs.getString("name"));
             user.setSurname(rs.getString("surname"));
