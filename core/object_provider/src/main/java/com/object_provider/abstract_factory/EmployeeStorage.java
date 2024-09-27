@@ -2,7 +2,6 @@ package com.object_provider.abstract_factory;
 
 import com.object_provider.Employee;
 import com.object_provider.WorkType;
-import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
