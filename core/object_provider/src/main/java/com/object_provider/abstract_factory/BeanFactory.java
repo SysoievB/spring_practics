@@ -1,6 +1,5 @@
 package com.object_provider.abstract_factory;
 
-import com.object_provider.WorkType;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,9 +10,12 @@ public class BeanFactory {
     private final EmployeeStorage employeeStorage;
 
     @Bean
-    public EmployeeService createEmployeeService(WorkType workType) {
-        return WorkType.ONSITE == workType
-                ? new OnsiteEmployeeService(employeeStorage)
-                : new RemoteEmployeeService(employeeStorage);
+    public EmployeeService onsiteEmployeeService() {
+        return new OnsiteEmployeeService(employeeStorage);
+    }
+
+    @Bean
+    public EmployeeService remoteEmployeeService() {
+        return new RemoteEmployeeService(employeeStorage);
     }
 }

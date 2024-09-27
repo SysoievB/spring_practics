@@ -17,14 +17,4 @@ public class EmployeeController {
     public String getEmployee(@RequestParam WorkType workType) {
         return employeeTrigger.getFirstEmployeeByWorkType(workType).getName();
     }
-
-   /* @GetMapping("/available")
-    public String getIfAvailable() {
-        return employeeServices.getIfAvailable(RemoteEmployeeService::new).getClass().getSimpleName();
-    }//NoUniqueBeanDefinitionException
-
-    @GetMapping("/unique")
-    public String getIfUnique() {
-        return employeeServices.getIfUnique(OnsiteEmployeeService::new).getClass().getSimpleName();
-    }*/
 }
