@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/boot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/autowire_require_false/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/bean_configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/component_configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/conditional_on_property/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/constructor_binding/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/converter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/import_configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/object_provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/scheduled/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/attribute_converter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/attribute_override/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/column_updatable_insertable/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/created_modified_by_transient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/dto_projection/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/element_collection/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/embedded_id/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/entity_graph/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/fetch_annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/filter_annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/formula_annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/generationtype_auto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/generationtype_custom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/generationtype_sequence/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/generationtype_table/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/id_class/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/immutable_annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/inheritance_annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/keyset_pagination/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/many_to_one_uni/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/mapped_superclass/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/named_entity_graph/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/notnull_annotation_vs_column_nullable_false/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/optimistic_lock_exception/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/pagination/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/pessimistic_locking/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/query_param_modifying/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/slice_pagination/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/soft_delete/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/specifications/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/stored_procedures/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/where_annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_profiles/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/validation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web_annotations/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web_headers_cookies/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webflux/src/main/java" charset="UTF-8" />
+  </component>
+</project>

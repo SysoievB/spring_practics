@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Cleaned project" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Record" />
+        <option value="Exception" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SysoievB&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SysoievB/spring_practics.git&quot;,
+    &quot;accountId&quot;: &quot;356a8206-52ef-4522-8c00-273170264343&quot;
+  }
+}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ioUXKV1Bc5jLdIxS7AY3uM5eh9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Car.executor": "Run",
+    "JUnit.CarTest.divide_by_zero.executor": "Run",
+    "JUnit.CarTest.executor": "Run",
+    "JUnit.CarTest.success.executor": "Run",
+    "JUnit.EmployeeMapperTest.executor": "Run",
+    "JUnit.EmployeeServiceTest.executor": "Run",
+    "JUnit.MapperTest.executor": "Run",
+    "JUnit.MapperTest.testMapper.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "JUnit.UserTest.user_fields_assertions.executor": "Run",
+    "Maven.object_provider [clean].executor": "Run",
+    "Maven.specifications [clean].executor": "Run",
+    "Maven.specifications [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AttributeConverterApplication.executor": "Run",
+    "Spring Boot.AttributeOverrideApplication.executor": "Run",
+    "Spring Boot.AutowireRequireFalseApplication.executor": "Run",
+    "Spring Boot.BootApplication.executor": "Run",
+    "Spring Boot.ColumnUpdatableInsertableApplication.executor": "Run",
+    "Spring Boot.ConstructorBindingApplication.executor": "Run",
+    "Spring Boot.ConverterApplication.executor": "Run",
+    "Spring Boot.CreatedModifiedByTransientApplication.executor": "Run",
+    "Spring Boot.DtoProjectionApplication.executor": "Run",
+    "Spring Boot.ElementCollectionApplication.executor": "Run",
+    "Spring Boot.EmbeddedIdApplication.executor": "Run",
+    "Spring Boot.EntityGraphApplication.executor": "Run",
+    "Spring Boot.FetchAnnotationApplication.executor": "Run",
+    "Spring Boot.FilterAnnotationApplication.executor": "Run",
+    "Spring Boot.FormulaAnnotationApplication.executor": "Run",
+    "Spring Boot.GenerationtypeAutoApplication.executor": "Run",
+    "Spring Boot.GenerationtypeCustomApplication.executor": "Run",
+    "Spring Boot.GenerationtypeSequenceApplication.executor": "Run",
+    "Spring Boot.GenerationtypeTableApplication.executor": "Run",
+    "Spring Boot.IdClassApplication.executor": "Run",
+    "Spring Boot.ImmutableAnnotationApplication.executor": "Run",
+    "Spring Boot.InheritanceAnnotationApplication.executor": "Run",
+    "Spring Boot.KeysetPaginationApplication.executor": "Run",
+    "Spring Boot.MappedSuperclassApplication.executor": "Run",
+    "Spring Boot.NamedEntityGraphApplication.executor": "Run",
+    "Spring Boot.NoRepositoryBeanApplication.executor": "Run",
+    "Spring Boot.NotnullAnnotationVsColumnNullableFalseApplication.executor": "Run",
+    "Spring Boot.ObjectProviderApplication.executor": "Run",
+    "Spring Boot.OptimisticLockExceptionApplication.executor": "Run",
+    "Spring Boot.PaginationApplication.executor": "Run",
+    "Spring Boot.PessimisticLockingApplication.executor": "Run",
+    "Spring Boot.QueryParamModifyingApplication.executor": "Run",
+    "Spring Boot.ScheduledApplication.executor": "Run",
+    "Spring Boot.SlicePaginationApplication.executor": "Run",
+    "Spring Boot.SoftDeleteApplication.executor": "Run",
+    "Spring Boot.SpecificationsApplication.executor": "Run",
+    "Spring Boot.SpringJdbcApplication.executor": "Run",
+    "Spring Boot.SpringProfilesApplication.executor": "Run",
+    "Spring Boot.StoredProceduresApplication.executor": "Run",
+    "Spring Boot.SwaggerApplication.executor": "Run",
+    "Spring Boot.WebAnnotationsApplication.executor": "Run",
+    "Spring Boot.WebHeadersApplication.executor": "Run",
+    "Spring Boot.WebfluxApplication.executor": "Run",
+    "Spring Boot.WhereAnnotationApplication.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "91a4a309",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_practics",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "MySQL",
+      "Greenplum"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\pessimistic_locking\src\main\java\com\pessimistic_locking" />
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\attribute_converter\src\main\resources" />
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\immutable_annotation\src\main\resources" />
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\column_updatable_insertable\src\main\resources" />
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\named_entity_graph\src\main\java\com\named_entity_graph" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.web_annotations.map_struct" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.pagination" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.immutable_annotation" />
+      <recent name="com.filter_annotation" />
+      <recent name="com.where_annotation" />
+      <recent name="com.id_class" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ObjectProviderApplication">
+    <configuration name="EmployeeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web_annotations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.web_annotations.map_struct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.web_annotations.map_struct" />
+      <option name="MAIN_CLASS_NAME" value="com.web_annotations.map_struct.EmployeeServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web_annotations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.web_annotations.map_struct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.web_annotations.map_struct" />
+      <option name="MAIN_CLASS_NAME" value="com.web_annotations.map_struct.MapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapperTest.testMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web_annotations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.web_annotations.map_struct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.web_annotations.map_struct" />
+      <option name="MAIN_CLASS_NAME" value="com.web_annotations.map_struct.MapperTest" />
+      <option name="METHOD_NAME" value="testMapper" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.validation" />
+      <option name="MAIN_CLASS_NAME" value="com.validation.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnyAnnotationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="any_annotation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.any_annotation.AnyAnnotationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AttributeConverterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="attribute_converter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.attribute_converter.AttributeConverterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AttributeOverrideApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="attribute_override" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.attribute_override.AttributeOverrideApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutowireRequireFalseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="autowire_require_false" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.autowire_require_false.AutowireRequireFalseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.boot.BootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColumnUpdatableInsertableApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="column_updatable_insertable" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.column_updatable_insertable.ColumnUpdatableInsertableApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConditionalOnPropertyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="conditional_on_property" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.conditional_on_property.ConditionalOnPropertyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructorBindingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="constructor_binding" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.constructor_binding.ConstructorBindingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConverterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="converter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.converter.ConverterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="core" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.core.CoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatedModifiedByTransientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="created_modified_by_transient" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.created_modified_by_transient.CreatedModifiedByTransientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DtoProjectionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="dto_projection" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dto_projection.DtoProjectionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElementCollectionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="element_collection" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.element_collection.ElementCollectionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmbeddedIdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="embedded_id" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.embedded_id.EmbeddedIdApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntityGraphApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="entity_graph" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.entity_graph.EntityGraphApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FetchAnnotationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="fetch_annotation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fetch_annotation.FetchAnnotationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilterAnnotationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="filter_annotation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.filter_annotation.FilterAnnotationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormulaAnnotationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="formula_annotation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.formula_annotation.FormulaAnnotationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenerationtypeAutoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="generationtype_auto" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.generationtype_auto.GenerationtypeAutoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenerationtypeCustomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="generationtype_custom" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.generationtype_custom.GenerationtypeCustomApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenerationtypeSequenceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="generationtype_sequence" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.generationtype_sequence.GenerationtypeSequenceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenerationtypeTableApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="generationtype_table" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.generationtype_table.GenerationtypeTableApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdClassApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="id_class" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.id_class.IdClassApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImmutableAnnotationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="immutable_annotation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.immutable_annotation.ImmutableAnnotationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InheritanceAnnotationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="inheritance_annotation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.inheritance_annotation.InheritanceAnnotationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeysetPaginationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="keyset_pagination" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.keyset_pagination.KeysetPaginationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManyToOneUniApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="many_to_one_uni" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.many_to_one_uni.ManyToOneUniApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MappedSuperclassApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="mapped_superclass" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mapped_superclass.MappedSuperclassApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NamedEntityGraphApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="named_entity_graph" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.named_entity_graph.NamedEntityGraphApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoRepositoryBeanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="no_repository_bean" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.no_repository_bean.NoRepositoryBeanApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotnullAnnotationVsColumnNullableFalseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="notnull_annotation_vs_column_nullable_false" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.notnull_annotation_vs_column_nullable_false.NotnullAnnotationVsColumnNullableFalseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObjectProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="object_provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.object_provider.ObjectProviderApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.object_provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OptimisticLockExceptionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="optimistic_lock_exception" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimistic_lock_exception.OptimisticLockExceptionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaginationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="pagination" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pagination.PaginationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PessimisticLockingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="pessimistic_locking" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pessimistic_locking.PessimisticLockingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryParamModifyingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="query_param_modifying" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.query_param_modifying.QueryParamModifyingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScheduledApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="scheduled" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.scheduled.ScheduledApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SlicePaginationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="slice_pagination" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.slice_pagination.SlicePaginationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoftDeleteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="soft_delete" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft_delete.SoftDeleteApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecificationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="specifications" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.specifications.SpecificationsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringJdbcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="spring_jdbc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring_jdbc.SpringJdbcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringProfilesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="spring_profiles" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring_profiles.SpringProfilesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoredProceduresApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="stored_procedures" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stored_procedures.StoredProceduresApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwaggerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="swagger" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.swagger.SwaggerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="validation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.validation.ValidationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebAnnotationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="web_annotations" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.web_annotations.WebAnnotationsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebHeadersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="web_headers_cookies" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.web_headers.WebHeadersApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebfluxApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="webflux" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.webflux.WebfluxApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WhereAnnotationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="where_annotation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.where_annotation.WhereAnnotationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ObjectProviderApplication" />
+        <item itemvalue="JUnit.EmployeeServiceTest" />
+        <item itemvalue="JUnit.MapperTest" />
+        <item itemvalue="JUnit.MapperTest.testMapper" />
+        <item itemvalue="JUnit.UserTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="" />
+      <created>1720156463653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720156463653</updated>
+      <workItem from="1720156467408" duration="4465000" />
+      <workItem from="1720234553553" duration="5528000" />
+      <workItem from="1720245364571" duration="2767000" />
+      <workItem from="1720257407636" duration="1866000" />
+      <workItem from="1720272345124" duration="904000" />
+      <workItem from="1720287449074" duration="1114000" />
+      <workItem from="1720324856560" duration="9129000" />
+      <workItem from="1720354251526" duration="590000" />
+      <workItem from="1720355729182" duration="439000" />
+      <workItem from="1720410773268" duration="1451000" />
+      <workItem from="1720458824297" duration="2288000" />
+      <workItem from="1720495105114" duration="5087000" />
+      <workItem from="1720581570454" duration="1173000" />
+      <workItem from="1720583698410" duration="2675000" />
+      <workItem from="1720628180119" duration="6969000" />
+      <workItem from="1720667432444" duration="6818000" />
+      <workItem from="1720754194375" duration="868000" />
+      <workItem from="1720842103487" duration="10406000" />
+      <workItem from="1720853433751" duration="65000" />
+      <workItem from="1720867627400" duration="1609000" />
+      <workItem from="1720936188658" duration="1845000" />
+      <workItem from="1720949587900" duration="793000" />
+      <workItem from="1720955536737" duration="514000" />
+      <workItem from="1720969413068" duration="21000" />
+      <workItem from="1721013140228" duration="4180000" />
+      <workItem from="1721030912597" duration="1448000" />
+      <workItem from="1721060554767" duration="6539000" />
+      <workItem from="1721098189520" duration="3145000" />
+      <workItem from="1721185905311" duration="5392000" />
+      <workItem from="1721229825740" duration="2175000" />
+      <workItem from="1721273072710" duration="5531000" />
+      <workItem from="1721322390897" duration="392000" />
+      <workItem from="1721358888663" duration="5633000" />
+      <workItem from="1721365515618" duration="3794000" />
+      <workItem from="1721412500834" duration="4488000" />
+      <workItem from="1721450766429" duration="3503000" />
+      <workItem from="1721474861095" duration="6703000" />
+      <workItem from="1721536186515" duration="349000" />
+      <workItem from="1721557619642" duration="3269000" />
+      <workItem from="1721635483091" duration="3653000" />
+      <workItem from="1721704154489" duration="2231000" />
+      <workItem from="1721718104344" duration="3929000" />
+      <workItem from="1721791530456" duration="7304000" />
+      <workItem from="1721878691190" duration="10680000" />
+      <workItem from="1721963220404" duration="3903000" />
+      <workItem from="1721970988931" duration="6542000" />
+      <workItem from="1722002656443" duration="2361000" />
+      <workItem from="1722055298443" duration="1062000" />
+      <workItem from="1722159371171" duration="5110000" />
+      <workItem from="1722222858009" duration="8797000" />
+      <workItem from="1722275731949" duration="1670000" />
+      <workItem from="1722311108865" duration="2686000" />
+      <workItem from="1722352393039" duration="2655000" />
+      <workItem from="1722403479199" duration="1362000" />
+      <workItem from="1722483601002" duration="1490000" />
+      <workItem from="1722526543820" duration="3358000" />
+      <workItem from="1722530406167" duration="5028000" />
+      <workItem from="1722572128556" duration="2942000" />
+      <workItem from="1722689843396" duration="2044000" />
+      <workItem from="1722705827635" duration="180000" />
+      <workItem from="1722752438339" duration="7389000" />
+      <workItem from="1722829778082" duration="78000" />
+      <workItem from="1722929654833" duration="166000" />
+      <workItem from="1723039891386" duration="2780000" />
+      <workItem from="1723091969343" duration="4601000" />
+      <workItem from="1723137790956" duration="1414000" />
+      <workItem from="1723173374885" duration="5122000" />
+      <workItem from="1723264003931" duration="2780000" />
+      <workItem from="1723284717432" duration="278000" />
+      <workItem from="1723296167927" duration="170000" />
+      <workItem from="1723356716057" duration="4994000" />
+      <workItem from="1723372355702" duration="100000" />
+      <workItem from="1723372531329" duration="789000" />
+      <workItem from="1723435256591" duration="7246000" />
+      <workItem from="1723452660668" duration="24000" />
+      <workItem from="1723519284908" duration="3272000" />
+      <workItem from="1723611659326" duration="3101000" />
+      <workItem from="1723702613576" duration="28000" />
+      <workItem from="1723864205906" duration="8350000" />
+      <workItem from="1723974041266" duration="2624000" />
+      <workItem from="1724036769395" duration="5970000" />
+      <workItem from="1724131023522" duration="88000" />
+      <workItem from="1724139530789" duration="1799000" />
+      <workItem from="1724211758520" duration="6166000" />
+      <workItem from="1724296767341" duration="4403000" />
+      <workItem from="1724384809350" duration="1420000" />
+      <workItem from="1724392033567" duration="1155000" />
+      <workItem from="1724499550444" duration="9974000" />
+      <workItem from="1724574994859" duration="1615000" />
+      <workItem from="1724641153498" duration="7051000" />
+      <workItem from="1724679677629" duration="720000" />
+      <workItem from="1724728422519" duration="6159000" />
+      <workItem from="1724764479871" duration="1728000" />
+      <workItem from="1724814513553" duration="3714000" />
+      <workItem from="1724944206460" duration="1082000" />
+      <workItem from="1724947771639" duration="309000" />
+      <workItem from="1724988763792" duration="912000" />
+      <workItem from="1725185634528" duration="1781000" />
+      <workItem from="1725198273970" duration="3983000" />
+      <workItem from="1725249035719" duration="3659000" />
+      <workItem from="1725333269786" duration="5598000" />
+      <workItem from="1725359325923" duration="75000" />
+      <workItem from="1725514666994" duration="3872000" />
+      <workItem from="1725539641378" duration="1523000" />
+      <workItem from="1725553094579" duration="3677000" />
+      <workItem from="1725609722931" duration="1086000" />
+      <workItem from="1725619289087" duration="1118000" />
+      <workItem from="1725888969096" duration="615000" />
+      <workItem from="1725898859850" duration="3820000" />
+      <workItem from="1725938273929" duration="4627000" />
+      <workItem from="1726027510209" duration="12000" />
+      <workItem from="1726069354616" duration="3381000" />
+      <workItem from="1726313869261" duration="119000" />
+      <workItem from="1726591293308" duration="1585000" />
+      <workItem from="1726920342138" duration="2719000" />
+      <workItem from="1727005708777" duration="37000" />
+      <workItem from="1727063083407" duration="2516000" />
+      <workItem from="1727077248168" duration="2267000" />
+      <workItem from="1727085122496" duration="901000" />
+      <workItem from="1727093812485" duration="4818000" />
+      <workItem from="1727107588096" duration="804000" />
+      <workItem from="1727183077064" duration="56000" />
+      <workItem from="1727235396525" duration="6000" />
+      <workItem from="1727418017277" duration="89000" />
+      <workItem from="1727439689853" duration="2376000" />
+      <workItem from="1727457882942" duration="1268000" />
+      <workItem from="1727495755840" duration="23000" />
+      <workItem from="1727883835490" duration="143000" />
+      <workItem from="1727883992239" duration="87000" />
+      <workItem from="1727884092371" duration="935000" />
+    </task>
+    <task id="LOCAL-00173" summary="Added pessimistic locking">
+      <option name="closed" value="true" />
+      <created>1724039808255</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1724039808256</updated>
+    </task>
+    <task id="LOCAL-00174" summary="Added optimistic locking">
+      <option name="closed" value="true" />
+      <created>1724039829796</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1724039829796</updated>
+    </task>
+    <task id="LOCAL-00175" summary="Added head mapping">
+      <option name="closed" value="true" />
+      <created>1724139664588</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1724139664589</updated>
+    </task>
+    <task id="LOCAL-00176" summary="Added head mapping">
+      <option name="closed" value="true" />
+      <created>1724219620991</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1724219620993</updated>
+    </task>
+    <task id="LOCAL-00177" summary="Added head mapping">
+      <option name="closed" value="true" />
+      <created>1724259097340</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1724259097340</updated>
+    </task>
+    <task id="LOCAL-00178" summary="Added head mapping">
+      <option name="closed" value="true" />
+      <created>1724297643870</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1724297643871</updated>
+    </task>
+    <task id="LOCAL-00179" summary="Added headers">
+      <option name="closed" value="true" />
+      <created>1724298782005</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1724298782005</updated>
+    </task>
+    <task id="LOCAL-00180" summary="Added headers">
+      <option name="closed" value="true" />
+      <created>1724299728470</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1724299728470</updated>
+    </task>
+    <task id="LOCAL-00181" summary="Added headers">
+      <option name="closed" value="true" />
+      <created>1724391965343</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1724391965344</updated>
+    </task>
+    <task id="LOCAL-00182" summary="Added cookies">
+      <option name="closed" value="true" />
+      <created>1724501097055</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1724501097057</updated>
+    </task>
+    <task id="LOCAL-00183" summary="Added cookies">
+      <option name="closed" value="true" />
+      <created>1724501743979</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1724501743979</updated>
+    </task>
+    <task id="LOCAL-00184" summary="Added cookies">
+      <option name="closed" value="true" />
+      <created>1724502302524</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1724502302524</updated>
+    </task>
+    <task id="LOCAL-00185" summary="Added cookies">
+      <option name="closed" value="true" />
+      <created>1724503715993</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1724503715993</updated>
+    </task>
+    <task id="LOCAL-00186" summary="Added request methods">
+      <option name="closed" value="true" />
+      <created>1724508744787</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1724508744787</updated>
+    </task>
+    <task id="LOCAL-00187" summary="Added response methods">
+      <option name="closed" value="true" />
+      <created>1724575207467</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1724575207468</updated>
+    </task>
+    <task id="LOCAL-00188" summary="Added response methods">
+      <option name="closed" value="true" />
+      <created>1724575318306</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1724575318306</updated>
+    </task>
+    <task id="LOCAL-00189" summary="Added matrix variables">
+      <option name="closed" value="true" />
+      <created>1724650026229</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1724650026230</updated>
+    </task>
+    <task id="LOCAL-00190" summary="Added matrix variables">
+      <option name="closed" value="true" />
+      <created>1724728743648</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1724728743648</updated>
+    </task>
+    <task id="LOCAL-00191" summary="Added matrix variables">
+      <option name="closed" value="true" />
+      <created>1724748762456</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1724748762456</updated>
+    </task>
+    <task id="LOCAL-00192" summary="Added pageable">
+      <option name="closed" value="true" />
+      <created>1724815818658</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1724815818658</updated>
+    </task>
+    <task id="LOCAL-00193" summary="Added pageable">
+      <option name="closed" value="true" />
+      <created>1724815875806</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1724815875806</updated>
+    </task>
+    <task id="LOCAL-00194" summary="Added profiles">
+      <option name="closed" value="true" />
+      <created>1724816203246</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1724816203246</updated>
+    </task>
+    <task id="LOCAL-00195" summary="Added profiles">
+      <option name="closed" value="true" />
+      <created>1724818335128</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1724818335129</updated>
+    </task>
+    <task id="LOCAL-00196" summary="Added profiles">
+      <option name="closed" value="true" />
+      <created>1724944643968</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1724944643969</updated>
+    </task>
+    <task id="LOCAL-00197" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1725185925593</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1725185925594</updated>
+    </task>
+    <task id="LOCAL-00198" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1725187305677</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1725187305677</updated>
+    </task>
+    <task id="LOCAL-00199" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1725187317920</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1725187317921</updated>
+    </task>
+    <task id="LOCAL-00200" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1725251329211</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1725251329212</updated>
+    </task>
+    <task id="LOCAL-00201" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1725251348942</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1725251348943</updated>
+    </task>
+    <task id="LOCAL-00202" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1725251360157</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1725251360157</updated>
+    </task>
+    <task id="LOCAL-00203" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1725251383006</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1725251383006</updated>
+    </task>
+    <task id="LOCAL-00204" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1725251394999</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1725251394999</updated>
+    </task>
+    <task id="LOCAL-00205" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1725255356359</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1725255356359</updated>
+    </task>
+    <task id="LOCAL-00206" summary="Added swagger">
+      <option name="closed" value="true" />
+      <created>1725514874015</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1725514874016</updated>
+    </task>
+    <task id="LOCAL-00207" summary="Added swagger">
+      <option name="closed" value="true" />
+      <created>1725550099689</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1725550099690</updated>
+    </task>
+    <task id="LOCAL-00208" summary="Added swagger">
+      <option name="closed" value="true" />
+      <created>1725556762215</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1725556762216</updated>
+    </task>
+    <task id="LOCAL-00209" summary="Added fix for dateBetweenOrIsNull">
+      <option name="closed" value="true" />
+      <created>1725619778440</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1725619778441</updated>
+    </task>
+    <task id="LOCAL-00210" summary="Added abstract factory pattern to object provider">
+      <option name="closed" value="true" />
+      <created>1725941527194</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1725941527195</updated>
+    </task>
+    <task id="LOCAL-00211" summary="Added spring jdbc crud">
+      <option name="closed" value="true" />
+      <created>1727063279610</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1727063279611</updated>
+    </task>
+    <task id="LOCAL-00212" summary="Added spring jdbc crud">
+      <option name="closed" value="true" />
+      <created>1727082542721</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1727082542722</updated>
+    </task>
+    <task id="LOCAL-00213" summary="Added spring jdbc crud">
+      <option name="closed" value="true" />
+      <created>1727085450748</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1727085450750</updated>
+    </task>
+    <task id="LOCAL-00214" summary="Added spring jdbc crud">
+      <option name="closed" value="true" />
+      <created>1727095577465</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1727095577466</updated>
+    </task>
+    <task id="LOCAL-00215" summary="Added spring jdbc crud">
+      <option name="closed" value="true" />
+      <created>1727095749094</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1727095749094</updated>
+    </task>
+    <task id="LOCAL-00216" summary="Added spring jdbc crud">
+      <option name="closed" value="true" />
+      <created>1727098651052</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1727098651052</updated>
+    </task>
+    <task id="LOCAL-00217" summary="Added spring jdbc crud">
+      <option name="closed" value="true" />
+      <created>1727108361564</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1727108361565</updated>
+    </task>
+    <task id="LOCAL-00218" summary="Added spring jdbc crud">
+      <option name="closed" value="true" />
+      <created>1727183109746</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1727183109747</updated>
+    </task>
+    <task id="LOCAL-00219" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1727442078078</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1727442078078</updated>
+    </task>
+    <task id="LOCAL-00220" summary="Added object provider">
+      <option name="closed" value="true" />
+      <created>1727459148657</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1727459148657</updated>
+    </task>
+    <task id="LOCAL-00221" summary="Cleaned project">
+      <option name="closed" value="true" />
+      <created>1727883935384</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1727883935385</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added pagination" />
+    <MESSAGE value="Added @Column insertable updatable" />
+    <MESSAGE value="Added FieldDefaults" />
+    <MESSAGE value="Added @Immutable" />
+    <MESSAGE value="Added Specification criteria builders" />
+    <MESSAGE value="Added @NotNull vs @Column(nullable = false)" />
+    <MESSAGE value="Added converter" />
+    <MESSAGE value="Added attribute converter" />
+    <MESSAGE value="Added spring validation" />
+    <MESSAGE value="Added pessimistic locking" />
+    <MESSAGE value="Added optimistic locking" />
+    <MESSAGE value="Added head mapping" />
+    <MESSAGE value="Added headers" />
+    <MESSAGE value="Added cookies" />
+    <MESSAGE value="Added request methods" />
+    <MESSAGE value="Added response methods" />
+    <MESSAGE value="Added matrix variables" />
+    <MESSAGE value="Added pageable" />
+    <MESSAGE value="Added profiles" />
+    <MESSAGE value="Added swagger" />
+    <MESSAGE value="Added fix for dateBetweenOrIsNull" />
+    <MESSAGE value="Added abstract factory pattern to object provider" />
+    <MESSAGE value="Added spring jdbc crud" />
+    <MESSAGE value="Added object provider" />
+    <MESSAGE value="Cleaned project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned project" />
+  </component>
+</project>

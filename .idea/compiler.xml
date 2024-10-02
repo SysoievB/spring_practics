@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="stored_procedures" />
+        <module name="converter" />
+        <module name="where_annotation" />
+        <module name="notnull_annotation_vs_column_nullable_false" />
+        <module name="conditional_on_property" />
+        <module name="swagger" />
+        <module name="import_configuration" />
+        <module name="optimistic_lock_exception" />
+        <module name="spring_profiles" />
+        <module name="column_updatable_insertable" />
+        <module name="validation" />
+        <module name="query_param_modifying" />
+        <module name="spring_jdbc" />
+        <module name="embedded_id" />
+        <module name="created_modified_by_transient" />
+        <module name="core" />
+        <module name="mapped_superclass" />
+        <module name="generationtype_auto" />
+        <module name="constructor_binding" />
+        <module name="attribute_converter" />
+        <module name="generationtype_custom" />
+        <module name="named_entity_graph" />
+        <module name="pessimistic_locking" />
+        <module name="pagination" />
+        <module name="scheduled" />
+        <module name="webflux" />
+        <module name="bean_configuration" />
+        <module name="element_collection" />
+        <module name="object_provider" />
+        <module name="dto_projection" />
+        <module name="immutable_annotation" />
+        <module name="soft_delete" />
+        <module name="filter_annotation" />
+        <module name="id_class" />
+        <module name="boot" />
+        <module name="autowire_require_false" />
+        <module name="inheritance_annotation" />
+        <module name="data_jpa" />
+        <module name="formula_annotation" />
+        <module name="fetch_annotation" />
+        <module name="many_to_one_uni" />
+        <module name="generationtype_sequence" />
+        <module name="generationtype_table" />
+        <module name="slice_pagination" />
+        <module name="component_configuration" />
+        <module name="no_repository_bean" />
+        <module name="entity_graph" />
+        <module name="attribute_override" />
+        <module name="keyset_pagination" />
+        <module name="web_headers_cookies" />
+      </profile>
+      <profile name="Annotation profile for specifications" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/hibernate/orm/hibernate-jpamodelgen/6.6.0.CR1/hibernate-jpamodelgen-6.6.0.CR1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/hibernate/orm/hibernate-core/6.6.0.CR1/hibernate-core-6.6.0.CR1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/7.0.1.Final/hibernate-commons-annotations-7.0.1.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.jar" />
+          <entry name="$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar" />
+          <entry name="$MAVEN_REPOSITORY$/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar" />
+        </processorPath>
+        <module name="specifications" />
+      </profile>
+      <profile name="Annotation profile for web_annotations" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.6.0/mapstruct-processor-1.6.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.6.0/mapstruct-1.6.0.jar" />
+        </processorPath>
+        <module name="web_annotations" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="attribute_converter" options="-parameters" />
+      <module name="attribute_override" options="-parameters" />
+      <module name="autowire_require_false" options="-parameters" />
+      <module name="bean_configuration" options="-parameters" />
+      <module name="boot" options="-parameters" />
+      <module name="column_updatable_insertable" options="-parameters" />
+      <module name="component_configuration" options="-parameters" />
+      <module name="conditional_on_property" options="-parameters" />
+      <module name="constructor_binding" options="-parameters" />
+      <module name="converter" options="-parameters" />
+      <module name="core" options="-parameters" />
+      <module name="created_modified_by_transient" options="-parameters" />
+      <module name="data_jpa" options="-parameters" />
+      <module name="dto_projection" options="-parameters" />
+      <module name="element_collection" options="-parameters" />
+      <module name="embedded_id" options="-parameters" />
+      <module name="entity_graph" options="-parameters" />
+      <module name="fetch_annotation" options="-parameters" />
+      <module name="filter_annotation" options="-parameters" />
+      <module name="formula_annotation" options="-parameters" />
+      <module name="generationtype_auto" options="-parameters" />
+      <module name="generationtype_custom" options="-parameters" />
+      <module name="generationtype_sequence" options="-parameters" />
+      <module name="generationtype_table" options="-parameters" />
+      <module name="id_class" options="-parameters" />
+      <module name="immutable_annotation" options="-parameters" />
+      <module name="import_configuration" options="-parameters" />
+      <module name="inheritance_annotation" options="-parameters" />
+      <module name="keyset_pagination" options="-parameters" />
+      <module name="many_to_one_uni" options="-parameters" />
+      <module name="mapped_superclass" options="-parameters" />
+      <module name="named_entity_graph" options="-parameters" />
+      <module name="no_repository_bean" options="-parameters" />
+      <module name="notnull_annotation_vs_column_nullable_false" options="-parameters" />
+      <module name="object_provider" options="-parameters" />
+      <module name="optimistic_lock_exception" options="-parameters" />
+      <module name="pagination" options="-parameters" />
+      <module name="pessimistic_locking" options="-parameters" />
+      <module name="query_param_modifying" options="-parameters" />
+      <module name="scheduled" options="-parameters" />
+      <module name="slice_pagination" options="-parameters" />
+      <module name="soft_delete" options="-parameters" />
+      <module name="specifications" options="-parameters" />
+      <module name="spring_jdbc" options="-parameters" />
+      <module name="spring_profiles" options="-parameters" />
+      <module name="stored_procedures" options="-parameters" />
+      <module name="swagger" options="-parameters" />
+      <module name="validation" options="-parameters" />
+      <module name="web_annotations" options="-parameters" />
+      <module name="web_headers_cookies" options="-parameters" />
+      <module name="webflux" options="-parameters" />
+      <module name="where_annotation" options="-parameters" />
+    </option>
+  </component>
+</project>

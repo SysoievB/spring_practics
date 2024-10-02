@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/many_to_one_uni/pom.xml" />
+        <option value="$PROJECT_DIR$/core/conditional_on_property/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/generationtype_auto/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/generationtype_sequence/pom.xml" />
+        <option value="$PROJECT_DIR$/core/scheduled/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/generationtype_table/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/generationtype_custom/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/embedded_id/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/id_class/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/attribute_override/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/mapped_superclass/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/element_collection/pom.xml" />
+        <option value="$PROJECT_DIR$/core/constructor_binding/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/no_repository_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/query_param_modifying/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/created_modified_by_transient/pom.xml" />
+        <option value="$PROJECT_DIR$/boot/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/stored_procedures/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/dto_projection/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/specifications/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/fetch_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+        <option value="$PROJECT_DIR$/core/autowire_require_false/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/filter_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/soft_delete/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/formula_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/where_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/any_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/entity_graph/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/named_entity_graph/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/inheritance_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/keyset_pagination/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/slice_pagination/pom.xml" />
+        <option value="$PROJECT_DIR$/web_annotations/pom.xml" />
+        <option value="$PROJECT_DIR$/webflux/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/pagination/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/column_updatable_insertable/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/immutable_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/notnull_annotation_vs_column_nullable_false/pom.xml" />
+        <option value="$PROJECT_DIR$/core/converter/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/attribute_converter/pom.xml" />
+        <option value="$PROJECT_DIR$/validation/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/optimistic_lock_exception/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/pessimistic_locking/pom.xml" />
+        <option value="$PROJECT_DIR$/web_headers/pom.xml" />
+        <option value="$PROJECT_DIR$/web_headers_cookies/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_profiles/pom.xml" />
+        <option value="$PROJECT_DIR$/core/object_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_jdbc/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/data_jpa/any_annotation/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK" />
+</project>
