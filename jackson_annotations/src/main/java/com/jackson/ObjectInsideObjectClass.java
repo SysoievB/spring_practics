@@ -12,8 +12,8 @@ public class ObjectInsideObjectClass {
         System.out.println(json);//{"color":"yellow","type":"renault","driver":{"name":"Vasia"}}
 
         Car car1 = mapper.readValue(json, Car.class);
-        System.out.println(car1);//ObjectInsideObjectClass.Car(color=yellow, type=renault, driver=ObjectInsideObjectClass.Driver(name=Vasia))
-
+        System.out.println(car1);
+        //ObjectInsideObjectClass.Car(color=yellow, type=renault, driver=ObjectInsideObjectClass.Driver(name=Vasia))
     }
 
     @ToString

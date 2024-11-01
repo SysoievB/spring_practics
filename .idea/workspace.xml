@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jackson JsonIncludeProperties">
-      <change beforePath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonAutoDetectClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonAutoDetectClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonIncludePropertiesClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonIncludePropertiesClass.java" afterDir="false" />
-    </list>
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jackson JsonAutoDetect" />
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +62,7 @@
     "Application.Car.executor": "Run",
     "Application.JsonAnyGetterClass.executor": "Run",
     "Application.JsonAnyGetterSetterClass.executor": "Run",
+    "Application.JsonAutoDetectClass.executor": "Run",
     "Application.JsonGetterJsonSetterClass.executor": "Run",
     "Application.JsonIgnorePropertiesClass.executor": "Run",
     "Application.JsonIgnoreTypeClass.executor": "Run",
@@ -811,14 +809,6 @@
       <workItem from="1730380902946" duration="1234000" />
       <workItem from="1730437913171" duration="3494000" />
     </task>
-    <task id="LOCAL-00182" summary="Added cookies">
-      <option name="closed" value="true" />
-      <created>1724501097055</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1724501097057</updated>
-    </task>
     <task id="LOCAL-00183" summary="Added cookies">
       <option name="closed" value="true" />
       <created>1724501743979</created>
@@ -1203,7 +1193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730449789053</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="Added jackson JsonAutoDetect">
+      <option name="closed" value="true" />
+      <created>1730450051312</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1730450051312</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1221,7 +1219,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added optimistic locking" />
     <MESSAGE value="Added head mapping" />
     <MESSAGE value="Added headers" />
     <MESSAGE value="Added cookies" />
@@ -1246,6 +1243,7 @@
     <MESSAGE value="Added jackson JsonIgnoreType" />
     <MESSAGE value="Added jackson JsonInclude" />
     <MESSAGE value="Added jackson JsonIncludeProperties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jackson JsonIncludeProperties" />
+    <MESSAGE value="Added jackson JsonAutoDetect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jackson JsonAutoDetect" />
   </component>
 </project>
