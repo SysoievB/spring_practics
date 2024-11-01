@@ -1,4 +1,4 @@
-package com.jackson;
+package com.jackson.serialize;
 
 import com.fasterxml.jackson.annotation.JsonRawValue;
 import com.fasterxml.jackson.core.JsonProcessingException;
