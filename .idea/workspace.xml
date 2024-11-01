@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jackson JsonValue">
-      <change afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonRootNameClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -48,6 +47,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -63,6 +65,7 @@
     "Application.JsonAnyGetterClass.executor": "Run",
     "Application.JsonAnyGetterSetterClass.executor": "Run",
     "Application.JsonGetterJsonSetterClass.executor": "Run",
+    "Application.JsonIgnorePropertiesClass.executor": "Run",
     "Application.JsonRootNameClass.executor": "Run",
     "Application.JsonValueClass.executor": "Run",
     "JUnit.CarTest.divide_by_zero.executor": "Run",
@@ -188,7 +191,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JsonRootNameClass">
+  <component name="RunManager" selected="Application.JsonIgnorePropertiesClass">
     <configuration name="JsonAnyGetterSetterClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.JsonAnyGetterSetterClass" />
       <module name="jackson_annotations" />
@@ -215,8 +218,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonRootNameClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jackson.JsonRootNameClass" />
+    <configuration name="JsonIgnorePropertiesClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jackson.JsonIgnorePropertiesClass" />
       <module name="jackson_annotations" />
       <extension name="coverage">
         <pattern>
@@ -228,17 +231,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="web_annotations" />
+    <configuration name="JsonRootNameClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jackson.JsonRootNameClass" />
+      <module name="jackson_annotations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.web_annotations.map_struct.*" />
+          <option name="PATTERN" value="com.jackson.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.web_annotations.map_struct" />
-      <option name="MAIN_CLASS_NAME" value="com.web_annotations.map_struct.EmployeeServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -648,11 +649,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JsonIgnorePropertiesClass" />
         <item itemvalue="Application.JsonRootNameClass" />
         <item itemvalue="Application.JsonGetterJsonSetterClass" />
         <item itemvalue="Application.JsonAnyGetterSetterClass" />
         <item itemvalue="Spring Boot.ObjectProviderApplication" />
-        <item itemvalue="JUnit.EmployeeServiceTest" />
       </list>
     </recent_temporary>
   </component>
