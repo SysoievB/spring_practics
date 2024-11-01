@@ -1,4 +1,4 @@
-package com.jackson;
+package com.jackson.deserialize;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -8,7 +8,7 @@ import lombok.Getter;
 import lombok.ToString;
 import lombok.val;
 
-public class WithoutNoArgConstructorClass {
+public class JsonCreatorPropertyClass {
     public static void main(String[] args) throws JsonProcessingException {
         val mapper = new ObjectMapper();
         val car = new Car1("yellow", "renault");
@@ -21,7 +21,7 @@ public class WithoutNoArgConstructorClass {
     }
 
     @ToString
-    @Getter
+    @Getter//there is no no arg constructor
     private static class Car1 {
         private String color;
         private String type;
