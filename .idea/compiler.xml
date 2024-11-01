@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="aop" />
         <module name="stored_procedures" />
         <module name="converter" />
         <module name="where_annotation" />
@@ -20,6 +21,7 @@
         <module name="validation" />
         <module name="query_param_modifying" />
         <module name="spring_jdbc" />
+        <module name="jackson_annotations" />
         <module name="embedded_id" />
         <module name="created_modified_by_transient" />
         <module name="core" />
@@ -98,9 +100,13 @@
         <module name="web_annotations" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring_boot_rest_crud_with_virtual_threads" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="aop" options="-parameters" />
       <module name="attribute_converter" options="-parameters" />
       <module name="attribute_override" options="-parameters" />
       <module name="autowire_require_false" options="-parameters" />
@@ -129,6 +135,7 @@
       <module name="immutable_annotation" options="-parameters" />
       <module name="import_configuration" options="-parameters" />
       <module name="inheritance_annotation" options="-parameters" />
+      <module name="jackson_annotations" options="-parameters" />
       <module name="keyset_pagination" options="-parameters" />
       <module name="many_to_one_uni" options="-parameters" />
       <module name="mapped_superclass" options="-parameters" />
