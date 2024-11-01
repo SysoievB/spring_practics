@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jackson JsonAnyGetter JsonAnySetter">
-      <change afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonGetterJsonSetterClass.java" afterDir="false" />
-    </list>
-    <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jackson JsonValue">
+      <change afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonRootNameClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +63,8 @@
     "Application.JsonAnyGetterClass.executor": "Run",
     "Application.JsonAnyGetterSetterClass.executor": "Run",
     "Application.JsonGetterJsonSetterClass.executor": "Run",
+    "Application.JsonRootNameClass.executor": "Run",
+    "Application.JsonValueClass.executor": "Run",
     "JUnit.CarTest.divide_by_zero.executor": "Run",
     "JUnit.CarTest.executor": "Run",
     "JUnit.CarTest.success.executor": "Run",
@@ -190,7 +188,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JsonGetterJsonSetterClass">
+  <component name="RunManager" selected="Application.JsonRootNameClass">
     <configuration name="JsonAnyGetterSetterClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.JsonAnyGetterSetterClass" />
       <module name="jackson_annotations" />
@@ -217,6 +215,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JsonRootNameClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jackson.JsonRootNameClass" />
+      <module name="jackson_annotations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jackson.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmployeeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="web_annotations" />
       <extension name="coverage">
@@ -227,21 +238,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.web_annotations.map_struct" />
       <option name="MAIN_CLASS_NAME" value="com.web_annotations.map_struct.EmployeeServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="web_annotations" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.web_annotations.map_struct.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.web_annotations.map_struct" />
-      <option name="MAIN_CLASS_NAME" value="com.web_annotations.map_struct.MapperTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -652,11 +648,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JsonRootNameClass" />
         <item itemvalue="Application.JsonGetterJsonSetterClass" />
         <item itemvalue="Application.JsonAnyGetterSetterClass" />
         <item itemvalue="Spring Boot.ObjectProviderApplication" />
         <item itemvalue="JUnit.EmployeeServiceTest" />
-        <item itemvalue="JUnit.MapperTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1221,7 +1217,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added @NotNull vs @Column(nullable = false)" />
     <MESSAGE value="Added converter" />
     <MESSAGE value="Added attribute converter" />
     <MESSAGE value="Added spring validation" />
@@ -1243,9 +1238,10 @@
     <MESSAGE value="Cleaned project" />
     <MESSAGE value="Added spring boot AOP" />
     <MESSAGE value="Exclude" />
-    <MESSAGE value="Added jackson" />
     <MESSAGE value="Added jackson study project" />
     <MESSAGE value="Added jackson JsonAnyGetter JsonAnySetter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jackson JsonAnyGetter JsonAnySetter" />
+    <MESSAGE value="Added jackson JsonValue" />
+    <MESSAGE value="Added jackson" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jackson" />
   </component>
 </project>
