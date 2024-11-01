@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jackson JsonIgnoreType">
-      <change afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/ignore/JsonIgnoreTypeClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonIgnoreClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/ignore/JsonIgnoreClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonIgnorePropertiesClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/ignore/JsonIgnorePropertiesClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonIgnoreTypeClass.java" beforeDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jackson JsonInclude">
+      <change beforePath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonIncludeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonIncludeClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonIncludePropertiesClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonIncludePropertiesClass.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +68,7 @@
     "Application.JsonGetterJsonSetterClass.executor": "Run",
     "Application.JsonIgnorePropertiesClass.executor": "Run",
     "Application.JsonIgnoreTypeClass.executor": "Run",
+    "Application.JsonIncludeClass.executor": "Run",
     "Application.JsonRootNameClass.executor": "Run",
     "Application.JsonValueClass.executor": "Run",
     "JUnit.CarTest.divide_by_zero.executor": "Run",
@@ -196,20 +194,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JsonIncludeClass">
-    <configuration name="JsonGetterJsonSetterClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jackson.JsonGetterJsonSetterClass" />
-      <module name="jackson_annotations" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jackson.ignore.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.JsonIncludePropertiesClass">
     <configuration name="JsonIgnorePropertiesClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.ignore.JsonIgnorePropertiesClass" />
       <module name="jackson_annotations" />
@@ -238,6 +223,19 @@
     </configuration>
     <configuration name="JsonIncludeClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.JsonIncludeClass" />
+      <module name="jackson_annotations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jackson.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonIncludePropertiesClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jackson.JsonIncludePropertiesClass" />
       <module name="jackson_annotations" />
       <extension name="coverage">
         <pattern>
@@ -653,11 +651,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JsonIncludePropertiesClass" />
         <item itemvalue="Application.JsonIncludeClass" />
         <item itemvalue="Application.JsonIgnoreTypeClass" />
         <item itemvalue="Application.JsonIgnorePropertiesClass" />
         <item itemvalue="Application.JsonRootNameClass" />
-        <item itemvalue="Application.JsonGetterJsonSetterClass" />
       </list>
     </recent_temporary>
   </component>
@@ -811,22 +809,6 @@
       <workItem from="1730367209565" duration="1878000" />
       <workItem from="1730380902946" duration="1234000" />
       <workItem from="1730437913171" duration="3494000" />
-    </task>
-    <task id="LOCAL-00179" summary="Added headers">
-      <option name="closed" value="true" />
-      <created>1724298782005</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1724298782005</updated>
-    </task>
-    <task id="LOCAL-00180" summary="Added headers">
-      <option name="closed" value="true" />
-      <created>1724299728470</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1724299728470</updated>
     </task>
     <task id="LOCAL-00181" summary="Added headers">
       <option name="closed" value="true" />
@@ -1204,7 +1186,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730449091602</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="Added jackson JsonIgnoreType">
+      <option name="closed" value="true" />
+      <created>1730449352584</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1730449352584</updated>
+    </task>
+    <task id="LOCAL-00229" summary="Added jackson JsonInclude">
+      <option name="closed" value="true" />
+      <created>1730449536476</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1730449536476</updated>
+    </task>
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1222,7 +1220,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added spring validation" />
     <MESSAGE value="Added pessimistic locking" />
     <MESSAGE value="Added optimistic locking" />
     <MESSAGE value="Added head mapping" />
@@ -1247,6 +1244,7 @@
     <MESSAGE value="Added jackson" />
     <MESSAGE value="Added jackson JsonIgnoreProperties" />
     <MESSAGE value="Added jackson JsonIgnoreType" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jackson JsonIgnoreType" />
+    <MESSAGE value="Added jackson JsonInclude" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jackson JsonInclude" />
   </component>
 </project>
