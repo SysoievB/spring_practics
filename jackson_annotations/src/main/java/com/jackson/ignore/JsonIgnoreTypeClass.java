@@ -1,20 +1,20 @@
-package com.jackson;
+package com.jackson.ignore;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreType;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.*;
 
-public class JsonIgnoreClass {
+public class JsonIgnoreTypeClass {
     public static void main(String[] args) throws JsonProcessingException {
         val mapper = new ObjectMapper();
-        val car = new Car("yellow", "renault", "ignored");
+        val car = new Car("yellow", "renault", new Driver("Vasia"));
         val json = mapper.writeValueAsString(car);//{"color":"yellow","type":"renault"}
         System.out.println(json);
 
         Car car1 = mapper.readValue(json, Car.class);
-        System.out.println(car1);//JsonIgnoreClass.Car(color=yellow, type=renault, ignoredField=null)
-
+        System.out.println(car1);
+        //JsonIgnorePropertiesClass.Car(color=yellow, type=renault, driver=null)
     }
 
     @ToString
@@ -24,7 +24,15 @@ public class JsonIgnoreClass {
     private static class Car {
         private String color;
         private String type;
-        @JsonIgnore
-        private String ignoredField;
+        private Driver driver;
+    }
+
+    @ToString
+    @Getter
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @JsonIgnoreType
+    private static class Driver {
+        private String name;
     }
 }

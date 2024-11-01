@@ -191,7 +191,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JsonIgnorePropertiesClass">
+  <component name="RunManager" selected="Application.JsonIgnoreTypeClass">
     <configuration name="JsonAnyGetterSetterClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.JsonAnyGetterSetterClass" />
       <module name="jackson_annotations" />
@@ -220,6 +220,19 @@
     </configuration>
     <configuration name="JsonIgnorePropertiesClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.JsonIgnorePropertiesClass" />
+      <module name="jackson_annotations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jackson.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonIgnoreTypeClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jackson.JsonIgnoreTypeClass" />
       <module name="jackson_annotations" />
       <extension name="coverage">
         <pattern>
@@ -498,20 +511,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="object_provider" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.object_provider.ObjectProviderApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.object_provider.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OptimisticLockExceptionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="optimistic_lock_exception" />
@@ -649,11 +648,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JsonIgnoreTypeClass" />
         <item itemvalue="Application.JsonIgnorePropertiesClass" />
         <item itemvalue="Application.JsonRootNameClass" />
         <item itemvalue="Application.JsonGetterJsonSetterClass" />
         <item itemvalue="Application.JsonAnyGetterSetterClass" />
-        <item itemvalue="Spring Boot.ObjectProviderApplication" />
       </list>
     </recent_temporary>
   </component>
