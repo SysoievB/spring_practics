@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jackson JsonAutoDetect">
-      <change afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JacksonPolymorphicTypeHandlingClass.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jackson polymorphic">
       <change afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/JsonFormatClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -68,6 +67,7 @@
     "Application.JsonAnyGetterClass.executor": "Run",
     "Application.JsonAnyGetterSetterClass.executor": "Run",
     "Application.JsonAutoDetectClass.executor": "Run",
+    "Application.JsonFormatClass.executor": "Run",
     "Application.JsonGetterJsonSetterClass.executor": "Run",
     "Application.JsonIgnorePropertiesClass.executor": "Run",
     "Application.JsonIgnoreTypeClass.executor": "Run",
@@ -198,7 +198,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JacksonPolymorphicTypeHandlingClass">
+  <component name="RunManager" selected="Application.JsonFormatClass">
     <configuration name="JacksonPolymorphicTypeHandlingClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.JacksonPolymorphicTypeHandlingClass" />
       <module name="jackson_annotations" />
@@ -225,12 +225,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonIgnoreTypeClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jackson.ignore.JsonIgnoreTypeClass" />
+    <configuration name="JsonFormatClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jackson.JsonFormatClass" />
       <module name="jackson_annotations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jackson.ignore.*" />
+          <option name="PATTERN" value="com.jackson.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -655,11 +655,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JsonFormatClass" />
         <item itemvalue="Application.JacksonPolymorphicTypeHandlingClass" />
         <item itemvalue="Application.JsonAutoDetectClass" />
         <item itemvalue="Application.JsonIncludePropertiesClass" />
         <item itemvalue="Application.JsonIncludeClass" />
-        <item itemvalue="Application.JsonIgnoreTypeClass" />
       </list>
     </recent_temporary>
   </component>
@@ -814,15 +814,7 @@
       <workItem from="1730380902946" duration="1234000" />
       <workItem from="1730437913171" duration="3494000" />
       <workItem from="1730472453386" duration="359000" />
-      <workItem from="1730522922886" duration="683000" />
-    </task>
-    <task id="LOCAL-00184" summary="Added cookies">
-      <option name="closed" value="true" />
-      <created>1724502302524</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1724502302524</updated>
+      <workItem from="1730522922886" duration="2728000" />
     </task>
     <task id="LOCAL-00185" summary="Added cookies">
       <option name="closed" value="true" />
@@ -1208,7 +1200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730472508022</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="Added jackson polymorphic">
+      <option name="closed" value="true" />
+      <created>1730523798049</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1730523798050</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1226,7 +1226,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added head mapping" />
     <MESSAGE value="Added headers" />
     <MESSAGE value="Added cookies" />
     <MESSAGE value="Added request methods" />
@@ -1251,6 +1250,7 @@
     <MESSAGE value="Added jackson JsonInclude" />
     <MESSAGE value="Added jackson JsonIncludeProperties" />
     <MESSAGE value="Added jackson JsonAutoDetect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jackson JsonAutoDetect" />
+    <MESSAGE value="Added jackson polymorphic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jackson polymorphic" />
   </component>
 </project>
