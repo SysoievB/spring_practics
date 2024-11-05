@@ -20,7 +20,6 @@ class WithLombokCustomBuilder {
 
         Car car1 = mapper.readValue(json, Car.class);
         System.out.println(car1);//WithLombokCustomBuilder.Car(color=yellow, type=renault, engine=V6)
-
     }
 
     @ToString
