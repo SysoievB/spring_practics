@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added aspect">
-      <change afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/lombok/WithLombokClass.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added serialization/deserialization with lombok builder">
+      <change afterPath="$PROJECT_DIR$/jackson_annotations/src/main/java/com/jackson/lombok/WithLombokCustomBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -76,6 +76,7 @@
     "Application.JsonRootNameClass.executor": "Run",
     "Application.JsonValueClass.executor": "Run",
     "Application.WithLombokClass.executor": "Run",
+    "Application.WithLombokCustomBuilder.executor": "Run",
     "JUnit.CarTest.divide_by_zero.executor": "Run",
     "JUnit.CarTest.executor": "Run",
     "JUnit.CarTest.success.executor": "Run",
@@ -200,7 +201,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WithLombokClass">
+  <component name="RunManager" selected="Application.WithLombokCustomBuilder">
     <configuration name="JacksonPolymorphicTypeHandlingClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.JacksonPolymorphicTypeHandlingClass" />
       <module name="jackson_annotations" />
@@ -240,12 +241,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonIncludePropertiesClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jackson.JsonIncludePropertiesClass" />
+    <configuration name="WithLombokClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jackson.lombok.WithLombokClass" />
       <module name="jackson_annotations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jackson.*" />
+          <option name="PATTERN" value="com.jackson.lombok.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -253,8 +254,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WithLombokClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jackson.lombok.WithLombokClass" />
+    <configuration name="WithLombokCustomBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jackson.lombok.WithLombokCustomBuilder" />
       <module name="jackson_annotations" />
       <extension name="coverage">
         <pattern>
@@ -657,11 +658,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WithLombokCustomBuilder" />
         <item itemvalue="Application.WithLombokClass" />
         <item itemvalue="Application.JsonFormatClass" />
         <item itemvalue="Application.JacksonPolymorphicTypeHandlingClass" />
         <item itemvalue="Application.JsonAutoDetectClass" />
-        <item itemvalue="Application.JsonIncludePropertiesClass" />
       </list>
     </recent_temporary>
   </component>
@@ -819,15 +820,7 @@
       <workItem from="1730522922886" duration="5258000" />
       <workItem from="1730639591178" duration="972000" />
       <workItem from="1730693352623" duration="562000" />
-      <workItem from="1730819602367" duration="387000" />
-    </task>
-    <task id="LOCAL-00187" summary="Added response methods">
-      <option name="closed" value="true" />
-      <created>1724575207467</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1724575207468</updated>
+      <workItem from="1730819602367" duration="2324000" />
     </task>
     <task id="LOCAL-00188" summary="Added response methods">
       <option name="closed" value="true" />
@@ -1213,7 +1206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730639953888</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="Added serialization/deserialization with lombok builder">
+      <option name="closed" value="true" />
+      <created>1730820223928</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1730820223929</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1231,7 +1232,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added request methods" />
     <MESSAGE value="Added response methods" />
     <MESSAGE value="Added matrix variables" />
     <MESSAGE value="Added pageable" />
@@ -1256,6 +1256,7 @@
     <MESSAGE value="Added jackson polymorphic" />
     <MESSAGE value="Added jackson JsonFormat" />
     <MESSAGE value="Added aspect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added aspect" />
+    <MESSAGE value="Added serialization/deserialization with lombok builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added serialization/deserialization with lombok builder" />
   </component>
 </project>
