@@ -14,6 +14,7 @@
         <module name="notnull_annotation_vs_column_nullable_false" />
         <module name="conditional_on_property" />
         <module name="swagger" />
+        <module name="liquibase" />
         <module name="import_configuration" />
         <module name="optimistic_lock_exception" />
         <module name="spring_profiles" />
@@ -137,6 +138,7 @@
       <module name="inheritance_annotation" options="-parameters" />
       <module name="jackson_annotations" options="-parameters" />
       <module name="keyset_pagination" options="-parameters" />
+      <module name="liquibase" options="-parameters" />
       <module name="many_to_one_uni" options="-parameters" />
       <module name="mapped_superclass" options="-parameters" />
       <module name="named_entity_graph" options="-parameters" />

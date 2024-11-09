@@ -56,6 +56,7 @@
         <option value="$PROJECT_DIR$/swagger/pom.xml" />
         <option value="$PROJECT_DIR$/spring_jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/aop/pom.xml" />
+        <option value="$PROJECT_DIR$/liquibase/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added serialization/deserialization with lombok custom builder">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added liquibase project">
+      <change afterPath="$PROJECT_DIR$/liquibase/src/main/java/com/liquibase/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +205,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WithLombokCustomBuilder">
+  <component name="RunManager" selected="Spring Boot.LiquibaseApplication">
     <configuration name="JacksonPolymorphicTypeHandlingClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.JacksonPolymorphicTypeHandlingClass" />
       <module name="jackson_annotations" />
@@ -476,6 +481,14 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="keyset_pagination" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.keyset_pagination.KeysetPaginationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LiquibaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="liquibase" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liquibase.LiquibaseApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -822,14 +835,7 @@
       <workItem from="1730819602367" duration="2504000" />
       <workItem from="1730867187736" duration="19000" />
       <workItem from="1731051819724" duration="1240000" />
-    </task>
-    <task id="LOCAL-00190" summary="Added matrix variables">
-      <option name="closed" value="true" />
-      <created>1724728743648</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1724728743648</updated>
+      <workItem from="1731117622695" duration="1121000" />
     </task>
     <task id="LOCAL-00191" summary="Added matrix variables">
       <option name="closed" value="true" />
@@ -1215,7 +1221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730822120362</updated>
     </task>
-    <option name="localTasksCounter" value="239" />
+    <task id="LOCAL-00239" summary="Added liquibase project">
+      <option name="closed" value="true" />
+      <created>1731117835258</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1731117835259</updated>
+    </task>
+    <option name="localTasksCounter" value="240" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1233,7 +1247,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added matrix variables" />
     <MESSAGE value="Added pageable" />
     <MESSAGE value="Added profiles" />
     <MESSAGE value="Added swagger" />
@@ -1258,6 +1271,7 @@
     <MESSAGE value="Added aspect" />
     <MESSAGE value="Added serialization/deserialization with lombok builder" />
     <MESSAGE value="Added serialization/deserialization with lombok custom builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added serialization/deserialization with lombok custom builder" />
+    <MESSAGE value="Added liquibase project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added liquibase project" />
   </component>
 </project>
