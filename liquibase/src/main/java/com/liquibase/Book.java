@@ -21,4 +21,9 @@ public class Book {
     String title;
 
     String author;
+
+    String publisher;
+
+    @Column(name = "is_last")
+    boolean last;
 }

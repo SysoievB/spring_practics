@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet id="1" author="bs">
+    <changeSet id="subset-1-create-table" author="bs">
         <createTable tableName="book">
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
@@ -18,4 +18,16 @@
             </column>
         </createTable>
     </changeSet>
+
+    <changeSet id="subset-2-add-new-fields" author="bs">
+        <addColumn tableName="book">
+            <column name="publisher" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+        <addColumn tableName="book">
+            <column name="is_last" type="boolean"/>
+        </addColumn>
+    </changeSet>
+
 </databaseChangeLog>
