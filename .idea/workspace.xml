@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added liquibase table settings">
-      <change afterPath="$PROJECT_DIR$/liquibase/src/main/resources/populate.sql" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added liquibase addColumn">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquibase/src/main/java/com/liquibase/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/java/com/liquibase/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/book-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -836,15 +833,9 @@
       <workItem from="1730867187736" duration="19000" />
       <workItem from="1731051819724" duration="1240000" />
       <workItem from="1731117622695" duration="1576000" />
-      <workItem from="1731144329354" duration="1100000" />
-    </task>
-    <task id="LOCAL-00192" summary="Added pageable">
-      <option name="closed" value="true" />
-      <created>1724815818658</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1724815818658</updated>
+      <workItem from="1731144329354" duration="1346000" />
+      <workItem from="1731145897216" duration="5000" />
+      <workItem from="1731240793408" duration="1319000" />
     </task>
     <task id="LOCAL-00193" summary="Added pageable">
       <option name="closed" value="true" />
@@ -1230,7 +1221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731119177295</updated>
     </task>
-    <option name="localTasksCounter" value="241" />
+    <task id="LOCAL-00241" summary="Added liquibase addColumn">
+      <option name="closed" value="true" />
+      <created>1731145544774</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1731145544776</updated>
+    </task>
+    <option name="localTasksCounter" value="242" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1248,7 +1247,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added profiles" />
     <MESSAGE value="Added swagger" />
     <MESSAGE value="Added fix for dateBetweenOrIsNull" />
     <MESSAGE value="Added abstract factory pattern to object provider" />
@@ -1273,6 +1271,7 @@
     <MESSAGE value="Added serialization/deserialization with lombok custom builder" />
     <MESSAGE value="Added liquibase project" />
     <MESSAGE value="Added liquibase table settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added liquibase table settings" />
+    <MESSAGE value="Added liquibase addColumn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added liquibase addColumn" />
   </component>
 </project>

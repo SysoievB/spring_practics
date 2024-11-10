@@ -30,4 +30,11 @@
         </addColumn>
     </changeSet>
 
+    <changeSet id="subset-3-update-null-columns" author="bs">
+        <update tableName="book">
+            <column name="publisher" valueComputed="SYSTEM_USER()"/>
+            <column name="is_last" valueBoolean="true"/>
+            <where>is_last IS NULL</where>
+        </update>
+    </changeSet>
 </databaseChangeLog>
