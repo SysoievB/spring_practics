@@ -21,7 +21,7 @@
 
     <changeSet id="subset-2-add-new-fields" author="bs">
         <addColumn tableName="book">
-            <column name="publisher" type="varchar(255)">
+            <column name="publisher" type="varchar(255)" defaultValue="SYSTEM">
                 <constraints nullable="true"/>
             </column>
         </addColumn>
@@ -36,5 +36,9 @@
             <column name="is_last" valueBoolean="true"/>
             <where>is_last IS NULL</where>
         </update>
+    </changeSet>
+
+    <changeSet id="subset-4-add-default-values" author="bs">
+        <addDefaultValue tableName="book" columnName="publisher" defaultValue="SYSTEM_USER"/>
     </changeSet>
 </databaseChangeLog>
