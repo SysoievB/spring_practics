@@ -20,8 +20,8 @@
     </changeSet>
 
     <changeSet id="subset-2-add-new-fields" author="bs">
-        <addColumn tableName="book">
-            <column name="publisher" type="varchar(255)" defaultValue="SYSTEM">
+        <addColumn tableName="book"><!--possible to set here default value - it works defaultValue="SYSTEM"-->
+            <column name="publisher" type="varchar(255)"><!---->
                 <constraints nullable="true"/>
             </column>
         </addColumn>
@@ -31,7 +31,7 @@
     </changeSet>
 
     <changeSet id="subset-3-update-null-columns" author="bs">
-        <update tableName="book">
+        <update tableName="book"><!--not possible to set here default value - not works-->
             <column name="publisher" valueComputed="SYSTEM_USER()"/>
             <column name="is_last" valueBoolean="true"/>
             <where>is_last IS NULL</where>

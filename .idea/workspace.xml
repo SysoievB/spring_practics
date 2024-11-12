@@ -835,15 +835,9 @@
       <workItem from="1731117622695" duration="1576000" />
       <workItem from="1731144329354" duration="1346000" />
       <workItem from="1731145897216" duration="5000" />
-      <workItem from="1731240793408" duration="3062000" />
-    </task>
-    <task id="LOCAL-00194" summary="Added profiles">
-      <option name="closed" value="true" />
-      <created>1724816203246</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1724816203246</updated>
+      <workItem from="1731240793408" duration="4042000" />
+      <workItem from="1731318702506" duration="25000" />
+      <workItem from="1731397980080" duration="377000" />
     </task>
     <task id="LOCAL-00195" summary="Added profiles">
       <option name="closed" value="true" />
@@ -1229,7 +1223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731242176420</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="Added liquibase update">
+      <option name="closed" value="true" />
+      <created>1731244223850</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1731244223850</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
