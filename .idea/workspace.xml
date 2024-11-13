@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added liquibase update">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added liquibase logging properties">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -838,15 +838,9 @@
       <workItem from="1731240793408" duration="4042000" />
       <workItem from="1731318702506" duration="25000" />
       <workItem from="1731397980080" duration="2348000" />
-      <workItem from="1731421784010" duration="320000" />
-    </task>
-    <task id="LOCAL-00196" summary="Added profiles">
-      <option name="closed" value="true" />
-      <created>1724944643968</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1724944643969</updated>
+      <workItem from="1731421784010" duration="672000" />
+      <workItem from="1731424199500" duration="7000" />
+      <workItem from="1731490696858" duration="2497000" />
     </task>
     <task id="LOCAL-00197" summary="Added object provider">
       <option name="closed" value="true" />
@@ -1232,7 +1226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731398527578</updated>
     </task>
-    <option name="localTasksCounter" value="245" />
+    <task id="LOCAL-00245" summary="Added liquibase logging properties">
+      <option name="closed" value="true" />
+      <created>1731422446898</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1731422446899</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1250,7 +1252,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added fix for dateBetweenOrIsNull" />
     <MESSAGE value="Added abstract factory pattern to object provider" />
     <MESSAGE value="Added spring jdbc crud" />
     <MESSAGE value="Added object provider" />
@@ -1275,6 +1276,7 @@
     <MESSAGE value="Added liquibase table settings" />
     <MESSAGE value="Added liquibase addColumn" />
     <MESSAGE value="Added liquibase update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added liquibase update" />
+    <MESSAGE value="Added liquibase logging properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added liquibase logging properties" />
   </component>
 </project>

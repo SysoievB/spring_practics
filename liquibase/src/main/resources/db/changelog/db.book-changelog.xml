@@ -21,12 +21,12 @@
 
     <changeSet id="subset-2-add-new-fields" author="bs">
         <addColumn tableName="book"><!--possible to set here default value - it works defaultValue="SYSTEM"-->
-            <column name="publisher" type="varchar(255)"><!---->
+            <column name="publisher" type="varchar(255)" value="SYSTEM"><!--value field updates automatically all existing fields-->
                 <constraints nullable="true"/>
             </column>
         </addColumn>
         <addColumn tableName="book">
-            <column name="is_last" type="boolean"/>
+            <column name="is_last" type="boolean" value="true"/>
         </addColumn>
     </changeSet>
 
