@@ -34,6 +34,7 @@
         <module name="named_entity_graph" />
         <module name="pessimistic_locking" />
         <module name="pagination" />
+        <module name="conditional_on_expression" />
         <module name="scheduled" />
         <module name="webflux" />
         <module name="bean_configuration" />
@@ -115,6 +116,7 @@
       <module name="boot" options="-parameters" />
       <module name="column_updatable_insertable" options="-parameters" />
       <module name="component_configuration" options="-parameters" />
+      <module name="conditional_on_expression" options="-parameters" />
       <module name="conditional_on_property" options="-parameters" />
       <module name="constructor_binding" options="-parameters" />
       <module name="converter" options="-parameters" />

@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/core/autowire_require_false/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/bean_configuration/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/component_configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core/conditional_on_expression/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/conditional_on_property/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/constructor_binding/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/converter/src/main/java" charset="UTF-8" />

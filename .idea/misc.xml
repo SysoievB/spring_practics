@@ -57,6 +57,7 @@
         <option value="$PROJECT_DIR$/spring_jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/aop/pom.xml" />
         <option value="$PROJECT_DIR$/liquibase/pom.xml" />
+        <option value="$PROJECT_DIR$/core/conditional_on_expression/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
