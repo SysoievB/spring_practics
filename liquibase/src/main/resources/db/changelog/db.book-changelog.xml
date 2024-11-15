@@ -41,4 +41,18 @@
     <changeSet id="subset-4-add-default-values" author="bs">
         <addDefaultValue tableName="book" columnName="publisher" defaultValue="SYSTEM_USER"/>
     </changeSet>
+
+    <changeSet id="subset-5-rollback-example" author="bs">
+        <createTable tableName="table_for_removing">
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="age" type="VARCHAR(255)"/>
+        </createTable>
+        <rollback>
+            <dropTable tableName="table_for_removing"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="subset-6-removing-table" author="bs">
+        <dropTable tableName="table_for_removing"/>
+    </changeSet>
 </databaseChangeLog>
