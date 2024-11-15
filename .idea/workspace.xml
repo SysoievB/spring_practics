@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added conditionalOnExpression">
-      <change afterPath="$PROJECT_DIR$/core/conditional_on_expression/src/main/java/com/conditional_on_expression/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/conditional_on_expression/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/conditional_on_expression/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/conditional_on_property/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/conditional_on_property/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +101,7 @@
     "Spring Boot.BootApplication.executor": "Run",
     "Spring Boot.ColumnUpdatableInsertableApplication.executor": "Run",
     "Spring Boot.ConditionalOnExpressionApplication.executor": "Run",
+    "Spring Boot.ConditionalOnPropertyApplication.executor": "Run",
     "Spring Boot.ConstructorBindingApplication.executor": "Run",
     "Spring Boot.ConverterApplication.executor": "Run",
     "Spring Boot.CreatedModifiedByTransientApplication.executor": "Run",
@@ -207,7 +203,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConditionalOnExpressionApplication">
+  <component name="RunManager" selected="Spring Boot.ConditionalOnPropertyApplication">
     <configuration name="JacksonPolymorphicTypeHandlingClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.JacksonPolymorphicTypeHandlingClass" />
       <module name="jackson_annotations" />
@@ -855,15 +851,7 @@
       <workItem from="1731424199500" duration="7000" />
       <workItem from="1731490696858" duration="3305000" />
       <workItem from="1731556834796" duration="2747000" />
-      <workItem from="1731652550093" duration="824000" />
-    </task>
-    <task id="LOCAL-00199" summary="Added object provider">
-      <option name="closed" value="true" />
-      <created>1725187317920</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1725187317921</updated>
+      <workItem from="1731652550093" duration="1249000" />
     </task>
     <task id="LOCAL-00200" summary="Added object provider">
       <option name="closed" value="true" />
@@ -1249,7 +1237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731557020628</updated>
     </task>
-    <option name="localTasksCounter" value="248" />
+    <task id="LOCAL-00248" summary="Added conditionalOnExpression">
+      <option name="closed" value="true" />
+      <created>1731653594482</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1731653594483</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
