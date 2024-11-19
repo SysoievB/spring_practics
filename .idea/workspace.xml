@@ -285,6 +285,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AssociationOverrideApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="association_override" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.association_override.AssociationOverrideApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AttributeConverterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="attribute_converter" />

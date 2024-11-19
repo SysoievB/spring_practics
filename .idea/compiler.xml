@@ -23,6 +23,7 @@
         <module name="query_param_modifying" />
         <module name="spring_jdbc" />
         <module name="jackson_annotations" />
+        <module name="association_override" />
         <module name="embedded_id" />
         <module name="created_modified_by_transient" />
         <module name="core" />
@@ -109,6 +110,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="aop" options="-parameters" />
+      <module name="association_override" options="-parameters" />
       <module name="attribute_converter" options="-parameters" />
       <module name="attribute_override" options="-parameters" />
       <module name="autowire_require_false" options="-parameters" />

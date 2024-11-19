@@ -58,6 +58,7 @@
         <option value="$PROJECT_DIR$/aop/pom.xml" />
         <option value="$PROJECT_DIR$/liquibase/pom.xml" />
         <option value="$PROJECT_DIR$/core/conditional_on_expression/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/association_override/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
