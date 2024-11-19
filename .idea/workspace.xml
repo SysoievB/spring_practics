@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added rollback">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @AssociationOverride">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/association_override/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/association_override/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -862,22 +863,8 @@
       <workItem from="1731652550093" duration="2456000" />
       <workItem from="1731686372449" duration="2019000" />
       <workItem from="1731733507016" duration="21000" />
-    </task>
-    <task id="LOCAL-00202" summary="Added object provider">
-      <option name="closed" value="true" />
-      <created>1725251360157</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1725251360157</updated>
-    </task>
-    <task id="LOCAL-00203" summary="Added object provider">
-      <option name="closed" value="true" />
-      <created>1725251383006</created>
-      <option name="number" value="00203" />
-      <option name="presentableId" value="LOCAL-00203" />
-      <option name="project" value="LOCAL" />
-      <updated>1725251383006</updated>
+      <workItem from="1732001260344" duration="1014000" />
+      <workItem from="1732018627127" duration="146000" />
     </task>
     <task id="LOCAL-00204" summary="Added object provider">
       <option name="closed" value="true" />
@@ -1255,7 +1242,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731688394978</updated>
     </task>
-    <option name="localTasksCounter" value="251" />
+    <task id="LOCAL-00251" summary="Added @AssociationOverride">
+      <option name="closed" value="true" />
+      <created>1732001400450</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1732001400451</updated>
+    </task>
+    <task id="LOCAL-00252" summary="Added @AssociationOverride">
+      <option name="closed" value="true" />
+      <created>1732010541121</created>
+      <option name="number" value="00252" />
+      <option name="presentableId" value="LOCAL-00252" />
+      <option name="project" value="LOCAL" />
+      <updated>1732010541121</updated>
+    </task>
+    <option name="localTasksCounter" value="253" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1273,7 +1276,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cleaned project" />
     <MESSAGE value="Added spring boot AOP" />
     <MESSAGE value="Exclude" />
     <MESSAGE value="Added jackson study project" />
@@ -1298,6 +1300,7 @@
     <MESSAGE value="Added conditionalOnExpression" />
     <MESSAGE value="Added matchIfMissing = true explanation" />
     <MESSAGE value="Added rollback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added rollback" />
+    <MESSAGE value="Added @AssociationOverride" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added @AssociationOverride" />
   </component>
 </project>
