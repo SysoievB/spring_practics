@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added matchIfMissing = true explanation">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added rollback">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -853,15 +852,8 @@
       <workItem from="1731490696858" duration="3305000" />
       <workItem from="1731556834796" duration="2747000" />
       <workItem from="1731652550093" duration="2456000" />
-      <workItem from="1731686372449" duration="1719000" />
-    </task>
-    <task id="LOCAL-00201" summary="Added object provider">
-      <option name="closed" value="true" />
-      <created>1725251348942</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1725251348943</updated>
+      <workItem from="1731686372449" duration="2019000" />
+      <workItem from="1731733507016" duration="21000" />
     </task>
     <task id="LOCAL-00202" summary="Added object provider">
       <option name="closed" value="true" />
@@ -1247,7 +1239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731654407313</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="Added rollback">
+      <option name="closed" value="true" />
+      <created>1731688394977</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1731688394978</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1265,7 +1265,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added object provider" />
     <MESSAGE value="Cleaned project" />
     <MESSAGE value="Added spring boot AOP" />
     <MESSAGE value="Exclude" />
@@ -1290,6 +1289,7 @@
     <MESSAGE value="Added liquibase logging properties" />
     <MESSAGE value="Added conditionalOnExpression" />
     <MESSAGE value="Added matchIfMissing = true explanation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added matchIfMissing = true explanation" />
+    <MESSAGE value="Added rollback" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added rollback" />
   </component>
 </project>
