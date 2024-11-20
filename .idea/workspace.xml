@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @AssociationOverride">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added memorizing hint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aop/src/main/java/com/aop/aspect/StudyAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/aop/src/main/java/com/aop/aspect/StudyAspect.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +206,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OneToOnePrimarykeyjoincolumnApplication">
+  <component name="RunManager" selected="Spring Boot.AopApplication">
     <configuration name="JacksonPolymorphicTypeHandlingClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jackson.JacksonPolymorphicTypeHandlingClass" />
       <module name="jackson_annotations" />
@@ -885,15 +883,7 @@
       <workItem from="1731733507016" duration="21000" />
       <workItem from="1732001260344" duration="1014000" />
       <workItem from="1732018627127" duration="2727000" />
-      <workItem from="1732075932378" duration="1286000" />
-    </task>
-    <task id="LOCAL-00206" summary="Added swagger">
-      <option name="closed" value="true" />
-      <created>1725514874015</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1725514874016</updated>
+      <workItem from="1732075932378" duration="5868000" />
     </task>
     <task id="LOCAL-00207" summary="Added swagger">
       <option name="closed" value="true" />
@@ -1279,7 +1269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732022097197</updated>
     </task>
-    <option name="localTasksCounter" value="255" />
+    <task id="LOCAL-00255" summary="Added memorizing hint">
+      <option name="closed" value="true" />
+      <created>1732077582275</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1732077582276</updated>
+    </task>
+    <option name="localTasksCounter" value="256" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1297,7 +1295,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added spring boot AOP" />
     <MESSAGE value="Exclude" />
     <MESSAGE value="Added jackson study project" />
     <MESSAGE value="Added jackson JsonAnyGetter JsonAnySetter" />
@@ -1322,6 +1319,7 @@
     <MESSAGE value="Added matchIfMissing = true explanation" />
     <MESSAGE value="Added rollback" />
     <MESSAGE value="Added @AssociationOverride" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added @AssociationOverride" />
+    <MESSAGE value="Added memorizing hint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added memorizing hint" />
   </component>
 </project>
