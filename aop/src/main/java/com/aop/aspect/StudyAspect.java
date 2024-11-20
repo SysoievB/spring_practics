@@ -29,6 +29,20 @@ public class StudyAspect {
     public void withWithinPoint() {
     }
 
+    //if BarDaoImpl implements BarDao, the proxy for BarDaoImpl will match this pointcut
+    @Pointcut("target(com.aop.aop_classes.BarDao)")
+    public void withTargetPointcut() {}
+
+    /**
+     * If the proxy is of type FooDao, this pointcut will match.
+     * Note:
+     * <p>
+     * If you're using JDK dynamic proxies, it matches interfaces implemented by the proxy.
+     * If you're using CGLIB proxies, it matches the class of the proxy.*/
+    @Pointcut("this(com.aop.aop_classes.BarDao)")
+    public void withThisPointcut() {}
+
+
     @Before(value = "withAnnotation()")
     public void getAnnotation(JoinPoint jp) {
         StackWalker.getInstance()
@@ -55,6 +69,25 @@ public class StudyAspect {
                 .ifPresent(methodName -> aspectMethodLog().accept(methodName));
         getLog(jp);
     }
+
+    @Before(value = "withTargetPointcut()")
+    public void getTargetPoint(JoinPoint jp) {
+        StackWalker.getInstance()
+                .walk(Stream::findFirst)
+                .map(StackWalker.StackFrame::getMethodName)
+                .ifPresent(methodName -> aspectMethodLog().accept(methodName));
+        getLog(jp);
+    }
+
+    @AfterReturning(value = "withThisPointcut()")
+    public void getThisPoint(JoinPoint jp) {
+        StackWalker.getInstance()
+                .walk(Stream::findFirst)
+                .map(StackWalker.StackFrame::getMethodName)
+                .ifPresent(methodName -> aspectMethodLog().accept(methodName));
+        getLog(jp);
+    }
+
 
     private void getLog(JoinPoint jp) {
         val methodName = jp.getSignature().getName();

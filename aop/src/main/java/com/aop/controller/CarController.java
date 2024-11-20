@@ -1,5 +1,6 @@
 package com.aop.controller;
 
+import com.aop.aop_classes.BarDao;
 import com.aop.aspect.UpdateCar;
 import com.aop.model.Car;
 import com.aop.service.CarService;
@@ -17,6 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CarController {
     private final CarService service;
+    private final BarDao barDao;
 
     @UpdateCar
     @GetMapping("/{id}")
@@ -28,5 +30,10 @@ public class CarController {
     @GetMapping
     Mono<List<Car>> getCars() {
         return service.getCars();
+    }
+
+    @GetMapping("/bar")
+    Mono<String> getBar() {
+        return Mono.just(barDao.bar());
     }
 }
