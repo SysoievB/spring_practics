@@ -39,6 +39,8 @@
     <file url="file://$PROJECT_DIR$/data_jpa/named_entity_graph/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/notnull_annotation_vs_column_nullable_false/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/one_to_one_with_fk/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/optimistic_lock_exception/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/pagination/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/pessimistic_locking/src/main/java" charset="UTF-8" />

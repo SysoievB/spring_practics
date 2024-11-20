@@ -29,6 +29,7 @@
         <module name="core" />
         <module name="mapped_superclass" />
         <module name="generationtype_auto" />
+        <module name="one_to_one_with_fk" />
         <module name="constructor_binding" />
         <module name="attribute_converter" />
         <module name="generationtype_custom" />
@@ -39,6 +40,7 @@
         <module name="scheduled" />
         <module name="webflux" />
         <module name="bean_configuration" />
+        <module name="one_to_one_primarykeyjoincolumn" />
         <module name="element_collection" />
         <module name="object_provider" />
         <module name="dto_projection" />
@@ -149,6 +151,8 @@
       <module name="no_repository_bean" options="-parameters" />
       <module name="notnull_annotation_vs_column_nullable_false" options="-parameters" />
       <module name="object_provider" options="-parameters" />
+      <module name="one_to_one_primarykeyjoincolumn" options="-parameters" />
+      <module name="one_to_one_with_fk" options="-parameters" />
       <module name="optimistic_lock_exception" options="-parameters" />
       <module name="pagination" options="-parameters" />
       <module name="pessimistic_locking" options="-parameters" />
