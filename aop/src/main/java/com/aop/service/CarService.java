@@ -1,12 +1,12 @@
 package com.aop.service;
 
 import com.aop.model.Car;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.util.List;
 
-@Component
+@Service
 public class CarService {
 
     public Mono<Car> getCarById(Integer id) {

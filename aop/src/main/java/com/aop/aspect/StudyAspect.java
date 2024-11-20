@@ -29,18 +29,31 @@ public class StudyAspect {
     public void withWithinPoint() {
     }
 
-    //if BarDaoImpl implements BarDao, the proxy for BarDaoImpl will match this pointcut
+    /**
+     * If BarDaoImpl implements BarDao, the proxy for BarDaoImpl will match this pointcut
+     */
     @Pointcut("target(com.aop.aop_classes.BarDao)")
-    public void withTargetPointcut() {}
+    public void withTargetPointcut() {
+    }
 
     /**
      * If the proxy is of type FooDao, this pointcut will match.
      * Note:
      * <p>
      * If you're using JDK dynamic proxies, it matches interfaces implemented by the proxy.
-     * If you're using CGLIB proxies, it matches the class of the proxy.*/
+     * If you're using CGLIB proxies, it matches the class of the proxy.
+     */
     @Pointcut("this(com.aop.aop_classes.BarDao)")
-    public void withThisPointcut() {}
+    public void withThisPointcut() {
+    }
+
+    /**
+     * <h6>@Target(ElementType.TYPE)</h6>
+     * Ensures the annotation can only be applied to classes, interfaces, or enums.
+     */
+    @Pointcut("@target(com.aop.aspect.CustomService)")
+    public void withAnnotationTargetPointcut() {
+    }
 
 
     @Before(value = "withAnnotation()")
