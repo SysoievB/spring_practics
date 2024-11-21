@@ -62,6 +62,15 @@ public class StudyAspect {
     public void withArgsPointcut() {
     }
 
+    /**
+     * These are the same*/
+    @Pointcut("@within(org.springframework.stereotype.Repository)")
+    public void withWithinRepositoryPointcut() {
+    }
+    @Pointcut("within(@org.springframework.stereotype.Repository *)")
+    public void withinRepositoryPointcut() {
+    }
+
 
     @Before(value = "withAnnotation()")
     public void getAnnotation(JoinPoint jp) {
