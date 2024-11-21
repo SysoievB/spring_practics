@@ -55,6 +55,13 @@ public class StudyAspect {
     public void withAnnotationTargetPointcut() {
     }
 
+    /**
+     * Pointcut matching methods with a single argument of type 'Integer'
+     */
+    @Pointcut("args(java.lang.Integer)")
+    public void withArgsPointcut() {
+    }
+
 
     @Before(value = "withAnnotation()")
     public void getAnnotation(JoinPoint jp) {
@@ -101,6 +108,14 @@ public class StudyAspect {
         getLog(jp);
     }
 
+    @Before("withArgsPointcut()")
+    public void getArgsPoint(JoinPoint jp) {
+        StackWalker.getInstance()
+                .walk(Stream::findFirst)
+                .map(StackWalker.StackFrame::getMethodName)
+                .ifPresent(methodName -> aspectMethodLog().accept(methodName));
+        getLog(jp);
+    }
 
     private void getLog(JoinPoint jp) {
         val methodName = jp.getSignature().getName();
