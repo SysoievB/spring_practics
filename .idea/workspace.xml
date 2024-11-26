@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added pointcuts @within">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added security">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -607,6 +610,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="security" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.security.SecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SlicePaginationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="slice_pagination" />
@@ -891,15 +901,8 @@
       <workItem from="1732251975956" duration="55000" />
       <workItem from="1732259338239" duration="654000" />
       <workItem from="1732346044462" duration="11000" />
-      <workItem from="1732451886437" duration="635000" />
-    </task>
-    <task id="LOCAL-00212" summary="Added spring jdbc crud">
-      <option name="closed" value="true" />
-      <created>1727082542721</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
-      <option name="project" value="LOCAL" />
-      <updated>1727082542722</updated>
+      <workItem from="1732451886437" duration="1429000" />
+      <workItem from="1732470099975" duration="96000" />
     </task>
     <task id="LOCAL-00213" summary="Added spring jdbc crud">
       <option name="closed" value="true" />
@@ -1285,7 +1288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732162999898</updated>
     </task>
-    <option name="localTasksCounter" value="261" />
+    <task id="LOCAL-00261" summary="Added security">
+      <option name="closed" value="true" />
+      <created>1732453152021</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1732453152022</updated>
+    </task>
+    <option name="localTasksCounter" value="262" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1303,7 +1314,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added jackson JsonIgnoreProperties" />
     <MESSAGE value="Added jackson JsonIgnoreType" />
     <MESSAGE value="Added jackson JsonInclude" />
     <MESSAGE value="Added jackson JsonIncludeProperties" />
@@ -1328,7 +1338,8 @@
     <MESSAGE value="Added pointcuts @target" />
     <MESSAGE value="Added pointcuts args" />
     <MESSAGE value="Added pointcuts @within" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pointcuts @within" />
+    <MESSAGE value="Added security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added security" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

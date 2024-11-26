@@ -42,6 +42,7 @@
         <module name="bean_configuration" />
         <module name="one_to_one_primarykeyjoincolumn" />
         <module name="element_collection" />
+        <module name="security" />
         <module name="object_provider" />
         <module name="dto_projection" />
         <module name="immutable_annotation" />
@@ -158,6 +159,7 @@
       <module name="pessimistic_locking" options="-parameters" />
       <module name="query_param_modifying" options="-parameters" />
       <module name="scheduled" options="-parameters" />
+      <module name="security" options="-parameters" />
       <module name="slice_pagination" options="-parameters" />
       <module name="soft_delete" options="-parameters" />
       <module name="specifications" options="-parameters" />

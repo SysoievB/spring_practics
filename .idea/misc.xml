@@ -61,6 +61,7 @@
         <option value="$PROJECT_DIR$/data_jpa/association_override/pom.xml" />
         <option value="$PROJECT_DIR$/data_jpa/one_to_one_with_fk/pom.xml" />
         <option value="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/pom.xml" />
+        <option value="$PROJECT_DIR$/security/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
