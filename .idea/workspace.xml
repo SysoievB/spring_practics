@@ -378,6 +378,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContextConfigurationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="context_configuration" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.context_configuration.ContextConfigurationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConverterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="converter" />
