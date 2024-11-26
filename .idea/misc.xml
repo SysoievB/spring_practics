@@ -64,6 +64,7 @@
         <option value="$PROJECT_DIR$/security/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/dirty_context/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_tests/spring-boot-test/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -53,6 +53,7 @@
         <module name="boot" />
         <module name="spring_tests" />
         <module name="autowire_require_false" />
+        <module name="spring-boot-test" />
         <module name="inheritance_annotation" />
         <module name="data_jpa" />
         <module name="formula_annotation" />
@@ -166,6 +167,7 @@
       <module name="slice_pagination" options="-parameters" />
       <module name="soft_delete" options="-parameters" />
       <module name="specifications" options="-parameters" />
+      <module name="spring-boot-test" options="-parameters" />
       <module name="spring_jdbc" options="-parameters" />
       <module name="spring_profiles" options="-parameters" />
       <module name="spring_tests" options="-parameters" />
