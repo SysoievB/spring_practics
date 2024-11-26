@@ -11,6 +11,7 @@
         <module name="stored_procedures" />
         <module name="converter" />
         <module name="where_annotation" />
+        <module name="dirty_context" />
         <module name="notnull_annotation_vs_column_nullable_false" />
         <module name="conditional_on_property" />
         <module name="swagger" />
@@ -129,6 +130,7 @@
       <module name="core" options="-parameters" />
       <module name="created_modified_by_transient" options="-parameters" />
       <module name="data_jpa" options="-parameters" />
+      <module name="dirty_context" options="-parameters" />
       <module name="dto_projection" options="-parameters" />
       <module name="element_collection" options="-parameters" />
       <module name="embedded_id" options="-parameters" />
