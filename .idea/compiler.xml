@@ -50,6 +50,7 @@
         <module name="filter_annotation" />
         <module name="id_class" />
         <module name="boot" />
+        <module name="spring_tests" />
         <module name="autowire_require_false" />
         <module name="inheritance_annotation" />
         <module name="data_jpa" />
@@ -165,6 +166,7 @@
       <module name="specifications" options="-parameters" />
       <module name="spring_jdbc" options="-parameters" />
       <module name="spring_profiles" options="-parameters" />
+      <module name="spring_tests" options="-parameters" />
       <module name="stored_procedures" options="-parameters" />
       <module name="swagger" options="-parameters" />
       <module name="validation" options="-parameters" />
