@@ -33,7 +33,7 @@ class PrototypeServiceTest {
 
     @Order(2)
     @Test
-    @DirtiesContext
+    @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
     void testPrototypeScopeWithDirtiesContext() {
         // Retrieve a new instance after context reset
         PrototypeService service = context.getBean(PrototypeService.class);
