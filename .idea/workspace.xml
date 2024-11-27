@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added spring boot tests">
-      <change afterPath="$PROJECT_DIR$/spring_tests/spring-boot-test/src/main/java/com/springboottest/GreetingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/spring-boot-test/src/test/java/com/springboottest/GreetingServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @ContextConfiguration">
+      <change afterPath="$PROJECT_DIR$/spring_tests/context_configuration/src/main/java/com/context_configuration/GreetingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/context_configuration/src/main/java/com/context_configuration/TestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/context_configuration/src/test/java/com/context_configuration/GreetingServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -86,6 +84,7 @@
     "JUnit.CarTest.success.executor": "Run",
     "JUnit.EmployeeMapperTest.executor": "Run",
     "JUnit.EmployeeServiceTest.executor": "Run",
+    "JUnit.GreetingServiceTest.executor": "Run",
     "JUnit.GreetingServiceTest.testGreet.executor": "Run",
     "JUnit.MapperTest.executor": "Run",
     "JUnit.MapperTest.testMapper.executor": "Run",
@@ -196,6 +195,8 @@
       <recent name="com.web_annotations.map_struct" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.context_configuration" />
+      <recent name="com.springboottest" />
       <recent name="com.dirty_context" />
       <recent name="com.aop.aspect" />
       <recent name="com.pagination" />
@@ -217,9 +218,9 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GreetingServiceTest.testGreet">
-    <configuration name="WithLombokClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jackson.lombok.WithLombokClass" />
+  <component name="RunManager" selected="JUnit.GreetingServiceTest">
+    <configuration name="WithLombokCustomBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jackson.lombok.WithLombokCustomBuilder" />
       <module name="jackson_annotations" />
       <extension name="coverage">
         <pattern>
@@ -231,15 +232,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WithLombokCustomBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jackson.lombok.WithLombokCustomBuilder" />
-      <module name="jackson_annotations" />
+    <configuration name="GreetingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="context_configuration" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jackson.lombok.*" />
+          <option name="PATTERN" value="com.context_configuration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.context_configuration" />
+      <option name="MAIN_CLASS_NAME" value="com.context_configuration.GreetingServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -757,11 +760,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GreetingServiceTest" />
         <item itemvalue="JUnit.GreetingServiceTest.testGreet" />
         <item itemvalue="JUnit.PrototypeServiceTest" />
         <item itemvalue="JUnit.PrototypeServiceTest.testAfterDirtiesContextIncrementedCheck" />
         <item itemvalue="Application.WithLombokCustomBuilder" />
-        <item itemvalue="Application.WithLombokClass" />
       </list>
     </recent_temporary>
   </component>
@@ -946,23 +949,7 @@
       <workItem from="1732451886437" duration="1429000" />
       <workItem from="1732470099975" duration="96000" />
       <workItem from="1732595189792" duration="2520000" />
-      <workItem from="1732644727825" duration="1005000" />
-    </task>
-    <task id="LOCAL-00217" summary="Added spring jdbc crud">
-      <option name="closed" value="true" />
-      <created>1727108361564</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1727108361565</updated>
-    </task>
-    <task id="LOCAL-00218" summary="Added spring jdbc crud">
-      <option name="closed" value="true" />
-      <created>1727183109746</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1727183109747</updated>
+      <workItem from="1732644727825" duration="3166000" />
     </task>
     <task id="LOCAL-00219" summary="Added object provider">
       <option name="closed" value="true" />
@@ -1340,7 +1327,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732645473072</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="Added spring boot tests">
+      <option name="closed" value="true" />
+      <created>1732645754786</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1732645754786</updated>
+    </task>
+    <task id="LOCAL-00267" summary="Added @ContextConfiguration">
+      <option name="closed" value="true" />
+      <created>1732645889509</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1732645889509</updated>
+    </task>
+    <option name="localTasksCounter" value="268" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1358,7 +1361,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added jackson JsonAutoDetect" />
     <MESSAGE value="Added jackson polymorphic" />
     <MESSAGE value="Added jackson JsonFormat" />
     <MESSAGE value="Added aspect" />
@@ -1383,7 +1385,8 @@
     <MESSAGE value="Added tests" />
     <MESSAGE value="Added dirty context tests" />
     <MESSAGE value="Added spring boot tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added spring boot tests" />
+    <MESSAGE value="Added @ContextConfiguration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added @ContextConfiguration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
