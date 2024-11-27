@@ -16,6 +16,7 @@
         <module name="conditional_on_property" />
         <module name="swagger" />
         <module name="liquibase" />
+        <module name="actuator" />
         <module name="context_configuration" />
         <module name="import_configuration" />
         <module name="optimistic_lock_exception" />
@@ -117,6 +118,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="actuator" options="-parameters" />
       <module name="aop" options="-parameters" />
       <module name="association_override" options="-parameters" />
       <module name="attribute_converter" options="-parameters" />

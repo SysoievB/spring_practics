@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @TestConfiguration">
-      <change afterPath="$PROJECT_DIR$/spring_tests/test_configuration/src/main/java/com/test_configuration/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/test_configuration/src/test/java/com/test_configuration/EmployeeServiceTest.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added spring boot actuator">
+      <change afterPath="$PROJECT_DIR$/actuator/src/main/java/com/actuator/RandomEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actuator/src/main/java/com/actuator/ActuatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/actuator/src/main/java/com/actuator/ActuatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actuator/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/actuator/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +27,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -107,6 +111,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ActuatorApplication.executor": "Run",
     "Spring Boot.AopApplication.executor": "Run",
     "Spring Boot.AssociationOverrideApplication.executor": "Run",
     "Spring Boot.AttributeConverterApplication.executor": "Run",
@@ -224,7 +229,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeServiceTest.testFindUserById">
+  <component name="RunManager" selected="Spring Boot.ActuatorApplication">
     <configuration name="EmployeeServiceTest.testFindUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_configuration" />
       <extension name="coverage">
@@ -287,18 +292,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SomeTest.testHelperBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test_configuration" />
+    <configuration name="ActuatorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="actuator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.actuator.ActuatorApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test_configuration.*" />
+          <option name="PATTERN" value="com.actuator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test_configuration" />
-      <option name="MAIN_CLASS_NAME" value="com.test_configuration.SomeTest" />
-      <option name="METHOD_NAME" value="testHelperBean" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -776,11 +778,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ActuatorApplication" />
         <item itemvalue="JUnit.EmployeeServiceTest.testFindUserById" />
         <item itemvalue="JUnit.PrototypeServiceTest" />
         <item itemvalue="JUnit.PrototypeServiceTest.testPrototypeScopeWithDirtiesContext" />
         <item itemvalue="JUnit.SomeTest" />
-        <item itemvalue="JUnit.SomeTest.testHelperBean" />
       </list>
     </recent_temporary>
   </component>
@@ -968,14 +970,6 @@
       <workItem from="1732644727825" duration="3166000" />
       <workItem from="1732679751543" duration="3920000" />
       <workItem from="1732715713503" duration="846000" />
-    </task>
-    <task id="LOCAL-00223" summary="Added spring boot AOP">
-      <option name="closed" value="true" />
-      <created>1730367260807</created>
-      <option name="number" value="00223" />
-      <option name="presentableId" value="LOCAL-00223" />
-      <option name="project" value="LOCAL" />
-      <updated>1730367260809</updated>
     </task>
     <task id="LOCAL-00224" summary="Added jackson study project">
       <option name="closed" value="true" />
@@ -1361,7 +1355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732715869478</updated>
     </task>
-    <option name="localTasksCounter" value="272" />
+    <task id="LOCAL-00272" summary="Added spring boot actuator">
+      <option name="closed" value="true" />
+      <created>1732717031065</created>
+      <option name="number" value="00272" />
+      <option name="presentableId" value="LOCAL-00272" />
+      <option name="project" value="LOCAL" />
+      <updated>1732717031065</updated>
+    </task>
+    <option name="localTasksCounter" value="273" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1379,7 +1381,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added jackson JsonFormat" />
     <MESSAGE value="Added aspect" />
     <MESSAGE value="Added serialization/deserialization with lombok builder" />
     <MESSAGE value="Added serialization/deserialization with lombok custom builder" />
@@ -1404,7 +1405,8 @@
     <MESSAGE value="Added spring boot tests" />
     <MESSAGE value="Added @ContextConfiguration" />
     <MESSAGE value="Added @TestConfiguration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added @TestConfiguration" />
+    <MESSAGE value="Added spring boot actuator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added spring boot actuator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
