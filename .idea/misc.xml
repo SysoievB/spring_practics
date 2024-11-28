@@ -69,6 +69,7 @@
         <option value="$PROJECT_DIR$/spring_tests/test_configuration/pom.xml" />
         <option value="$PROJECT_DIR$/actuator/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/test_property_source/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_tests/dynamic_property_source/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

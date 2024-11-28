@@ -34,6 +34,7 @@
         <module name="mapped_superclass" />
         <module name="generationtype_auto" />
         <module name="one_to_one_with_fk" />
+        <module name="dynamic_property_source" />
         <module name="constructor_binding" />
         <module name="attribute_converter" />
         <module name="generationtype_custom" />
@@ -139,6 +140,7 @@
       <module name="data_jpa" options="-parameters" />
       <module name="dirty_context" options="-parameters" />
       <module name="dto_projection" options="-parameters" />
+      <module name="dynamic_property_source" options="-parameters" />
       <module name="element_collection" options="-parameters" />
       <module name="embedded_id" options="-parameters" />
       <module name="entity_graph" options="-parameters" />

@@ -428,6 +428,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DynamicPropertySourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dynamic_property_source" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dynamic_property_source.DynamicPropertySourceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ElementCollectionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="element_collection" />
