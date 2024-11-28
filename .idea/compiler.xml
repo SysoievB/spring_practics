@@ -39,6 +39,7 @@
         <module name="generationtype_custom" />
         <module name="named_entity_graph" />
         <module name="pessimistic_locking" />
+        <module name="test_property_source" />
         <module name="pagination" />
         <module name="conditional_on_expression" />
         <module name="scheduled" />
@@ -179,6 +180,7 @@
       <module name="stored_procedures" options="-parameters" />
       <module name="swagger" options="-parameters" />
       <module name="test_configuration" options="-parameters" />
+      <module name="test_property_source" options="-parameters" />
       <module name="validation" options="-parameters" />
       <module name="web_annotations" options="-parameters" />
       <module name="web_headers_cookies" options="-parameters" />

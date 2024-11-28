@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added spring boot actuator">
-      <change afterPath="$PROJECT_DIR$/actuator/src/main/java/com/actuator/RandomEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actuator/src/main/java/com/actuator/ActuatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/actuator/src/main/java/com/actuator/ActuatorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actuator/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/actuator/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,129 +59,129 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Car.executor": "Run",
-    "Application.JacksonPolymorphicTypeHandlingClass.executor": "Run",
-    "Application.JsonAnyGetterClass.executor": "Run",
-    "Application.JsonAnyGetterSetterClass.executor": "Run",
-    "Application.JsonAutoDetectClass.executor": "Run",
-    "Application.JsonFormatClass.executor": "Run",
-    "Application.JsonGetterJsonSetterClass.executor": "Run",
-    "Application.JsonIgnorePropertiesClass.executor": "Run",
-    "Application.JsonIgnoreTypeClass.executor": "Run",
-    "Application.JsonIncludeClass.executor": "Run",
-    "Application.JsonIncludePropertiesClass.executor": "Run",
-    "Application.JsonRootNameClass.executor": "Run",
-    "Application.JsonValueClass.executor": "Run",
-    "Application.WithLombokClass.executor": "Run",
-    "Application.WithLombokCustomBuilder.executor": "Run",
-    "JUnit.CarTest.divide_by_zero.executor": "Run",
-    "JUnit.CarTest.executor": "Run",
-    "JUnit.CarTest.success.executor": "Run",
-    "JUnit.EmployeeMapperTest.executor": "Run",
-    "JUnit.EmployeeServiceTest.executor": "Run",
-    "JUnit.EmployeeServiceTest.testFindUserById.executor": "Run",
-    "JUnit.GreetingServiceTest (1).executor": "Run",
-    "JUnit.GreetingServiceTest.executor": "Run",
-    "JUnit.GreetingServiceTest.testGreet (1).executor": "Run",
-    "JUnit.GreetingServiceTest.testGreet.executor": "Run",
-    "JUnit.MapperTest.executor": "Run",
-    "JUnit.MapperTest.testMapper.executor": "Run",
-    "JUnit.PrototypeServiceTest.executor": "Run",
-    "JUnit.PrototypeServiceTest.testAfterDirtiesContextIncrementedCheck.executor": "Run",
-    "JUnit.PrototypeServiceTest.testPrototypeScopeWithDirtiesContext.executor": "Run",
-    "JUnit.SomeTest.executor": "Run",
-    "JUnit.SomeTest.testHelperBean.executor": "Run",
-    "JUnit.UserServiceTest.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "JUnit.UserTest.user_fields_assertions.executor": "Run",
-    "Maven.object_provider [clean].executor": "Run",
-    "Maven.specifications [clean].executor": "Run",
-    "Maven.specifications [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ActuatorApplication.executor": "Run",
-    "Spring Boot.AopApplication.executor": "Run",
-    "Spring Boot.AssociationOverrideApplication.executor": "Run",
-    "Spring Boot.AttributeConverterApplication.executor": "Run",
-    "Spring Boot.AttributeOverrideApplication.executor": "Run",
-    "Spring Boot.AutowireRequireFalseApplication.executor": "Run",
-    "Spring Boot.BootApplication.executor": "Run",
-    "Spring Boot.ColumnUpdatableInsertableApplication.executor": "Run",
-    "Spring Boot.ConditionalOnExpressionApplication.executor": "Run",
-    "Spring Boot.ConditionalOnPropertyApplication.executor": "Run",
-    "Spring Boot.ConstructorBindingApplication.executor": "Run",
-    "Spring Boot.ConverterApplication.executor": "Run",
-    "Spring Boot.CreatedModifiedByTransientApplication.executor": "Run",
-    "Spring Boot.DtoProjectionApplication.executor": "Run",
-    "Spring Boot.ElementCollectionApplication.executor": "Run",
-    "Spring Boot.EmbeddedIdApplication.executor": "Run",
-    "Spring Boot.EntityGraphApplication.executor": "Run",
-    "Spring Boot.FetchAnnotationApplication.executor": "Run",
-    "Spring Boot.FilterAnnotationApplication.executor": "Run",
-    "Spring Boot.FormulaAnnotationApplication.executor": "Run",
-    "Spring Boot.GenerationtypeAutoApplication.executor": "Run",
-    "Spring Boot.GenerationtypeCustomApplication.executor": "Run",
-    "Spring Boot.GenerationtypeSequenceApplication.executor": "Run",
-    "Spring Boot.GenerationtypeTableApplication.executor": "Run",
-    "Spring Boot.IdClassApplication.executor": "Run",
-    "Spring Boot.ImmutableAnnotationApplication.executor": "Run",
-    "Spring Boot.InheritanceAnnotationApplication.executor": "Run",
-    "Spring Boot.KeysetPaginationApplication.executor": "Run",
-    "Spring Boot.LiquibaseApplication.executor": "Run",
-    "Spring Boot.MappedSuperclassApplication.executor": "Run",
-    "Spring Boot.NamedEntityGraphApplication.executor": "Run",
-    "Spring Boot.NoRepositoryBeanApplication.executor": "Run",
-    "Spring Boot.NotnullAnnotationVsColumnNullableFalseApplication.executor": "Run",
-    "Spring Boot.ObjectProviderApplication.executor": "Run",
-    "Spring Boot.OneToOnePrimarykeyjoincolumnApplication.executor": "Run",
-    "Spring Boot.OptimisticLockExceptionApplication.executor": "Run",
-    "Spring Boot.PaginationApplication.executor": "Run",
-    "Spring Boot.PessimisticLockingApplication.executor": "Run",
-    "Spring Boot.QueryParamModifyingApplication.executor": "Run",
-    "Spring Boot.ScheduledApplication.executor": "Run",
-    "Spring Boot.SlicePaginationApplication.executor": "Run",
-    "Spring Boot.SoftDeleteApplication.executor": "Run",
-    "Spring Boot.SpecificationsApplication.executor": "Run",
-    "Spring Boot.SpringJdbcApplication.executor": "Run",
-    "Spring Boot.SpringProfilesApplication.executor": "Run",
-    "Spring Boot.StoredProceduresApplication.executor": "Run",
-    "Spring Boot.SwaggerApplication.executor": "Run",
-    "Spring Boot.WebAnnotationsApplication.executor": "Run",
-    "Spring Boot.WebHeadersApplication.executor": "Run",
-    "Spring Boot.WebfluxApplication.executor": "Run",
-    "Spring Boot.WhereAnnotationApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_security_6_course",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Car.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JacksonPolymorphicTypeHandlingClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonAnyGetterClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonAnyGetterSetterClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonAutoDetectClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonFormatClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonGetterJsonSetterClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonIgnorePropertiesClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonIgnoreTypeClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonIncludeClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonIncludePropertiesClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonRootNameClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonValueClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WithLombokClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WithLombokCustomBuilder.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CarTest.divide_by_zero.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CarTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CarTest.success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeServiceTest.testFindUserById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GreetingServiceTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GreetingServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GreetingServiceTest.testGreet (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GreetingServiceTest.testGreet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MapperTest.testMapper.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PrototypeServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PrototypeServiceTest.testAfterDirtiesContextIncrementedCheck.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PrototypeServiceTest.testPrototypeScopeWithDirtiesContext.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SomeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SomeTest.testHelperBean.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.user_fields_assertions.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.object_provider [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.specifications [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.specifications [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ActuatorApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.AopApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AssociationOverrideApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AttributeConverterApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AttributeOverrideApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AutowireRequireFalseApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.BootApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ColumnUpdatableInsertableApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConditionalOnExpressionApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConditionalOnPropertyApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConstructorBindingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConverterApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CreatedModifiedByTransientApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DtoProjectionApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ElementCollectionApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EmbeddedIdApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EntityGraphApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FetchAnnotationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FilterAnnotationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FormulaAnnotationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GenerationtypeAutoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GenerationtypeCustomApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GenerationtypeSequenceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GenerationtypeTableApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.IdClassApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ImmutableAnnotationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.InheritanceAnnotationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.KeysetPaginationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LiquibaseApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MappedSuperclassApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NamedEntityGraphApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NoRepositoryBeanApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NotnullAnnotationVsColumnNullableFalseApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ObjectProviderApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OneToOnePrimarykeyjoincolumnApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OptimisticLockExceptionApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PaginationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PessimisticLockingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.QueryParamModifyingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ScheduledApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SlicePaginationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SoftDeleteApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpecificationsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringJdbcApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringProfilesApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.StoredProceduresApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SwaggerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.WebAnnotationsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.WebHeadersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.WebfluxApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.WhereAnnotationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bogdan/IdeaProjects/spring_security_6_course&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
-      "MySQL",
-      "Greenplum"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;MySQL&quot;,
+      &quot;Greenplum&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -736,6 +730,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestPropertySourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="test_property_source" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.test_property_source.TestPropertySourceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ValidationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="validation" />
@@ -970,14 +971,7 @@
       <workItem from="1732644727825" duration="3166000" />
       <workItem from="1732679751543" duration="3920000" />
       <workItem from="1732715713503" duration="846000" />
-    </task>
-    <task id="LOCAL-00224" summary="Added jackson study project">
-      <option name="closed" value="true" />
-      <created>1730367678683</created>
-      <option name="number" value="00224" />
-      <option name="presentableId" value="LOCAL-00224" />
-      <option name="project" value="LOCAL" />
-      <updated>1730367678684</updated>
+      <workItem from="1732727261884" duration="1956000" />
     </task>
     <task id="LOCAL-00225" summary="Added jackson study project">
       <option name="closed" value="true" />
@@ -1363,7 +1357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732717031065</updated>
     </task>
-    <option name="localTasksCounter" value="273" />
+    <task id="LOCAL-00273" summary="Added spring boot actuator">
+      <option name="closed" value="true" />
+      <created>1732719540266</created>
+      <option name="number" value="00273" />
+      <option name="presentableId" value="LOCAL-00273" />
+      <option name="project" value="LOCAL" />
+      <updated>1732719540266</updated>
+    </task>
+    <option name="localTasksCounter" value="274" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1419,6 +1421,11 @@
           <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/actuator/src/main/java/com/actuator/RandomEndpoint.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
