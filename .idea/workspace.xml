@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @TestBean">
-      <change afterPath="$PROJECT_DIR$/spring_tests/test_bean/src/main/java/com/test_bean/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/test_bean/src/main/java/com/test_bean/MyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/test_bean/src/test/java/com/test_bean/MyServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @TestBean" />
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -996,15 +988,7 @@
       <workItem from="1732715713503" duration="846000" />
       <workItem from="1732727261884" duration="1956000" />
       <workItem from="1732768022591" duration="1304000" />
-      <workItem from="1732854464728" duration="4788000" />
-    </task>
-    <task id="LOCAL-00230" summary="Added jackson JsonIncludeProperties">
-      <option name="closed" value="true" />
-      <created>1730449789052</created>
-      <option name="number" value="00230" />
-      <option name="presentableId" value="LOCAL-00230" />
-      <option name="project" value="LOCAL" />
-      <updated>1730449789053</updated>
+      <workItem from="1732854464728" duration="4908000" />
     </task>
     <task id="LOCAL-00231" summary="Added jackson JsonAutoDetect">
       <option name="closed" value="true" />
@@ -1390,7 +1374,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732857527118</updated>
     </task>
-    <option name="localTasksCounter" value="279" />
+    <task id="LOCAL-00279" summary="Added @TestBean">
+      <option name="closed" value="true" />
+      <created>1732865822399</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1732865822399</updated>
+    </task>
+    <option name="localTasksCounter" value="280" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
