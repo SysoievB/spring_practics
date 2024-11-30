@@ -116,9 +116,7 @@
         <module name="web_annotations" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring_boot_rest_crud_with_virtual_threads" target="21" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="21" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -190,7 +188,7 @@
       <module name="validation" options="-parameters" />
       <module name="web_annotations" options="-parameters" />
       <module name="web_headers_cookies" options="-parameters" />
-      <module name="webflux" options="-parameters" />
+      <module name="webflux" options="" />
       <module name="where_annotation" options="-parameters" />
     </option>
   </component>
