@@ -8,6 +8,12 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * <h3>@SpringJUnitConfig combines these 2 annotations:</h3>
+ * <ul>
+ * <li>@ExtendWith(SpringExtension.class) from JUnit 5 to run the test with the SpringExtension class</li>
+ * <li>@ContextConfiguration from Spring Testing to load the Spring context</li>
+ * </ul>*/
 @SpringJUnitConfig(MyConfig.class)
 class MyServiceTest {
 
