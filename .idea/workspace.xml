@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added security static credentials + trivial tests">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added just annotation description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -1015,15 +1015,8 @@
       <workItem from="1732958433455" duration="29000" />
       <workItem from="1732958628989" duration="1858000" />
       <workItem from="1732960836557" duration="1239000" />
-      <workItem from="1733055926023" duration="760000" />
-    </task>
-    <task id="LOCAL-00234" summary="Added jackson JsonFormat">
-      <option name="closed" value="true" />
-      <created>1730525750948</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
-      <option name="project" value="LOCAL" />
-      <updated>1730525750949</updated>
+      <workItem from="1733055926023" duration="1044000" />
+      <workItem from="1733114383941" duration="1686000" />
     </task>
     <task id="LOCAL-00235" summary="Added aspect">
       <option name="closed" value="true" />
@@ -1409,7 +1402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732962083287</updated>
     </task>
-    <option name="localTasksCounter" value="283" />
+    <task id="LOCAL-00283" summary="Added just annotation description">
+      <option name="closed" value="true" />
+      <created>1733057088558</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1733057088558</updated>
+    </task>
+    <option name="localTasksCounter" value="284" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1427,7 +1428,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added liquibase addColumn" />
     <MESSAGE value="Added liquibase update" />
     <MESSAGE value="Added liquibase logging properties" />
     <MESSAGE value="Added conditionalOnExpression" />
@@ -1452,7 +1452,8 @@
     <MESSAGE value="Added @TestBean" />
     <MESSAGE value="Added security static credentials" />
     <MESSAGE value="Added security static credentials + trivial tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added security static credentials + trivial tests" />
+    <MESSAGE value="Added just annotation description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added just annotation description" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
