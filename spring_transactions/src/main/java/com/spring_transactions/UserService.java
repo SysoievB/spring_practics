@@ -11,7 +11,15 @@ public class UserService {
     private final UserRepository userRepository;
     private final OrderService orderService;
 
-    @Transactional(propagation = Propagation.REQUIRED)// default
+    /**
+     * REQUIRED is the default propagation type in Spring, and it includes all other transactional
+     * methods that are called after it. This means that it is required to create one session for
+     * all transactions that are called after it.
+     *
+     * For instance, you want to save 20 lines of data. On the 18th line, the application throws
+     * an error, and the transaction calls the rollback function. Required is the most usage type.
+     * */
+    @Transactional(propagation = Propagation.REQUIRED)
     public void createUserWithOrder() {
         userRepository.save(new User("John Doe", "john@example.com"));
 
