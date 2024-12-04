@@ -32,6 +32,7 @@
         <module name="embedded_id" />
         <module name="created_modified_by_transient" />
         <module name="core" />
+        <module name="spring_transactions" />
         <module name="mapped_superclass" />
         <module name="generationtype_auto" />
         <module name="one_to_one_with_fk" />
@@ -180,6 +181,7 @@
       <module name="spring_jdbc" options="-parameters" />
       <module name="spring_profiles" options="-parameters" />
       <module name="spring_tests" options="-parameters" />
+      <module name="spring_transactions" options="-parameters" />
       <module name="stored_procedures" options="-parameters" />
       <module name="swagger" options="-parameters" />
       <module name="test_bean" options="-parameters" />

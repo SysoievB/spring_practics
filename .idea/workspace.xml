@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added just annotation description">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added transactions">
+      <change afterPath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_transactions/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_transactions/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +29,10 @@
         <option value="Record" />
         <option value="Exception" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -735,6 +745,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringTransactionsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="spring_transactions" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring_transactions.SpringTransactionsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StoredProceduresApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="stored_procedures" />
@@ -1016,15 +1034,9 @@
       <workItem from="1732958628989" duration="1858000" />
       <workItem from="1732960836557" duration="1239000" />
       <workItem from="1733055926023" duration="1044000" />
-      <workItem from="1733114383941" duration="1686000" />
-    </task>
-    <task id="LOCAL-00235" summary="Added aspect">
-      <option name="closed" value="true" />
-      <created>1730639953887</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
-      <option name="project" value="LOCAL" />
-      <updated>1730639953888</updated>
+      <workItem from="1733114383941" duration="3976000" />
+      <workItem from="1733247431406" duration="33000" />
+      <workItem from="1733288426763" duration="3250000" />
     </task>
     <task id="LOCAL-00236" summary="Added serialization/deserialization with lombok builder">
       <option name="closed" value="true" />
@@ -1410,7 +1422,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733057088558</updated>
     </task>
-    <option name="localTasksCounter" value="284" />
+    <task id="LOCAL-00284" summary="Added transactions">
+      <option name="closed" value="true" />
+      <created>1733121287579</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1733121287579</updated>
+    </task>
+    <option name="localTasksCounter" value="285" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1428,7 +1448,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added liquibase update" />
     <MESSAGE value="Added liquibase logging properties" />
     <MESSAGE value="Added conditionalOnExpression" />
     <MESSAGE value="Added matchIfMissing = true explanation" />
@@ -1453,7 +1472,8 @@
     <MESSAGE value="Added security static credentials" />
     <MESSAGE value="Added security static credentials + trivial tests" />
     <MESSAGE value="Added just annotation description" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added just annotation description" />
+    <MESSAGE value="Added transactions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added transactions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
