@@ -2,12 +2,10 @@ package com.spring_transactions;
 
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+@ToString
 @Entity
 @Table(name = "orders")
 @Getter
