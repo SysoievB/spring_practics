@@ -26,6 +26,8 @@ public class SpringTransactionsApplication {
 
 			//userService.neverPropagation();//Hibernate: insert into orders (amount,product) values (?,?)
 
+            userService.createUser("Vasia");
+			//org.springframework.orm.jpa.JpaSystemException: could not execute statement [Connection is read-only. Queries leading to data modification are not allowed] [insert into users (email,name) values (?,?)]
 		};
 	}
 }

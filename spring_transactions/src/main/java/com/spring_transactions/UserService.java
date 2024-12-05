@@ -102,7 +102,8 @@ public class UserService {
     /**
      * <h6>ISOLATION LEVEL REPEATABLE_READ</h6>
      * Prevents dirty reads and non-repeatable reads.
-     * Guarantees that if a row is read twice in the same transaction, the data will not change (phantom reads may still occur).*/
+     * Guarantees that if a row is read twice in the same transaction, the data will
+     * not change (phantom reads may still occur).*/
     @Transactional(isolation = Isolation.REPEATABLE_READ)
     public void repeatableReadExample() {
         User user = userRepository.findById(1L).orElseThrow();
@@ -129,10 +130,21 @@ public class UserService {
     public void serializableExample() {
         userRepository.save(new User("Serialized User", "serialized@example.com"));
 
+        // Simulate a long-running transaction
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         // Simulate another transaction attempting to insert conflicting data
         // No other transaction can interfere until this transaction completes
     }
 
+    @Transactional
+    public List<User> readUsers() {
+        return userRepository.findAll();
+    }
 
     @Transactional
     public void createUserWithoutCommit(String name) {
@@ -151,6 +163,13 @@ public class UserService {
         val user = new User(name, name + "@example.com");
         userRepository.save(user);
         // This method commits automatically since the transaction is short-lived
+    }
+
+    @Transactional(readOnly = true)
+    public void createUser(String name) {
+        val user = new User(name, name + "@example.com");
+        userRepository.save(user);// This method throws exception
+       // userRepository.findAll().forEach(System.out::println);// works
     }
 }
 
