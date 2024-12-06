@@ -73,6 +73,7 @@
         <option value="$PROJECT_DIR$/spring_tests/test_bean/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_1_static_credentials/pom.xml" />
         <option value="$PROJECT_DIR$/spring_transactions/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_tests/commit_rollback/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -128,21 +128,17 @@ public class UserService {
      * Transactions are executed sequentially, significantly reducing concurrency.*/
     @Transactional(isolation = Isolation.SERIALIZABLE)
     public void serializableExample() {
-        userRepository.save(new User("Serialized User", "serialized@example.com"));
+        userRepository.save(new User("Serialized1 User", "serialized@example.com"));
+    }
 
+    @Transactional(isolation = Isolation.SERIALIZABLE)
+    public List<User> readUsers() {
         // Simulate a long-running transaction
         try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
-        // Simulate another transaction attempting to insert conflicting data
-        // No other transaction can interfere until this transaction completes
-    }
-
-    @Transactional
-    public List<User> readUsers() {
         return userRepository.findAll();
     }
 
@@ -168,8 +164,18 @@ public class UserService {
     @Transactional(readOnly = true)
     public void createUser(String name) {
         val user = new User(name, name + "@example.com");
-        userRepository.save(user);// This method throws exception
-       // userRepository.findAll().forEach(System.out::println);// works
+       // userRepository.save(user);// This method throws exception
+        userRepository.findAll().forEach(System.out::println);// works
+    }
+
+    @Transactional(isolation = Isolation.REPEATABLE_READ)
+    public void createUserWithinTransaction() {
+        userRepository.save(new User("COMPLETELY NEW USER", "vasia@example.com"));
+    }
+
+    @Transactional(isolation = Isolation.REPEATABLE_READ)
+    public List<User> readUserWithinTransaction2() {
+        return userRepository.findAll();
     }
 }
 

@@ -7,7 +7,6 @@
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added transactions">
       <change afterPath="$PROJECT_DIR$/spring_transactions/src/test/java/com/spring_transactions/TransactionIsolationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/SpringTransactionsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/SpringTransactionsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/UserService.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -105,6 +104,7 @@
     &quot;JUnit.SomeTest.testHelperBean.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TransactionIsolationTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TransactionIsolationTest.testReadCommittedIsolation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionIsolationTest.testRepeatableReadIsolation.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TransactionIsolationTest.testSerializableIsolation.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
@@ -245,7 +245,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringTransactionsApplication">
+  <component name="RunManager" selected="JUnit.TransactionIsolationTest">
     <configuration name="HelloControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_1_static_credentials" />
       <extension name="coverage">
@@ -257,22 +257,6 @@
       <option name="PACKAGE_NAME" value="com.section_1_static_credentials" />
       <option name="MAIN_CLASS_NAME" value="com.section_1_static_credentials.HelloControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloControllerTest.whenInvalidHttpMethod_thenMethodNotAllowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="section_1_static_credentials" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.section_1_static_credentials.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.section_1_static_credentials" />
-      <option name="MAIN_CLASS_NAME" value="com.section_1_static_credentials.HelloControllerTest" />
-      <option name="METHOD_NAME" value="whenInvalidHttpMethod_thenMethodNotAllowed" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -303,6 +287,22 @@
       <option name="PACKAGE_NAME" value="com.spring_transactions" />
       <option name="MAIN_CLASS_NAME" value="com.spring_transactions.TransactionIsolationTest" />
       <option name="METHOD_NAME" value="testReadCommittedIsolation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionIsolationTest.testRepeatableReadIsolation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_transactions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring_transactions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring_transactions" />
+      <option name="MAIN_CLASS_NAME" value="com.spring_transactions.TransactionIsolationTest" />
+      <option name="METHOD_NAME" value="testRepeatableReadIsolation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -833,11 +833,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TransactionIsolationTest.testSerializableIsolation" />
         <item itemvalue="JUnit.TransactionIsolationTest" />
+        <item itemvalue="JUnit.TransactionIsolationTest.testRepeatableReadIsolation" />
+        <item itemvalue="JUnit.TransactionIsolationTest.testSerializableIsolation" />
         <item itemvalue="JUnit.TransactionIsolationTest.testReadCommittedIsolation" />
         <item itemvalue="JUnit.HelloControllerTest" />
-        <item itemvalue="JUnit.HelloControllerTest.whenInvalidHttpMethod_thenMethodNotAllowed" />
       </list>
     </recent_temporary>
   </component>
@@ -1039,23 +1039,8 @@
       <workItem from="1733247431406" duration="33000" />
       <workItem from="1733288426763" duration="3996000" />
       <workItem from="1733319175351" duration="7248000" />
-      <workItem from="1733372095600" duration="417000" />
-    </task>
-    <task id="LOCAL-00240" summary="Added liquibase table settings">
-      <option name="closed" value="true" />
-      <created>1731119177295</created>
-      <option name="number" value="00240" />
-      <option name="presentableId" value="LOCAL-00240" />
-      <option name="project" value="LOCAL" />
-      <updated>1731119177295</updated>
-    </task>
-    <task id="LOCAL-00241" summary="Added liquibase addColumn">
-      <option name="closed" value="true" />
-      <created>1731145544774</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
-      <option name="project" value="LOCAL" />
-      <updated>1731145544776</updated>
+      <workItem from="1733372095600" duration="6958000" />
+      <workItem from="1733459077145" duration="439000" />
     </task>
     <task id="LOCAL-00242" summary="Added liquibase update">
       <option name="closed" value="true" />
@@ -1433,7 +1418,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733337410916</updated>
     </task>
-    <option name="localTasksCounter" value="289" />
+    <task id="LOCAL-00289" summary="Added transactions">
+      <option name="closed" value="true" />
+      <created>1733372893988</created>
+      <option name="number" value="00289" />
+      <option name="presentableId" value="LOCAL-00289" />
+      <option name="project" value="LOCAL" />
+      <updated>1733372893988</updated>
+    </task>
+    <task id="LOCAL-00290" summary="Added transactions">
+      <option name="closed" value="true" />
+      <created>1733372932928</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1733372932928</updated>
+    </task>
+    <option name="localTasksCounter" value="291" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
