@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added transactions">
-      <change afterPath="$PROJECT_DIR$/spring_transactions/src/test/java/com/spring_transactions/TransactionIsolationTest.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added transactions tests">
+      <change afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/java/com/commit_rollback/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/java/com/commit_rollback/EmployeeNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/java/com/commit_rollback/EmployeeRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/java/com/commit_rollback/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/test/java/com/commit_rollback/EmployeeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_transactions/src/main/java/com/spring_transactions/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/commit_rollback/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +29,9 @@
         <option value="Exception" />
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -207,6 +214,9 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.commit_rollback" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\pessimistic_locking\src\main\java\com\pessimistic_locking" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\attribute_converter\src\main\resources" />
@@ -222,11 +232,11 @@
       <recent name="com.web_annotations.map_struct" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.commit_rollback" />
       <recent name="com.section_1_static_credentials" />
       <recent name="com.test_bean" />
       <recent name="com.test_configuration" />
       <recent name="com.context_configuration" />
-      <recent name="com.springboottest" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jackson.lombok" />
@@ -383,6 +393,14 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="column_updatable_insertable" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.column_updatable_insertable.ColumnUpdatableInsertableApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommitRollbackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="commit_rollback" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.commit_rollback.CommitRollbackApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1040,15 +1058,7 @@
       <workItem from="1733288426763" duration="3996000" />
       <workItem from="1733319175351" duration="7248000" />
       <workItem from="1733372095600" duration="6958000" />
-      <workItem from="1733459077145" duration="439000" />
-    </task>
-    <task id="LOCAL-00242" summary="Added liquibase update">
-      <option name="closed" value="true" />
-      <created>1731242176420</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
-      <option name="project" value="LOCAL" />
-      <updated>1731242176420</updated>
+      <workItem from="1733459077145" duration="3410000" />
     </task>
     <task id="LOCAL-00243" summary="Added liquibase update">
       <option name="closed" value="true" />
@@ -1434,7 +1444,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733372932928</updated>
     </task>
-    <option name="localTasksCounter" value="291" />
+    <task id="LOCAL-00291" summary="Added transactions tests">
+      <option name="closed" value="true" />
+      <created>1733460341411</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1733460341412</updated>
+    </task>
+    <option name="localTasksCounter" value="292" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1452,7 +1470,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added liquibase logging properties" />
     <MESSAGE value="Added conditionalOnExpression" />
     <MESSAGE value="Added matchIfMissing = true explanation" />
     <MESSAGE value="Added rollback" />
@@ -1477,7 +1494,8 @@
     <MESSAGE value="Added security static credentials + trivial tests" />
     <MESSAGE value="Added just annotation description" />
     <MESSAGE value="Added transactions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added transactions" />
+    <MESSAGE value="Added transactions tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added transactions tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
