@@ -5,41 +5,64 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Commit;
 import org.springframework.test.annotation.Rollback;
-import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.context.transaction.AfterTransaction;
 import org.springframework.test.context.transaction.BeforeTransaction;
 import org.springframework.transaction.annotation.Transactional;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 @SpringBootTest
 class EmployeeServiceTest {
 
-    @MockitoBean
-    EmployeeRepo repo;
+    @Autowired
+    EmployeeRepo repository;
 
     @Autowired
     EmployeeService service;
 
     @BeforeTransaction
     void setUp() {
-        repo.deleteAll();
+        repository.deleteAll();
     }
 
     @AfterTransaction
     void tearDown() {
-        repo.deleteAll();
+        repository.deleteAll();
     }
 
-    @Transactional
-    @Commit // the same as @Rollback(false)
     @Test
-    void test() {
+    @Transactional
+    @Commit
+        // Persist changes to the DB after the test
+    void shouldCommitWhenEmployeeIsCreated() {
+        // Given
+        String employeeName = "Jane Doe";
+        assertEquals(0, repository.count());
 
+        // When
+        Employee result = service.getEmployeeByNameOrCreateIfNotExists(employeeName);
+
+        // Then
+        assertNotNull(result);
+        assertEquals(employeeName, result.getName());
+        assertEquals(1, repository.count());
     }
 
-    @Transactional
-    @Rollback
     @Test
-    void test1() {
+    @Transactional
+    @Rollback// Roll back changes after the test
+    void shouldRollbackWhenEmployeeIsCreated() {
+        // Given
+        String employeeName = "John Doe";
+        assertEquals(0, repository.count());
 
+        // When
+        Employee result = service.getEmployeeByNameOrCreateIfNotExists(employeeName);
+
+        // Then
+        assertNotNull(result);
+        assertEquals(employeeName, result.getName());
+        assertEquals(1, repository.count());
     }
 }

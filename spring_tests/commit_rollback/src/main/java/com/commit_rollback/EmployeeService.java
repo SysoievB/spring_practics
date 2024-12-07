@@ -1,16 +1,15 @@
 package com.commit_rollback;
 
-import lombok.RequiredArgsConstructor;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 @Component
-@RequiredArgsConstructor
 public class EmployeeService {
     private final EmployeeRepo repository;
 
+    public EmployeeService(EmployeeRepo repository) {
+        this.repository = repository;
+    }
 
     public Employee getEmployeeById(Long id) {
         return repository.findById(id)
@@ -18,8 +17,8 @@ public class EmployeeService {
     }
 
     @Transactional
-    public Optional<Employee> getEmployeeByNameOrCreateIfNotExists(String name) {
+    public Employee getEmployeeByNameOrCreateIfNotExists(String name) {
         return repository.findByName(name)
-                .or(() -> Optional.of(repository.save(new Employee("DefaultName", 18))));
+                .orElseGet(() -> repository.save(new Employee(name, 18)));
     }
 }

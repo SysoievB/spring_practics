@@ -22,6 +22,7 @@
         <module name="optimistic_lock_exception" />
         <module name="test_configuration" />
         <module name="spring_profiles" />
+        <module name="commit_rollback" />
         <module name="column_updatable_insertable" />
         <module name="test_bean" />
         <module name="validation" />
@@ -115,15 +116,6 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.6.0/mapstruct-1.6.0.jar" />
         </processorPath>
         <module name="web_annotations" />
-      </profile>
-      <profile name="Annotation profile for commit_rollback" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-        </processorPath>
-        <module name="commit_rollback" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="21" />
