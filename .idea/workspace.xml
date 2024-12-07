@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added transactions tests">
-      <change afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/java/com/commit_rollback/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/java/com/commit_rollback/EmployeeNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/java/com/commit_rollback/EmployeeRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/java/com/commit_rollback/EmployeeService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/test/java/com/commit_rollback/EmployeeServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_tests/commit_rollback/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/commit_rollback/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/NoRepositoryBeanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/NoRepositoryBeanApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/repo/CommonAbstractRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/repo/CommonAbstractRepo.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,58 +125,72 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Spring Boot.ActuatorApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.AopApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AssociationOverrideApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AttributeConverterApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AttributeOverrideApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AutowireRequireFalseApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.BootApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ColumnUpdatableInsertableApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConditionalOnExpressionApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConditionalOnPropertyApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConstructorBindingApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConverterApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CreatedModifiedByTransientApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DtoProjectionApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ElementCollectionApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EmbeddedIdApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EntityGraphApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.FetchAnnotationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.FilterAnnotationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.FormulaAnnotationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GenerationtypeAutoApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GenerationtypeCustomApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GenerationtypeSequenceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GenerationtypeTableApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.IdClassApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ImmutableAnnotationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.InheritanceAnnotationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.KeysetPaginationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LiquibaseApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MappedSuperclassApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.NamedEntityGraphApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.NoRepositoryBeanApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.NotnullAnnotationVsColumnNullableFalseApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AopApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.AssociationOverrideApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.AttributeConverterApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.AttributeOverrideApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.AutowireRequireFalseApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.BootApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ColumnUpdatableInsertableApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.CommitRollbackApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConditionalOnExpressionApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConditionalOnPropertyApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConstructorBindingApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ContextConfigurationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConverterApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.CoreApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.CreatedModifiedByTransientApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.DirtyContextApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.DtoProjectionApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.DynamicPropertySourceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ElementCollectionApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EmbeddedIdApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EntityGraphApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.FetchAnnotationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.FilterAnnotationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.FormulaAnnotationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GenerationtypeAutoApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GenerationtypeCustomApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GenerationtypeSequenceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GenerationtypeTableApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.IdClassApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ImmutableAnnotationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.InheritanceAnnotationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.KeysetPaginationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.LiquibaseApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ManyToOneUniApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.MappedSuperclassApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.NamedEntityGraphApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.NoRepositoryBeanApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.NotnullAnnotationVsColumnNullableFalseApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.ObjectProviderApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OneToOnePrimarykeyjoincolumnApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OptimisticLockExceptionApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PaginationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PessimisticLockingApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.QueryParamModifyingApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ScheduledApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Section1StaticCredentialsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SlicePaginationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SoftDeleteApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SpecificationsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SpringJdbcApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SpringProfilesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SpringTransactionsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.StoredProceduresApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SwaggerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.WebAnnotationsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.WebHeadersApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.WebfluxApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.WhereAnnotationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OneToOnePrimarykeyjoincolumnApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.OneToOneWithFkApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.OptimisticLockExceptionApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.PaginationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.PessimisticLockingApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.QueryParamModifyingApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ScheduledApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.Section1StaticCredentialsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SecurityApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SlicePaginationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SoftDeleteApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SpecificationsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SpringBootTestApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SpringJdbcApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SpringProfilesApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SpringTestsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SpringTransactionsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.StoredProceduresApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SwaggerApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.TestBeanApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.TestConfigurationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.TestPropertySourceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ValidationApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.WebAnnotationsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.WebHeadersApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.WebfluxApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.WhereAnnotationApplication.executor&quot;: &quot;Debug&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -255,7 +265,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TransactionIsolationTest">
+  <component name="RunManager" selected="Spring Boot.NoRepositoryBeanApplication">
     <configuration name="HelloControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_1_static_credentials" />
       <extension name="coverage">
@@ -1058,15 +1068,9 @@
       <workItem from="1733288426763" duration="3996000" />
       <workItem from="1733319175351" duration="7248000" />
       <workItem from="1733372095600" duration="6958000" />
-      <workItem from="1733459077145" duration="3410000" />
-    </task>
-    <task id="LOCAL-00243" summary="Added liquibase update">
-      <option name="closed" value="true" />
-      <created>1731244223850</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
-      <option name="project" value="LOCAL" />
-      <updated>1731244223850</updated>
+      <workItem from="1733459077145" duration="6569000" />
+      <workItem from="1733540007658" duration="4676000" />
+      <workItem from="1733545110974" duration="429000" />
     </task>
     <task id="LOCAL-00244" summary="Added liquibase update">
       <option name="closed" value="true" />
@@ -1452,7 +1456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733460341412</updated>
     </task>
-    <option name="localTasksCounter" value="292" />
+    <task id="LOCAL-00292" summary="Added transactions tests">
+      <option name="closed" value="true" />
+      <created>1733466020238</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1733466020238</updated>
+    </task>
+    <option name="localTasksCounter" value="293" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1504,7 +1516,7 @@
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />
           <option name="timeStamp" value="2" />
         </breakpoint>
@@ -1512,6 +1524,50 @@
           <url>file://$PROJECT_DIR$/actuator/src/main/java/com/actuator/RandomEndpoint.java</url>
           <line>12</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/repo/CommonAbstractRepo.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/repo/CommonAbstractRepo.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/repo/CommonAbstractRepo.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/NoRepositoryBeanApplication.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/NoRepositoryBeanApplication.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/NoRepositoryBeanApplication.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/NoRepositoryBeanApplication.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/repo/CommonAbstractRepo.java</url>
+          <line>24</line>
+          <properties class="com.no_repository_bean.repo.CommonAbstractRepo" method="findAllByNameInAndBirthdateBetweenIncluded">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

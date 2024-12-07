@@ -12,6 +12,8 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDate;
+
 @Entity
 @Table
 @Getter
@@ -28,11 +30,11 @@ public class Employee implements RepoType {
 
     String email;
 
-    int experience;
+    LocalDate birthday;
 
-    public Employee(String name, String email, int experience) {
+    public Employee(String name, String email, LocalDate birthday) {
         this.name = name;
         this.email = email;
-        this.experience = experience;
+        this.birthday = birthday;
     }
 }
