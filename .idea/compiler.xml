@@ -117,6 +117,15 @@
         </processorPath>
         <module name="web_annotations" />
       </profile>
+      <profile name="Annotation profile for context_hierarchy" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="context_hierarchy" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="21" />
   </component>
@@ -137,6 +146,7 @@
       <module name="conditional_on_property" options="-parameters" />
       <module name="constructor_binding" options="-parameters" />
       <module name="context_configuration" options="-parameters" />
+      <module name="context_hierarchy" options="-parameters" />
       <module name="converter" options="-parameters" />
       <module name="core" options="-parameters" />
       <module name="created_modified_by_transient" options="-parameters" />
