@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @ContextHierarchy">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @WebAppConfiguration">
+      <change afterPath="$PROJECT_DIR$/spring_tests/web_app_configuration/src/test/java/com/web_app_configuration/WebApplicationContextTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -24,8 +22,8 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -113,6 +111,8 @@
     "JUnit.UserServiceTest.executor": "Run",
     "JUnit.UserTest.executor": "Run",
     "JUnit.UserTest.user_fields_assertions.executor": "Run",
+    "JUnit.WebApplicationContextTest.executor": "Run",
+    "JUnit.WebApplicationContextTest.verifyBeanPresence.executor": "Run",
     "Maven.commit_rollback [clean].executor": "Run",
     "Maven.commit_rollback [install].executor": "Run",
     "Maven.object_provider [clean].executor": "Run",
@@ -268,7 +268,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GreetingServiceTest">
+  <component name="RunManager" selected="JUnit.WebApplicationContextTest">
     <configuration name="EmployeeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="commit_rollback" />
       <extension name="coverage">
@@ -280,38 +280,6 @@
       <option name="PACKAGE_NAME" value="com.commit_rollback" />
       <option name="MAIN_CLASS_NAME" value="com.commit_rollback.EmployeeServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceTest.shouldCommitWhenEmployeeIsCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="commit_rollback" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.commit_rollback.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.commit_rollback" />
-      <option name="MAIN_CLASS_NAME" value="com.commit_rollback.EmployeeServiceTest" />
-      <option name="METHOD_NAME" value="shouldCommitWhenEmployeeIsCreated" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceTest.shouldRollbackWhenEmployeeIsCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="commit_rollback" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.commit_rollback.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.commit_rollback" />
-      <option name="MAIN_CLASS_NAME" value="com.commit_rollback.EmployeeServiceTest" />
-      <option name="METHOD_NAME" value="shouldRollbackWhenEmployeeIsCreated" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -342,6 +310,37 @@
       <option name="PACKAGE_NAME" value="com.context_hierarchy" />
       <option name="MAIN_CLASS_NAME" value="com.context_hierarchy.GreetingServiceTest" />
       <option name="METHOD_NAME" value="testAbstractGreeting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplicationContextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web_app_configuration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.web_app_configuration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.web_app_configuration" />
+      <option name="MAIN_CLASS_NAME" value="com.web_app_configuration.WebApplicationContextTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplicationContextTest.verifyBeanPresence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web_app_configuration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.web_app_configuration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.web_app_configuration" />
+      <option name="MAIN_CLASS_NAME" value="com.web_app_configuration.WebApplicationContextTest" />
+      <option name="METHOD_NAME" value="verifyBeanPresence" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -879,11 +878,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebApplicationContextTest" />
+        <item itemvalue="JUnit.WebApplicationContextTest.verifyBeanPresence" />
         <item itemvalue="JUnit.GreetingServiceTest" />
         <item itemvalue="JUnit.GreetingServiceTest.testAbstractGreeting" />
         <item itemvalue="JUnit.EmployeeServiceTest" />
-        <item itemvalue="JUnit.EmployeeServiceTest.shouldCommitWhenEmployeeIsCreated" />
-        <item itemvalue="JUnit.EmployeeServiceTest.shouldRollbackWhenEmployeeIsCreated" />
       </list>
     </recent_temporary>
   </component>
@@ -1089,15 +1088,7 @@
       <workItem from="1733459077145" duration="6569000" />
       <workItem from="1733540007658" duration="4676000" />
       <workItem from="1733545110974" duration="9563000" />
-      <workItem from="1733655031106" duration="3598000" />
-    </task>
-    <task id="LOCAL-00248" summary="Added conditionalOnExpression">
-      <option name="closed" value="true" />
-      <created>1731653594482</created>
-      <option name="number" value="00248" />
-      <option name="presentableId" value="LOCAL-00248" />
-      <option name="project" value="LOCAL" />
-      <updated>1731653594483</updated>
+      <workItem from="1733655031106" duration="4236000" />
     </task>
     <task id="LOCAL-00249" summary="Added matchIfMissing = true explanation">
       <option name="closed" value="true" />
@@ -1483,7 +1474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733661055069</updated>
     </task>
-    <option name="localTasksCounter" value="297" />
+    <task id="LOCAL-00297" summary="Added @WebAppConfiguration">
+      <option name="closed" value="true" />
+      <created>1733661950044</created>
+      <option name="number" value="00297" />
+      <option name="presentableId" value="LOCAL-00297" />
+      <option name="project" value="LOCAL" />
+      <updated>1733661950044</updated>
+    </task>
+    <option name="localTasksCounter" value="298" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1501,7 +1500,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added @AssociationOverride" />
     <MESSAGE value="Added memorizing hint" />
     <MESSAGE value="Added pointcuts execution &amp; within" />
     <MESSAGE value="Added pointcuts target &amp; this" />
@@ -1526,7 +1524,8 @@
     <MESSAGE value="Added #{#entityName} to abstract NoRepositoryBean annotation" />
     <MESSAGE value="Added @Commit &amp; @Rollback" />
     <MESSAGE value="Added @ContextHierarchy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added @ContextHierarchy" />
+    <MESSAGE value="Added @WebAppConfiguration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added @WebAppConfiguration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
