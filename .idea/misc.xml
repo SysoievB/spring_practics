@@ -75,6 +75,7 @@
         <option value="$PROJECT_DIR$/spring_transactions/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/commit_rollback/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/context_hierarchy/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_tests/web_app_configuration/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

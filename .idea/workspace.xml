@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @ContextHierarchy">
-      <change afterPath="$PROJECT_DIR$/spring_tests/context_hierarchy/src/main/java/com/context_hierarchy/AbstractGreeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/context_hierarchy/src/main/java/com/context_hierarchy/AbstractTestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/context_hierarchy/src/main/java/com/context_hierarchy/GreetingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/context_hierarchy/src/main/java/com/context_hierarchy/TestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/context_hierarchy/src/test/java/com/context_hierarchy/GreetingServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -847,6 +845,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebAppConfigurationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="web_app_configuration" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.web_app_configuration.WebAppConfigurationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebHeadersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="web_headers_cookies" />
@@ -1083,15 +1089,7 @@
       <workItem from="1733459077145" duration="6569000" />
       <workItem from="1733540007658" duration="4676000" />
       <workItem from="1733545110974" duration="9563000" />
-      <workItem from="1733655031106" duration="2625000" />
-    </task>
-    <task id="LOCAL-00247" summary="Added conditionalOnExpression">
-      <option name="closed" value="true" />
-      <created>1731557020628</created>
-      <option name="number" value="00247" />
-      <option name="presentableId" value="LOCAL-00247" />
-      <option name="project" value="LOCAL" />
-      <updated>1731557020628</updated>
+      <workItem from="1733655031106" duration="3598000" />
     </task>
     <task id="LOCAL-00248" summary="Added conditionalOnExpression">
       <option name="closed" value="true" />
@@ -1477,7 +1475,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733659810316</updated>
     </task>
-    <option name="localTasksCounter" value="296" />
+    <task id="LOCAL-00296" summary="Added @ContextHierarchy">
+      <option name="closed" value="true" />
+      <created>1733661055069</created>
+      <option name="number" value="00296" />
+      <option name="presentableId" value="LOCAL-00296" />
+      <option name="project" value="LOCAL" />
+      <updated>1733661055069</updated>
+    </task>
+    <option name="localTasksCounter" value="297" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
