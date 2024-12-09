@@ -64,6 +64,7 @@
         <module name="spring_tests" />
         <module name="autowire_require_false" />
         <module name="spring-boot-test" />
+        <module name="bootstrapwith" />
         <module name="inheritance_annotation" />
         <module name="data_jpa" />
         <module name="formula_annotation" />
@@ -140,6 +141,7 @@
       <module name="autowire_require_false" options="-parameters" />
       <module name="bean_configuration" options="-parameters" />
       <module name="boot" options="-parameters" />
+      <module name="bootstrapwith" options="-parameters" />
       <module name="column_updatable_insertable" options="-parameters" />
       <module name="commit_rollback" options="-parameters" />
       <module name="component_configuration" options="-parameters" />
