@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @DynamicPropertySource comment">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_tests/test_property_source/src/test/java/com/test_property_source/MyDynamicServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/test_property_source/src/test/java/com/test_property_source/MyDynamicServiceTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @TestExecutionListeners" />
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +267,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomBootstrapTest.testCustomBootstrapper">
+  <component name="RunManager" selected="JUnit.TestExecutionListenerExample">
     <configuration name="CustomBootstrapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootstrapwith" />
       <extension name="coverage">
@@ -302,16 +299,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GreetingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="context_hierarchy" />
+    <configuration name="TestExecutionListenerExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test_execution_listener" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.context_hierarchy.*" />
+          <option name="PATTERN" value="com.test_execution_listener.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.context_hierarchy" />
-      <option name="MAIN_CLASS_NAME" value="com.context_hierarchy.GreetingServiceTest" />
+      <option name="PACKAGE_NAME" value="com.test_execution_listener" />
+      <option name="MAIN_CLASS_NAME" value="com.test_execution_listener.TestExecutionListenerExample" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -894,11 +891,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestExecutionListenerExample" />
         <item itemvalue="JUnit.CustomBootstrapTest.testCustomBootstrapper" />
         <item itemvalue="JUnit.CustomBootstrapTest" />
         <item itemvalue="JUnit.WebApplicationContextTest" />
         <item itemvalue="JUnit.WebApplicationContextTest.verifyBeanPresence" />
-        <item itemvalue="JUnit.GreetingServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1105,23 +1102,7 @@
       <workItem from="1733540007658" duration="4676000" />
       <workItem from="1733545110974" duration="9563000" />
       <workItem from="1733655031106" duration="4748000" />
-      <workItem from="1733718046353" duration="5865000" />
-    </task>
-    <task id="LOCAL-00252" summary="Added @AssociationOverride">
-      <option name="closed" value="true" />
-      <created>1732010541121</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
-      <option name="project" value="LOCAL" />
-      <updated>1732010541121</updated>
-    </task>
-    <task id="LOCAL-00253" summary="Added @AssociationOverride">
-      <option name="closed" value="true" />
-      <created>1732018793009</created>
-      <option name="number" value="00253" />
-      <option name="presentableId" value="LOCAL-00253" />
-      <option name="project" value="LOCAL" />
-      <updated>1732018793010</updated>
+      <workItem from="1733718046353" duration="6173000" />
     </task>
     <task id="LOCAL-00254" summary="Added @AssociationOverride">
       <option name="closed" value="true" />
@@ -1499,7 +1480,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733724475157</updated>
     </task>
-    <option name="localTasksCounter" value="301" />
+    <task id="LOCAL-00301" summary="Added @DynamicPropertySource comment">
+      <option name="closed" value="true" />
+      <created>1733726827291</created>
+      <option name="number" value="00301" />
+      <option name="presentableId" value="LOCAL-00301" />
+      <option name="project" value="LOCAL" />
+      <updated>1733726827291</updated>
+    </task>
+    <task id="LOCAL-00302" summary="Added @TestExecutionListeners">
+      <option name="closed" value="true" />
+      <created>1733727099074</created>
+      <option name="number" value="00302" />
+      <option name="presentableId" value="LOCAL-00302" />
+      <option name="project" value="LOCAL" />
+      <updated>1733727099074</updated>
+    </task>
+    <option name="localTasksCounter" value="303" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1517,7 +1514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added pointcuts target &amp; this" />
     <MESSAGE value="Added pointcuts @target" />
     <MESSAGE value="Added pointcuts args" />
     <MESSAGE value="Added pointcuts @within" />
@@ -1542,7 +1538,8 @@
     <MESSAGE value="Added @WebAppConfiguration" />
     <MESSAGE value="Added @BootstrapWith" />
     <MESSAGE value="Added @DynamicPropertySource comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added @DynamicPropertySource comment" />
+    <MESSAGE value="Added @TestExecutionListeners" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added @TestExecutionListeners" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
