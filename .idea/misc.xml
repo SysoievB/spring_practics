@@ -77,6 +77,7 @@
         <option value="$PROJECT_DIR$/spring_tests/context_hierarchy/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/web_app_configuration/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/bootstrapwith/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_tests/test_execution_listener/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

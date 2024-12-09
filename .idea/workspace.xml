@@ -830,6 +830,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestExecutionListenerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="test_execution_listener" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.test_execution_listener.TestExecutionListenerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestPropertySourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="test_property_source" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.test_property_source.TestPropertySourceApplication" />

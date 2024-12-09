@@ -68,6 +68,7 @@
     <file url="file://$PROJECT_DIR$/spring_tests/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_tests/test_bean/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_tests/test_configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_tests/test_execution_listener/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_tests/test_property_source/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_tests/web_app_configuration/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_transactions/src/main/java" charset="UTF-8" />
