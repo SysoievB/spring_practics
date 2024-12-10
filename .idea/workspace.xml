@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @TestExecutionListeners" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @TestExecutionListeners">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/NoRepositoryBeanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/NoRepositoryBeanApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/repo/CommonAbstractRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/java/com/no_repository_bean/repo/CommonAbstractRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/no_repository_bean/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/query_param_modifying/src/main/java/com/query_param_modifying/QueryParamModifyingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/query_param_modifying/src/main/java/com/query_param_modifying/QueryParamModifyingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/query_param_modifying/src/main/java/com/query_param_modifying/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/query_param_modifying/src/main/java/com/query_param_modifying/UserRepo.java" afterDir="false" />
+    </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +178,7 @@
     "Spring Boot.OptimisticLockExceptionApplication.executor": "Debug",
     "Spring Boot.PaginationApplication.executor": "Debug",
     "Spring Boot.PessimisticLockingApplication.executor": "Debug",
-    "Spring Boot.QueryParamModifyingApplication.executor": "Debug",
+    "Spring Boot.QueryParamModifyingApplication.executor": "Run",
     "Spring Boot.ScheduledApplication.executor": "Debug",
     "Spring Boot.Section1StaticCredentialsApplication.executor": "Debug",
     "Spring Boot.SecurityApplication.executor": "Debug",
@@ -267,7 +274,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestExecutionListenerExample">
+  <component name="RunManager" selected="Spring Boot.NoRepositoryBeanApplication">
     <configuration name="CustomBootstrapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootstrapwith" />
       <extension name="coverage">
@@ -1103,6 +1110,7 @@
       <workItem from="1733545110974" duration="9563000" />
       <workItem from="1733655031106" duration="4748000" />
       <workItem from="1733718046353" duration="6173000" />
+      <workItem from="1733804247273" duration="2705000" />
     </task>
     <task id="LOCAL-00254" summary="Added @AssociationOverride">
       <option name="closed" value="true" />

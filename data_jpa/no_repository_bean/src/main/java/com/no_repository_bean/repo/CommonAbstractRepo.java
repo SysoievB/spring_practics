@@ -26,4 +26,11 @@ public interface CommonAbstractRepo<T extends RepoType> extends JpaRepository<T,
             LocalDate startDateRange,
             LocalDate endDateRange
     );
+
+    //the same sa query above
+    List<T> findAllByNameInAndBirthdayBetween(
+            List<String> names,
+            LocalDate startDateRange,
+            LocalDate endDateRange
+    );
 }

@@ -58,11 +58,11 @@ public class NoRepositoryBeanApplication implements CommandLineRunner {
 
         System.out.println("----------findAllByNameInAndBirthdateBetweenIncluded----------".toUpperCase());
         // Fetch users by the criteria
-        List<User> filteredUsers = userRepo.findAllByNameInAndBirthdateBetweenIncluded(names, startDateRange, endDateRange);
+        List<User> filteredUsers = userRepo.findAllByNameInAndBirthdayBetween(names, startDateRange, endDateRange);
         System.out.println("Filtered Users: " + filteredUsers);
 
         // Fetch employees by the criteria
-        List<Employee> filteredEmployees = employeeRepo.findAllByNameInAndBirthdateBetweenIncluded(names, startDateRange, endDateRange);
+        List<Employee> filteredEmployees = employeeRepo.findAllByNameInAndBirthdayBetween(names, startDateRange, endDateRange);
         System.out.println("Filtered Employees: " + filteredEmployees);
     }
 }

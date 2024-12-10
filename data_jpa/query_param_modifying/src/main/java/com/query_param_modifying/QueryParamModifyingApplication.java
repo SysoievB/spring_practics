@@ -75,5 +75,9 @@ public class QueryParamModifyingApplication implements CommandLineRunner {
                 .forEach(System.out::println);
 
         repo.insertUser("Name", "Ser", "some@email.com", 321);
+
+        System.out.println("---------findAllByAgeBetween-----------");
+        repo.findAllByAgeBetween(30, 35)
+                .forEach(System.out::println);
     }
 }

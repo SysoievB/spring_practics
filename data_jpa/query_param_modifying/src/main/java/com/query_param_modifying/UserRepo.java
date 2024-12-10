@@ -37,4 +37,6 @@ public interface UserRepo extends JpaRepository<User, Long> {
             nativeQuery = true)
     void insertUser(@Param("name") String name, @Param("surname") String surname,
                     @Param("email") String email, @Param("age") Integer age);
+
+    List<User> findAllByAgeBetween(Integer minAge, Integer maxAge);
 }
