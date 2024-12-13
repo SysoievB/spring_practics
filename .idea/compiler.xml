@@ -77,6 +77,7 @@
         <module name="component_configuration" />
         <module name="no_repository_bean" />
         <module name="entity_graph" />
+        <module name="application_events" />
         <module name="attribute_override" />
         <module name="keyset_pagination" />
         <module name="web_headers_cookies" />
@@ -120,11 +121,12 @@
         </processorPath>
         <module name="web_annotations" />
       </profile>
-      <profile name="Annotation profile for context_hierarchy" enabled="true">
+      <profile name="Annotation profile for application_events" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="context_hierarchy" />
@@ -136,6 +138,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="actuator" options="-parameters" />
       <module name="aop" options="-parameters" />
+      <module name="application_events" options="-parameters" />
       <module name="association_override" options="-parameters" />
       <module name="attribute_converter" options="-parameters" />
       <module name="attribute_override" options="-parameters" />
