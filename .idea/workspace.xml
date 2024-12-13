@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added application events">
-      <change afterPath="$PROJECT_DIR$/core/application_events/src/main/java/com/application_events/CustomEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/application_events/src/main/java/com/application_events/UserPublishEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/application_events/src/main/java/com/application_events/UserService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/core/application_events/src/test/java/com/application_events/DemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/application_events/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/application_events/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/application_events/src/main/java/com/application_events/ApplicationEventsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/application_events/src/main/java/com/application_events/ApplicationEventsApplication.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1127,15 +1118,7 @@
       <workItem from="1733804247273" duration="3864000" />
       <workItem from="1733900154900" duration="1289000" />
       <workItem from="1733980917174" duration="2134000" />
-      <workItem from="1734064181363" duration="2901000" />
-    </task>
-    <task id="LOCAL-00256" summary="Added pointcuts execution &amp; within">
-      <option name="closed" value="true" />
-      <created>1732084041183</created>
-      <option name="number" value="00256" />
-      <option name="presentableId" value="LOCAL-00256" />
-      <option name="project" value="LOCAL" />
-      <updated>1732084041183</updated>
+      <workItem from="1734064181363" duration="3901000" />
     </task>
     <task id="LOCAL-00257" summary="Added pointcuts target &amp; this">
       <option name="closed" value="true" />
@@ -1521,7 +1504,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733981340834</updated>
     </task>
-    <option name="localTasksCounter" value="305" />
+    <task id="LOCAL-00305" summary="Added application events">
+      <option name="closed" value="true" />
+      <created>1734068132371</created>
+      <option name="number" value="00305" />
+      <option name="presentableId" value="LOCAL-00305" />
+      <option name="project" value="LOCAL" />
+      <updated>1734068132372</updated>
+    </task>
+    <option name="localTasksCounter" value="306" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
