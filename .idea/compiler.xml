@@ -80,6 +80,7 @@
         <module name="application_events" />
         <module name="attribute_override" />
         <module name="keyset_pagination" />
+        <module name="record_application_events" />
         <module name="web_headers_cookies" />
       </profile>
       <profile name="Annotation profile for specifications" enabled="true">
@@ -190,6 +191,7 @@
       <module name="pagination" options="-parameters" />
       <module name="pessimistic_locking" options="-parameters" />
       <module name="query_param_modifying" options="-parameters" />
+      <module name="record_application_events" options="-parameters" />
       <module name="scheduled" options="-parameters" />
       <module name="section_1_static_credentials" options="-parameters" />
       <module name="security" options="-parameters" />
