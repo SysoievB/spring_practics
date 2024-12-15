@@ -9,7 +9,6 @@
       <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/resources/populate.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/java/com/sql_annotations/EmployeeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/java/com/sql_annotations/EmployeeRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/java/com/sql_annotations/EmployeeRepoH2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/java/com/sql_annotations/EmployeeRepoH2Test.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1159,15 +1158,7 @@
       <workItem from="1734150807601" duration="270000" />
       <workItem from="1734196638258" duration="2248000" />
       <workItem from="1734249211692" duration="361000" />
-      <workItem from="1734249712340" duration="13738000" />
-    </task>
-    <task id="LOCAL-00267" summary="Added @ContextConfiguration">
-      <option name="closed" value="true" />
-      <created>1732645889509</created>
-      <option name="number" value="00267" />
-      <option name="presentableId" value="LOCAL-00267" />
-      <option name="project" value="LOCAL" />
-      <updated>1732645889509</updated>
+      <workItem from="1734249712340" duration="14056000" />
     </task>
     <task id="LOCAL-00268" summary="Added @ContextConfiguration">
       <option name="closed" value="true" />
@@ -1553,7 +1544,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734264579916</updated>
     </task>
-    <option name="localTasksCounter" value="316" />
+    <task id="LOCAL-00316" summary="Added sql annotations tests">
+      <option name="closed" value="true" />
+      <created>1734266335029</created>
+      <option name="number" value="00316" />
+      <option name="presentableId" value="LOCAL-00316" />
+      <option name="project" value="LOCAL" />
+      <updated>1734266335030</updated>
+    </task>
+    <option name="localTasksCounter" value="317" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
