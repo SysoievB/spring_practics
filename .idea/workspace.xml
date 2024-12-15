@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added sql annotations tests">
-      <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/java/com/sql_annotations/EmployeeRepoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/java/com/sql_annotations/EmployeeRepoH2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/test-application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/test_application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/test-application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/resources/test_application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/java/com/sql_annotations/EmployeeRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/java/com/sql_annotations/EmployeeRepoMySqlTest.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +24,9 @@
         <option value="Exception" />
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,6 +88,8 @@
     "JUnit.CustomBootstrapTest.testCustomBootstrapper.executor": "Run",
     "JUnit.DemoApplicationTests.testCustomEventIsPublished.executor": "Run",
     "JUnit.EmployeeMapperTest.executor": "Run",
+    "JUnit.EmployeeRepoH2Test.executor": "Run",
+    "JUnit.EmployeeRepoH2Test.testDatabaseConnection.executor": "Run",
     "JUnit.EmployeeRepoTest.executor": "Run",
     "JUnit.EmployeeRepoTest.test.executor": "Run",
     "JUnit.EmployeeRepoTest.testDatabaseConnection.executor": "Run",
@@ -254,6 +257,8 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\spring_tests\sql_annotations\src\test\resources" />
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\spring_tests\sql_annotations\src\test\java\resources" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\spring_tests\record_application_events\src\test\java\com\record_application_events" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -285,8 +290,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeRepoTest">
-    <configuration name="EmployeeRepoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EmployeeRepoH2Test">
+    <configuration name="EmployeeRepoH2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sql_annotations" />
       <extension name="coverage">
         <pattern>
@@ -295,13 +300,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sql_annotations" />
-      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoH2Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeRepoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeRepoH2Test.testDatabaseConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sql_annotations" />
       <extension name="coverage">
         <pattern>
@@ -310,55 +315,55 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sql_annotations" />
-      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeRepoTest.testDatabaseConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sql_annotations" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sql_annotations.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sql_annotations" />
-      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoH2Test" />
       <option name="METHOD_NAME" value="testDatabaseConnection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="record_application_events" />
+    <configuration name="EmployeeRepoH2Test.testFindEmployeeById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sql_annotations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.record_application_events.*" />
+          <option name="PATTERN" value="com.sql_annotations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.record_application_events" />
-      <option name="MAIN_CLASS_NAME" value="com.record_application_events.UserServiceTest" />
+      <option name="PACKAGE_NAME" value="com.sql_annotations" />
+      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoH2Test" />
+      <option name="METHOD_NAME" value="testFindEmployeeById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeRepoMySqlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sql_annotations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sql_annotations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sql_annotations" />
+      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoMySqlTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testUserServiceHandlesException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="record_application_events" />
+    <configuration name="EmployeeRepoMySqlTest.testDatabaseConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sql_annotations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.record_application_events.*" />
+          <option name="PATTERN" value="com.sql_annotations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.record_application_events" />
-      <option name="MAIN_CLASS_NAME" value="com.record_application_events.UserServiceTest" />
-      <option name="METHOD_NAME" value="testUserServiceHandlesException" />
+      <option name="PACKAGE_NAME" value="com.sql_annotations" />
+      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoMySqlTest" />
+      <option name="METHOD_NAME" value="testDatabaseConnection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -931,11 +936,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EmployeeRepoTest" />
-        <item itemvalue="JUnit.EmployeeRepoTest.testDatabaseConnection" />
-        <item itemvalue="JUnit.EmployeeRepoTest.test" />
-        <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.testUserServiceHandlesException" />
+        <item itemvalue="JUnit.EmployeeRepoH2Test" />
+        <item itemvalue="JUnit.EmployeeRepoH2Test.testFindEmployeeById" />
+        <item itemvalue="JUnit.EmployeeRepoH2Test.testDatabaseConnection" />
+        <item itemvalue="JUnit.EmployeeRepoMySqlTest" />
+        <item itemvalue="JUnit.EmployeeRepoMySqlTest.testDatabaseConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -1151,15 +1156,7 @@
       <workItem from="1734150807601" duration="270000" />
       <workItem from="1734196638258" duration="2248000" />
       <workItem from="1734249211692" duration="361000" />
-      <workItem from="1734249712340" duration="9813000" />
-    </task>
-    <task id="LOCAL-00263" summary="Added dirty context tests">
-      <option name="closed" value="true" />
-      <created>1732595427448</created>
-      <option name="number" value="00263" />
-      <option name="presentableId" value="LOCAL-00263" />
-      <option name="project" value="LOCAL" />
-      <updated>1732595427448</updated>
+      <workItem from="1734249712340" duration="12013000" />
     </task>
     <task id="LOCAL-00264" summary="Added dirty context tests">
       <option name="closed" value="true" />
@@ -1545,7 +1542,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734259525787</updated>
     </task>
-    <option name="localTasksCounter" value="312" />
+    <task id="LOCAL-00312" summary="Added sql annotations tests">
+      <option name="closed" value="true" />
+      <created>1734262144785</created>
+      <option name="number" value="00312" />
+      <option name="presentableId" value="LOCAL-00312" />
+      <option name="project" value="LOCAL" />
+      <updated>1734262144785</updated>
+    </task>
+    <option name="localTasksCounter" value="313" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)//uses MySQL
-class EmployeeRepoTest {
+class EmployeeRepoMySqlTest {
     private static final String DIALECT = "org.hibernate.dialect.MySQLDialect";
     @Autowired
     private EmployeeRepo repo;
