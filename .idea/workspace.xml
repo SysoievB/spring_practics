@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added sql annotations tests">
-      <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/java/com/sql_annotations/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/java/com/sql_annotations/EmployeeRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/test-application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/java/com/sql_annotations/EmployeeRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/test-application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/test_application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +87,9 @@
     "JUnit.CustomBootstrapTest.testCustomBootstrapper.executor": "Run",
     "JUnit.DemoApplicationTests.testCustomEventIsPublished.executor": "Run",
     "JUnit.EmployeeMapperTest.executor": "Run",
+    "JUnit.EmployeeRepoTest.executor": "Run",
+    "JUnit.EmployeeRepoTest.test.executor": "Run",
+    "JUnit.EmployeeRepoTest.testDatabaseConnection.executor": "Run",
     "JUnit.EmployeeServiceTest.executor": "Run",
     "JUnit.EmployeeServiceTest.shouldCommitWhenEmployeeIsCreated.executor": "Run",
     "JUnit.EmployeeServiceTest.shouldRollbackWhenEmployeeIsCreated.executor": "Run",
@@ -288,18 +285,49 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
-    <configuration name="DemoApplicationTests.testCustomEventIsPublished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="application_events" />
+  <component name="RunManager" selected="JUnit.EmployeeRepoTest">
+    <configuration name="EmployeeRepoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sql_annotations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.application_events.*" />
+          <option name="PATTERN" value="com.sql_annotations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.application_events" />
-      <option name="MAIN_CLASS_NAME" value="com.application_events.DemoApplicationTests" />
-      <option name="METHOD_NAME" value="testCustomEventIsPublished" />
+      <option name="PACKAGE_NAME" value="com.sql_annotations" />
+      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeRepoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sql_annotations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sql_annotations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sql_annotations" />
+      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeRepoTest.testDatabaseConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sql_annotations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sql_annotations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sql_annotations" />
+      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoTest" />
+      <option name="METHOD_NAME" value="testDatabaseConnection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -320,22 +348,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testEventPublishing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="record_application_events" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.record_application_events.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.record_application_events" />
-      <option name="MAIN_CLASS_NAME" value="com.record_application_events.UserServiceTest" />
-      <option name="METHOD_NAME" value="testEventPublishing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserServiceTest.testUserServiceHandlesException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="record_application_events" />
       <extension name="coverage">
@@ -347,22 +359,6 @@
       <option name="PACKAGE_NAME" value="com.record_application_events" />
       <option name="MAIN_CLASS_NAME" value="com.record_application_events.UserServiceTest" />
       <option name="METHOD_NAME" value="testUserServiceHandlesException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testUserServicePublishingEvent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="record_application_events" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.record_application_events.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.record_application_events" />
-      <option name="MAIN_CLASS_NAME" value="com.record_application_events.UserServiceTest" />
-      <option name="METHOD_NAME" value="testUserServicePublishingEvent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -935,11 +931,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeRepoTest" />
+        <item itemvalue="JUnit.EmployeeRepoTest.testDatabaseConnection" />
+        <item itemvalue="JUnit.EmployeeRepoTest.test" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.testUserServiceHandlesException" />
-        <item itemvalue="JUnit.UserServiceTest.testEventPublishing" />
-        <item itemvalue="JUnit.UserServiceTest.testUserServicePublishingEvent" />
-        <item itemvalue="JUnit.DemoApplicationTests.testCustomEventIsPublished" />
       </list>
     </recent_temporary>
   </component>
@@ -1155,15 +1151,7 @@
       <workItem from="1734150807601" duration="270000" />
       <workItem from="1734196638258" duration="2248000" />
       <workItem from="1734249211692" duration="361000" />
-      <workItem from="1734249712340" duration="7418000" />
-    </task>
-    <task id="LOCAL-00262" summary="Added tests">
-      <option name="closed" value="true" />
-      <created>1732595308982</created>
-      <option name="number" value="00262" />
-      <option name="presentableId" value="LOCAL-00262" />
-      <option name="project" value="LOCAL" />
-      <updated>1732595308983</updated>
+      <workItem from="1734249712340" duration="9813000" />
     </task>
     <task id="LOCAL-00263" summary="Added dirty context tests">
       <option name="closed" value="true" />
@@ -1549,7 +1537,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734254075735</updated>
     </task>
-    <option name="localTasksCounter" value="311" />
+    <task id="LOCAL-00311" summary="Added sql annotations tests">
+      <option name="closed" value="true" />
+      <created>1734259525786</created>
+      <option name="number" value="00311" />
+      <option name="presentableId" value="LOCAL-00311" />
+      <option name="project" value="LOCAL" />
+      <updated>1734259525787</updated>
+    </task>
+    <option name="localTasksCounter" value="312" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
