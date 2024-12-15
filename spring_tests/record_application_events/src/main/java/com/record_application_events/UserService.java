@@ -18,7 +18,7 @@ public class UserService {
         Exception exception = null;
         try {
             if (content.contains("error")) {
-                throw new CustomException("Publishing content failed: Content contains forbidden word.");
+                throw new CustomException("Publishing content failed: Content contains error word.");
             }
         } catch (Exception ex) {
             exception = ex;

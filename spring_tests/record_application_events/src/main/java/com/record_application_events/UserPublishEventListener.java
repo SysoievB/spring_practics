@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserPublishEventListener {
 
-    @EventListener(condition = "#event.exception != null and #event.exception instanceof T(com.example.demo.UserService.CustomException)")
+    @EventListener(condition = "#event.exception != null and #event.exception instanceof T(com.record_application_events.UserService.CustomException)")
     public void handleUserPublishEventWithException(UserPublishEvent event) {
         System.err.println("Special handling for CustomException during event: User " +
                 event.getUsername() + " attempted to publish \"" + event.getContent() + "\". Exception: " +
