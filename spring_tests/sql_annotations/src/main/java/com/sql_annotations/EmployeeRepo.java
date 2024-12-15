@@ -7,4 +7,6 @@ import java.util.Optional;
 public interface EmployeeRepo extends JpaRepository<Employee, Long> {
 
     Optional<Employee> findByNameIsContainingIgnoreCase(String substring);
+
+    long countAllByName(String name);
 }
