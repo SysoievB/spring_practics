@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added application events tests" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added sql annotations tests">
+      <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/java/com/sql_annotations/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/java/com/sql_annotations/EmployeeRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/test-application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/test/java/com/sql_annotations/EmployeeRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/sql_annotations/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +29,8 @@
         <option value="Exception" />
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -254,11 +265,11 @@
       <recent name="com.web_annotations.map_struct" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.sql_annotations" />
       <recent name="com.record_application_events" />
       <recent name="com.context_hierarchy" />
       <recent name="com.commit_rollback" />
       <recent name="com.section_1_static_credentials" />
-      <recent name="com.test_bean" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jackson.lombok" />
@@ -823,6 +834,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SqlAnnotationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sql_annotations" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sql_annotations.SqlAnnotationsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StoredProceduresApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="stored_procedures" />
@@ -1137,15 +1155,7 @@
       <workItem from="1734150807601" duration="270000" />
       <workItem from="1734196638258" duration="2248000" />
       <workItem from="1734249211692" duration="361000" />
-      <workItem from="1734249712340" duration="3760000" />
-    </task>
-    <task id="LOCAL-00261" summary="Added security">
-      <option name="closed" value="true" />
-      <created>1732453152021</created>
-      <option name="number" value="00261" />
-      <option name="presentableId" value="LOCAL-00261" />
-      <option name="project" value="LOCAL" />
-      <updated>1732453152022</updated>
+      <workItem from="1734249712340" duration="7418000" />
     </task>
     <task id="LOCAL-00262" summary="Added tests">
       <option name="closed" value="true" />
@@ -1531,7 +1541,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734253831414</updated>
     </task>
-    <option name="localTasksCounter" value="310" />
+    <task id="LOCAL-00310" summary="Added sql annotations tests">
+      <option name="closed" value="true" />
+      <created>1734254075735</created>
+      <option name="number" value="00310" />
+      <option name="presentableId" value="LOCAL-00310" />
+      <option name="project" value="LOCAL" />
+      <updated>1734254075735</updated>
+    </task>
+    <option name="localTasksCounter" value="311" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1549,7 +1567,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added security" />
     <MESSAGE value="Added tests" />
     <MESSAGE value="Added dirty context tests" />
     <MESSAGE value="Added spring boot tests" />
@@ -1574,7 +1591,8 @@
     <MESSAGE value="Added between" />
     <MESSAGE value="Added application events" />
     <MESSAGE value="Added application events tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added application events tests" />
+    <MESSAGE value="Added sql annotations tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sql annotations tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

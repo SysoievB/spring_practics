@@ -80,6 +80,7 @@
         <option value="$PROJECT_DIR$/spring_tests/test_execution_listener/pom.xml" />
         <option value="$PROJECT_DIR$/core/application_events/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/record_application_events/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_tests/sql_annotations/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

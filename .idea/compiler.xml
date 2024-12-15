@@ -69,6 +69,7 @@
         <module name="inheritance_annotation" />
         <module name="data_jpa" />
         <module name="formula_annotation" />
+        <module name="sql_annotations" />
         <module name="fetch_annotation" />
         <module name="many_to_one_uni" />
         <module name="generationtype_sequence" />
@@ -203,6 +204,7 @@
       <module name="spring_profiles" options="-parameters" />
       <module name="spring_tests" options="-parameters" />
       <module name="spring_transactions" options="-parameters" />
+      <module name="sql_annotations" options="-parameters" />
       <module name="stored_procedures" options="-parameters" />
       <module name="swagger" options="-parameters" />
       <module name="test_bean" options="-parameters" />
