@@ -2,6 +2,8 @@ package com.sql_annotations;
 
 import jakarta.persistence.*;
 
+import java.util.Objects;
+
 @Entity
 @Table
 public class Employee {
@@ -58,5 +60,17 @@ public class Employee {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return Objects.equals(id, employee.id) && Objects.equals(name, employee.name) && Objects.equals(email, employee.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, email);
     }
 }
