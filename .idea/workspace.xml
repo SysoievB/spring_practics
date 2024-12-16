@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added sql annotations tests &amp; ASSERTIONS">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added sql annotations tests &amp; assertions" />
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1163,15 +1161,7 @@
       <workItem from="1734249211692" duration="361000" />
       <workItem from="1734249712340" duration="14123000" />
       <workItem from="1734266687256" duration="75000" />
-      <workItem from="1734321887322" duration="4907000" />
-    </task>
-    <task id="LOCAL-00270" summary="Added @TestConfiguration">
-      <option name="closed" value="true" />
-      <created>1732683452486</created>
-      <option name="number" value="00270" />
-      <option name="presentableId" value="LOCAL-00270" />
-      <option name="project" value="LOCAL" />
-      <updated>1732683452486</updated>
+      <workItem from="1734321887322" duration="5752000" />
     </task>
     <task id="LOCAL-00271" summary="Added @TestConfiguration">
       <option name="closed" value="true" />
@@ -1557,7 +1547,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734326840779</updated>
     </task>
-    <option name="localTasksCounter" value="319" />
+    <task id="LOCAL-00319" summary="Added sql annotations tests &amp; assertions">
+      <option name="closed" value="true" />
+      <created>1734327481244</created>
+      <option name="number" value="00319" />
+      <option name="presentableId" value="LOCAL-00319" />
+      <option name="project" value="LOCAL" />
+      <updated>1734327481244</updated>
+    </task>
+    <option name="localTasksCounter" value="320" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1575,7 +1573,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added dirty context tests" />
     <MESSAGE value="Added spring boot tests" />
     <MESSAGE value="Added @ContextConfiguration" />
     <MESSAGE value="Added @TestConfiguration" />
@@ -1600,7 +1597,8 @@
     <MESSAGE value="Added application events tests" />
     <MESSAGE value="Added sql annotations tests" />
     <MESSAGE value="Added sql annotations tests &amp; ASSERTIONS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added sql annotations tests &amp; ASSERTIONS" />
+    <MESSAGE value="Added sql annotations tests &amp; assertions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sql annotations tests &amp; assertions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

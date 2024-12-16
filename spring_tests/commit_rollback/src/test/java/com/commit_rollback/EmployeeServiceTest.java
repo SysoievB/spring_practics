@@ -33,8 +33,7 @@ class EmployeeServiceTest {
 
     @Test
     @Transactional
-    @Commit
-        // Persist changes to the DB after the test
+    @Commit// Persist changes to the DB after the test
     void shouldCommitWhenEmployeeIsCreated() {
         // Given
         String employeeName = "Jane Doe";
