@@ -10,6 +10,8 @@ import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlConfig;
 import org.springframework.test.context.jdbc.SqlGroup;
 
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
@@ -56,5 +58,24 @@ class EmployeeRepoH2Test {
                 .returns(id, Employee::getId)
                 .returns("Vasia", Employee::getName)
                 .returns("vasia@mail.com", Employee::getEmail);
+    }
+
+    @Test
+    void testSaveAllEmployee() {
+        //Given
+        Employee employee1 = new Employee("Vasia", "vasia@mail.com");
+        Employee employee2 = new Employee("Ann", "ann@mail.com");
+        repo.saveAll(List.of(employee1, employee2));
+        entityManager.flush();
+        entityManager.clear();
+
+        //When
+        List<Employee> result = repo.findAll();
+
+        //Then
+        assertThat(result)
+                .isNotEmpty()
+                .hasSize(2)
+                .containsExactlyInAnyOrder(employee1, employee2);
     }
 }
