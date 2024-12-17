@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added controller &amp; integration tests">
-      <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added controller &amp; integration tests" />
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1174,23 +1170,7 @@
       <workItem from="1734266687256" duration="75000" />
       <workItem from="1734321887322" duration="5752000" />
       <workItem from="1734376787536" duration="1323000" />
-      <workItem from="1734408595879" duration="3396000" />
-    </task>
-    <task id="LOCAL-00274" summary="Added @TestPropertySource">
-      <option name="closed" value="true" />
-      <created>1732768292958</created>
-      <option name="number" value="00274" />
-      <option name="presentableId" value="LOCAL-00274" />
-      <option name="project" value="LOCAL" />
-      <updated>1732768292959</updated>
-    </task>
-    <task id="LOCAL-00275" summary="Added @TestPropertySource">
-      <option name="closed" value="true" />
-      <created>1732768560759</created>
-      <option name="number" value="00275" />
-      <option name="presentableId" value="LOCAL-00275" />
-      <option name="project" value="LOCAL" />
-      <updated>1732768560759</updated>
+      <workItem from="1734408595879" duration="5288000" />
     </task>
     <task id="LOCAL-00276" summary="Added @DynamicPropertySource">
       <option name="closed" value="true" />
@@ -1568,7 +1548,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734409394867</updated>
     </task>
-    <option name="localTasksCounter" value="323" />
+    <task id="LOCAL-00323" summary="Added controller &amp; integration tests">
+      <option name="closed" value="true" />
+      <created>1734415632394</created>
+      <option name="number" value="00323" />
+      <option name="presentableId" value="LOCAL-00323" />
+      <option name="project" value="LOCAL" />
+      <updated>1734415632394</updated>
+    </task>
+    <task id="LOCAL-00324" summary="Added controller &amp; integration tests">
+      <option name="closed" value="true" />
+      <created>1734415743057</created>
+      <option name="number" value="00324" />
+      <option name="presentableId" value="LOCAL-00324" />
+      <option name="project" value="LOCAL" />
+      <updated>1734415743057</updated>
+    </task>
+    <option name="localTasksCounter" value="325" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -38,11 +39,8 @@ public class CarService {
     }
 
     public Car update(Long id, @Nullable String brand, @Nullable String model, @Nullable String color) {
-        return Stream.of(
-                Optional.ofNullable(brand),
-                Optional.ofNullable(model),
-                Optional.ofNullable(color)
-        ).anyMatch(Optional::isPresent)
+        return Stream.of(brand, model, color)
+                .anyMatch(Objects::nonNull)
                 ? repository.findById(id)
                 .map(car -> repository.save(car.update(brand, model, color)))
                 .orElseThrow(() -> new RuntimeException("Car with ID=" + id + " not found"))
