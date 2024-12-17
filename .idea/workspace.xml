@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added sql annotations tests &amp; assertions">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added controller &amp; integration tests">
+      <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/pom.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -931,6 +934,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebmvctestAutoconfiguremockmvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="webmvctest_autoconfiguremockmvc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.webmvctest_autoconfiguremockmvc.WebmvctestAutoconfiguremockmvcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WhereAnnotationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="where_annotation" />
@@ -1164,15 +1174,8 @@
       <workItem from="1734249712340" duration="14123000" />
       <workItem from="1734266687256" duration="75000" />
       <workItem from="1734321887322" duration="5752000" />
-      <workItem from="1734376787536" duration="1228000" />
-    </task>
-    <task id="LOCAL-00272" summary="Added spring boot actuator">
-      <option name="closed" value="true" />
-      <created>1732717031065</created>
-      <option name="number" value="00272" />
-      <option name="presentableId" value="LOCAL-00272" />
-      <option name="project" value="LOCAL" />
-      <updated>1732717031065</updated>
+      <workItem from="1734376787536" duration="1323000" />
+      <workItem from="1734408595879" duration="717000" />
     </task>
     <task id="LOCAL-00273" summary="Added spring boot actuator">
       <option name="closed" value="true" />
@@ -1558,7 +1561,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734376888647</updated>
     </task>
-    <option name="localTasksCounter" value="321" />
+    <task id="LOCAL-00321" summary="Added controller &amp; integration tests">
+      <option name="closed" value="true" />
+      <created>1734378663257</created>
+      <option name="number" value="00321" />
+      <option name="presentableId" value="LOCAL-00321" />
+      <option name="project" value="LOCAL" />
+      <updated>1734378663257</updated>
+    </task>
+    <option name="localTasksCounter" value="322" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1576,7 +1587,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added spring boot tests" />
     <MESSAGE value="Added @ContextConfiguration" />
     <MESSAGE value="Added @TestConfiguration" />
     <MESSAGE value="Added spring boot actuator" />
@@ -1601,7 +1611,8 @@
     <MESSAGE value="Added sql annotations tests" />
     <MESSAGE value="Added sql annotations tests &amp; ASSERTIONS" />
     <MESSAGE value="Added sql annotations tests &amp; assertions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added sql annotations tests &amp; assertions" />
+    <MESSAGE value="Added controller &amp; integration tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added controller &amp; integration tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

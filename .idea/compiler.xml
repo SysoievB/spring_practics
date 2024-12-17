@@ -32,6 +32,7 @@
         <module name="association_override" />
         <module name="embedded_id" />
         <module name="created_modified_by_transient" />
+        <module name="webmvctest_autoconfiguremockmvc" />
         <module name="core" />
         <module name="spring_transactions" />
         <module name="mapped_superclass" />
@@ -216,6 +217,7 @@
       <module name="web_app_configuration" options="-parameters" />
       <module name="web_headers_cookies" options="-parameters" />
       <module name="webflux" options="" />
+      <module name="webmvctest_autoconfiguremockmvc" options="-parameters" />
       <module name="where_annotation" options="-parameters" />
     </option>
   </component>
