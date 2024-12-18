@@ -28,8 +28,8 @@ public class CarService {
                 .orElseThrow(() -> new RuntimeException("Car with ID=" + id + " not found"));
     }
 
-    public Car save(Car car) {
-        return repository.save(car);
+    public Car save(CreateCarDto dto) {
+        return repository.save(new Car(dto.brand(), dto.color(), dto.model()));
     }
 
     public void delete(Long id) {

@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added controller &amp; integration tests" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added controller &amp; integration tests">
+      <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CreateCarDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/UpdateCarDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarService.java" afterDir="false" />
+    </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,6 +255,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.webmvctest_autoconfiguremockmvc" />
       <recent name="com.commit_rollback" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -1170,15 +1178,8 @@
       <workItem from="1734266687256" duration="75000" />
       <workItem from="1734321887322" duration="5752000" />
       <workItem from="1734376787536" duration="1323000" />
-      <workItem from="1734408595879" duration="5288000" />
-    </task>
-    <task id="LOCAL-00276" summary="Added @DynamicPropertySource">
-      <option name="closed" value="true" />
-      <created>1732768870300</created>
-      <option name="number" value="00276" />
-      <option name="presentableId" value="LOCAL-00276" />
-      <option name="project" value="LOCAL" />
-      <updated>1732768870300</updated>
+      <workItem from="1734408595879" duration="6037000" />
+      <workItem from="1734495710840" duration="950000" />
     </task>
     <task id="LOCAL-00277" summary="Added @DynamicPropertySource">
       <option name="closed" value="true" />
@@ -1564,7 +1565,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734415743057</updated>
     </task>
-    <option name="localTasksCounter" value="325" />
+    <task id="LOCAL-00325" summary="Added controller &amp; integration tests">
+      <option name="closed" value="true" />
+      <created>1734415941160</created>
+      <option name="number" value="00325" />
+      <option name="presentableId" value="LOCAL-00325" />
+      <option name="project" value="LOCAL" />
+      <updated>1734415941160</updated>
+    </task>
+    <option name="localTasksCounter" value="326" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
