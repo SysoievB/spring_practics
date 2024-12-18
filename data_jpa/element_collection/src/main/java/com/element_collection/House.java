@@ -59,10 +59,15 @@ public class House {
     @Column(name = "room_name")
     Map<String, String> squareMetersAndRoomNames;
 
-    public House(String city, List<String> doors, Set<String> windows, Map<String, String> squareMetersAndRoomNames) {
+    @ElementCollection(fetch = FetchType.EAGER)
+    @CollectionTable(name = "persons", joinColumns = {@JoinColumn(name = "house_id")})
+    Set<Person> persons;
+
+    public House(String city, List<String> doors, Set<String> windows, Map<String, String> squareMetersAndRoomNames, Set<Person> persons) {
         this.city = city;
         this.doors = doors;
         this.windows = windows;
         this.squareMetersAndRoomNames = squareMetersAndRoomNames;
+        this.persons = persons;
     }
 }

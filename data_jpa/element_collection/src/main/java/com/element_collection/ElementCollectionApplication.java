@@ -21,7 +21,7 @@ public class ElementCollectionApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		val house = new House(
+		/*val house = new House(
 				"Berlin",
 				List.of("green", "red"),
 				Set.of("big", "small"),
@@ -29,9 +29,9 @@ public class ElementCollectionApplication implements CommandLineRunner {
 						"12m2", "living room",
 						"10m2", "bedroom"
 				)
-		);
-		repo.save(house);
-		repo.findById(house.getId()).ifPresent(System.out::println);
+		);*/
+		/*repo.save(house);
+		repo.findById(house.getId()).ifPresent(System.out::println);*/
 		//House(id=1, city=Berlin, doors=[green, red], windows=[small, big], squareMetersAndRoomNames={12m2=living room, 10m2=bedroom})
 	}
 }

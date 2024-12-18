@@ -23,9 +23,19 @@ create table house_windows
     house_id bigint not null,
     windows  varchar(255)
 );
+create table persons
+(
+    age         integer,
+    house_id    bigint not null,
+    person_uuid BINARY(16),
+    name        varchar(255)
+);
+
 alter table house_door
     add constraint FK_house_door foreign key (house_id) references house (id);
 alter table house_room
     add constraint FK_house_room foreign key (house_id) references house (id);
 alter table house_windows
     add constraint FK_house_windows foreign key (house_id) references house (id);
+alter table persons
+    add constraint FK_persons foreign key (house_id) references house (id);
