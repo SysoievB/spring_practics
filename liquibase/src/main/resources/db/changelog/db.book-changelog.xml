@@ -55,4 +55,13 @@
     <changeSet id="subset-6-removing-table" author="bs">
         <dropTable tableName="table_for_removing"/>
     </changeSet>
+
+    <changeSet id="subset-7-adding-uuid-and-populate-existing-rows-with-uuid" author="bs">
+        <addColumn tableName="book">
+            <column name="book_uuid" type="CHAR(36)"/>
+        </addColumn>
+        <update tableName="book">
+            <column name="book_uuid" valueComputed="UUID()"/>
+        </update>
+    </changeSet>
 </databaseChangeLog>

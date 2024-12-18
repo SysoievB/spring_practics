@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added controller &amp; integration tests">
-      <change afterPath="$PROJECT_DIR$/data_jpa/element_collection/src/main/java/com/element_collection/Person.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added UUID field for @Embeddable entity">
       <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/test/java/com/webmvctest_autoconfiguremockmvc/CarControllerIsolatedTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/test/java/com/webmvctest_autoconfiguremockmvc/CarControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/element_collection/src/main/java/com/element_collection/ElementCollectionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/element_collection/src/main/java/com/element_collection/ElementCollectionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/element_collection/src/main/java/com/element_collection/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/element_collection/src/main/java/com/element_collection/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/element_collection/src/main/resources/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/element_collection/src/main/resources/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liquibase/src/main/java/com/liquibase/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/java/com/liquibase/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +182,7 @@
     "Spring Boot.ImmutableAnnotationApplication.executor": "Debug",
     "Spring Boot.InheritanceAnnotationApplication.executor": "Debug",
     "Spring Boot.KeysetPaginationApplication.executor": "Debug",
-    "Spring Boot.LiquibaseApplication.executor": "Debug",
+    "Spring Boot.LiquibaseApplication.executor": "Run",
     "Spring Boot.ManyToOneUniApplication.executor": "Debug",
     "Spring Boot.MappedSuperclassApplication.executor": "Debug",
     "Spring Boot.NamedEntityGraphApplication.executor": "Debug",
@@ -387,7 +385,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ElementCollectionApplication">
+  <component name="RunManager" selected="Spring Boot.LiquibaseApplication">
     <configuration name="EmployeeRepoH2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sql_annotations" />
       <extension name="coverage">
@@ -1265,15 +1263,7 @@
       <workItem from="1734376787536" duration="1323000" />
       <workItem from="1734408595879" duration="6037000" />
       <workItem from="1734495710840" duration="3967000" />
-      <workItem from="1734503713659" duration="3409000" />
-    </task>
-    <task id="LOCAL-00278" summary="Added @TestBean">
-      <option name="closed" value="true" />
-      <created>1732857527117</created>
-      <option name="number" value="00278" />
-      <option name="presentableId" value="LOCAL-00278" />
-      <option name="project" value="LOCAL" />
-      <updated>1732857527118</updated>
+      <workItem from="1734503713659" duration="6300000" />
     </task>
     <task id="LOCAL-00279" summary="Added @TestBean">
       <option name="closed" value="true" />
@@ -1659,7 +1649,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734497503118</updated>
     </task>
-    <option name="localTasksCounter" value="327" />
+    <task id="LOCAL-00327" summary="Added UUID field for @Embeddable entity">
+      <option name="closed" value="true" />
+      <created>1734508884800</created>
+      <option name="number" value="00327" />
+      <option name="presentableId" value="LOCAL-00327" />
+      <option name="project" value="LOCAL" />
+      <updated>1734508884801</updated>
+    </task>
+    <option name="localTasksCounter" value="328" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1677,7 +1675,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added @ContextConfiguration" />
     <MESSAGE value="Added @TestConfiguration" />
     <MESSAGE value="Added spring boot actuator" />
     <MESSAGE value="Added @TestPropertySource" />
@@ -1702,7 +1699,8 @@
     <MESSAGE value="Added sql annotations tests &amp; ASSERTIONS" />
     <MESSAGE value="Added sql annotations tests &amp; assertions" />
     <MESSAGE value="Added controller &amp; integration tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added controller &amp; integration tests" />
+    <MESSAGE value="Added UUID field for @Embeddable entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added UUID field for @Embeddable entity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
