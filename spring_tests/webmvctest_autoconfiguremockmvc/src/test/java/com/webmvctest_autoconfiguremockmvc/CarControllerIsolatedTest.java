@@ -107,24 +107,8 @@ class CarControllerIsolatedTest {
                                 .isInstanceOf(CarService.CarNotFoundException.class)
                 );
     }
-
-    @Test
-    void getCarById() {
-    }
-
-    @Test
-    void createCar() {
-    }
-
-    @Test
-    void testCreateCar() {
-    }
-
-    @Test
-    void testGetCarById() {
-    }
-
-    @Test
-    void deleteCarById() {
-    }
+//save
+    //delete
+    //update
+    //findByBrandAndModel
 }
