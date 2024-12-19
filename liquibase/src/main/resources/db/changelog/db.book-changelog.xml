@@ -65,3 +65,4 @@
         </update>
     </changeSet>
 </databaseChangeLog>
+<!--if we set constraints nullable="false" we should also set defaultValue, or we can set constraints nullable="true"-->
