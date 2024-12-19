@@ -2,7 +2,9 @@ package com.webmvctest_autoconfiguremockmvc;
 
 import jakarta.annotation.Nullable;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.util.List;
 import java.util.Objects;
@@ -25,7 +27,7 @@ public class CarService {
 
     public Car findById(Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Car with ID=" + id + " not found"));
+                .orElseThrow(() -> new CarNotFoundException("Car with ID=" + id + " not found"));
     }
 
     public Car save(CreateCarDto dto) {
@@ -43,12 +45,19 @@ public class CarService {
                 .anyMatch(Objects::nonNull)
                 ? repository.findById(id)
                 .map(car -> repository.save(car.update(brand, model, color)))
-                .orElseThrow(() -> new RuntimeException("Car with ID=" + id + " not found"))
+                .orElseThrow(() -> new CarNotFoundException("Car with ID=" + id + " not found"))
                 : findById(id);
     }
 
     public Car findByBrandAndModel(String brand, String model) {
         return repository.findByBrandAndModel(brand, model)
-                .orElseThrow(() -> new RuntimeException("Car with Brand=" + brand + " or Model=" + model + " not found"));
+                .orElseThrow(() -> new CarNotFoundException("Car with Brand=" + brand + " or Model=" + model + " not found"));
+    }
+
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public static class CarNotFoundException extends RuntimeException {
+        public CarNotFoundException(String message) {
+            super(message);
+        }
     }
 }

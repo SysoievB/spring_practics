@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added UUID field for @Embeddable entity">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added UUID field for liquibase">
       <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/test/java/com/webmvctest_autoconfiguremockmvc/CarControllerIsolatedTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/test/java/com/webmvctest_autoconfiguremockmvc/CarControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquibase/src/main/java/com/liquibase/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/java/com/liquibase/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarService.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +80,11 @@
     "Application.Section1StaticCredentialsApplication.executor": "Run",
     "Application.WithLombokClass.executor": "Run",
     "Application.WithLombokCustomBuilder.executor": "Run",
+    "JUnit.CarControllerIsolatedTest,returns_empty_list_of_cars_when_no_cars_found and 1 more.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.findById_returns_exception_when_car_not_found.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.returns_empty_list_of_cars_when_no_cars_found.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.returns_list_of_cars_when_cars_found.executor": "Run",
     "JUnit.CarTest.divide_by_zero.executor": "Run",
     "JUnit.CarTest.executor": "Run",
     "JUnit.CarTest.success.executor": "Run",
@@ -385,80 +389,77 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LiquibaseApplication">
-    <configuration name="EmployeeRepoH2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sql_annotations" />
+  <component name="RunManager" selected="JUnit.CarControllerIsolatedTest">
+    <configuration name="CarControllerIsolatedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webmvctest_autoconfiguremockmvc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sql_annotations.*" />
+          <option name="PATTERN" value="com.webmvctest_autoconfiguremockmvc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.sql_annotations" />
-      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoH2Test" />
+      <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
+      <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarControllerIsolatedTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeRepoH2Test.testSaveAllEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sql_annotations" />
+    <configuration name="CarControllerIsolatedTest.findById_returns_car_when_car_found" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webmvctest_autoconfiguremockmvc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sql_annotations.*" />
+          <option name="PATTERN" value="com.webmvctest_autoconfiguremockmvc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.sql_annotations" />
-      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoH2Test" />
-      <option name="METHOD_NAME" value="testSaveAllEmployee" />
+      <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
+      <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarControllerIsolatedTest" />
+      <option name="METHOD_NAME" value="findById_returns_car_when_car_found" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeRepoMySqlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sql_annotations" />
+    <configuration name="CarControllerIsolatedTest.findById_returns_exception_when_car_not_found" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webmvctest_autoconfiguremockmvc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sql_annotations.*" />
+          <option name="PATTERN" value="com.webmvctest_autoconfiguremockmvc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.sql_annotations" />
-      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoMySqlTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeRepoMySqlTest.testSaveAllEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sql_annotations" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sql_annotations.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sql_annotations" />
-      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoMySqlTest" />
-      <option name="METHOD_NAME" value="testSaveAllEmployee" />
+      <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
+      <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarControllerIsolatedTest" />
+      <option name="METHOD_NAME" value="findById_returns_exception_when_car_not_found" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeRepoSqlConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sql_annotations" />
+    <configuration name="CarControllerIsolatedTest,returns_empty_list_of_cars_when_no_cars_found and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webmvctest_autoconfiguremockmvc" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="com.webmvctest_autoconfiguremockmvc.CarControllerIsolatedTest,returns_empty_list_of_cars_when_no_cars_found" />
+        <pattern testClass="com.webmvctest_autoconfiguremockmvc.CarControllerIsolatedTest,returns_list_of_cars_when_cars_found" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarControllerIsolatedTest.returns_list_of_cars_when_cars_found" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webmvctest_autoconfiguremockmvc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sql_annotations.*" />
+          <option name="PATTERN" value="com.webmvctest_autoconfiguremockmvc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.sql_annotations" />
-      <option name="MAIN_CLASS_NAME" value="com.sql_annotations.EmployeeRepoSqlConfigTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
+      <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarControllerIsolatedTest" />
+      <option name="METHOD_NAME" value="returns_list_of_cars_when_cars_found" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1037,11 +1038,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EmployeeRepoH2Test.testSaveAllEmployee" />
-        <item itemvalue="JUnit.EmployeeRepoH2Test" />
-        <item itemvalue="JUnit.EmployeeRepoMySqlTest" />
-        <item itemvalue="JUnit.EmployeeRepoMySqlTest.testSaveAllEmployee" />
-        <item itemvalue="JUnit.EmployeeRepoSqlConfigTest" />
+        <item itemvalue="JUnit.CarControllerIsolatedTest" />
+        <item itemvalue="JUnit.CarControllerIsolatedTest.findById_returns_car_when_car_found" />
+        <item itemvalue="JUnit.CarControllerIsolatedTest.findById_returns_exception_when_car_not_found" />
+        <item itemvalue="JUnit.CarControllerIsolatedTest.returns_list_of_cars_when_cars_found" />
+        <item itemvalue="JUnit.CarControllerIsolatedTest,returns_empty_list_of_cars_when_no_cars_found and 1 more" />
       </list>
     </recent_temporary>
   </component>
@@ -1263,15 +1264,8 @@
       <workItem from="1734376787536" duration="1323000" />
       <workItem from="1734408595879" duration="6037000" />
       <workItem from="1734495710840" duration="3967000" />
-      <workItem from="1734503713659" duration="6300000" />
-    </task>
-    <task id="LOCAL-00279" summary="Added @TestBean">
-      <option name="closed" value="true" />
-      <created>1732865822399</created>
-      <option name="number" value="00279" />
-      <option name="presentableId" value="LOCAL-00279" />
-      <option name="project" value="LOCAL" />
-      <updated>1732865822399</updated>
+      <workItem from="1734503713659" duration="6621000" />
+      <workItem from="1734581782512" duration="6129000" />
     </task>
     <task id="LOCAL-00280" summary="Added security static credentials">
       <option name="closed" value="true" />
@@ -1657,7 +1651,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734508884801</updated>
     </task>
-    <option name="localTasksCounter" value="328" />
+    <task id="LOCAL-00328" summary="Added UUID field for liquibase">
+      <option name="closed" value="true" />
+      <created>1734539055044</created>
+      <option name="number" value="00328" />
+      <option name="presentableId" value="LOCAL-00328" />
+      <option name="project" value="LOCAL" />
+      <updated>1734539055044</updated>
+    </task>
+    <option name="localTasksCounter" value="329" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1675,7 +1677,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added @TestConfiguration" />
     <MESSAGE value="Added spring boot actuator" />
     <MESSAGE value="Added @TestPropertySource" />
     <MESSAGE value="Added @DynamicPropertySource" />
@@ -1700,7 +1701,8 @@
     <MESSAGE value="Added sql annotations tests &amp; assertions" />
     <MESSAGE value="Added controller &amp; integration tests" />
     <MESSAGE value="Added UUID field for @Embeddable entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added UUID field for @Embeddable entity" />
+    <MESSAGE value="Added UUID field for liquibase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added UUID field for liquibase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
