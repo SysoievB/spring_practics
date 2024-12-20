@@ -7,6 +7,7 @@
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @WebMvcTest test for controller">
       <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/test/java/com/webmvctest_autoconfiguremockmvc/CarControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/test/java/com/webmvctest_autoconfiguremockmvc/CarControllerIsolatedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/test/java/com/webmvctest_autoconfiguremockmvc/CarControllerIsolatedTest.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -90,6 +91,10 @@
     "JUnit.CarControllerIsolatedTest.returns_empty_list_of_cars_when_no_cars_found.executor": "Run",
     "JUnit.CarControllerIsolatedTest.returns_list_of_cars_when_cars_found.executor": "Run",
     "JUnit.CarControllerIsolatedTest.save_returns_saved_car.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.update_returns_not_found_when_fields_absent.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.update_returns_not_found_when_fields_present.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.update_returns_same_car_when_fields_absent.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.update_returns_updated_car_when_fields_present.executor": "Run",
     "JUnit.CarTest.divide_by_zero.executor": "Run",
     "JUnit.CarTest.executor": "Run",
     "JUnit.CarTest.success.executor": "Run",
@@ -394,7 +399,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarControllerIsolatedTest.findByBrandAndModel_returns_exception_when_car_not_found">
+  <component name="RunManager" selected="JUnit.CarControllerIsolatedTest">
     <configuration name="CarControllerIsolatedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webmvctest_autoconfiguremockmvc" />
       <extension name="coverage">
@@ -410,7 +415,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarControllerIsolatedTest.delete_returns_exception_when_car_not_found" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarControllerIsolatedTest.update_returns_not_found_when_fields_absent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webmvctest_autoconfiguremockmvc" />
       <extension name="coverage">
         <pattern>
@@ -420,13 +425,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
       <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarControllerIsolatedTest" />
-      <option name="METHOD_NAME" value="delete_returns_exception_when_car_not_found" />
+      <option name="METHOD_NAME" value="update_returns_not_found_when_fields_absent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarControllerIsolatedTest.delete_returns_void_when_car_found" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarControllerIsolatedTest.update_returns_not_found_when_fields_present" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webmvctest_autoconfiguremockmvc" />
       <extension name="coverage">
         <pattern>
@@ -436,13 +441,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
       <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarControllerIsolatedTest" />
-      <option name="METHOD_NAME" value="delete_returns_void_when_car_found" />
+      <option name="METHOD_NAME" value="update_returns_not_found_when_fields_present" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarControllerIsolatedTest.findByBrandAndModel_returns_car_when_car_found" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarControllerIsolatedTest.update_returns_same_car_when_fields_absent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webmvctest_autoconfiguremockmvc" />
       <extension name="coverage">
         <pattern>
@@ -452,13 +457,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
       <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarControllerIsolatedTest" />
-      <option name="METHOD_NAME" value="findByBrandAndModel_returns_car_when_car_found" />
+      <option name="METHOD_NAME" value="update_returns_same_car_when_fields_absent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarControllerIsolatedTest.findByBrandAndModel_returns_exception_when_car_not_found" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarControllerIsolatedTest.update_returns_updated_car_when_fields_present" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webmvctest_autoconfiguremockmvc" />
       <extension name="coverage">
         <pattern>
@@ -468,7 +473,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
       <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarControllerIsolatedTest" />
-      <option name="METHOD_NAME" value="findByBrandAndModel_returns_exception_when_car_not_found" />
+      <option name="METHOD_NAME" value="update_returns_updated_car_when_fields_present" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1048,11 +1053,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CarControllerIsolatedTest.findByBrandAndModel_returns_exception_when_car_not_found" />
-        <item itemvalue="JUnit.CarControllerIsolatedTest.findByBrandAndModel_returns_car_when_car_found" />
         <item itemvalue="JUnit.CarControllerIsolatedTest" />
-        <item itemvalue="JUnit.CarControllerIsolatedTest.delete_returns_exception_when_car_not_found" />
-        <item itemvalue="JUnit.CarControllerIsolatedTest.delete_returns_void_when_car_found" />
+        <item itemvalue="JUnit.CarControllerIsolatedTest.update_returns_not_found_when_fields_absent" />
+        <item itemvalue="JUnit.CarControllerIsolatedTest.update_returns_same_car_when_fields_absent" />
+        <item itemvalue="JUnit.CarControllerIsolatedTest.update_returns_not_found_when_fields_present" />
+        <item itemvalue="JUnit.CarControllerIsolatedTest.update_returns_updated_car_when_fields_present" />
       </list>
     </recent_temporary>
   </component>
@@ -1277,14 +1282,7 @@
       <workItem from="1734503713659" duration="6621000" />
       <workItem from="1734581782512" duration="7333000" />
       <workItem from="1734614690810" duration="5051000" />
-    </task>
-    <task id="LOCAL-00285" summary="Added transactions">
-      <option name="closed" value="true" />
-      <created>1733294801911</created>
-      <option name="number" value="00285" />
-      <option name="presentableId" value="LOCAL-00285" />
-      <option name="project" value="LOCAL" />
-      <updated>1733294801912</updated>
+      <workItem from="1734667580782" duration="1964000" />
     </task>
     <task id="LOCAL-00286" summary="Added transactions">
       <option name="closed" value="true" />
@@ -1670,7 +1668,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734625956049</updated>
     </task>
-    <option name="localTasksCounter" value="334" />
+    <task id="LOCAL-00334" summary="Added @WebMvcTest test for controller">
+      <option name="closed" value="true" />
+      <created>1734667650197</created>
+      <option name="number" value="00334" />
+      <option name="presentableId" value="LOCAL-00334" />
+      <option name="project" value="LOCAL" />
+      <updated>1734667650198</updated>
+    </task>
+    <option name="localTasksCounter" value="335" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -31,7 +31,7 @@ public class CarController {
     }
 
     @PutMapping("/{id}")
-    Car createCar(@PathVariable Long id, @RequestBody CreateCarDto dto){
+    Car createCar(@PathVariable Long id, @RequestBody UpdateCarDto dto){
         return carService.update(id, dto.brand(), dto.model(), dto.color());
     }
 
