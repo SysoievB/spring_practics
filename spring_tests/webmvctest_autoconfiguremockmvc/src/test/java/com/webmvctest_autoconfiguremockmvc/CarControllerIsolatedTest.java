@@ -1,5 +1,6 @@
 package com.webmvctest_autoconfiguremockmvc;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.val;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,9 +18,11 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
-import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.BDDMockito.given;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.doThrow;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -39,6 +42,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class CarControllerIsolatedTest {
     @Autowired
     private MockMvc mockMvc;
+    @Autowired
+    private ObjectMapper objectMapper;
 
     @MockBean
     private CarService carService;
@@ -107,8 +112,95 @@ class CarControllerIsolatedTest {
                                 .isInstanceOf(CarService.CarNotFoundException.class)
                 );
     }
-//save
-    //delete
-    //update
-    //findByBrandAndModel
+
+    @Test
+    void save_returns_saved_car() throws Exception {
+        //given
+        val id = 1L;
+        val car = new Car(id, "BMW", "X10", "Black");
+        given(carService.save(any())).willReturn(car);
+
+        val json = objectMapper.writeValueAsString(car);
+
+        //when & then
+        mockMvc.perform(post("/car")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.brand", is(car.getBrand())))
+                .andExpect(jsonPath("$.model", is(car.getModel())))
+                .andExpect(jsonPath("$.color", is(car.getColor())));
+    }
+
+    @Test
+    void delete_returns_void_when_car_found() throws Exception {
+        //given
+        val id = 1000L;
+        doNothing().when(carService).delete(anyLong());
+
+        //when & then
+        mockMvc.perform(delete("/car/{id}", id)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNoContent());
+    }
+
+    @Test
+    void delete_returns_exception_when_car_not_found() throws Exception {
+        //given
+        val id = 1000L;
+       doThrow(new CarService.CarNotFoundException(""))
+               .when(carService).delete(anyLong());
+
+        //when & then
+        mockMvc.perform(delete("/car/{id}", id)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound())
+                .andExpect(result ->
+                        assertThat(result)
+                                .extracting(MvcResult::getResolvedException)
+                                .isInstanceOf(CarService.CarNotFoundException.class)
+                );
+    }
+
+    @Test
+    void findByBrandAndModel_returns_car_when_car_found() throws Exception {
+        //given
+        val brand = "BMW";
+        val model = "X10";
+        val car = new Car(brand, model, "Black");
+        given(carService.findByBrandAndModel(anyString(), anyString())).willReturn(car);
+
+        //when & then
+        mockMvc.perform(get("/car/ByBrandAndModel")
+                        .param("brand", brand)
+                        .param("model", model)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.brand", is(car.getBrand())))
+                .andExpect(jsonPath("$.model", is(car.getModel())))
+                .andExpect(jsonPath("$.color", is(car.getColor())));
+    }
+
+    @Test
+    void findByBrandAndModel_returns_exception_when_car_not_found() throws Exception {
+        //given
+        val brand = "BMW";
+        val model = "X10";
+        given(carService.findByBrandAndModel(anyString(), anyString()))
+                .willThrow(new CarService.CarNotFoundException(""));
+
+        //when & then
+        mockMvc.perform(get("/car/ByBrandAndModel")
+                        .param("brand", brand)
+                        .param("model", model)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound())
+                .andExpect(result ->
+                        assertThat(result)
+                                .extracting(MvcResult::getResolvedException)
+                                .isInstanceOf(CarService.CarNotFoundException.class)
+                );
+    }
+
+    
 }
