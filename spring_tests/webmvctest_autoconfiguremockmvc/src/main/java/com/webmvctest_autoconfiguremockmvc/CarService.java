@@ -31,7 +31,7 @@ public class CarService {
     }
 
     public Car save(CreateCarDto dto) {
-        return repository.save(new Car(dto.brand(), dto.color(), dto.model()));
+        return repository.save(new Car(dto.brand(), dto.model(), dto.color()));
     }
 
     public void delete(Long id) {

@@ -31,10 +31,10 @@ public class Car {
         if (brand != null) {
             this.brand = brand;
         }
-        if (brand != null) {
+        if (model != null) {
             this.model = model;
         }
-        if (brand != null) {
+        if (color != null) {
             this.color = color;
         }
 
