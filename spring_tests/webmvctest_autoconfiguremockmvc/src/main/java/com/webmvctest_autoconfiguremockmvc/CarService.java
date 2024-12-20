@@ -35,8 +35,7 @@ public class CarService {
     }
 
     public void delete(Long id) {
-        Optional.of(id)
-                .flatMap(repository::findById)
+        Optional.of(findById(id))
                 .ifPresent(repository::delete);
     }
 

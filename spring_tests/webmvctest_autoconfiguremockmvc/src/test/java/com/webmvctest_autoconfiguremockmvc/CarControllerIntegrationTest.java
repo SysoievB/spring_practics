@@ -15,10 +15,6 @@ import org.springframework.test.web.servlet.MvcResult;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyLong;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.doThrow;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -108,7 +104,6 @@ class CarControllerIntegrationTest {
     @Test
     void save_returns_saved_car() throws Exception {
         //given
-        val id = 1L;
         val car = new Car("BMW", "X10", "Black");
         repository.save(car);
 
@@ -122,5 +117,38 @@ class CarControllerIntegrationTest {
                 .andExpect(jsonPath("$.brand", is(car.getBrand())))
                 .andExpect(jsonPath("$.model", is(car.getModel())))
                 .andExpect(jsonPath("$.color", is(car.getColor())));
+    }
+
+    @Test
+    void delete_returns_void_when_car_found() throws Exception {
+        //given
+        val car = new Car("BMW", "X10", "Black");
+        val id = repository.save(car).getId();
+        repository.findById(id);
+
+        //when & then
+        mockMvc.perform(delete("/car/{id}", id)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNoContent());
+    }
+
+    @Test
+    void delete_returns_exception_when_car_not_found() throws Exception {
+        //given
+        val idForDelete = 1000L;
+        val car = new Car("BMW", "X10", "Black");
+        val id = repository.save(car).getId();
+        repository.findById(idForDelete);
+
+        //when & then
+        mockMvc.perform(delete("/car/{id}", idForDelete)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound())
+                .andExpect(result -> {
+                    assertThat(id).isNotEqualTo(idForDelete);
+                    assertThat(result)
+                            .extracting(MvcResult::getResolvedException)
+                            .isInstanceOf(CarService.CarNotFoundException.class);
+                });
     }
 }
