@@ -38,4 +38,8 @@ public class CarModifierService {
         }
         return "Seconds amount: " + seconds;
     }
+
+    public void voidMethod(String name) {
+        System.out.println("Name: " + name);
+    }
 }
