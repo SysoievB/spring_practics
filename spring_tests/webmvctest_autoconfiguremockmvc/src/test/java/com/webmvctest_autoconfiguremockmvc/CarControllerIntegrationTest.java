@@ -151,4 +151,101 @@ class CarControllerIntegrationTest {
                             .isInstanceOf(CarService.CarNotFoundException.class);
                 });
     }
+
+    @Test
+    void findByBrandAndModel_returns_car_when_car_found() throws Exception {
+        //given
+        val brand = "BMW";
+        val model = "X10";
+        val car = new Car(brand, model, "Black");
+        repository.save(car);
+
+        //when & then
+        mockMvc.perform(get("/car/ByBrandAndModel")
+                        .param("brand", brand)
+                        .param("model", model)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.brand", is(car.getBrand())))
+                .andExpect(jsonPath("$.model", is(car.getModel())))
+                .andExpect(jsonPath("$.color", is(car.getColor())));
+    }
+
+    @Test
+    void findByBrandAndModel_returns_exception_when_car_not_found() throws Exception {
+        //given
+        val brand = "BMW";
+        val model = "X10";
+
+        //when & then
+        mockMvc.perform(get("/car/ByBrandAndModel")
+                        .param("brand", brand)
+                        .param("model", model)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound())
+                .andExpect(result ->
+                        assertThat(result)
+                                .extracting(MvcResult::getResolvedException)
+                                .isInstanceOf(CarService.CarNotFoundException.class)
+                );
+    }
+
+    @Test
+    void update_returns_updated_car_when_fields_present() throws Exception {
+        // given
+        val car = new Car("BMW", "X10", "Black");
+        val savedCar = repository.save(car);
+        Long id = savedCar.getId();
+        val carForUpdate = new UpdateCarDto("Audi", "Q5", "White");
+        val json = objectMapper.writeValueAsString(carForUpdate);
+
+        // when & then
+        mockMvc.perform(put("/car/{id}", id)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.brand", is(carForUpdate.brand())))
+                .andExpect(jsonPath("$.model", is(carForUpdate.model())))
+                .andExpect(jsonPath("$.color", is(carForUpdate.color())));
+    }
+
+    @Test
+    void update_returns_not_found_when_fields_present() throws Exception {
+        //given
+        val id = 1L;
+        val car = new Car("BMW", "X10", "Black");
+
+        val json = objectMapper.writeValueAsString(car);
+
+        //when & then
+        mockMvc.perform(put("/car/{id}", id)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isNotFound())
+                .andExpect(result ->
+                        assertThat(result)
+                                .extracting(MvcResult::getResolvedException)
+                                .isInstanceOf(CarService.CarNotFoundException.class)
+                );
+    }
+
+    @Test
+    void update_returns_not_found_when_fields_absent() throws Exception {
+        //given
+        val id = 1L;
+        val car = new Car();
+
+        val json = objectMapper.writeValueAsString(car);
+
+        //when & then
+        mockMvc.perform(put("/car/{id}", id)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isNotFound())
+                .andExpect(result ->
+                        assertThat(result)
+                                .extracting(MvcResult::getResolvedException)
+                                .isInstanceOf(CarService.CarNotFoundException.class)
+                );
+    }
 }

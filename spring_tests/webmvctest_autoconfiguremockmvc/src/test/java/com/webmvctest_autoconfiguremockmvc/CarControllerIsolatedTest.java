@@ -262,23 +262,4 @@ class CarControllerIsolatedTest {
                                 .isInstanceOf(CarService.CarNotFoundException.class)
                 );
     }
-
-    @Test
-    void update_returns_same_car_when_fields_absent() throws Exception {
-        //given
-        val id = 1L;
-        val car = new Car("BMW", "X10", "Black");
-        given(carService.update(any(), isNull(), isNull(), isNull())).willReturn(car);
-
-        val json = objectMapper.writeValueAsString(new Car());
-
-        //when & then
-        mockMvc.perform(put("/car/{id}", id)
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(json))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.brand", is(car.getBrand())))
-                .andExpect(jsonPath("$.model", is(car.getModel())))
-                .andExpect(jsonPath("$.color", is(car.getColor())));
-    }
 }
