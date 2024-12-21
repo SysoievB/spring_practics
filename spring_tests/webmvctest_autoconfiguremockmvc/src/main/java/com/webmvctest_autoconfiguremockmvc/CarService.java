@@ -59,4 +59,18 @@ public class CarService {
             super(message);
         }
     }
+
+    public Optional<Car> searchBrand(String searchString) {
+        return findAll()
+                .stream()
+                .filter(car1 -> car1.getBrand().contains(searchString))
+                .findFirst();
+    }
+
+    public Optional<Car> searchCarByBrand(Car car) {
+        return findAll()
+                .stream()
+                .filter(car1 -> car1.getBrand().equalsIgnoreCase(car.getBrand()))
+                .findFirst();
+    }
 }
