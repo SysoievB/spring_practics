@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @AutoConfigureMockMvc test for controller">
-      <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarModifierService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/test/java/com/webmvctest_autoconfiguremockmvc/CarModifierMockitoTest.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added mockito">
+      <change afterPath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/functional_web/EmployeeServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/simple_web/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/src/main/java/com/webmvctest_autoconfiguremockmvc/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webflux/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/pom.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +25,8 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -139,6 +140,8 @@
     "JUnit.EmployeeRepoTest.test.executor": "Run",
     "JUnit.EmployeeRepoTest.testDatabaseConnection.executor": "Run",
     "JUnit.EmployeeServiceTest.executor": "Run",
+    "JUnit.EmployeeServiceTest.getAllEmployees.executor": "Run",
+    "JUnit.EmployeeServiceTest.getAllEmployees_WithOneField.executor": "Run",
     "JUnit.EmployeeServiceTest.shouldCommitWhenEmployeeIsCreated.executor": "Run",
     "JUnit.EmployeeServiceTest.shouldRollbackWhenEmployeeIsCreated.executor": "Run",
     "JUnit.EmployeeServiceTest.testFindUserById.executor": "Run",
@@ -179,6 +182,7 @@
     "Maven.section_1_static_credentials [install].executor": "Run",
     "Maven.specifications [clean].executor": "Run",
     "Maven.specifications [install].executor": "Run",
+    "Maven.webflux [clean].executor": "Run",
     "Maven.webmvctest_autoconfiguremockmvc [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -254,7 +258,7 @@
     "Spring Boot.ValidationApplication.executor": "Debug",
     "Spring Boot.WebAnnotationsApplication.executor": "Run",
     "Spring Boot.WebHeadersApplication.executor": "Debug",
-    "Spring Boot.WebfluxApplication.executor": "Debug",
+    "Spring Boot.WebfluxApplication.executor": "Run",
     "Spring Boot.WhereAnnotationApplication.executor": "Debug",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -268,7 +272,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
@@ -317,11 +321,11 @@
       <recent name="com.web_annotations.map_struct" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.webflux.functional_web" />
+      <recent name="com.webflux.simple_web" />
       <recent name="com.webmvctest_autoconfiguremockmvc" />
       <recent name="com.sql_annotations" />
       <recent name="com.record_application_events" />
-      <recent name="com.context_hierarchy" />
-      <recent name="com.commit_rollback" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jackson.lombok" />
@@ -424,8 +428,8 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarModifierMockitoTest.testPrivateMethod">
-    <configuration name="CarModifierMockitoTest.testAwaitility" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EmployeeServiceTest.getAllEmployees_WithOneField">
+    <configuration name="CarModifierMockitoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webmvctest_autoconfiguremockmvc" />
       <extension name="coverage">
         <pattern>
@@ -435,40 +439,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
       <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarModifierMockitoTest" />
-      <option name="METHOD_NAME" value="testAwaitility" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarModifierMockitoTest.testAwaitility1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webmvctest_autoconfiguremockmvc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webmvctest_autoconfiguremockmvc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
-      <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarModifierMockitoTest" />
-      <option name="METHOD_NAME" value="testAwaitility1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarModifierMockitoTest.testConstructorMock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webmvctest_autoconfiguremockmvc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webmvctest_autoconfiguremockmvc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
-      <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarModifierMockitoTest" />
-      <option name="METHOD_NAME" value="testConstructorMock" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -489,17 +460,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarModifierMockitoTest.testStaticMethodMock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webmvctest_autoconfiguremockmvc" />
+    <configuration name="EmployeeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webflux" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.webmvctest_autoconfiguremockmvc.*" />
+          <option name="PATTERN" value="com.webflux.functional_web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.webmvctest_autoconfiguremockmvc" />
-      <option name="MAIN_CLASS_NAME" value="com.webmvctest_autoconfiguremockmvc.CarModifierMockitoTest" />
-      <option name="METHOD_NAME" value="testStaticMethodMock" />
+      <option name="PACKAGE_NAME" value="com.webflux.functional_web" />
+      <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeServiceTest.getAllEmployees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webflux" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webflux.functional_web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.webflux.functional_web" />
+      <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
+      <option name="METHOD_NAME" value="getAllEmployees" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeServiceTest.getAllEmployees_WithOneField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webflux" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webflux.functional_web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.webflux.functional_web" />
+      <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
+      <option name="METHOD_NAME" value="getAllEmployees_WithOneField" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1079,11 +1081,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeServiceTest.getAllEmployees_WithOneField" />
+        <item itemvalue="JUnit.EmployeeServiceTest" />
+        <item itemvalue="JUnit.EmployeeServiceTest.getAllEmployees" />
+        <item itemvalue="JUnit.CarModifierMockitoTest" />
         <item itemvalue="JUnit.CarModifierMockitoTest.testPrivateMethod" />
-        <item itemvalue="JUnit.CarModifierMockitoTest.testAwaitility1" />
-        <item itemvalue="JUnit.CarModifierMockitoTest.testAwaitility" />
-        <item itemvalue="JUnit.CarModifierMockitoTest.testConstructorMock" />
-        <item itemvalue="JUnit.CarModifierMockitoTest.testStaticMethodMock" />
       </list>
     </recent_temporary>
   </component>
@@ -1311,39 +1313,10 @@
       <workItem from="1734667580782" duration="6498000" />
       <workItem from="1734705518294" duration="1344000" />
       <workItem from="1734709342681" duration="2214000" />
-      <workItem from="1734755318583" duration="15883000" />
-    </task>
-    <task id="LOCAL-00290" summary="Added transactions">
-      <option name="closed" value="true" />
-      <created>1733372932928</created>
-      <option name="number" value="00290" />
-      <option name="presentableId" value="LOCAL-00290" />
-      <option name="project" value="LOCAL" />
-      <updated>1733372932928</updated>
-    </task>
-    <task id="LOCAL-00291" summary="Added transactions tests">
-      <option name="closed" value="true" />
-      <created>1733460341411</created>
-      <option name="number" value="00291" />
-      <option name="presentableId" value="LOCAL-00291" />
-      <option name="project" value="LOCAL" />
-      <updated>1733460341412</updated>
-    </task>
-    <task id="LOCAL-00292" summary="Added transactions tests">
-      <option name="closed" value="true" />
-      <created>1733466020238</created>
-      <option name="number" value="00292" />
-      <option name="presentableId" value="LOCAL-00292" />
-      <option name="project" value="LOCAL" />
-      <updated>1733466020238</updated>
-    </task>
-    <task id="LOCAL-00293" summary="Added #{#entityName} to abstract NoRepositoryBean annotation">
-      <option name="closed" value="true" />
-      <created>1733545811107</created>
-      <option name="number" value="00293" />
-      <option name="presentableId" value="LOCAL-00293" />
-      <option name="project" value="LOCAL" />
-      <updated>1733545811108</updated>
+      <workItem from="1734755318583" duration="17599000" />
+      <workItem from="1734859340515" duration="384000" />
+      <workItem from="1734866086318" duration="1411000" />
+      <workItem from="1734879966319" duration="3353000" />
     </task>
     <task id="LOCAL-00294" summary="Added @Commit &amp; @Rollback">
       <option name="closed" value="true" />
@@ -1705,7 +1678,39 @@
       <option name="project" value="LOCAL" />
       <updated>1734757092787</updated>
     </task>
-    <option name="localTasksCounter" value="339" />
+    <task id="LOCAL-00339" summary="Added mockito">
+      <option name="closed" value="true" />
+      <created>1734774220136</created>
+      <option name="number" value="00339" />
+      <option name="presentableId" value="LOCAL-00339" />
+      <option name="project" value="LOCAL" />
+      <updated>1734774220136</updated>
+    </task>
+    <task id="LOCAL-00340" summary="Added mockito">
+      <option name="closed" value="true" />
+      <created>1734774231596</created>
+      <option name="number" value="00340" />
+      <option name="presentableId" value="LOCAL-00340" />
+      <option name="project" value="LOCAL" />
+      <updated>1734774231596</updated>
+    </task>
+    <task id="LOCAL-00341" summary="Added mockito">
+      <option name="closed" value="true" />
+      <created>1734774256837</created>
+      <option name="number" value="00341" />
+      <option name="presentableId" value="LOCAL-00341" />
+      <option name="project" value="LOCAL" />
+      <updated>1734774256837</updated>
+    </task>
+    <task id="LOCAL-00342" summary="Added mockito">
+      <option name="closed" value="true" />
+      <created>1734775312266</created>
+      <option name="number" value="00342" />
+      <option name="presentableId" value="LOCAL-00342" />
+      <option name="project" value="LOCAL" />
+      <updated>1734775312266</updated>
+    </task>
+    <option name="localTasksCounter" value="343" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1723,7 +1728,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added @TestBean" />
     <MESSAGE value="Added security static credentials" />
     <MESSAGE value="Added security static credentials + trivial tests" />
     <MESSAGE value="Added just annotation description" />
@@ -1748,7 +1752,8 @@
     <MESSAGE value="Added added comment" />
     <MESSAGE value="Added @WebMvcTest test for controller" />
     <MESSAGE value="Added @AutoConfigureMockMvc test for controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added @AutoConfigureMockMvc test for controller" />
+    <MESSAGE value="Added mockito" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mockito" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
