@@ -11,10 +11,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.core.publisher.Operators;
 import reactor.test.StepVerifier;
 
 import static java.util.Objects.nonNull;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.*;
 
@@ -27,11 +30,18 @@ class EmployeeServiceTest {
     @InjectMocks
     private EmployeeService service;
 
+    /**
+     * <h2>expectNextMatches</h2> - require a predicate that returns a boolean
+     * <h2>enableConditionalSupport</h2> turns the subscriber into a Fuseable.
+     * ConditionalSubscriber, which allows conditional processing of emitted elements
+     * (e.g., elements satisfying a predicate are processed differently).
+     * */
+
     @Test
     void getAllEmployees() {
         // Given
-        val employee1 = employee().build();
-        val employee2 = employee().build();
+        val employee1 = employee().name("John Doe").age(25).build();
+        val employee2 = employee().name("Vasia").age(32).build();
 
         given(repository.findAll()).willReturn(Flux.just(employee1, employee2));
 
@@ -43,6 +53,12 @@ class EmployeeServiceTest {
                 .expectNext(employee1)
                 .expectNext(employee2)
                 .then(() -> verify(repository, times(1)).findAll())
+                .verifyComplete();
+
+        StepVerifier.create(result)
+                .enableConditionalSupport(employee -> employee.getName().startsWith("John"))
+                .expectNextMatches(employee -> "John Doe".equals(employee.getName()) && employee.getAge() == 25)
+                .expectNext(employee2)
                 .verifyComplete();
     }
 
@@ -97,10 +113,104 @@ class EmployeeServiceTest {
                 .verifyComplete();
     }
 
+    @Test
+    void testFindEmployeeById() {
+        // Given
+        val id = 100L;
+        val name = "John Doe";
+        val age = 25;
+        val employee1 = employee().id(id).name(name).age(age).build();
+
+        given(repository.findById(anyLong())).willReturn(Mono.just(employee1));
+
+        // When
+        val result = service.findEmployeeById(id);
+
+        // Then
+        StepVerifier.create(result)
+                .consumeNextWith(employee ->
+                        assertThat(employee)
+                                .returns(id, Employee::getId)
+                                .returns(name, Employee::getName)
+                                .returns(age, Employee::getAge)
+                )
+                .verifyComplete();
+    }
+
+    @Test
+    void testFindEmployeeById_error() {
+        // Given
+        val id = 100L;
+
+        given(repository.findById(anyLong()))
+                .willReturn(Mono.error(new EmployeeService.EmployeeNotFoundException("Employee not found")));
+
+        // When
+        val result = service.findEmployeeById(id);
+
+        // Then
+        StepVerifier.create(result)
+                .expectErrorMatches(throwable ->
+                        throwable instanceof EmployeeService.EmployeeNotFoundException &&
+                                "Employee not found".equals(throwable.getMessage()))
+                .verify();
+    }
+
+    @Test
+    void operatorThrowsErrorExplicitly() {
+        Mono<String> source = Mono.just("test")
+                .map(value -> {
+                    throw new RuntimeException("Operator error");
+                });
+
+        StepVerifier.create(source)
+                .expectError()
+                .verifyThenAssertThat()
+                .hasOperatorErrorOfType(RuntimeException.class)
+                .hasOperatorErrorWithMessage("Operator error");
+    }
+
+    @Test
+    void operatorAssertions() {
+        Mono<String> source = Mono.just("test")
+                .map(String::toUpperCase);
+
+        StepVerifier.create(source)
+                .expectNext("TEST") // Check that the next value is "TEST"
+                .expectComplete() // Ensure the stream completes after emitting the value
+                .verifyThenAssertThat()
+                .hasNotDroppedElements() // Ensure no elements were dropped
+                .hasNotDroppedErrors(); // Ensure no errors were dropped
+    }
+
+    @Test
+    void assertDroppedElementsAllPass() {
+        val flux = Flux.from(s -> {
+            s.onSubscribe(Operators.emptySubscription());
+            s.onNext("foo");
+            s.onComplete();
+            s.onNext("bar");
+            s.onNext("baz");
+        }).take(3, false);
+
+        StepVerifier.create(flux)
+                .expectNext("foo")
+                .expectComplete()
+                .verifyThenAssertThat()
+                .hasDroppedElements()
+                .hasDropped("baz")
+                .hasDroppedExactly("baz", "bar");
+    }
+
+
+
 
     @Builder(builderMethodName = "employee")
-    private Employee getEmployee(@Nullable String name, @Nullable Integer age) {
+    private Employee getEmployee(@Nullable Long id, @Nullable String name, @Nullable Integer age) {
         val employee = mock(Employee.class);
+        if (nonNull(id)) {
+            given(employee.getId()).willReturn(id);
+        }
         if (nonNull(name)) {
             given(employee.getName()).willReturn(name);
         }

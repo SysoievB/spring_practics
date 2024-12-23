@@ -19,7 +19,8 @@ public class EmployeeService {
     }
 
     Mono<Employee> findEmployeeById(Long id) {
-        return repo.findById(id);
+        return repo.findById(id)
+                .switchIfEmpty(Mono.error(new EmployeeNotFoundException("Employee not found")));
     }
 
     @Transactional
