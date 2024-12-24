@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added ContextExpectations">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added publisherProbe">
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/security/WelcomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/functional_web/EmployeeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/functional_web/EmployeeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +24,8 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -251,7 +253,7 @@
     "Spring Boot.RecordApplicationEventsApplication.executor": "Run",
     "Spring Boot.ScheduledApplication.executor": "Debug",
     "Spring Boot.Section1StaticCredentialsApplication.executor": "Debug",
-    "Spring Boot.SecurityApplication.executor": "Debug",
+    "Spring Boot.SecurityApplication.executor": "Run",
     "Spring Boot.SlicePaginationApplication.executor": "Debug",
     "Spring Boot.SoftDeleteApplication.executor": "Debug",
     "Spring Boot.SpecificationsApplication.executor": "Debug",
@@ -438,7 +440,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeServiceTest">
+  <component name="RunManager" selected="Spring Boot.SecurityApplication">
     <configuration name="ContextExpectationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webflux" />
       <extension name="coverage">
@@ -1328,15 +1330,7 @@
       <workItem from="1734866086318" duration="1411000" />
       <workItem from="1734879966319" duration="4228000" />
       <workItem from="1734925113677" duration="8215000" />
-      <workItem from="1735015047596" duration="5684000" />
-    </task>
-    <task id="LOCAL-00301" summary="Added @DynamicPropertySource comment">
-      <option name="closed" value="true" />
-      <created>1733726827291</created>
-      <option name="number" value="00301" />
-      <option name="presentableId" value="LOCAL-00301" />
-      <option name="project" value="LOCAL" />
-      <updated>1733726827291</updated>
+      <workItem from="1735015047596" duration="7469000" />
     </task>
     <task id="LOCAL-00302" summary="Added @TestExecutionListeners">
       <option name="closed" value="true" />
@@ -1722,7 +1716,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735019110860</updated>
     </task>
-    <option name="localTasksCounter" value="350" />
+    <task id="LOCAL-00350" summary="Added publisherProbe">
+      <option name="closed" value="true" />
+      <created>1735022042387</created>
+      <option name="number" value="00350" />
+      <option name="presentableId" value="LOCAL-00350" />
+      <option name="project" value="LOCAL" />
+      <updated>1735022042387</updated>
+    </task>
+    <option name="localTasksCounter" value="351" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1740,7 +1742,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added just annotation description" />
     <MESSAGE value="Added transactions" />
     <MESSAGE value="Added transactions tests" />
     <MESSAGE value="Added #{#entityName} to abstract NoRepositoryBean annotation" />
@@ -1765,7 +1766,8 @@
     <MESSAGE value="Added mockito" />
     <MESSAGE value="Added StepVerifier" />
     <MESSAGE value="Added ContextExpectations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ContextExpectations" />
+    <MESSAGE value="Added publisherProbe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added publisherProbe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
