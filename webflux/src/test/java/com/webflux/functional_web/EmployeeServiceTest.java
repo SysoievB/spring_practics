@@ -201,7 +201,20 @@ class EmployeeServiceTest {
                 .hasDroppedExactly("baz", "bar");
     }
 
+    @Test
+    void createEmployeeTest() {
+        val dto = mock(EmployeeDto.class);
+        val employee = employee().name("NAME").age(30).build();
+        given(repository.save(any())).willReturn(Mono.just(employee));
 
+        val result = service.createEmployee(dto);
+
+        StepVerifier.create(result)
+                .assertNext(emp -> assertThat(emp)
+                        .usingRecursiveComparison()
+                        .isEqualTo(employee))
+                .verifyComplete();
+    }
 
 
     @Builder(builderMethodName = "employee")

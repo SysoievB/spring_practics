@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added StepVerifier">
-      <change afterPath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/simple_web/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/webflux/context/ContextExpectations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/context/ContextExpectationsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webflux/src/main/java/com/webflux/functional_web/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/main/java/com/webflux/functional_web/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/functional_web/EmployeeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/functional_web/EmployeeServiceTest.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -122,6 +122,8 @@
     "JUnit.CarTest.divide_by_zero.executor": "Run",
     "JUnit.CarTest.executor": "Run",
     "JUnit.CarTest.success.executor": "Run",
+    "JUnit.ContextExpectationsTest.contextHasCorrectSize.executor": "Run",
+    "JUnit.ContextExpectationsTest.contextHasKey.executor": "Run",
     "JUnit.CustomBootstrapTest.executor": "Run",
     "JUnit.CustomBootstrapTest.testCustomBootstrapper.executor": "Run",
     "JUnit.DemoApplicationTests.testCustomEventIsPublished.executor": "Run",
@@ -139,9 +141,11 @@
     "JUnit.EmployeeRepoTest.test.executor": "Run",
     "JUnit.EmployeeRepoTest.testDatabaseConnection.executor": "Run",
     "JUnit.EmployeeServiceTest.assertDroppedElementsAllPass.executor": "Run",
+    "JUnit.EmployeeServiceTest.createEmployeeTest.executor": "Run",
     "JUnit.EmployeeServiceTest.executor": "Run",
     "JUnit.EmployeeServiceTest.getAllEmployees.executor": "Run",
     "JUnit.EmployeeServiceTest.getAllEmployees_WithOneField.executor": "Run",
+    "JUnit.EmployeeServiceTest.operatorAssertions.executor": "Run",
     "JUnit.EmployeeServiceTest.operatorThrowsErrorExplicitly.executor": "Run",
     "JUnit.EmployeeServiceTest.shouldCommitWhenEmployeeIsCreated.executor": "Run",
     "JUnit.EmployeeServiceTest.shouldRollbackWhenEmployeeIsCreated.executor": "Run",
@@ -327,11 +331,11 @@
       <recent name="com.web_annotations.map_struct" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.webflux.context" />
       <recent name="com.webflux.functional_web" />
       <recent name="com.webflux.simple_web" />
       <recent name="com.webmvctest_autoconfiguremockmvc" />
       <recent name="com.sql_annotations" />
-      <recent name="com.record_application_events" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jackson.lombok" />
@@ -434,7 +438,54 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeServiceTest">
+  <component name="RunManager" selected="JUnit.ContextExpectationsTest">
+    <configuration name="ContextExpectationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webflux" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webflux.context.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.webflux.context" />
+      <option name="MAIN_CLASS_NAME" value="com.webflux.context.ContextExpectationsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContextExpectationsTest.contextHasCorrectSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webflux" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webflux.context.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.webflux.context" />
+      <option name="MAIN_CLASS_NAME" value="com.webflux.context.ContextExpectationsTest" />
+      <option name="METHOD_NAME" value="contextHasCorrectSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContextExpectationsTest.contextHasKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webflux" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webflux.context.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.webflux.context" />
+      <option name="MAIN_CLASS_NAME" value="com.webflux.context.ContextExpectationsTest" />
+      <option name="METHOD_NAME" value="contextHasKey" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmployeeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webflux" />
       <extension name="coverage">
@@ -450,7 +501,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeServiceTest.assertDroppedElementsAllPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeServiceTest.createEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webflux" />
       <extension name="coverage">
         <pattern>
@@ -460,55 +511,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.webflux.functional_web" />
       <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
-      <option name="METHOD_NAME" value="assertDroppedElementsAllPass" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceTest.operatorAssertions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webflux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webflux.functional_web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.webflux.functional_web" />
-      <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
-      <option name="METHOD_NAME" value="operatorAssertions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceTest.testDroppedError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webflux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webflux.functional_web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.webflux.functional_web" />
-      <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
-      <option name="METHOD_NAME" value="testDroppedError" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceTest.testDroppedErrors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webflux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webflux.functional_web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.webflux.functional_web" />
-      <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
-      <option name="METHOD_NAME" value="testDroppedErrors" />
+      <option name="METHOD_NAME" value="createEmployeeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1088,11 +1091,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContextExpectationsTest" />
+        <item itemvalue="JUnit.ContextExpectationsTest.contextHasCorrectSize" />
+        <item itemvalue="JUnit.ContextExpectationsTest.contextHasKey" />
+        <item itemvalue="JUnit.EmployeeServiceTest.createEmployeeTest" />
         <item itemvalue="JUnit.EmployeeServiceTest" />
-        <item itemvalue="JUnit.EmployeeServiceTest.operatorAssertions" />
-        <item itemvalue="JUnit.EmployeeServiceTest.assertDroppedElementsAllPass" />
-        <item itemvalue="JUnit.EmployeeServiceTest.testDroppedError" />
-        <item itemvalue="JUnit.EmployeeServiceTest.testDroppedErrors" />
       </list>
     </recent_temporary>
   </component>
@@ -1324,23 +1327,8 @@
       <workItem from="1734859340515" duration="384000" />
       <workItem from="1734866086318" duration="1411000" />
       <workItem from="1734879966319" duration="4228000" />
-      <workItem from="1734925113677" duration="7598000" />
-    </task>
-    <task id="LOCAL-00296" summary="Added @ContextHierarchy">
-      <option name="closed" value="true" />
-      <created>1733661055069</created>
-      <option name="number" value="00296" />
-      <option name="presentableId" value="LOCAL-00296" />
-      <option name="project" value="LOCAL" />
-      <updated>1733661055069</updated>
-    </task>
-    <task id="LOCAL-00297" summary="Added @WebAppConfiguration">
-      <option name="closed" value="true" />
-      <created>1733661950044</created>
-      <option name="number" value="00297" />
-      <option name="presentableId" value="LOCAL-00297" />
-      <option name="project" value="LOCAL" />
-      <updated>1733661950044</updated>
+      <workItem from="1734925113677" duration="8215000" />
+      <workItem from="1735015047596" duration="3818000" />
     </task>
     <task id="LOCAL-00298" summary="Added @WebAppConfiguration">
       <option name="closed" value="true" />
@@ -1718,7 +1706,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734883545294</updated>
     </task>
-    <option name="localTasksCounter" value="345" />
+    <task id="LOCAL-00345" summary="Added StepVerifier">
+      <option name="closed" value="true" />
+      <created>1734934935145</created>
+      <option name="number" value="00345" />
+      <option name="presentableId" value="LOCAL-00345" />
+      <option name="project" value="LOCAL" />
+      <updated>1734934935145</updated>
+    </task>
+    <task id="LOCAL-00346" summary="Added StepVerifier">
+      <option name="closed" value="true" />
+      <created>1734934956960</created>
+      <option name="number" value="00346" />
+      <option name="presentableId" value="LOCAL-00346" />
+      <option name="project" value="LOCAL" />
+      <updated>1734934956960</updated>
+    </task>
+    <option name="localTasksCounter" value="347" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
