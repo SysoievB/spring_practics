@@ -14,6 +14,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.Operators;
 import reactor.test.StepVerifier;
+import reactor.test.publisher.PublisherProbe;
 
 import static java.util.Objects.nonNull;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -34,7 +35,7 @@ class EmployeeServiceTest {
      * <h2>enableConditionalSupport</h2> turns the subscriber into a Fuseable.
      * ConditionalSubscriber, which allows conditional processing of emitted elements
      * (e.g., elements satisfying a predicate are processed differently).
-     * */
+     */
 
     @Test
     void getAllEmployees() {
@@ -99,7 +100,7 @@ class EmployeeServiceTest {
      *   <li>ANY: Any type of fusion (either synchronous or asynchronous).</li>
      *   <li>THREAD_BARRIER: Prevents fusion, ensuring operators remain distinct.</li>
      * </ul>
-     * */
+     */
     @Test
     void testFusion() {
         // Given: A simple publisher with a map operator
@@ -216,6 +217,55 @@ class EmployeeServiceTest {
                 .verifyComplete();
     }
 
+    @Test
+    void deleteEmployeeTest() {
+        // Given
+        val probe = PublisherProbe.<Employee>empty();
+
+        given(repository.findById(anyLong())).willReturn(Mono.just(mock(Employee.class)));
+        given(repository.delete(any())).willReturn(probe.mono().then());
+
+        // When
+        val result = service.deleteEmployee(100L);
+
+        // Then
+        StepVerifier.create(result)
+                .then(() -> {
+                    probe.assertWasRequested();
+                    probe.assertWasSubscribed();
+                    probe.assertWasNotCancelled();
+                })
+                .verifyComplete();
+    }
+
+    @Test
+    void findEmployeeByIdTest() {
+        // Given
+        val id = 100L;
+        val name = "Vasia";
+        val age = 23;
+        val employee = employee().id(id).name(name).age(age).build();
+        val probe = PublisherProbe.of(Mono.just(employee));
+
+        given(repository.findById(anyLong())).willReturn(probe.mono());
+
+        // When
+        val result = service.findEmployeeById(id);
+
+        // Then
+        StepVerifier.create(result)
+                .assertNext(emp -> assertThat(emp)
+                        .returns(id, Employee::getId)
+                        .returns(name, Employee::getName)
+                        .returns(age, Employee::getAge)
+                )
+                .then(() -> {
+                    probe.assertWasRequested();
+                    probe.assertWasSubscribed();
+                    probe.assertWasNotCancelled();
+                })
+                .verifyComplete();
+    }
 
     @Builder(builderMethodName = "employee")
     private Employee getEmployee(@Nullable Long id, @Nullable String name, @Nullable Integer age) {

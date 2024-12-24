@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added StepVerifier">
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/webflux/context/ContextExpectations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/context/ContextExpectationsTest.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added ContextExpectations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/functional_web/EmployeeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/test/java/com/webflux/functional_web/EmployeeServiceTest.java" afterDir="false" />
     </list>
@@ -124,6 +122,7 @@
     "JUnit.CarTest.success.executor": "Run",
     "JUnit.ContextExpectationsTest.contextHasCorrectSize.executor": "Run",
     "JUnit.ContextExpectationsTest.contextHasKey.executor": "Run",
+    "JUnit.ContextExpectationsTest.executor": "Run",
     "JUnit.CustomBootstrapTest.executor": "Run",
     "JUnit.CustomBootstrapTest.testCustomBootstrapper.executor": "Run",
     "JUnit.DemoApplicationTests.testCustomEventIsPublished.executor": "Run",
@@ -143,6 +142,7 @@
     "JUnit.EmployeeServiceTest.assertDroppedElementsAllPass.executor": "Run",
     "JUnit.EmployeeServiceTest.createEmployeeTest.executor": "Run",
     "JUnit.EmployeeServiceTest.executor": "Run",
+    "JUnit.EmployeeServiceTest.findEmployeeByIdTest.executor": "Run",
     "JUnit.EmployeeServiceTest.getAllEmployees.executor": "Run",
     "JUnit.EmployeeServiceTest.getAllEmployees_WithOneField.executor": "Run",
     "JUnit.EmployeeServiceTest.operatorAssertions.executor": "Run",
@@ -438,7 +438,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContextExpectationsTest">
+  <component name="RunManager" selected="JUnit.EmployeeServiceTest">
     <configuration name="ContextExpectationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webflux" />
       <extension name="coverage">
@@ -501,7 +501,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeServiceTest.createEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeServiceTest.findEmployeeByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webflux" />
       <extension name="coverage">
         <pattern>
@@ -511,7 +511,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.webflux.functional_web" />
       <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
-      <option name="METHOD_NAME" value="createEmployeeTest" />
+      <option name="METHOD_NAME" value="findEmployeeByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1091,11 +1091,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeServiceTest" />
+        <item itemvalue="JUnit.EmployeeServiceTest.findEmployeeByIdTest" />
         <item itemvalue="JUnit.ContextExpectationsTest" />
         <item itemvalue="JUnit.ContextExpectationsTest.contextHasCorrectSize" />
         <item itemvalue="JUnit.ContextExpectationsTest.contextHasKey" />
-        <item itemvalue="JUnit.EmployeeServiceTest.createEmployeeTest" />
-        <item itemvalue="JUnit.EmployeeServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1328,31 +1328,7 @@
       <workItem from="1734866086318" duration="1411000" />
       <workItem from="1734879966319" duration="4228000" />
       <workItem from="1734925113677" duration="8215000" />
-      <workItem from="1735015047596" duration="3818000" />
-    </task>
-    <task id="LOCAL-00298" summary="Added @WebAppConfiguration">
-      <option name="closed" value="true" />
-      <created>1733663059743</created>
-      <option name="number" value="00298" />
-      <option name="presentableId" value="LOCAL-00298" />
-      <option name="project" value="LOCAL" />
-      <updated>1733663059743</updated>
-    </task>
-    <task id="LOCAL-00299" summary="Added @BootstrapWith">
-      <option name="closed" value="true" />
-      <created>1733719902747</created>
-      <option name="number" value="00299" />
-      <option name="presentableId" value="LOCAL-00299" />
-      <option name="project" value="LOCAL" />
-      <updated>1733719902748</updated>
-    </task>
-    <task id="LOCAL-00300" summary="Added @BootstrapWith">
-      <option name="closed" value="true" />
-      <created>1733724475157</created>
-      <option name="number" value="00300" />
-      <option name="presentableId" value="LOCAL-00300" />
-      <option name="project" value="LOCAL" />
-      <updated>1733724475157</updated>
+      <workItem from="1735015047596" duration="5684000" />
     </task>
     <task id="LOCAL-00301" summary="Added @DynamicPropertySource comment">
       <option name="closed" value="true" />
@@ -1722,7 +1698,31 @@
       <option name="project" value="LOCAL" />
       <updated>1734934956960</updated>
     </task>
-    <option name="localTasksCounter" value="347" />
+    <task id="LOCAL-00347" summary="Added ContextExpectations">
+      <option name="closed" value="true" />
+      <created>1735018966909</created>
+      <option name="number" value="00347" />
+      <option name="presentableId" value="LOCAL-00347" />
+      <option name="project" value="LOCAL" />
+      <updated>1735018966910</updated>
+    </task>
+    <task id="LOCAL-00348" summary="Added ContextExpectations">
+      <option name="closed" value="true" />
+      <created>1735019088843</created>
+      <option name="number" value="00348" />
+      <option name="presentableId" value="LOCAL-00348" />
+      <option name="project" value="LOCAL" />
+      <updated>1735019088843</updated>
+    </task>
+    <task id="LOCAL-00349" summary="Added ContextExpectations">
+      <option name="closed" value="true" />
+      <created>1735019110860</created>
+      <option name="number" value="00349" />
+      <option name="presentableId" value="LOCAL-00349" />
+      <option name="project" value="LOCAL" />
+      <updated>1735019110860</updated>
+    </task>
+    <option name="localTasksCounter" value="350" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1740,7 +1740,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added security static credentials + trivial tests" />
     <MESSAGE value="Added just annotation description" />
     <MESSAGE value="Added transactions" />
     <MESSAGE value="Added transactions tests" />
@@ -1765,7 +1764,8 @@
     <MESSAGE value="Added @AutoConfigureMockMvc test for controller" />
     <MESSAGE value="Added mockito" />
     <MESSAGE value="Added StepVerifier" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added StepVerifier" />
+    <MESSAGE value="Added ContextExpectations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ContextExpectations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
