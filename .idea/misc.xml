@@ -82,6 +82,7 @@
         <option value="$PROJECT_DIR$/spring_tests/record_application_events/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/sql_annotations/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/webmvctest_autoconfiguremockmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/security/section_2_changing_default_config/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

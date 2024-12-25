@@ -134,6 +134,15 @@
         </processorPath>
         <module name="context_hierarchy" />
       </profile>
+      <profile name="Annotation profile for section_2_changing_default_config" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="section_2_changing_default_config" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="21" />
   </component>
@@ -196,6 +205,7 @@
       <module name="record_application_events" options="-parameters" />
       <module name="scheduled" options="-parameters" />
       <module name="section_1_static_credentials" options="-parameters" />
+      <module name="section_2_changing_default_config" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="slice_pagination" options="-parameters" />
       <module name="soft_delete" options="-parameters" />
