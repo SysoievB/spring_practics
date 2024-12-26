@@ -923,6 +923,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Section2DisableFormLoginAndHttpbasicAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="section_2_disable_form_login_and_httpbasic_auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_2_disable_form_login_and_httpbasic_auth.Section2DisableFormLoginAndHttpbasicAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="security" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.security.SecurityApplication" />

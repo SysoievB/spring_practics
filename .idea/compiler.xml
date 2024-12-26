@@ -45,6 +45,7 @@
         <module name="named_entity_graph" />
         <module name="pessimistic_locking" />
         <module name="test_execution_listener" />
+        <module name="section_2_disable_form_login_and_httpbasic_auth" />
         <module name="test_property_source" />
         <module name="pagination" />
         <module name="conditional_on_expression" />
@@ -124,24 +125,16 @@
         </processorPath>
         <module name="web_annotations" />
       </profile>
-      <profile name="Annotation profile for application_events" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-        </processorPath>
-        <module name="context_hierarchy" />
-      </profile>
       <profile name="Annotation profile for section_2_changing_default_config" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="section_2_changing_default_config" />
+        <module name="context_hierarchy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="21" />
@@ -206,6 +199,7 @@
       <module name="scheduled" options="-parameters" />
       <module name="section_1_static_credentials" options="-parameters" />
       <module name="section_2_changing_default_config" options="-parameters" />
+      <module name="section_2_disable_form_login_and_httpbasic_auth" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="slice_pagination" options="-parameters" />
       <module name="soft_delete" options="-parameters" />
