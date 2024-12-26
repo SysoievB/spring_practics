@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added changing default config security">
-      <change afterPath="$PROJECT_DIR$/security/section_2_changing_default_config/src/main/java/com/section_2_changing_default_config/config/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added changing default config security disable formlogin">
+      <change afterPath="$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java/com/section_2_disable_form_login_and_httpbasic_auth/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -252,6 +252,7 @@
     "Spring Boot.ScheduledApplication.executor": "Debug",
     "Spring Boot.Section1StaticCredentialsApplication.executor": "Debug",
     "Spring Boot.Section2ChangingDefaultConfigApplication.executor": "Run",
+    "Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication.executor": "Run",
     "Spring Boot.SecurityApplication.executor": "Debug",
     "Spring Boot.SlicePaginationApplication.executor": "Debug",
     "Spring Boot.SoftDeleteApplication.executor": "Debug",
@@ -277,7 +278,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_practics/spring_tests/context_hierarchy/src/main/java/com/context_hierarchy",
+    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java/com/section_2_disable_form_login_and_httpbasic_auth",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -312,11 +313,11 @@
       <recent name="com.commit_rollback" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_2_disable_form_login_and_httpbasic_auth\src\main\java\com\section_2_disable_form_login_and_httpbasic_auth" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\spring_tests\context_hierarchy\src\main\java\com\context_hierarchy" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\pessimistic_locking\src\main\java\com\pessimistic_locking" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\attribute_converter\src\main\resources" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\immutable_annotation\src\main\resources" />
-      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\column_updatable_insertable\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -439,7 +440,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section2ChangingDefaultConfigApplication">
+  <component name="RunManager" selected="Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication">
     <configuration name="ContextExpectationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webflux" />
       <extension name="coverage">
@@ -1348,23 +1349,7 @@
       <workItem from="1735015047596" duration="9000000" />
       <workItem from="1735067940887" duration="749000" />
       <workItem from="1735147346062" duration="2891000" />
-      <workItem from="1735191824984" duration="7056000" />
-    </task>
-    <task id="LOCAL-00306" summary="Added application events tests">
-      <option name="closed" value="true" />
-      <created>1734068227871</created>
-      <option name="number" value="00306" />
-      <option name="presentableId" value="LOCAL-00306" />
-      <option name="project" value="LOCAL" />
-      <updated>1734068227871</updated>
-    </task>
-    <task id="LOCAL-00307" summary="Added application events tests">
-      <option name="closed" value="true" />
-      <created>1734198301766</created>
-      <option name="number" value="00307" />
-      <option name="presentableId" value="LOCAL-00307" />
-      <option name="project" value="LOCAL" />
-      <updated>1734198301768</updated>
+      <workItem from="1735191824984" duration="8195000" />
     </task>
     <task id="LOCAL-00308" summary="Added application events tests">
       <option name="closed" value="true" />
@@ -1742,7 +1727,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735201449994</updated>
     </task>
-    <option name="localTasksCounter" value="355" />
+    <task id="LOCAL-00355" summary="Added changing default config security disable formlogin">
+      <option name="closed" value="true" />
+      <created>1735201679094</created>
+      <option name="number" value="00355" />
+      <option name="presentableId" value="LOCAL-00355" />
+      <option name="project" value="LOCAL" />
+      <updated>1735201679094</updated>
+    </task>
+    <task id="LOCAL-00356" summary="Added changing default config security disable formlogin">
+      <option name="closed" value="true" />
+      <created>1735201738538</created>
+      <option name="number" value="00356" />
+      <option name="presentableId" value="LOCAL-00356" />
+      <option name="project" value="LOCAL" />
+      <updated>1735201738538</updated>
+    </task>
+    <option name="localTasksCounter" value="357" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1760,7 +1761,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added @Commit &amp; @Rollback" />
     <MESSAGE value="Added @ContextHierarchy" />
     <MESSAGE value="Added @WebAppConfiguration" />
     <MESSAGE value="Added @BootstrapWith" />
@@ -1785,7 +1785,8 @@
     <MESSAGE value="Added static credentials security" />
     <MESSAGE value="Added changing default config security aaded controllers" />
     <MESSAGE value="Added changing default config security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added changing default config security" />
+    <MESSAGE value="Added changing default config security disable formlogin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added changing default config security disable formlogin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
