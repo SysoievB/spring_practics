@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added changing default config security aaded controllers">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added changing default config security">
       <change afterPath="$PROJECT_DIR$/security/section_2_changing_default_config/src/main/java/com/section_2_changing_default_config/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -1340,15 +1340,7 @@
       <workItem from="1735015047596" duration="9000000" />
       <workItem from="1735067940887" duration="749000" />
       <workItem from="1735147346062" duration="2891000" />
-      <workItem from="1735191824984" duration="6215000" />
-    </task>
-    <task id="LOCAL-00305" summary="Added application events">
-      <option name="closed" value="true" />
-      <created>1734068132371</created>
-      <option name="number" value="00305" />
-      <option name="presentableId" value="LOCAL-00305" />
-      <option name="project" value="LOCAL" />
-      <updated>1734068132372</updated>
+      <workItem from="1735191824984" duration="7056000" />
     </task>
     <task id="LOCAL-00306" summary="Added application events tests">
       <option name="closed" value="true" />
@@ -1734,7 +1726,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735199486228</updated>
     </task>
-    <option name="localTasksCounter" value="354" />
+    <task id="LOCAL-00354" summary="Added changing default config security">
+      <option name="closed" value="true" />
+      <created>1735201449994</created>
+      <option name="number" value="00354" />
+      <option name="presentableId" value="LOCAL-00354" />
+      <option name="project" value="LOCAL" />
+      <updated>1735201449994</updated>
+    </task>
+    <option name="localTasksCounter" value="355" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1775,9 +1775,9 @@
     <MESSAGE value="Added ContextExpectations" />
     <MESSAGE value="Added publisherProbe" />
     <MESSAGE value="Added static credentials security" />
-    <MESSAGE value="Added changing default config security" />
     <MESSAGE value="Added changing default config security aaded controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added changing default config security aaded controllers" />
+    <MESSAGE value="Added changing default config security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added changing default config security" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
