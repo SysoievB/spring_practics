@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added static credentials security">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added changing default config security">
+      <change afterPath="$PROJECT_DIR$/security/section_2_changing_default_config/src/main/java/com/section_2_changing_default_config/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_2_changing_default_config/src/main/java/com/section_2_changing_default_config/controller/BalanceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -250,7 +252,7 @@
     &quot;Spring Boot.RecordApplicationEventsApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ScheduledApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.Section1StaticCredentialsApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SecurityApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SecurityApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.SlicePaginationApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.SoftDeleteApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.SpecificationsApplication.executor&quot;: &quot;Debug&quot;,
@@ -913,6 +915,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Section2ChangingDefaultConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="section_2_changing_default_config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_2_changing_default_config.Section2ChangingDefaultConfigApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="security" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.security.SecurityApplication" />
@@ -1329,15 +1339,8 @@
       <workItem from="1734925113677" duration="8215000" />
       <workItem from="1735015047596" duration="9000000" />
       <workItem from="1735067940887" duration="749000" />
-      <workItem from="1735147346062" duration="430000" />
-    </task>
-    <task id="LOCAL-00303" summary="Added between">
-      <option name="closed" value="true" />
-      <created>1733807845734</created>
-      <option name="number" value="00303" />
-      <option name="presentableId" value="LOCAL-00303" />
-      <option name="project" value="LOCAL" />
-      <updated>1733807845735</updated>
+      <workItem from="1735147346062" duration="2891000" />
+      <workItem from="1735191824984" duration="5124000" />
     </task>
     <task id="LOCAL-00304" summary="Added application events">
       <option name="closed" value="true" />
@@ -1723,7 +1726,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735023330877</updated>
     </task>
-    <option name="localTasksCounter" value="352" />
+    <task id="LOCAL-00352" summary="Added changing default config security">
+      <option name="closed" value="true" />
+      <created>1735147907810</created>
+      <option name="number" value="00352" />
+      <option name="presentableId" value="LOCAL-00352" />
+      <option name="project" value="LOCAL" />
+      <updated>1735147907811</updated>
+    </task>
+    <option name="localTasksCounter" value="353" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1741,7 +1752,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added transactions tests" />
     <MESSAGE value="Added #{#entityName} to abstract NoRepositoryBean annotation" />
     <MESSAGE value="Added @Commit &amp; @Rollback" />
     <MESSAGE value="Added @ContextHierarchy" />
@@ -1766,7 +1776,8 @@
     <MESSAGE value="Added ContextExpectations" />
     <MESSAGE value="Added publisherProbe" />
     <MESSAGE value="Added static credentials security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added static credentials security" />
+    <MESSAGE value="Added changing default config security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added changing default config security" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1783,6 +1794,11 @@
           <url>file://$PROJECT_DIR$/actuator/src/main/java/com/actuator/RandomEndpoint.java</url>
           <line>12</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.4.1/spring-security-core-6.4.1-sources.jar!/org/springframework/security/provisioning/InMemoryUserDetailsManager.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
