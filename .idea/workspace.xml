@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added changing default config security disable formlogin" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added in memory user details manager">
+      <change afterPath="$PROJECT_DIR$/security/section_3_in_memory_user_details_manager/src/main/java/com/section_3_in_memory_user_details_manager/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_3_in_memory_user_details_manager/src/test/java/com/section_3_in_memory_user_details_manager/controller/SecurityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +175,7 @@
     "JUnit.PrototypeServiceTest.executor": "Run",
     "JUnit.PrototypeServiceTest.testAfterDirtiesContextIncrementedCheck.executor": "Run",
     "JUnit.PrototypeServiceTest.testPrototypeScopeWithDirtiesContext.executor": "Run",
+    "JUnit.SecurityTests.executor": "Run",
     "JUnit.SomeTest.executor": "Run",
     "JUnit.SomeTest.testHelperBean.executor": "Run",
     "JUnit.TransactionIsolationTest.executor": "Run",
@@ -250,6 +258,7 @@
     "Spring Boot.Section1StaticCredentialsApplication.executor": "Debug",
     "Spring Boot.Section2ChangingDefaultConfigApplication.executor": "Run",
     "Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication.executor": "Run",
+    "Spring Boot.Section3InMemoryUserDetailsManagerApplication.executor": "Run",
     "Spring Boot.SecurityApplication.executor": "Debug",
     "Spring Boot.SlicePaginationApplication.executor": "Debug",
     "Spring Boot.SoftDeleteApplication.executor": "Debug",
@@ -275,7 +284,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java/com/section_2_disable_form_login_and_httpbasic_auth",
+    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_3_in_memory_user_details_manager/src/main/java/com/section_3_in_memory_user_details_manager",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -310,11 +319,11 @@
       <recent name="com.commit_rollback" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_3_in_memory_user_details_manager\src\main\java\com\section_3_in_memory_user_details_manager" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_2_disable_form_login_and_httpbasic_auth\src\main\java\com\section_2_disable_form_login_and_httpbasic_auth" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\spring_tests\context_hierarchy\src\main\java\com\context_hierarchy" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\pessimistic_locking\src\main\java\com\pessimistic_locking" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\attribute_converter\src\main\resources" />
-      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\immutable_annotation\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -437,7 +446,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication">
+  <component name="RunManager" selected="Spring Boot.Section3InMemoryUserDetailsManagerApplication">
     <configuration name="ContextExpectationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webflux" />
       <extension name="coverage">
@@ -464,22 +473,6 @@
       <option name="PACKAGE_NAME" value="com.webflux.context" />
       <option name="MAIN_CLASS_NAME" value="com.webflux.context.ContextExpectationsTest" />
       <option name="METHOD_NAME" value="contextHasCorrectSize" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContextExpectationsTest.contextHasKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webflux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webflux.context.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.webflux.context" />
-      <option name="MAIN_CLASS_NAME" value="com.webflux.context.ContextExpectationsTest" />
-      <option name="METHOD_NAME" value="contextHasKey" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -512,6 +505,21 @@
       <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
       <option name="METHOD_NAME" value="findEmployeeByIdTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="section_3_in_memory_user_details_manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.section_3_in_memory_user_details_manager.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.section_3_in_memory_user_details_manager.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.section_3_in_memory_user_details_manager.controller.SecurityTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -929,6 +937,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Section3InMemoryUserDetailsManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="section_3_in_memory_user_details_manager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_3_in_memory_user_details_manager.Section3InMemoryUserDetailsManagerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="security" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.security.SecurityApplication" />
@@ -1106,11 +1122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SecurityTests" />
         <item itemvalue="JUnit.EmployeeServiceTest" />
         <item itemvalue="JUnit.EmployeeServiceTest.findEmployeeByIdTest" />
         <item itemvalue="JUnit.ContextExpectationsTest" />
         <item itemvalue="JUnit.ContextExpectationsTest.contextHasCorrectSize" />
-        <item itemvalue="JUnit.ContextExpectationsTest.contextHasKey" />
       </list>
     </recent_temporary>
   </component>
@@ -1347,22 +1363,7 @@
       <workItem from="1735067940887" duration="749000" />
       <workItem from="1735147346062" duration="2891000" />
       <workItem from="1735191824984" duration="8870000" />
-    </task>
-    <task id="LOCAL-00309" summary="Added application events tests">
-      <option name="closed" value="true" />
-      <created>1734253831414</created>
-      <option name="number" value="00309" />
-      <option name="presentableId" value="LOCAL-00309" />
-      <option name="project" value="LOCAL" />
-      <updated>1734253831414</updated>
-    </task>
-    <task id="LOCAL-00310" summary="Added sql annotations tests">
-      <option name="closed" value="true" />
-      <created>1734254075735</created>
-      <option name="number" value="00310" />
-      <option name="presentableId" value="LOCAL-00310" />
-      <option name="project" value="LOCAL" />
-      <updated>1734254075735</updated>
+      <workItem from="1735275285189" duration="5170000" />
     </task>
     <task id="LOCAL-00311" summary="Added sql annotations tests">
       <option name="closed" value="true" />
@@ -1740,7 +1741,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735202651108</updated>
     </task>
-    <option name="localTasksCounter" value="358" />
+    <task id="LOCAL-00358" summary="Added in memory user details manager">
+      <option name="closed" value="true" />
+      <created>1735275471329</created>
+      <option name="number" value="00358" />
+      <option name="presentableId" value="LOCAL-00358" />
+      <option name="project" value="LOCAL" />
+      <updated>1735275471330</updated>
+    </task>
+    <task id="LOCAL-00359" summary="Added in memory user details manager">
+      <option name="closed" value="true" />
+      <created>1735275603064</created>
+      <option name="number" value="00359" />
+      <option name="presentableId" value="LOCAL-00359" />
+      <option name="project" value="LOCAL" />
+      <updated>1735275603064</updated>
+    </task>
+    <option name="localTasksCounter" value="360" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1758,7 +1775,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added @ContextHierarchy" />
     <MESSAGE value="Added @WebAppConfiguration" />
     <MESSAGE value="Added @BootstrapWith" />
     <MESSAGE value="Added @DynamicPropertySource comment" />
@@ -1783,7 +1799,8 @@
     <MESSAGE value="Added changing default config security aaded controllers" />
     <MESSAGE value="Added changing default config security" />
     <MESSAGE value="Added changing default config security disable formlogin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added changing default config security disable formlogin" />
+    <MESSAGE value="Added in memory user details manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added in memory user details manager" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
