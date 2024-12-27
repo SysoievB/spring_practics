@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added in memory user details manager">
-      <change afterPath="$PROJECT_DIR$/security/section_3_in_memory_user_details_manager/src/test/java/com/section_3_in_memory_user_details_manager/controller/SecurityTests.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added in memory user details manager tests">
+      <change afterPath="$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/test/java/com/section_2_disable_form_login_and_httpbasic_auth/controller/SecurityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java/com/section_2_disable_form_login_and_httpbasic_auth/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java/com/section_2_disable_form_login_and_httpbasic_auth/config/SecurityConfig.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +172,12 @@
     "JUnit.PrototypeServiceTest.executor": "Run",
     "JUnit.PrototypeServiceTest.testAfterDirtiesContextIncrementedCheck.executor": "Run",
     "JUnit.PrototypeServiceTest.testPrototypeScopeWithDirtiesContext.executor": "Run",
+    "JUnit.SecurityTests (1).executor": "Run",
     "JUnit.SecurityTests.executor": "Run",
+    "JUnit.SecurityTests.testAdminAccess.executor": "Run",
+    "JUnit.SecurityTests.testEndpointsNotAccessible.executor": "Run",
+    "JUnit.SecurityTests.testEndpointsNotAccessibleWithAnonymousUser.executor": "Run",
+    "JUnit.SecurityTests.testPrivateEndpointsNotAccessibleWithoutAuthentication.executor": "Run",
     "JUnit.SomeTest.executor": "Run",
     "JUnit.SomeTest.testHelperBean.executor": "Run",
     "JUnit.TransactionIsolationTest.executor": "Run",
@@ -441,65 +448,18 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SecurityTests">
-    <configuration name="ContextExpectationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webflux" />
+  <component name="RunManager" selected="JUnit.SecurityTests (1)">
+    <configuration name="SecurityTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="section_2_disable_form_login_and_httpbasic_auth" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.webflux.context.*" />
+          <option name="PATTERN" value="com.section_2_disable_form_login_and_httpbasic_auth.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.webflux.context" />
-      <option name="MAIN_CLASS_NAME" value="com.webflux.context.ContextExpectationsTest" />
+      <option name="PACKAGE_NAME" value="com.section_2_disable_form_login_and_httpbasic_auth.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.section_2_disable_form_login_and_httpbasic_auth.controller.SecurityTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContextExpectationsTest.contextHasCorrectSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webflux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webflux.context.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.webflux.context" />
-      <option name="MAIN_CLASS_NAME" value="com.webflux.context.ContextExpectationsTest" />
-      <option name="METHOD_NAME" value="contextHasCorrectSize" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webflux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webflux.functional_web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.webflux.functional_web" />
-      <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeServiceTest.findEmployeeByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webflux" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webflux.functional_web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.webflux.functional_web" />
-      <option name="MAIN_CLASS_NAME" value="com.webflux.functional_web.EmployeeServiceTest" />
-      <option name="METHOD_NAME" value="findEmployeeByIdTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -515,6 +475,54 @@
       <option name="PACKAGE_NAME" value="com.section_3_in_memory_user_details_manager.controller" />
       <option name="MAIN_CLASS_NAME" value="com.section_3_in_memory_user_details_manager.controller.SecurityTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityTests.testAdminAccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="section_2_disable_form_login_and_httpbasic_auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.section_2_disable_form_login_and_httpbasic_auth.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.section_2_disable_form_login_and_httpbasic_auth.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.section_2_disable_form_login_and_httpbasic_auth.controller.SecurityTests" />
+      <option name="METHOD_NAME" value="testAdminAccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityTests.testEndpointsNotAccessibleWithAnonymousUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="section_2_disable_form_login_and_httpbasic_auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.section_2_disable_form_login_and_httpbasic_auth.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.section_2_disable_form_login_and_httpbasic_auth.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.section_2_disable_form_login_and_httpbasic_auth.controller.SecurityTests" />
+      <option name="METHOD_NAME" value="testEndpointsNotAccessibleWithAnonymousUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityTests.testPrivateEndpointsNotAccessibleWithoutAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="section_2_disable_form_login_and_httpbasic_auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.section_2_disable_form_login_and_httpbasic_auth.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.section_2_disable_form_login_and_httpbasic_auth.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.section_2_disable_form_login_and_httpbasic_auth.controller.SecurityTests" />
+      <option name="METHOD_NAME" value="testPrivateEndpointsNotAccessibleWithoutAuthentication" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1117,11 +1125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SecurityTests (1)" />
+        <item itemvalue="JUnit.SecurityTests.testPrivateEndpointsNotAccessibleWithoutAuthentication" />
+        <item itemvalue="JUnit.SecurityTests.testAdminAccess" />
+        <item itemvalue="JUnit.SecurityTests.testEndpointsNotAccessibleWithAnonymousUser" />
         <item itemvalue="JUnit.SecurityTests" />
-        <item itemvalue="JUnit.EmployeeServiceTest" />
-        <item itemvalue="JUnit.EmployeeServiceTest.findEmployeeByIdTest" />
-        <item itemvalue="JUnit.ContextExpectationsTest" />
-        <item itemvalue="JUnit.ContextExpectationsTest.contextHasCorrectSize" />
       </list>
     </recent_temporary>
   </component>
@@ -1358,31 +1366,7 @@
       <workItem from="1735067940887" duration="749000" />
       <workItem from="1735147346062" duration="2891000" />
       <workItem from="1735191824984" duration="8870000" />
-      <workItem from="1735275285189" duration="5580000" />
-    </task>
-    <task id="LOCAL-00312" summary="Added sql annotations tests">
-      <option name="closed" value="true" />
-      <created>1734262144785</created>
-      <option name="number" value="00312" />
-      <option name="presentableId" value="LOCAL-00312" />
-      <option name="project" value="LOCAL" />
-      <updated>1734262144785</updated>
-    </task>
-    <task id="LOCAL-00313" summary="Added sql annotations tests">
-      <option name="closed" value="true" />
-      <created>1734264548907</created>
-      <option name="number" value="00313" />
-      <option name="presentableId" value="LOCAL-00313" />
-      <option name="project" value="LOCAL" />
-      <updated>1734264548907</updated>
-    </task>
-    <task id="LOCAL-00314" summary="Added sql annotations tests">
-      <option name="closed" value="true" />
-      <created>1734264570496</created>
-      <option name="number" value="00314" />
-      <option name="presentableId" value="LOCAL-00314" />
-      <option name="project" value="LOCAL" />
-      <updated>1734264570496</updated>
+      <workItem from="1735275285189" duration="8668000" />
     </task>
     <task id="LOCAL-00315" summary="Added sql annotations tests">
       <option name="closed" value="true" />
@@ -1752,7 +1736,31 @@
       <option name="project" value="LOCAL" />
       <updated>1735287002506</updated>
     </task>
-    <option name="localTasksCounter" value="361" />
+    <task id="LOCAL-00361" summary="Added in memory user details manager">
+      <option name="closed" value="true" />
+      <created>1735287032018</created>
+      <option name="number" value="00361" />
+      <option name="presentableId" value="LOCAL-00361" />
+      <option name="project" value="LOCAL" />
+      <updated>1735287032018</updated>
+    </task>
+    <task id="LOCAL-00362" summary="Added in memory user details manager">
+      <option name="closed" value="true" />
+      <created>1735287480235</created>
+      <option name="number" value="00362" />
+      <option name="presentableId" value="LOCAL-00362" />
+      <option name="project" value="LOCAL" />
+      <updated>1735287480235</updated>
+    </task>
+    <task id="LOCAL-00363" summary="Added in memory user details manager tests">
+      <option name="closed" value="true" />
+      <created>1735290026451</created>
+      <option name="number" value="00363" />
+      <option name="presentableId" value="LOCAL-00363" />
+      <option name="project" value="LOCAL" />
+      <updated>1735290026451</updated>
+    </task>
+    <option name="localTasksCounter" value="364" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1770,7 +1778,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added @WebAppConfiguration" />
     <MESSAGE value="Added @BootstrapWith" />
     <MESSAGE value="Added @DynamicPropertySource comment" />
     <MESSAGE value="Added @TestExecutionListeners" />
@@ -1795,7 +1802,8 @@
     <MESSAGE value="Added changing default config security" />
     <MESSAGE value="Added changing default config security disable formlogin" />
     <MESSAGE value="Added in memory user details manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in memory user details manager" />
+    <MESSAGE value="Added in memory user details manager tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added in memory user details manager tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
