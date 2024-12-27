@@ -44,7 +44,10 @@ public class SecurityConfig {
     }
 
     /**
-     * From Spring Security 6.3 version
+     * <h6>From Spring Security 6.3 version</h6>
+     * The CompromisedPasswordChecker interface in Spring Security is designed to check if
+     * a password has been compromised in a data breach. This helps enhance security by
+     * ensuring that users do not use passwords that are known to be unsafe.
      */
     @Bean
     public CompromisedPasswordChecker compromisedPasswordChecker() {
