@@ -4,7 +4,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.test.context.support.WithAnonymousUser;
 import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.security.test.context.support.WithUserDetails;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -42,6 +44,38 @@ public class SecurityTests {
     }
 
     @Test
+    @WithUserDetails("user")
+    void testPrivateEndpointsAccessibleWithUserDetails() throws Exception {
+        mockMvc.perform(get("/myAccount"))
+                .andExpect(status().isOk());
+
+        mockMvc.perform(get("/myBalance"))
+                .andExpect(status().isOk());
+
+        mockMvc.perform(get("/myCards"))
+                .andExpect(status().isOk());
+
+        mockMvc.perform(get("/myLoans"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    @WithAnonymousUser
+    void testPrivateEndpointsNotAccessibleWithAnonymousUser() throws Exception {
+        mockMvc.perform(get("/myAccount"))
+                .andExpect(status().isUnauthorized());
+
+        mockMvc.perform(get("/myBalance"))
+                .andExpect(status().isUnauthorized());
+
+        mockMvc.perform(get("/myCards"))
+                .andExpect(status().isUnauthorized());
+
+        mockMvc.perform(get("/myLoans"))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
     @WithMockUser(username = "user", authorities = {"read"})
     void testPrivateEndpointsAccessibleWithAuthentication() throws Exception {
         mockMvc.perform(get("/myAccount"))
@@ -61,15 +95,6 @@ public class SecurityTests {
     @WithMockUser(username = "admin", authorities = {"admin"})
     void testAdminAccess() throws Exception {
         mockMvc.perform(get("/myAccount"))
-                .andExpect(status().isOk());
-
-        mockMvc.perform(get("/myBalance"))
-                .andExpect(status().isOk());
-
-        mockMvc.perform(get("/myCards"))
-                .andExpect(status().isOk());
-
-        mockMvc.perform(get("/myLoans"))
                 .andExpect(status().isOk());
     }
 
