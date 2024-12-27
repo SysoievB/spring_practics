@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added in memory user details manager">
-      <change afterPath="$PROJECT_DIR$/security/section_3_in_memory_user_details_manager/src/main/java/com/section_3_in_memory_user_details_manager/config/SecurityConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/security/section_3_in_memory_user_details_manager/src/test/java/com/section_3_in_memory_user_details_manager/controller/SecurityTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -446,7 +441,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section3InMemoryUserDetailsManagerApplication">
+  <component name="RunManager" selected="JUnit.SecurityTests">
     <configuration name="ContextExpectationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webflux" />
       <extension name="coverage">
@@ -1363,15 +1358,7 @@
       <workItem from="1735067940887" duration="749000" />
       <workItem from="1735147346062" duration="2891000" />
       <workItem from="1735191824984" duration="8870000" />
-      <workItem from="1735275285189" duration="5170000" />
-    </task>
-    <task id="LOCAL-00311" summary="Added sql annotations tests">
-      <option name="closed" value="true" />
-      <created>1734259525786</created>
-      <option name="number" value="00311" />
-      <option name="presentableId" value="LOCAL-00311" />
-      <option name="project" value="LOCAL" />
-      <updated>1734259525787</updated>
+      <workItem from="1735275285189" duration="5580000" />
     </task>
     <task id="LOCAL-00312" summary="Added sql annotations tests">
       <option name="closed" value="true" />
@@ -1757,7 +1744,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735275603064</updated>
     </task>
-    <option name="localTasksCounter" value="360" />
+    <task id="LOCAL-00360" summary="Added in memory user details manager">
+      <option name="closed" value="true" />
+      <created>1735287002506</created>
+      <option name="number" value="00360" />
+      <option name="presentableId" value="LOCAL-00360" />
+      <option name="project" value="LOCAL" />
+      <updated>1735287002506</updated>
+    </task>
+    <option name="localTasksCounter" value="361" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
