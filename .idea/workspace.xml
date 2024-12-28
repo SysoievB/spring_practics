@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added in memory user details manager tests">
-      <change afterPath="$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/test/java/com/section_2_disable_form_login_and_httpbasic_auth/controller/SecurityTests.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added managing users using a DB">
+      <change afterPath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db/repository/CustomerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java/com/section_2_disable_form_login_and_httpbasic_auth/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java/com/section_2_disable_form_login_and_httpbasic_auth/config/SecurityConfig.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1374,14 +1374,7 @@
       <workItem from="1735147346062" duration="2891000" />
       <workItem from="1735191824984" duration="8870000" />
       <workItem from="1735275285189" duration="8668000" />
-    </task>
-    <task id="LOCAL-00315" summary="Added sql annotations tests">
-      <option name="closed" value="true" />
-      <created>1734264579916</created>
-      <option name="number" value="00315" />
-      <option name="presentableId" value="LOCAL-00315" />
-      <option name="project" value="LOCAL" />
-      <updated>1734264579916</updated>
+      <workItem from="1735364127731" duration="637000" />
     </task>
     <task id="LOCAL-00316" summary="Added sql annotations tests">
       <option name="closed" value="true" />
@@ -1767,7 +1760,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735290026451</updated>
     </task>
-    <option name="localTasksCounter" value="364" />
+    <task id="LOCAL-00364" summary="Added managing users using a DB">
+      <option name="closed" value="true" />
+      <created>1735326298114</created>
+      <option name="number" value="00364" />
+      <option name="presentableId" value="LOCAL-00364" />
+      <option name="project" value="LOCAL" />
+      <updated>1735326298114</updated>
+    </task>
+    <option name="localTasksCounter" value="365" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1785,7 +1786,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added @BootstrapWith" />
     <MESSAGE value="Added @DynamicPropertySource comment" />
     <MESSAGE value="Added @TestExecutionListeners" />
     <MESSAGE value="Added between" />
@@ -1810,7 +1810,8 @@
     <MESSAGE value="Added changing default config security disable formlogin" />
     <MESSAGE value="Added in memory user details manager" />
     <MESSAGE value="Added in memory user details manager tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in memory user details manager tests" />
+    <MESSAGE value="Added managing users using a DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added managing users using a DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
