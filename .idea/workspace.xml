@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added managing users using a DB">
-      <change afterPath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db/config/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/resources/sql/scripts.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -261,6 +265,7 @@
     &quot;Spring Boot.Section2ChangingDefaultConfigApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.Section3InMemoryUserDetailsManagerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Section4ManagingUsersWithDbApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.SecurityApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.SlicePaginationApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.SoftDeleteApplication.executor&quot;: &quot;Debug&quot;,
@@ -286,7 +291,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_3_in_memory_user_details_manager/src/main/java/com/section_3_in_memory_user_details_manager&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_4_managing_users_with_db/src/main/java/com/section_4_managing_users_with_db&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -321,11 +326,11 @@
       <recent name="com.commit_rollback" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_4_managing_users_with_db\src\main\java\com\section_4_managing_users_with_db" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_3_in_memory_user_details_manager\src\main\java\com\section_3_in_memory_user_details_manager" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_2_disable_form_login_and_httpbasic_auth\src\main\java\com\section_2_disable_form_login_and_httpbasic_auth" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\spring_tests\context_hierarchy\src\main\java\com\context_hierarchy" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\pessimistic_locking\src\main\java\com\pessimistic_locking" />
-      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\data_jpa\attribute_converter\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -448,7 +453,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SecurityTests (1)">
+  <component name="RunManager" selected="Spring Boot.Section4ManagingUsersWithDbApplication">
     <configuration name="SecurityTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_2_disable_form_login_and_httpbasic_auth" />
       <extension name="coverage">
@@ -1374,31 +1379,8 @@
       <workItem from="1735147346062" duration="2891000" />
       <workItem from="1735191824984" duration="8870000" />
       <workItem from="1735275285189" duration="8668000" />
-      <workItem from="1735364127731" duration="637000" />
-    </task>
-    <task id="LOCAL-00316" summary="Added sql annotations tests">
-      <option name="closed" value="true" />
-      <created>1734266335029</created>
-      <option name="number" value="00316" />
-      <option name="presentableId" value="LOCAL-00316" />
-      <option name="project" value="LOCAL" />
-      <updated>1734266335030</updated>
-    </task>
-    <task id="LOCAL-00317" summary="Added sql annotations tests">
-      <option name="closed" value="true" />
-      <created>1734266394138</created>
-      <option name="number" value="00317" />
-      <option name="presentableId" value="LOCAL-00317" />
-      <option name="project" value="LOCAL" />
-      <updated>1734266394138</updated>
-    </task>
-    <task id="LOCAL-00318" summary="Added sql annotations tests &amp; ASSERTIONS">
-      <option name="closed" value="true" />
-      <created>1734326840778</created>
-      <option name="number" value="00318" />
-      <option name="presentableId" value="LOCAL-00318" />
-      <option name="project" value="LOCAL" />
-      <updated>1734326840779</updated>
+      <workItem from="1735364127731" duration="3794000" />
+      <workItem from="1735367972381" duration="1012000" />
     </task>
     <task id="LOCAL-00319" summary="Added sql annotations tests &amp; assertions">
       <option name="closed" value="true" />
@@ -1768,7 +1750,31 @@
       <option name="project" value="LOCAL" />
       <updated>1735326298114</updated>
     </task>
-    <option name="localTasksCounter" value="365" />
+    <task id="LOCAL-00365" summary="Added managing users using a DB">
+      <option name="closed" value="true" />
+      <created>1735364793952</created>
+      <option name="number" value="00365" />
+      <option name="presentableId" value="LOCAL-00365" />
+      <option name="project" value="LOCAL" />
+      <updated>1735364793953</updated>
+    </task>
+    <task id="LOCAL-00366" summary="Added managing users using a DB">
+      <option name="closed" value="true" />
+      <created>1735364806963</created>
+      <option name="number" value="00366" />
+      <option name="presentableId" value="LOCAL-00366" />
+      <option name="project" value="LOCAL" />
+      <updated>1735364806963</updated>
+    </task>
+    <task id="LOCAL-00367" summary="Added managing users using a DB">
+      <option name="closed" value="true" />
+      <created>1735364833561</created>
+      <option name="number" value="00367" />
+      <option name="presentableId" value="LOCAL-00367" />
+      <option name="project" value="LOCAL" />
+      <updated>1735364833561</updated>
+    </task>
+    <option name="localTasksCounter" value="368" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
