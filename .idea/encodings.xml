@@ -60,6 +60,7 @@
     <file url="file://$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_3_in_memory_user_details_manager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_4_managing_users_with_db/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security/section_5_authentication_provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_6_authentication_provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_jdbc/src/main/java" charset="UTF-8" />

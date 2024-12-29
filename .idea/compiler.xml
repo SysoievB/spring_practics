@@ -53,6 +53,7 @@
         <module name="scheduled" />
         <module name="webflux" />
         <module name="bean_configuration" />
+        <module name="section_5_authentication_provider" />
         <module name="section_1_static_credentials" />
         <module name="one_to_one_primarykeyjoincolumn" />
         <module name="web_app_configuration" />
@@ -214,6 +215,7 @@
       <module name="section_2_disable_form_login_and_httpbasic_auth" options="-parameters" />
       <module name="section_3_in_memory_user_details_manager" options="-parameters" />
       <module name="section_4_managing_users_with_db" options="-parameters" />
+      <module name="section_5_authentication_provider" options="-parameters" />
       <module name="section_6_authentication_provider" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="slice_pagination" options="-parameters" />
