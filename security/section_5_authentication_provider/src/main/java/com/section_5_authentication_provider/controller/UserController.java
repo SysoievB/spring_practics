@@ -1,7 +1,7 @@
 package com.section_5_authentication_provider.controller;
 
-import com.section_4_managing_users_with_db.model.Customer;
-import com.section_4_managing_users_with_db.repository.CustomerRepository;
+import com.section_5_authentication_provider.model.Customer;
+import com.section_5_authentication_provider.repository.CustomerRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;

@@ -1,6 +1,6 @@
 package com.section_5_authentication_provider.config;
 
-import com.section_4_managing_users_with_db.repository.CustomerRepository;
+import com.section_5_authentication_provider.repository.CustomerRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;

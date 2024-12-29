@@ -1,6 +1,6 @@
 package com.section_5_authentication_provider.repository;
 
-import com.section_4_managing_users_with_db.model.Customer;
+import com.section_5_authentication_provider.model.Customer;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
