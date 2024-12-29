@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added managing users using a DB tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added authentication provider" />
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1398,15 +1396,7 @@
       <workItem from="1735367972381" duration="2525000" />
       <workItem from="1735375348302" duration="1233000" />
       <workItem from="1735383219818" duration="4730000" />
-      <workItem from="1735448061439" duration="358000" />
-    </task>
-    <task id="LOCAL-00321" summary="Added controller &amp; integration tests">
-      <option name="closed" value="true" />
-      <created>1734378663257</created>
-      <option name="number" value="00321" />
-      <option name="presentableId" value="LOCAL-00321" />
-      <option name="project" value="LOCAL" />
-      <updated>1734378663257</updated>
+      <workItem from="1735448061439" duration="738000" />
     </task>
     <task id="LOCAL-00322" summary="Added controller &amp; integration tests">
       <option name="closed" value="true" />
@@ -1792,7 +1782,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735386089202</updated>
     </task>
-    <option name="localTasksCounter" value="370" />
+    <task id="LOCAL-00370" summary="Added authentication provider">
+      <option name="closed" value="true" />
+      <created>1735448780347</created>
+      <option name="number" value="00370" />
+      <option name="presentableId" value="LOCAL-00370" />
+      <option name="project" value="LOCAL" />
+      <updated>1735448780347</updated>
+    </task>
+    <option name="localTasksCounter" value="371" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1810,7 +1808,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added @TestExecutionListeners" />
     <MESSAGE value="Added between" />
     <MESSAGE value="Added application events" />
     <MESSAGE value="Added application events tests" />
@@ -1835,7 +1832,8 @@
     <MESSAGE value="Added in memory user details manager tests" />
     <MESSAGE value="Added managing users using a DB" />
     <MESSAGE value="Added managing users using a DB tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added managing users using a DB tests" />
+    <MESSAGE value="Added authentication provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added authentication provider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

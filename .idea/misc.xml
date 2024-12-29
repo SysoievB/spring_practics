@@ -87,12 +87,12 @@
         <option value="$PROJECT_DIR$/security/section_3_in_memory_user_details_manager/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_4_managing_users_with_db/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_6_authentication_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/security/section_5_authentication_provider/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/data_jpa/any_annotation/pom.xml" />
-        <option value="$PROJECT_DIR$/security/section_5_authentication_provider/pom.xml" />
       </set>
     </option>
   </component>

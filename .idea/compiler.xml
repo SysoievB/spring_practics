@@ -126,6 +126,15 @@
         </processorPath>
         <module name="web_annotations" />
       </profile>
+      <profile name="Annotation profile for context_hierarchy" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="context_hierarchy" />
+      </profile>
       <profile name="Annotation profile for section_4_managing_users_with_db" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -136,20 +145,6 @@
         </processorPath>
         <module name="section_4_managing_users_with_db" />
         <module name="section_2_changing_default_config" />
-      </profile>
-      <profile name="Annotation profile for section_6_authentication_provider" enabled="true">
-        <sourceOutputDir name="../section_6_authentication_provider/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../section_6_authentication_provider/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-      </profile>
-      <profile name="Annotation profile for context_hierarchy" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-        </processorPath>
-        <module name="context_hierarchy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="21">
