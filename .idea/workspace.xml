@@ -7,10 +7,6 @@
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added authentication provider">
       <change afterPath="$PROJECT_DIR$/security/section_5_authentication_provider/src/test/java/com/section_5_authentication_provider/controller/UserControllerIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_5_authentication_provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_5_authentication_provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/java/com/section_5_authentication_provider/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/java/com/section_5_authentication_provider/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/java/com/section_5_authentication_provider/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/java/com/section_5_authentication_provider/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/resources/sql/scripts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/resources/sql/scripts.sql" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,264 +60,268 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Car.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JacksonPolymorphicTypeHandlingClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonAnyGetterClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonAnyGetterSetterClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonAutoDetectClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonFormatClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonGetterJsonSetterClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonIgnorePropertiesClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonIgnoreTypeClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonIncludeClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonIncludePropertiesClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonRootNameClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonValueClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Section1StaticCredentialsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.WithLombokClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.WithLombokCustomBuilder.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.delete_returns_exception_when_car_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.delete_returns_void_when_car_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.findByBrandAndModel_returns_car_when_car_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.findByBrandAndModel_returns_exception_when_car_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.findById_returns_car_when_car_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.findById_returns_exception_when_car_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.getCars_returnsAllCars.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.getCars_returns_empty_list_of_cars_when_no_cars_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.save_returns_saved_car.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.update_returns_not_found_when_fields_absent.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.update_returns_same_car_when_fields_absent.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIntegrationTest.update_returns_updated_car_when_fields_present.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest,returns_empty_list_of_cars_when_no_cars_found and 1 more.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.delete_returns_exception_when_car_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.delete_returns_void_when_car_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.findByBrandAndModel_returns_car_when_car_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.findByBrandAndModel_returns_exception_when_car_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.findById_returns_car_when_car_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.findById_returns_exception_when_car_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.returns_empty_list_of_cars_when_no_cars_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.returns_list_of_cars_when_cars_found.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.save_returns_saved_car.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.update_returns_not_found_when_fields_absent.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.update_returns_not_found_when_fields_present.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.update_returns_same_car_when_fields_absent.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerIsolatedTest.update_returns_updated_car_when_fields_present.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarControllerTest.getCars_returnsAllCars.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarModifierMockitoTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarModifierMockitoTest.searchBrand_returns_found_car.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarModifierMockitoTest.searchCarByBrand_returns_found_car.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarModifierMockitoTest.searchCarByBrand_returns_found_car_then.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarModifierMockitoTest.testAwaitility.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarModifierMockitoTest.testAwaitility1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarModifierMockitoTest.testConstructorMock.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarModifierMockitoTest.testPrivateMethod.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarModifierMockitoTest.testStaticMethodMock.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarTest.divide_by_zero.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CarTest.success.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ContextExpectationsTest.contextHasCorrectSize.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ContextExpectationsTest.contextHasKey.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ContextExpectationsTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomBootstrapTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomBootstrapTest.testCustomBootstrapper.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DemoApplicationTests.testCustomEventIsPublished.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeMapperTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoH2Test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoH2Test.testCountEmployees.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoH2Test.testDatabaseConnection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoH2Test.testFindEmployeeById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoH2Test.testSaveAllEmployee.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoMySqlTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoMySqlTest.testSaveAllEmployee.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoSQLMergeModeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoSqlConfigTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeRepoTest.testDatabaseConnection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.assertDroppedElementsAllPass.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.createEmployeeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.findEmployeeByIdTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.getAllEmployees.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.getAllEmployees_WithOneField.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.operatorAssertions.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.operatorThrowsErrorExplicitly.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.shouldCommitWhenEmployeeIsCreated.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.shouldRollbackWhenEmployeeIsCreated.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.testDroppedError.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.testDroppedError_withTermination.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.testDroppedErrors.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.testFindEmployeeById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.testFindEmployeeById_error.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EmployeeServiceTest.testFindUserById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GreetingServiceTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GreetingServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GreetingServiceTest.testAbstractGreeting.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GreetingServiceTest.testGreet (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GreetingServiceTest.testGreet.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HelloControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HelloControllerTest.whenInvalidHttpMethod_thenMethodNotAllowed.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapperTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapperTest.testMapper.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyDynamicServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyServiceTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyServiceTest (2).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrototypeServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrototypeServiceTest.testAfterDirtiesContextIncrementedCheck.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrototypeServiceTest.testPrototypeScopeWithDirtiesContext.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SecurityTests (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SecurityTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SecurityTests.testAdminAccess.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SecurityTests.testEndpointsNotAccessible.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SecurityTests.testEndpointsNotAccessibleWithAnonymousUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SecurityTests.testPrivateEndpointsNotAccessibleWithoutAuthentication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SomeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SomeTest.testHelperBean.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TransactionIsolationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TransactionIsolationTest.testReadCommittedIsolation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TransactionIsolationTest.testRepeatableReadIsolation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TransactionIsolationTest.testSerializableIsolation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.testRegisterUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.testRegisterUserWith.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.testRegisterUserf.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.testEventPublishing.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.testUserServiceHandlesException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.testUserServicePublishingEvent.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.user_fields_assertions.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WebApplicationContextTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WebApplicationContextTest.verifyBeanPresence.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.commit_rollback [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.commit_rollback [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.object_provider [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.section_1_static_credentials [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.section_1_static_credentials [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.specifications [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.specifications [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.webflux [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.webmvctest_autoconfiguremockmvc [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ActuatorApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.AopApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ApplicationEventsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AssociationOverrideApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.AttributeConverterApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.AttributeOverrideApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.AutowireRequireFalseApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.BootApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ColumnUpdatableInsertableApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.CommitRollbackApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ConditionalOnExpressionApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ConditionalOnPropertyApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ConstructorBindingApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ContextConfigurationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ConverterApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.CoreApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.CreatedModifiedByTransientApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.DirtyContextApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.DtoProjectionApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.DynamicPropertySourceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ElementCollectionApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EmbeddedIdApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.EntityGraphApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.FetchAnnotationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.FilterAnnotationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.FormulaAnnotationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.GenerationtypeAutoApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.GenerationtypeCustomApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.GenerationtypeSequenceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.GenerationtypeTableApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.IdClassApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ImmutableAnnotationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.InheritanceAnnotationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.KeysetPaginationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.LiquibaseApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ManyToOneUniApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.MappedSuperclassApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.NamedEntityGraphApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.NoRepositoryBeanApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.NotnullAnnotationVsColumnNullableFalseApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ObjectProviderApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OneToOnePrimarykeyjoincolumnApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.OneToOneWithFkApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.OptimisticLockExceptionApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.PaginationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.PessimisticLockingApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.QueryParamModifyingApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.RecordApplicationEventsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ScheduledApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.Section1StaticCredentialsApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.Section2ChangingDefaultConfigApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Section3InMemoryUserDetailsManagerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Section4ManagingUsersWithDbApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Section5AuthenticationProviderApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SecurityApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SlicePaginationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SoftDeleteApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SpecificationsApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SpringBootTestApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SpringJdbcApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SpringProfilesApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SpringTestsApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SpringTransactionsApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.StoredProceduresApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SwaggerApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.TestBeanApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.TestConfigurationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.TestPropertySourceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ValidationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.WebAnnotationsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.WebHeadersApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.WebfluxApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.WhereAnnotationApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_5_authentication_provider/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Car.executor": "Run",
+    "Application.JacksonPolymorphicTypeHandlingClass.executor": "Run",
+    "Application.JsonAnyGetterClass.executor": "Run",
+    "Application.JsonAnyGetterSetterClass.executor": "Run",
+    "Application.JsonAutoDetectClass.executor": "Run",
+    "Application.JsonFormatClass.executor": "Run",
+    "Application.JsonGetterJsonSetterClass.executor": "Run",
+    "Application.JsonIgnorePropertiesClass.executor": "Run",
+    "Application.JsonIgnoreTypeClass.executor": "Run",
+    "Application.JsonIncludeClass.executor": "Run",
+    "Application.JsonIncludePropertiesClass.executor": "Run",
+    "Application.JsonRootNameClass.executor": "Run",
+    "Application.JsonValueClass.executor": "Run",
+    "Application.Section1StaticCredentialsApplication.executor": "Run",
+    "Application.WithLombokClass.executor": "Run",
+    "Application.WithLombokCustomBuilder.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.delete_returns_exception_when_car_not_found.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.delete_returns_void_when_car_found.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.findByBrandAndModel_returns_car_when_car_found.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.findByBrandAndModel_returns_exception_when_car_not_found.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.findById_returns_car_when_car_found.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.findById_returns_exception_when_car_not_found.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.getCars_returnsAllCars.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.getCars_returns_empty_list_of_cars_when_no_cars_found.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.save_returns_saved_car.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.update_returns_not_found_when_fields_absent.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.update_returns_same_car_when_fields_absent.executor": "Run",
+    "JUnit.CarControllerIntegrationTest.update_returns_updated_car_when_fields_present.executor": "Run",
+    "JUnit.CarControllerIsolatedTest,returns_empty_list_of_cars_when_no_cars_found and 1 more.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.delete_returns_exception_when_car_not_found.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.delete_returns_void_when_car_found.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.findByBrandAndModel_returns_car_when_car_found.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.findByBrandAndModel_returns_exception_when_car_not_found.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.findById_returns_car_when_car_found.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.findById_returns_exception_when_car_not_found.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.returns_empty_list_of_cars_when_no_cars_found.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.returns_list_of_cars_when_cars_found.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.save_returns_saved_car.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.update_returns_not_found_when_fields_absent.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.update_returns_not_found_when_fields_present.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.update_returns_same_car_when_fields_absent.executor": "Run",
+    "JUnit.CarControllerIsolatedTest.update_returns_updated_car_when_fields_present.executor": "Run",
+    "JUnit.CarControllerTest.executor": "Run",
+    "JUnit.CarControllerTest.getCars_returnsAllCars.executor": "Run",
+    "JUnit.CarModifierMockitoTest.executor": "Run",
+    "JUnit.CarModifierMockitoTest.searchBrand_returns_found_car.executor": "Run",
+    "JUnit.CarModifierMockitoTest.searchCarByBrand_returns_found_car.executor": "Run",
+    "JUnit.CarModifierMockitoTest.searchCarByBrand_returns_found_car_then.executor": "Run",
+    "JUnit.CarModifierMockitoTest.testAwaitility.executor": "Run",
+    "JUnit.CarModifierMockitoTest.testAwaitility1.executor": "Run",
+    "JUnit.CarModifierMockitoTest.testConstructorMock.executor": "Run",
+    "JUnit.CarModifierMockitoTest.testPrivateMethod.executor": "Run",
+    "JUnit.CarModifierMockitoTest.testStaticMethodMock.executor": "Run",
+    "JUnit.CarTest.divide_by_zero.executor": "Run",
+    "JUnit.CarTest.executor": "Run",
+    "JUnit.CarTest.success.executor": "Run",
+    "JUnit.ContextExpectationsTest.contextHasCorrectSize.executor": "Run",
+    "JUnit.ContextExpectationsTest.contextHasKey.executor": "Run",
+    "JUnit.ContextExpectationsTest.executor": "Run",
+    "JUnit.CustomBootstrapTest.executor": "Run",
+    "JUnit.CustomBootstrapTest.testCustomBootstrapper.executor": "Run",
+    "JUnit.DemoApplicationTests.testCustomEventIsPublished.executor": "Run",
+    "JUnit.EmployeeMapperTest.executor": "Run",
+    "JUnit.EmployeeRepoH2Test.executor": "Run",
+    "JUnit.EmployeeRepoH2Test.testCountEmployees.executor": "Run",
+    "JUnit.EmployeeRepoH2Test.testDatabaseConnection.executor": "Run",
+    "JUnit.EmployeeRepoH2Test.testFindEmployeeById.executor": "Run",
+    "JUnit.EmployeeRepoH2Test.testSaveAllEmployee.executor": "Run",
+    "JUnit.EmployeeRepoMySqlTest.executor": "Run",
+    "JUnit.EmployeeRepoMySqlTest.testSaveAllEmployee.executor": "Run",
+    "JUnit.EmployeeRepoSQLMergeModeTest.executor": "Run",
+    "JUnit.EmployeeRepoSqlConfigTest.executor": "Run",
+    "JUnit.EmployeeRepoTest.executor": "Run",
+    "JUnit.EmployeeRepoTest.test.executor": "Run",
+    "JUnit.EmployeeRepoTest.testDatabaseConnection.executor": "Run",
+    "JUnit.EmployeeServiceTest.assertDroppedElementsAllPass.executor": "Run",
+    "JUnit.EmployeeServiceTest.createEmployeeTest.executor": "Run",
+    "JUnit.EmployeeServiceTest.executor": "Run",
+    "JUnit.EmployeeServiceTest.findEmployeeByIdTest.executor": "Run",
+    "JUnit.EmployeeServiceTest.getAllEmployees.executor": "Run",
+    "JUnit.EmployeeServiceTest.getAllEmployees_WithOneField.executor": "Run",
+    "JUnit.EmployeeServiceTest.operatorAssertions.executor": "Run",
+    "JUnit.EmployeeServiceTest.operatorThrowsErrorExplicitly.executor": "Run",
+    "JUnit.EmployeeServiceTest.shouldCommitWhenEmployeeIsCreated.executor": "Run",
+    "JUnit.EmployeeServiceTest.shouldRollbackWhenEmployeeIsCreated.executor": "Run",
+    "JUnit.EmployeeServiceTest.testDroppedError.executor": "Run",
+    "JUnit.EmployeeServiceTest.testDroppedError_withTermination.executor": "Run",
+    "JUnit.EmployeeServiceTest.testDroppedErrors.executor": "Run",
+    "JUnit.EmployeeServiceTest.testFindEmployeeById.executor": "Run",
+    "JUnit.EmployeeServiceTest.testFindEmployeeById_error.executor": "Run",
+    "JUnit.EmployeeServiceTest.testFindUserById.executor": "Run",
+    "JUnit.GreetingServiceTest (1).executor": "Run",
+    "JUnit.GreetingServiceTest.executor": "Run",
+    "JUnit.GreetingServiceTest.testAbstractGreeting.executor": "Run",
+    "JUnit.GreetingServiceTest.testGreet (1).executor": "Run",
+    "JUnit.GreetingServiceTest.testGreet.executor": "Run",
+    "JUnit.HelloControllerTest.executor": "Run",
+    "JUnit.HelloControllerTest.whenInvalidHttpMethod_thenMethodNotAllowed.executor": "Run",
+    "JUnit.MapperTest.executor": "Run",
+    "JUnit.MapperTest.testMapper.executor": "Run",
+    "JUnit.MyDynamicServiceTest.executor": "Run",
+    "JUnit.MyServiceTest (1).executor": "Run",
+    "JUnit.MyServiceTest (2).executor": "Run",
+    "JUnit.MyServiceTest.executor": "Run",
+    "JUnit.PrototypeServiceTest.executor": "Run",
+    "JUnit.PrototypeServiceTest.testAfterDirtiesContextIncrementedCheck.executor": "Run",
+    "JUnit.PrototypeServiceTest.testPrototypeScopeWithDirtiesContext.executor": "Run",
+    "JUnit.SecurityTests (1).executor": "Run",
+    "JUnit.SecurityTests.executor": "Run",
+    "JUnit.SecurityTests.testAdminAccess.executor": "Run",
+    "JUnit.SecurityTests.testEndpointsNotAccessible.executor": "Run",
+    "JUnit.SecurityTests.testEndpointsNotAccessibleWithAnonymousUser.executor": "Run",
+    "JUnit.SecurityTests.testPrivateEndpointsNotAccessibleWithoutAuthentication.executor": "Run",
+    "JUnit.SomeTest.executor": "Run",
+    "JUnit.SomeTest.testHelperBean.executor": "Run",
+    "JUnit.TransactionIsolationTest.executor": "Run",
+    "JUnit.TransactionIsolationTest.testReadCommittedIsolation.executor": "Run",
+    "JUnit.TransactionIsolationTest.testRepeatableReadIsolation.executor": "Run",
+    "JUnit.TransactionIsolationTest.testSerializableIsolation.executor": "Run",
+    "JUnit.UserControllerIntegrationTest.executor": "Run",
+    "JUnit.UserControllerIntegrationTest.testRegisterUser_CustomerNull.executor": "Run",
+    "JUnit.UserControllerIntegrationTest.testRegisterUser_Success.executor": "Run",
+    "JUnit.UserControllerIntegrationTest.testRegisterUser_UnderAge.executor": "Run",
+    "JUnit.UserControllerTest.executor": "Run",
+    "JUnit.UserControllerTest.test.executor": "Run",
+    "JUnit.UserControllerTest.testRegisterUser.executor": "Run",
+    "JUnit.UserControllerTest.testRegisterUserWith.executor": "Run",
+    "JUnit.UserControllerTest.testRegisterUserf.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "JUnit.UserServiceTest.testEventPublishing.executor": "Run",
+    "JUnit.UserServiceTest.testUserServiceHandlesException.executor": "Run",
+    "JUnit.UserServiceTest.testUserServicePublishingEvent.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "JUnit.UserTest.user_fields_assertions.executor": "Run",
+    "JUnit.WebApplicationContextTest.executor": "Run",
+    "JUnit.WebApplicationContextTest.verifyBeanPresence.executor": "Run",
+    "Maven.commit_rollback [clean].executor": "Run",
+    "Maven.commit_rollback [install].executor": "Run",
+    "Maven.object_provider [clean].executor": "Run",
+    "Maven.section_1_static_credentials [clean].executor": "Run",
+    "Maven.section_1_static_credentials [install].executor": "Run",
+    "Maven.specifications [clean].executor": "Run",
+    "Maven.specifications [install].executor": "Run",
+    "Maven.webflux [clean].executor": "Run",
+    "Maven.webmvctest_autoconfiguremockmvc [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ActuatorApplication.executor": "Debug",
+    "Spring Boot.AopApplication.executor": "Debug",
+    "Spring Boot.ApplicationEventsApplication.executor": "Run",
+    "Spring Boot.AssociationOverrideApplication.executor": "Debug",
+    "Spring Boot.AttributeConverterApplication.executor": "Debug",
+    "Spring Boot.AttributeOverrideApplication.executor": "Debug",
+    "Spring Boot.AutowireRequireFalseApplication.executor": "Debug",
+    "Spring Boot.BootApplication.executor": "Debug",
+    "Spring Boot.ColumnUpdatableInsertableApplication.executor": "Debug",
+    "Spring Boot.CommitRollbackApplication.executor": "Debug",
+    "Spring Boot.ConditionalOnExpressionApplication.executor": "Debug",
+    "Spring Boot.ConditionalOnPropertyApplication.executor": "Debug",
+    "Spring Boot.ConstructorBindingApplication.executor": "Debug",
+    "Spring Boot.ContextConfigurationApplication.executor": "Debug",
+    "Spring Boot.ConverterApplication.executor": "Debug",
+    "Spring Boot.CoreApplication.executor": "Debug",
+    "Spring Boot.CreatedModifiedByTransientApplication.executor": "Debug",
+    "Spring Boot.DirtyContextApplication.executor": "Debug",
+    "Spring Boot.DtoProjectionApplication.executor": "Debug",
+    "Spring Boot.DynamicPropertySourceApplication.executor": "Debug",
+    "Spring Boot.ElementCollectionApplication.executor": "Run",
+    "Spring Boot.EmbeddedIdApplication.executor": "Debug",
+    "Spring Boot.EntityGraphApplication.executor": "Debug",
+    "Spring Boot.FetchAnnotationApplication.executor": "Debug",
+    "Spring Boot.FilterAnnotationApplication.executor": "Debug",
+    "Spring Boot.FormulaAnnotationApplication.executor": "Debug",
+    "Spring Boot.GenerationtypeAutoApplication.executor": "Debug",
+    "Spring Boot.GenerationtypeCustomApplication.executor": "Debug",
+    "Spring Boot.GenerationtypeSequenceApplication.executor": "Debug",
+    "Spring Boot.GenerationtypeTableApplication.executor": "Debug",
+    "Spring Boot.IdClassApplication.executor": "Debug",
+    "Spring Boot.ImmutableAnnotationApplication.executor": "Debug",
+    "Spring Boot.InheritanceAnnotationApplication.executor": "Debug",
+    "Spring Boot.KeysetPaginationApplication.executor": "Debug",
+    "Spring Boot.LiquibaseApplication.executor": "Run",
+    "Spring Boot.ManyToOneUniApplication.executor": "Debug",
+    "Spring Boot.MappedSuperclassApplication.executor": "Debug",
+    "Spring Boot.NamedEntityGraphApplication.executor": "Debug",
+    "Spring Boot.NoRepositoryBeanApplication.executor": "Run",
+    "Spring Boot.NotnullAnnotationVsColumnNullableFalseApplication.executor": "Debug",
+    "Spring Boot.ObjectProviderApplication.executor": "Run",
+    "Spring Boot.OneToOnePrimarykeyjoincolumnApplication.executor": "Debug",
+    "Spring Boot.OneToOneWithFkApplication.executor": "Debug",
+    "Spring Boot.OptimisticLockExceptionApplication.executor": "Debug",
+    "Spring Boot.PaginationApplication.executor": "Debug",
+    "Spring Boot.PessimisticLockingApplication.executor": "Debug",
+    "Spring Boot.QueryParamModifyingApplication.executor": "Run",
+    "Spring Boot.RecordApplicationEventsApplication.executor": "Run",
+    "Spring Boot.ScheduledApplication.executor": "Debug",
+    "Spring Boot.Section1StaticCredentialsApplication.executor": "Debug",
+    "Spring Boot.Section2ChangingDefaultConfigApplication.executor": "Run",
+    "Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication.executor": "Run",
+    "Spring Boot.Section3InMemoryUserDetailsManagerApplication.executor": "Run",
+    "Spring Boot.Section4ManagingUsersWithDbApplication.executor": "Run",
+    "Spring Boot.Section5AuthenticationProviderApplication.executor": "Run",
+    "Spring Boot.SecurityApplication.executor": "Debug",
+    "Spring Boot.SlicePaginationApplication.executor": "Debug",
+    "Spring Boot.SoftDeleteApplication.executor": "Debug",
+    "Spring Boot.SpecificationsApplication.executor": "Debug",
+    "Spring Boot.SpringBootTestApplication.executor": "Debug",
+    "Spring Boot.SpringJdbcApplication.executor": "Debug",
+    "Spring Boot.SpringProfilesApplication.executor": "Debug",
+    "Spring Boot.SpringTestsApplication.executor": "Debug",
+    "Spring Boot.SpringTransactionsApplication.executor": "Debug",
+    "Spring Boot.StoredProceduresApplication.executor": "Debug",
+    "Spring Boot.SwaggerApplication.executor": "Debug",
+    "Spring Boot.TestBeanApplication.executor": "Debug",
+    "Spring Boot.TestConfigurationApplication.executor": "Debug",
+    "Spring Boot.TestPropertySourceApplication.executor": "Debug",
+    "Spring Boot.ValidationApplication.executor": "Debug",
+    "Spring Boot.WebAnnotationsApplication.executor": "Run",
+    "Spring Boot.WebHeadersApplication.executor": "Debug",
+    "Spring Boot.WebfluxApplication.executor": "Run",
+    "Spring Boot.WhereAnnotationApplication.executor": "Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_5_authentication_provider/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
-      &quot;MySQL&quot;,
-      &quot;Greenplum&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "MySQL",
+      "Greenplum"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;H2&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "H2"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -458,7 +458,70 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section5AuthenticationProviderApplication">
+  <component name="RunManager" selected="JUnit.UserControllerIntegrationTest">
+    <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="section_5_authentication_provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.section_5_authentication_provider.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.section_5_authentication_provider.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.section_5_authentication_provider.controller.UserControllerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerIntegrationTest.testRegisterUser_CustomerNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="section_5_authentication_provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.section_5_authentication_provider.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.section_5_authentication_provider.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.section_5_authentication_provider.controller.UserControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="testRegisterUser_CustomerNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerIntegrationTest.testRegisterUser_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="section_5_authentication_provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.section_5_authentication_provider.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.section_5_authentication_provider.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.section_5_authentication_provider.controller.UserControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="testRegisterUser_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerIntegrationTest.testRegisterUser_UnderAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="section_5_authentication_provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.section_5_authentication_provider.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.section_5_authentication_provider.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.section_5_authentication_provider.controller.UserControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="testRegisterUser_UnderAge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_4_managing_users_with_db" />
       <extension name="coverage">
@@ -470,70 +533,6 @@
       <option name="PACKAGE_NAME" value="com.section_4_managing_users_with_db.controller" />
       <option name="MAIN_CLASS_NAME" value="com.section_4_managing_users_with_db.controller.UserControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="section_4_managing_users_with_db" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.section_4_managing_users_with_db.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.section_4_managing_users_with_db.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.section_4_managing_users_with_db.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.testRegisterUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="section_4_managing_users_with_db" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.section_4_managing_users_with_db.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.section_4_managing_users_with_db.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.section_4_managing_users_with_db.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="testRegisterUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.testRegisterUserWith" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="section_4_managing_users_with_db" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.section_4_managing_users_with_db.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.section_4_managing_users_with_db.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.section_4_managing_users_with_db.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="testRegisterUserWith" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.testRegisterUserf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="section_4_managing_users_with_db" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.section_4_managing_users_with_db.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.section_4_managing_users_with_db.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.section_4_managing_users_with_db.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="testRegisterUserf" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1165,11 +1164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerIntegrationTest" />
+        <item itemvalue="JUnit.UserControllerIntegrationTest.testRegisterUser_CustomerNull" />
+        <item itemvalue="JUnit.UserControllerIntegrationTest.testRegisterUser_UnderAge" />
+        <item itemvalue="JUnit.UserControllerIntegrationTest.testRegisterUser_Success" />
         <item itemvalue="JUnit.UserControllerTest" />
-        <item itemvalue="JUnit.UserControllerTest.testRegisterUserf" />
-        <item itemvalue="JUnit.UserControllerTest.testRegisterUserWith" />
-        <item itemvalue="JUnit.UserControllerTest.testRegisterUser" />
-        <item itemvalue="JUnit.UserControllerTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -1413,15 +1412,7 @@
       <workItem from="1735383219818" duration="4730000" />
       <workItem from="1735448061439" duration="4573000" />
       <workItem from="1735466985015" duration="2774000" />
-      <workItem from="1735541778377" duration="3346000" />
-    </task>
-    <task id="LOCAL-00327" summary="Added UUID field for @Embeddable entity">
-      <option name="closed" value="true" />
-      <created>1734508884800</created>
-      <option name="number" value="00327" />
-      <option name="presentableId" value="LOCAL-00327" />
-      <option name="project" value="LOCAL" />
-      <updated>1734508884801</updated>
+      <workItem from="1735541778377" duration="4777000" />
     </task>
     <task id="LOCAL-00328" summary="Added UUID field for liquibase">
       <option name="closed" value="true" />
@@ -1807,7 +1798,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735545098800</updated>
     </task>
-    <option name="localTasksCounter" value="376" />
+    <task id="LOCAL-00376" summary="Added authentication provider">
+      <option name="closed" value="true" />
+      <created>1735545889314</created>
+      <option name="number" value="00376" />
+      <option name="presentableId" value="LOCAL-00376" />
+      <option name="project" value="LOCAL" />
+      <updated>1735545889315</updated>
+    </task>
+    <option name="localTasksCounter" value="377" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
