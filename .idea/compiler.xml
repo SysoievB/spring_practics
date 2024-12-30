@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="section_6_session_timeout" />
         <module name="aop" />
         <module name="stored_procedures" />
         <module name="converter" />
@@ -219,6 +220,7 @@
       <module name="section_5_authentication_provider" options="-parameters" />
       <module name="section_6_authentication_provider" options="-parameters" />
       <module name="section_6_exception_handling" options="-parameters" />
+      <module name="section_6_session_timeout" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="slice_pagination" options="-parameters" />
       <module name="soft_delete" options="-parameters" />

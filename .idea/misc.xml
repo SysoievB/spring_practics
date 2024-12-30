@@ -89,6 +89,7 @@
         <option value="$PROJECT_DIR$/security/section_6_authentication_provider/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_5_authentication_provider/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_6_exception_handling/pom.xml" />
+        <option value="$PROJECT_DIR$/security/section_6_session_timeout/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
