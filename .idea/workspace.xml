@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added exception handling">
-      <change afterPath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/java/com/section_6_exception_handling/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/java/com/section_6_exception_handling/CustomBasicAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/java/com/section_6_exception_handling/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/java/com/section_6_exception_handling/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1429,15 +1421,7 @@
       <workItem from="1735466985015" duration="2774000" />
       <workItem from="1735541778377" duration="5082000" />
       <workItem from="1735556350325" duration="2750000" />
-      <workItem from="1735567986523" duration="692000" />
-    </task>
-    <task id="LOCAL-00330" summary="Added @WebMvcTest test for controller">
-      <option name="closed" value="true" />
-      <created>1734590071610</created>
-      <option name="number" value="00330" />
-      <option name="presentableId" value="LOCAL-00330" />
-      <option name="project" value="LOCAL" />
-      <updated>1734590071610</updated>
+      <workItem from="1735567986523" duration="1817000" />
     </task>
     <task id="LOCAL-00331" summary="Added @WebMvcTest test for controller">
       <option name="closed" value="true" />
@@ -1823,7 +1807,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735556614679</updated>
     </task>
-    <option name="localTasksCounter" value="379" />
+    <task id="LOCAL-00379" summary="Added exception handling">
+      <option name="closed" value="true" />
+      <created>1735568853402</created>
+      <option name="number" value="00379" />
+      <option name="presentableId" value="LOCAL-00379" />
+      <option name="project" value="LOCAL" />
+      <updated>1735568853403</updated>
+    </task>
+    <option name="localTasksCounter" value="380" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
