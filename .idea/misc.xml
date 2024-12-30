@@ -88,6 +88,7 @@
         <option value="$PROJECT_DIR$/security/section_4_managing_users_with_db/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_6_authentication_provider/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_5_authentication_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/security/section_6_exception_handling/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added authentication provider" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added exception handling">
+      <change afterPath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/java/com/section_6_exception_handling/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/java/com/section_6_exception_handling/CustomBasicAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/java/com/section_6_exception_handling/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/java/com/section_6_exception_handling/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_6_exception_handling/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +29,8 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -268,6 +278,7 @@
     &quot;Spring Boot.Section3InMemoryUserDetailsManagerApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.Section4ManagingUsersWithDbApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.Section5AuthenticationProviderApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Section6ExceptionHandlingApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.SecurityApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.SlicePaginationApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.SoftDeleteApplication.executor&quot;: &quot;Debug&quot;,
@@ -455,7 +466,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerIntegrationTest">
+  <component name="RunManager" selected="Spring Boot.Section6ExceptionHandlingApplication">
     <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_5_authentication_provider" />
       <extension name="coverage">
@@ -1417,14 +1428,8 @@
       <workItem from="1735448061439" duration="4573000" />
       <workItem from="1735466985015" duration="2774000" />
       <workItem from="1735541778377" duration="5082000" />
-    </task>
-    <task id="LOCAL-00329" summary="Added @WebMvcTest test for controller">
-      <option name="closed" value="true" />
-      <created>1734590046888</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1734590046889</updated>
+      <workItem from="1735556350325" duration="2750000" />
+      <workItem from="1735567986523" duration="692000" />
     </task>
     <task id="LOCAL-00330" summary="Added @WebMvcTest test for controller">
       <option name="closed" value="true" />
@@ -1810,7 +1815,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735547205651</updated>
     </task>
-    <option name="localTasksCounter" value="378" />
+    <task id="LOCAL-00378" summary="Added exception handling">
+      <option name="closed" value="true" />
+      <created>1735556614678</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1735556614679</updated>
+    </task>
+    <option name="localTasksCounter" value="379" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1828,7 +1841,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added between" />
     <MESSAGE value="Added application events" />
     <MESSAGE value="Added application events tests" />
     <MESSAGE value="Added sql annotations tests" />
@@ -1853,7 +1865,8 @@
     <MESSAGE value="Added managing users using a DB" />
     <MESSAGE value="Added managing users using a DB tests" />
     <MESSAGE value="Added authentication provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added authentication provider" />
+    <MESSAGE value="Added exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added exception handling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

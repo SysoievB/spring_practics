@@ -32,6 +32,7 @@
         <module name="jackson_annotations" />
         <module name="association_override" />
         <module name="embedded_id" />
+        <module name="section_6_exception_handling" />
         <module name="created_modified_by_transient" />
         <module name="webmvctest_autoconfiguremockmvc" />
         <module name="core" />
@@ -217,6 +218,7 @@
       <module name="section_4_managing_users_with_db" options="-parameters" />
       <module name="section_5_authentication_provider" options="-parameters" />
       <module name="section_6_authentication_provider" options="-parameters" />
+      <module name="section_6_exception_handling" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="slice_pagination" options="-parameters" />
       <module name="soft_delete" options="-parameters" />
