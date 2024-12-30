@@ -28,7 +28,7 @@ CREATE TABLE `customer`
     `email`    VARCHAR(45)  NOT NULL,
     `pwd`      VARCHAR(200) NOT NULL,
     `role`     VARCHAR(45)  NOT NULL,
-    `birthday` DATE         NULL,
+    `birthday` DATE         NOT NULL,
     PRIMARY KEY (`id`)
 );
 

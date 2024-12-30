@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added authentication provider">
+      <change afterPath="$PROJECT_DIR$/security/section_5_authentication_provider/src/test/java/com/section_5_authentication_provider/controller/UserControllerIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_5_authentication_provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_5_authentication_provider/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/java/com/section_5_authentication_provider/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/java/com/section_5_authentication_provider/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/java/com/section_5_authentication_provider/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/java/com/section_5_authentication_provider/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/resources/sql/scripts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_5_authentication_provider/src/main/resources/sql/scripts.sql" afterDir="false" />
@@ -24,8 +26,8 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -349,11 +351,11 @@
       <recent name="com.web_annotations.map_struct" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.section_5_authentication_provider.controller" />
       <recent name="com.section_4_managing_users_with_db.controller" />
       <recent name="com.webflux.context" />
       <recent name="com.webflux.functional_web" />
       <recent name="com.webflux.simple_web" />
-      <recent name="com.webmvctest_autoconfiguremockmvc" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jackson.lombok" />
@@ -1411,15 +1413,7 @@
       <workItem from="1735383219818" duration="4730000" />
       <workItem from="1735448061439" duration="4573000" />
       <workItem from="1735466985015" duration="2774000" />
-      <workItem from="1735541778377" duration="2633000" />
-    </task>
-    <task id="LOCAL-00326" summary="Added controller &amp; integration tests">
-      <option name="closed" value="true" />
-      <created>1734497503118</created>
-      <option name="number" value="00326" />
-      <option name="presentableId" value="LOCAL-00326" />
-      <option name="project" value="LOCAL" />
-      <updated>1734497503118</updated>
+      <workItem from="1735541778377" duration="3346000" />
     </task>
     <task id="LOCAL-00327" summary="Added UUID field for @Embeddable entity">
       <option name="closed" value="true" />
@@ -1805,7 +1799,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735469853517</updated>
     </task>
-    <option name="localTasksCounter" value="375" />
+    <task id="LOCAL-00375" summary="Added authentication provider">
+      <option name="closed" value="true" />
+      <created>1735545098798</created>
+      <option name="number" value="00375" />
+      <option name="presentableId" value="LOCAL-00375" />
+      <option name="project" value="LOCAL" />
+      <updated>1735545098800</updated>
+    </task>
+    <option name="localTasksCounter" value="376" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,11 +1,11 @@
 package com.section_5_authentication_provider.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDate;
 import java.util.Objects;
-
-import static java.util.Objects.isNull;
 
 @Entity
 @Table(name = "customer")
@@ -14,11 +14,15 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
+    @NotBlank
     String email;
+    @NotBlank
     @Column(name = "pwd")
     String password;
+    @NotBlank
     @Column(name = "role")
     String role;
+    @NotNull
     LocalDate birthday;
 
     public Customer() {
