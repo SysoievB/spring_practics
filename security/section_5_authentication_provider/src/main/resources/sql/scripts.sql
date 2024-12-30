@@ -24,14 +24,17 @@ VALUES ('admin', 'admin');
 
 CREATE TABLE `customer`
 (
-    `id`    int          NOT NULL AUTO_INCREMENT,
-    `email` varchar(45)  NOT NULL,
-    `pwd`   varchar(200) NOT NULL,
-    `role`  varchar(45)  NOT NULL,
+    `id`       INT          NOT NULL AUTO_INCREMENT,
+    `email`    VARCHAR(45)  NOT NULL,
+    `pwd`      VARCHAR(200) NOT NULL,
+    `role`     VARCHAR(45)  NOT NULL,
+    `birthday` DATE         NULL,
     PRIMARY KEY (`id`)
 );
 
-INSERT INTO `customer` (`email`, `pwd`, `role`)
-VALUES ('happy@example.com', '{noop}BsSecurity@12345', 'read');
-INSERT INTO `customer` (`email`, `pwd`, `role`)
-VALUES ('admin@example.com', '{bcrypt}$2a$12$lIBxO71DGD4eCZyaWcbNouz2HRpcGVlgltsHN19QWbkS6vR9F0VrG', 'admin');
+INSERT INTO `customer` (`email`, `pwd`, `role`, `birthday`)
+VALUES ('happy@example.com', '{noop}BsSecurity@12345', 'read', '2000-01-01');
+
+INSERT INTO `customer` (`email`, `pwd`, `role`, `birthday`)
+VALUES ('admin@example.com', '{bcrypt}$2a$12$lIBxO71DGD4eCZyaWcbNouz2HRpcGVlgltsHN19QWbkS6vR9F0VrG', 'admin',
+        '1990-05-15');
