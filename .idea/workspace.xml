@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added session timeout config">
-      <change afterPath="$PROJECT_DIR$/security/section_6_session_timeout/src/main/java/com/section_6_session_timeout/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_6_session_timeout/src/main/java/com/section_6_session_timeout/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_6_session_timeout/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_6_session_timeout/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_6_session_timeout/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_6_session_timeout/pom.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -309,7 +304,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
@@ -1435,15 +1430,8 @@
       <workItem from="1735466985015" duration="2774000" />
       <workItem from="1735541778377" duration="5082000" />
       <workItem from="1735556350325" duration="2750000" />
-      <workItem from="1735567986523" duration="4349000" />
-    </task>
-    <task id="LOCAL-00332" summary="Added  comment">
-      <option name="closed" value="true" />
-      <created>1734591556811</created>
-      <option name="number" value="00332" />
-      <option name="presentableId" value="LOCAL-00332" />
-      <option name="project" value="LOCAL" />
-      <updated>1734591556811</updated>
+      <workItem from="1735567986523" duration="4499000" />
+      <workItem from="1735620240956" duration="192000" />
     </task>
     <task id="LOCAL-00333" summary="Added @WebMvcTest test for controller">
       <option name="closed" value="true" />
@@ -1829,7 +1817,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735572110172</updated>
     </task>
-    <option name="localTasksCounter" value="381" />
+    <task id="LOCAL-00381" summary="Added session timeout config">
+      <option name="closed" value="true" />
+      <created>1735574742449</created>
+      <option name="number" value="00381" />
+      <option name="presentableId" value="LOCAL-00381" />
+      <option name="project" value="LOCAL" />
+      <updated>1735574742449</updated>
+    </task>
+    <option name="localTasksCounter" value="382" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
