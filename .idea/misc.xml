@@ -91,6 +91,7 @@
         <option value="$PROJECT_DIR$/security/section_6_exception_handling/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_6_session_timeout/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_6_auth_event_listener/pom.xml" />
+        <option value="$PROJECT_DIR$/security/section_7_thymeleaf/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

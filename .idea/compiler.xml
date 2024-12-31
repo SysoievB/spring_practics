@@ -81,6 +81,7 @@
         <module name="many_to_one_uni" />
         <module name="generationtype_sequence" />
         <module name="generationtype_table" />
+        <module name="section_7_thymeleaf" />
         <module name="slice_pagination" />
         <module name="component_configuration" />
         <module name="no_repository_bean" />
@@ -223,6 +224,7 @@
       <module name="section_6_authentication_provider" options="-parameters" />
       <module name="section_6_exception_handling" options="-parameters" />
       <module name="section_6_session_timeout" options="-parameters" />
+      <module name="section_7_thymeleaf" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="slice_pagination" options="-parameters" />
       <module name="soft_delete" options="-parameters" />

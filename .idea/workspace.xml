@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added auth event listener">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added thymeleaf">
+      <change afterPath="$PROJECT_DIR$/security/section_7_thymeleaf/src/main/java/com/section_7_thymeleaf/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_7_thymeleaf/src/main/java/com/section_7_thymeleaf/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_7_thymeleaf/src/main/resources/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_7_thymeleaf/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_7_thymeleaf/pom.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1011,6 +1018,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Section7ThymeleafApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="section_7_thymeleaf" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_7_thymeleaf.Section7ThymeleafApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="security" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.security.SecurityApplication" />
@@ -1440,15 +1454,8 @@
       <workItem from="1735556350325" duration="2750000" />
       <workItem from="1735567986523" duration="4499000" />
       <workItem from="1735620240956" duration="3182000" />
-      <workItem from="1735635232248" duration="784000" />
-    </task>
-    <task id="LOCAL-00335" summary="Added @WebMvcTest test for controller">
-      <option name="closed" value="true" />
-      <created>1734669661027</created>
-      <option name="number" value="00335" />
-      <option name="presentableId" value="LOCAL-00335" />
-      <option name="project" value="LOCAL" />
-      <updated>1734669661028</updated>
+      <workItem from="1735635232248" duration="1119000" />
+      <workItem from="1735638855366" duration="1740000" />
     </task>
     <task id="LOCAL-00336" summary="Added @AutoConfigureMockMvc test for controller">
       <option name="closed" value="true" />
@@ -1834,7 +1841,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735621617162</updated>
     </task>
-    <option name="localTasksCounter" value="384" />
+    <task id="LOCAL-00384" summary="Added thymeleaf">
+      <option name="closed" value="true" />
+      <created>1735636072602</created>
+      <option name="number" value="00384" />
+      <option name="presentableId" value="LOCAL-00384" />
+      <option name="project" value="LOCAL" />
+      <updated>1735636072603</updated>
+    </task>
+    <option name="localTasksCounter" value="385" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1852,7 +1867,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added sql annotations tests" />
     <MESSAGE value="Added sql annotations tests &amp; ASSERTIONS" />
     <MESSAGE value="Added sql annotations tests &amp; assertions" />
     <MESSAGE value="Added controller &amp; integration tests" />
@@ -1877,7 +1891,8 @@
     <MESSAGE value="Added exception handling" />
     <MESSAGE value="Added session timeout config" />
     <MESSAGE value="Added auth event listener" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added auth event listener" />
+    <MESSAGE value="Added thymeleaf" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added thymeleaf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
