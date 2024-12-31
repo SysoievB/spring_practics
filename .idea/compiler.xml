@@ -39,6 +39,7 @@
         <module name="core" />
         <module name="spring_transactions" />
         <module name="mapped_superclass" />
+        <module name="section_6_auth_event_listener" />
         <module name="generationtype_auto" />
         <module name="one_to_one_with_fk" />
         <module name="dynamic_property_source" />
@@ -218,6 +219,7 @@
       <module name="section_3_in_memory_user_details_manager" options="-parameters" />
       <module name="section_4_managing_users_with_db" options="-parameters" />
       <module name="section_5_authentication_provider" options="-parameters" />
+      <module name="section_6_auth_event_listener" options="-parameters" />
       <module name="section_6_authentication_provider" options="-parameters" />
       <module name="section_6_exception_handling" options="-parameters" />
       <module name="section_6_session_timeout" options="-parameters" />

@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added session timeout config">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added auth event listener">
+      <change afterPath="$PROJECT_DIR$/security/section_6_auth_event_listener/src/main/java/com/section_6_auth_event_listener/AuthenticationEvents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_6_auth_event_listener/src/main/java/com/section_6_auth_event_listener/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_6_auth_event_listener/src/main/java/com/section_6_auth_event_listener/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_6_session_timeout/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_6_session_timeout/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_6_auth_event_listener/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_6_auth_event_listener/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_6_auth_event_listener/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_6_auth_event_listener/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -271,6 +277,7 @@
     "Spring Boot.Section3InMemoryUserDetailsManagerApplication.executor": "Run",
     "Spring Boot.Section4ManagingUsersWithDbApplication.executor": "Run",
     "Spring Boot.Section5AuthenticationProviderApplication.executor": "Run",
+    "Spring Boot.Section6AuthEventListenerApplication.executor": "Run",
     "Spring Boot.Section6ExceptionHandlingApplication.executor": "Run",
     "Spring Boot.Section6SessionTimeoutApplication.executor": "Run",
     "Spring Boot.SecurityApplication.executor": "Debug",
@@ -298,7 +305,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_6_session_timeout/src/main/java/com/section_6_session_timeout",
+    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_6_auth_event_listener/src/main/java/com/section_6_auth_event_listener",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -333,11 +340,11 @@
       <recent name="com.commit_rollback" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_6_auth_event_listener\src\main\java\com\section_6_auth_event_listener" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_6_session_timeout\src\main\java\com\section_6_session_timeout" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_5_authentication_provider\src\main\resources" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_5_authentication_provider\src\main\java\com\section_5_authentication_provider" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_4_managing_users_with_db\src\main\java\com\section_4_managing_users_with_db" />
-      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_3_in_memory_user_details_manager\src\main\java\com\section_3_in_memory_user_details_manager" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -348,6 +355,7 @@
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\spring_tests\record_application_events\src\test\java\com\record_application_events" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.section_6_auth_event_listener" />
       <recent name="com.application_events" />
       <recent name="com.test_bean" />
       <recent name="com.web_annotations.map_struct" />
@@ -360,11 +368,11 @@
       <recent name="com.webflux.simple_web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.section_6_auth_event_listener.controller" />
       <recent name="com.jackson.lombok" />
       <recent name="com.immutable_annotation" />
       <recent name="com.filter_annotation" />
       <recent name="com.where_annotation" />
-      <recent name="com.id_class" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -460,7 +468,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section6SessionTimeoutApplication">
+  <component name="RunManager" selected="Spring Boot.Section6AuthEventListenerApplication">
     <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_5_authentication_provider" />
       <extension name="coverage">
@@ -989,6 +997,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Section6AuthEventListenerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="section_6_auth_event_listener" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_6_auth_event_listener.Section6AuthEventListenerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Section6ExceptionHandlingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="section_6_exception_handling" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_6_exception_handling.Section6ExceptionHandlingApplication" />
@@ -1431,15 +1446,7 @@
       <workItem from="1735541778377" duration="5082000" />
       <workItem from="1735556350325" duration="2750000" />
       <workItem from="1735567986523" duration="4499000" />
-      <workItem from="1735620240956" duration="192000" />
-    </task>
-    <task id="LOCAL-00333" summary="Added @WebMvcTest test for controller">
-      <option name="closed" value="true" />
-      <created>1734625956048</created>
-      <option name="number" value="00333" />
-      <option name="presentableId" value="LOCAL-00333" />
-      <option name="project" value="LOCAL" />
-      <updated>1734625956049</updated>
+      <workItem from="1735620240956" duration="1004000" />
     </task>
     <task id="LOCAL-00334" summary="Added @WebMvcTest test for controller">
       <option name="closed" value="true" />
@@ -1825,7 +1832,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735574742449</updated>
     </task>
-    <option name="localTasksCounter" value="382" />
+    <task id="LOCAL-00382" summary="Added auth event listener">
+      <option name="closed" value="true" />
+      <created>1735620541188</created>
+      <option name="number" value="00382" />
+      <option name="presentableId" value="LOCAL-00382" />
+      <option name="project" value="LOCAL" />
+      <updated>1735620541189</updated>
+    </task>
+    <option name="localTasksCounter" value="383" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1843,7 +1858,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added application events tests" />
     <MESSAGE value="Added sql annotations tests" />
     <MESSAGE value="Added sql annotations tests &amp; ASSERTIONS" />
     <MESSAGE value="Added sql annotations tests &amp; assertions" />
@@ -1868,7 +1882,8 @@
     <MESSAGE value="Added authentication provider" />
     <MESSAGE value="Added exception handling" />
     <MESSAGE value="Added session timeout config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added session timeout config" />
+    <MESSAGE value="Added auth event listener" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added auth event listener" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
