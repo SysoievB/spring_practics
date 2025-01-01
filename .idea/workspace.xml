@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added thymeleaf conditional">
-      <change afterPath="$PROJECT_DIR$/thymeleaf/src/main/resources/templates/allCustomers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/java/com/thymeleaf/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/java/com/thymeleaf/CustomerController.java" afterDir="false" />
-    </list>
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added thymeleaf for each" />
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1460,15 +1456,7 @@
       <workItem from="1735635232248" duration="1119000" />
       <workItem from="1735638855366" duration="2944000" />
       <workItem from="1735728300402" duration="2778000" />
-      <workItem from="1735731634891" duration="4887000" />
-    </task>
-    <task id="LOCAL-00345" summary="Added StepVerifier">
-      <option name="closed" value="true" />
-      <created>1734934935145</created>
-      <option name="number" value="00345" />
-      <option name="presentableId" value="LOCAL-00345" />
-      <option name="project" value="LOCAL" />
-      <updated>1734934935145</updated>
+      <workItem from="1735731634891" duration="5730000" />
     </task>
     <task id="LOCAL-00346" summary="Added StepVerifier">
       <option name="closed" value="true" />
@@ -1854,7 +1842,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735736117705</updated>
     </task>
-    <option name="localTasksCounter" value="394" />
+    <task id="LOCAL-00394" summary="Added thymeleaf for each">
+      <option name="closed" value="true" />
+      <created>1735736738320</created>
+      <option name="number" value="00394" />
+      <option name="presentableId" value="LOCAL-00394" />
+      <option name="project" value="LOCAL" />
+      <updated>1735736738320</updated>
+    </task>
+    <option name="localTasksCounter" value="395" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1872,7 +1868,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added sql annotations tests &amp; assertions" />
     <MESSAGE value="Added controller &amp; integration tests" />
     <MESSAGE value="Added UUID field for @Embeddable entity" />
     <MESSAGE value="Added UUID field for liquibase" />
@@ -1897,7 +1892,8 @@
     <MESSAGE value="Added auth event listener" />
     <MESSAGE value="Added thymeleaf" />
     <MESSAGE value="Added thymeleaf conditional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added thymeleaf conditional" />
+    <MESSAGE value="Added thymeleaf for each" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added thymeleaf for each" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
