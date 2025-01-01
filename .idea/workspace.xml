@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added thymeleaf">
-      <change afterPath="$PROJECT_DIR$/thymeleaf/src/main/resources/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thymeleaf/src/main/resources/templates/conditional.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thymeleaf/src/main/resources/templates/content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thymeleaf/src/main/resources/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/java/com/thymeleaf/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/java/com/thymeleaf/CustomerController.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -1459,15 +1462,7 @@
       <workItem from="1735635232248" duration="1119000" />
       <workItem from="1735638855366" duration="2944000" />
       <workItem from="1735728300402" duration="2778000" />
-      <workItem from="1735731634891" duration="760000" />
-    </task>
-    <task id="LOCAL-00340" summary="Added mockito">
-      <option name="closed" value="true" />
-      <created>1734774231596</created>
-      <option name="number" value="00340" />
-      <option name="presentableId" value="LOCAL-00340" />
-      <option name="project" value="LOCAL" />
-      <updated>1734774231596</updated>
+      <workItem from="1735731634891" duration="2888000" />
     </task>
     <task id="LOCAL-00341" summary="Added mockito">
       <option name="closed" value="true" />
@@ -1853,7 +1848,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735732122719</updated>
     </task>
-    <option name="localTasksCounter" value="389" />
+    <task id="LOCAL-00389" summary="Added thymeleaf">
+      <option name="closed" value="true" />
+      <created>1735732651383</created>
+      <option name="number" value="00389" />
+      <option name="presentableId" value="LOCAL-00389" />
+      <option name="project" value="LOCAL" />
+      <updated>1735732651383</updated>
+    </task>
+    <option name="localTasksCounter" value="390" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

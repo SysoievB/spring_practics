@@ -38,8 +38,18 @@ public class CustomerController {
     }
 
     //Layouts and Fragments
-    @GetMapping("/layout")//layout.html
-    public String layout() {
-        return "layout";
+    @GetMapping("/layout")//layout.html & content.html
+    public String layout(Model model) {
+        model.addAttribute("message", "Welcome to layout");
+        return "content";
     }
+
+    //Advanced Thymeleaf Features
+    @GetMapping("/conditional")
+    public String conditional(Model model) {
+        val customer = new Customer("John Doe", 12);
+        model.addAttribute("customer", customer);
+        return "conditional";
+    }
+
 }

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+<h1>Customer profile</h1>
+<p>Customer`s name: <span th:text="${customer.name}">Unknown</span></p>
+<p>Customer`s age:
+    <span th:if="${customer.age >= 18}">You are an adult </span>
+    <span th:if="${customer.age < 18}">You are very young </span>
+    <span th:unless="${customer.age > 18}">Printed only when statement is false</span></p>
+</body>
+</html>
+<!--
+th:if	Renders the element if the condition is true.
+th:unless	Renders the element if the condition is false.
+-->
