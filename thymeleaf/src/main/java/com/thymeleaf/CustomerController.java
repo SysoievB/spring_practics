@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Controller
 public class CustomerController {
@@ -55,4 +56,14 @@ public class CustomerController {
         return "conditional";
     }
 
+    //Iteration
+    @GetMapping("/forEach")
+    public String forEach(Model model) {
+        val customer1 = new Customer("John Doe", 42);
+        val customer2 = new Customer("Ann Doe", 32);
+        val customer3 = new Customer("Jim Smith", 22);
+        val customers = List.of(customer1, customer2, customer3);
+        model.addAttribute("customers", customers);
+        return "allCustomers";
+    }
 }

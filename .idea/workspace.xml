@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added thymeleaf conditional">
-      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/resources/templates/conditional.html" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/resources/templates/conditional.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thymeleaf/src/main/resources/templates/allCustomers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thymeleaf/src/main/java/com/thymeleaf/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/thymeleaf/src/main/java/com/thymeleaf/CustomerController.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1458,15 +1460,7 @@
       <workItem from="1735635232248" duration="1119000" />
       <workItem from="1735638855366" duration="2944000" />
       <workItem from="1735728300402" duration="2778000" />
-      <workItem from="1735731634891" duration="4258000" />
-    </task>
-    <task id="LOCAL-00344" summary="Added StepVerifier">
-      <option name="closed" value="true" />
-      <created>1734883545294</created>
-      <option name="number" value="00344" />
-      <option name="presentableId" value="LOCAL-00344" />
-      <option name="project" value="LOCAL" />
-      <updated>1734883545294</updated>
+      <workItem from="1735731634891" duration="4887000" />
     </task>
     <task id="LOCAL-00345" summary="Added StepVerifier">
       <option name="closed" value="true" />
@@ -1852,7 +1846,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735735818330</updated>
     </task>
-    <option name="localTasksCounter" value="393" />
+    <task id="LOCAL-00393" summary="Added thymeleaf conditional">
+      <option name="closed" value="true" />
+      <created>1735736117705</created>
+      <option name="number" value="00393" />
+      <option name="presentableId" value="LOCAL-00393" />
+      <option name="project" value="LOCAL" />
+      <updated>1735736117705</updated>
+    </task>
+    <option name="localTasksCounter" value="394" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
