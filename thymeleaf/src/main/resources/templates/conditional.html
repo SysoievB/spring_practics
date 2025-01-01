@@ -5,7 +5,8 @@
 </head>
 <body>
 <h1>Customer profile</h1>
-<p>Customer`s name: <span th:text="${customer.name}">Unknown</span></p>
+<!--Elvis operator(Provide a fallback value if the evaluated expression is null)-->
+<p>Customer`s name: <span th:text="${customer.name} ?: 'UNKNOWN'"></span></p>
 <p>Customer`s age:
     <span th:if="${customer.age >= 18}">You are an adult </span>
     <span th:if="${customer.age < 18}">You are very young </span>
