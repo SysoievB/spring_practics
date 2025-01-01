@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.time.LocalDate;
+
 @Controller
 public class CustomerController {
 
@@ -49,6 +51,7 @@ public class CustomerController {
     public String conditional(Model model) {
         val customer = new Customer("John Doe", 12);
         model.addAttribute("customer", customer);
+        model.addAttribute("dayOfWeek", LocalDate.now().getDayOfWeek().name());
         return "conditional";
     }
 

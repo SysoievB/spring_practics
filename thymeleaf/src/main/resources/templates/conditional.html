@@ -5,15 +5,34 @@
 </head>
 <body>
 <h1>Customer profile</h1>
-<!--Elvis operator(Provide a fallback value if the evaluated expression is null)-->
-<p>Customer`s name: <span th:text="${customer.name} ?: 'UNKNOWN'"></span></p>
-<p>Customer`s age:
+<!-- Elvis operator (Provide a fallback value if the evaluated expression is null) -->
+<p>Customer's name: <span th:text="${customer.name} ?: 'UNKNOWN'"></span></p>
+<p>Customer's age:
+    <!--
+    th:if: Renders the element if the condition is true.
+    th:unless: Renders the element if the condition is false.
+    -->
     <span th:if="${customer.age >= 18}">You are an adult </span>
     <span th:if="${customer.age < 18}">You are very young </span>
-    <span th:unless="${customer.age > 18}">Printed only when statement is false</span></p>
+    <span th:unless="${customer.age > 18}">Printed only when statement is false</span>
+</p>
+
+<!-- Switch–Case -->
+<h1>Day of the Week</h1>
+<p>Debug: Day of the week is <span th:text="${dayOfWeek}">Unknown</span></p>
+
+<div th:if="${dayOfWeek != null}" th:switch="${dayOfWeek}">
+    <p th:case="MONDAY">Day count: 1 (Monday)</p>
+    <p th:case="TUESDAY">Day count: 2 (Tuesday)</p>
+    <p th:case="WEDNESDAY">Day count: 3 (Wednesday)</p>
+    <p th:case="THURSDAY">Day count: 4 (Thursday)</p>
+    <p th:case="FRIDAY">Day count: 5 (Friday)</p>
+    <p th:case="SATURDAY">Day count: 6 (Saturday)</p>
+    <p th:case="SUNDAY">Day count: 7 (Sunday)</p>
+    <p th:case="*">Invalid day</p> <!-- Default case -->
+</div>
+<div th:unless="${dayOfWeek != null}">
+    <p>No day of the week information available.</p>
+</div>
 </body>
 </html>
-<!--
-th:if	Renders the element if the condition is true.
-th:unless	Renders the element if the condition is false.
--->
