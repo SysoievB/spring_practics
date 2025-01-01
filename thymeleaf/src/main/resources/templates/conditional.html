@@ -7,6 +7,7 @@
 <h1>Customer profile</h1>
 <!-- Elvis operator (Provide a fallback value if the evaluated expression is null) -->
 <p>Customer's name: <span th:text="${customer.name} ?: 'UNKNOWN'"></span></p>
+<p>Customer`s name is present - <span th:text="${customer.name != null} ? 'NAME PRESENT' : 'NAME ABSENT'"/></p>
 <p>Customer's age:
     <!--
     th:if: Renders the element if the condition is true.
