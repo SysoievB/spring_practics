@@ -10,20 +10,29 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
-import static org.springframework.security.config.Customizer.withDefaults;
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration {
 
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests((requests) -> requests
+        http
+                .csrf(AbstractHttpConfigurer::disable)
+                .authorizeHttpRequests(requests -> requests
                         .requestMatchers("/mainPage").authenticated()
-                        .requestMatchers("/login", "/errorPage").permitAll());
-        http.formLogin(withDefaults());
-        http.httpBasic(withDefaults());
+                        .requestMatchers("/login", "/errorPage").permitAll()
+                )
+                .formLogin(form -> form
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/mainPage") // Redirect after successful login
+                        .failureUrl("/errorPage") // Redirect after failed login
+                        .permitAll()
+                )
+                .logout(logout -> logout
+                        .logoutUrl("/logout") // Logout URL
+                        .logoutSuccessUrl("/login?logout") // Redirect after logout
+                        .permitAll()
+                );
         return http.build();
     }
 
@@ -47,16 +56,11 @@ public class SecurityConfiguration {
      * </ul>
      */
     @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+    public void configureGlobal(AuthenticationManagerBuilder auth, BCryptPasswordEncoder passwordEncoder) throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("user").password(passwordEncoder().encode("12345")).roles("USER")
+                .withUser("user").password(passwordEncoder.encode("12345")).roles("USER")
                 .and()
-                .withUser("admin").password(passwordEncoder().encode("54321")).roles("ADMIN");
-    }
-
-    @Bean
-    public BCryptPasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+                .withUser("admin").password(passwordEncoder.encode("54321")).roles("ADMIN");
     }
 }
