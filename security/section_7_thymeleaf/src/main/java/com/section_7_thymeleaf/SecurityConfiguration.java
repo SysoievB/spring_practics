@@ -31,6 +31,7 @@ public class SecurityConfiguration {
                 .logout(logout -> logout
                         .logoutUrl("/logout") // Logout URL
                         .logoutSuccessUrl("/login?logout") // Redirect after logout
+                        .deleteCookies("JSESSIONID")
                         .permitAll()
                 );
         return http.build();
