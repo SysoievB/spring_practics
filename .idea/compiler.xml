@@ -84,6 +84,7 @@
         <module name="generationtype_table" />
         <module name="section_7_thymeleaf" />
         <module name="slice_pagination" />
+        <module name="section_8_cors" />
         <module name="component_configuration" />
         <module name="no_repository_bean" />
         <module name="entity_graph" />
@@ -226,6 +227,7 @@
       <module name="section_6_exception_handling" options="-parameters" />
       <module name="section_6_session_timeout" options="-parameters" />
       <module name="section_7_thymeleaf" options="-parameters" />
+      <module name="section_8_cors" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="slice_pagination" options="-parameters" />
       <module name="soft_delete" options="-parameters" />
