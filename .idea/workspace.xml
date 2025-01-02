@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added CORs">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added csrf">
+      <change afterPath="$PROJECT_DIR$/security/section_8_csrf/src/main/java/com/section_8_csrf/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_8_csrf/src/main/java/com/section_8_csrf/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -365,11 +367,11 @@
       <recent name="com.webflux.simple_web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.section_8_csrf" />
       <recent name="com.section_6_auth_event_listener.controller" />
       <recent name="com.jackson.lombok" />
       <recent name="com.immutable_annotation" />
       <recent name="com.filter_annotation" />
-      <recent name="com.where_annotation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -465,7 +467,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section8CorsApplication">
+  <component name="RunManager" selected="Spring Boot.Section8CsrfApplication">
     <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_5_authentication_provider" />
       <extension name="coverage">
@@ -1029,6 +1031,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Section8CsrfApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="section_8_csrf" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_8_csrf.Section8CsrfApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="security" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.security.SecurityApplication" />
@@ -1472,15 +1481,8 @@
       <workItem from="1735752459188" duration="3161000" />
       <workItem from="1735789427113" duration="2549000" />
       <workItem from="1735809005079" duration="1729000" />
-      <workItem from="1735822445673" duration="399000" />
-    </task>
-    <task id="LOCAL-00351" summary="Added static credentials security">
-      <option name="closed" value="true" />
-      <created>1735023330877</created>
-      <option name="number" value="00351" />
-      <option name="presentableId" value="LOCAL-00351" />
-      <option name="project" value="LOCAL" />
-      <updated>1735023330877</updated>
+      <workItem from="1735822445673" duration="601000" />
+      <workItem from="1735840759819" duration="490000" />
     </task>
     <task id="LOCAL-00352" summary="Added changing default config security">
       <option name="closed" value="true" />
@@ -1866,7 +1868,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735810742427</updated>
     </task>
-    <option name="localTasksCounter" value="400" />
+    <task id="LOCAL-00400" summary="Added csrf">
+      <option name="closed" value="true" />
+      <created>1735823053020</created>
+      <option name="number" value="00400" />
+      <option name="presentableId" value="LOCAL-00400" />
+      <option name="project" value="LOCAL" />
+      <updated>1735823053021</updated>
+    </task>
+    <option name="localTasksCounter" value="401" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1884,7 +1894,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added UUID field for liquibase" />
     <MESSAGE value="Added added comment" />
     <MESSAGE value="Added @WebMvcTest test for controller" />
     <MESSAGE value="Added @AutoConfigureMockMvc test for controller" />
@@ -1909,7 +1918,8 @@
     <MESSAGE value="Added thymeleaf for each" />
     <MESSAGE value="Added thymeleaf for security" />
     <MESSAGE value="Added CORs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CORs" />
+    <MESSAGE value="Added csrf" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added csrf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
