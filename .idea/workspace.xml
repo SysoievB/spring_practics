@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added thymeleaf for security">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_7_thymeleaf/src/main/java/com/section_7_thymeleaf/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_7_thymeleaf/src/main/java/com/section_7_thymeleaf/SecurityConfiguration.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1463,15 +1462,8 @@
       <workItem from="1735728300402" duration="2778000" />
       <workItem from="1735731634891" duration="5730000" />
       <workItem from="1735752459188" duration="3161000" />
-      <workItem from="1735789427113" duration="1863000" />
-    </task>
-    <task id="LOCAL-00348" summary="Added ContextExpectations">
-      <option name="closed" value="true" />
-      <created>1735019088843</created>
-      <option name="number" value="00348" />
-      <option name="presentableId" value="LOCAL-00348" />
-      <option name="project" value="LOCAL" />
-      <updated>1735019088843</updated>
+      <workItem from="1735789427113" duration="2549000" />
+      <workItem from="1735809005079" duration="307000" />
     </task>
     <task id="LOCAL-00349" summary="Added ContextExpectations">
       <option name="closed" value="true" />
@@ -1857,7 +1849,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735755712072</updated>
     </task>
-    <option name="localTasksCounter" value="397" />
+    <task id="LOCAL-00397" summary="Added thymeleaf for security">
+      <option name="closed" value="true" />
+      <created>1735793229749</created>
+      <option name="number" value="00397" />
+      <option name="presentableId" value="LOCAL-00397" />
+      <option name="project" value="LOCAL" />
+      <updated>1735793229750</updated>
+    </task>
+    <option name="localTasksCounter" value="398" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
