@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added csrf">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added authorities &amp; roles">
+      <change afterPath="$PROJECT_DIR$/security/section_9_authorities_roles/src/main/java/com/section_9_authorities_roles/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_9_authorities_roles/src/main/java/com/section_9_authorities_roles/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_9_authorities_roles/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_9_authorities_roles/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_9_authorities_roles/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_9_authorities_roles/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -276,6 +283,7 @@
     "Spring Boot.Section7ThymeleafApplication.executor": "Run",
     "Spring Boot.Section8CorsApplication.executor": "Run",
     "Spring Boot.Section8CsrfApplication.executor": "Run",
+    "Spring Boot.Section9AuthoritiesRolesApplication.executor": "Run",
     "Spring Boot.SecurityApplication.executor": "Debug",
     "Spring Boot.SlicePaginationApplication.executor": "Debug",
     "Spring Boot.SoftDeleteApplication.executor": "Debug",
@@ -366,11 +374,11 @@
       <recent name="com.webflux.simple_web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.section_9_authorities_roles" />
       <recent name="com.section_8_csrf" />
       <recent name="com.section_6_auth_event_listener.controller" />
       <recent name="com.jackson.lombok" />
       <recent name="com.immutable_annotation" />
-      <recent name="com.filter_annotation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -386,6 +394,7 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <set>
+              <option value="ActuatorApplication" />
               <option value="AnyAnnotationApplication" />
               <option value="AopApplication" />
               <option value="ApplicationEventsApplication" />
@@ -437,6 +446,17 @@
               <option value="RecordApplicationEventsApplication" />
               <option value="ScheduledApplication" />
               <option value="Section1StaticCredentialsApplication" />
+              <option value="Section2ChangingDefaultConfigApplication" />
+              <option value="Section2DisableFormLoginAndHttpbasicAuthApplication" />
+              <option value="Section3InMemoryUserDetailsManagerApplication" />
+              <option value="Section4ManagingUsersWithDbApplication" />
+              <option value="Section5AuthenticationProviderApplication" />
+              <option value="Section6AuthEventListenerApplication" />
+              <option value="Section6ExceptionHandlingApplication" />
+              <option value="Section6SessionTimeoutApplication" />
+              <option value="Section7ThymeleafApplication" />
+              <option value="Section8CorsApplication" />
+              <option value="Section8CsrfApplication" />
               <option value="SecurityApplication" />
               <option value="SlicePaginationApplication" />
               <option value="SoftDeleteApplication" />
@@ -453,6 +473,7 @@
               <option value="TestConfigurationApplication" />
               <option value="TestExecutionListenerApplication" />
               <option value="TestPropertySourceApplication" />
+              <option value="ThymeleafApplication" />
               <option value="ValidationApplication" />
               <option value="WebAnnotationsApplication" />
               <option value="WebAppConfigurationApplication" />
@@ -466,7 +487,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section8CsrfApplication">
+  <component name="RunManager" selected="Spring Boot.Section9AuthoritiesRolesApplication">
     <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_5_authentication_provider" />
       <extension name="coverage">
@@ -1037,6 +1058,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Section9AuthoritiesRolesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="section_9_authorities_roles" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_9_authorities_roles.Section9AuthoritiesRolesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="security" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.security.SecurityApplication" />
@@ -1482,14 +1510,9 @@
       <workItem from="1735809005079" duration="1729000" />
       <workItem from="1735822445673" duration="601000" />
       <workItem from="1735840759819" duration="3754000" />
-    </task>
-    <task id="LOCAL-00354" summary="Added changing default config security">
-      <option name="closed" value="true" />
-      <created>1735201449994</created>
-      <option name="number" value="00354" />
-      <option name="presentableId" value="LOCAL-00354" />
-      <option name="project" value="LOCAL" />
-      <updated>1735201449994</updated>
+      <workItem from="1735885225121" duration="138000" />
+      <workItem from="1735895593222" duration="927000" />
+      <workItem from="1735903289598" duration="3003000" />
     </task>
     <task id="LOCAL-00355" summary="Added changing default config security disable formlogin">
       <option name="closed" value="true" />
@@ -1875,7 +1898,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735846152714</updated>
     </task>
-    <option name="localTasksCounter" value="403" />
+    <task id="LOCAL-00403" summary="Added authorities &amp; roles">
+      <option name="closed" value="true" />
+      <created>1735885353826</created>
+      <option name="number" value="00403" />
+      <option name="presentableId" value="LOCAL-00403" />
+      <option name="project" value="LOCAL" />
+      <updated>1735885353827</updated>
+    </task>
+    <option name="localTasksCounter" value="404" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1893,7 +1924,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added added comment" />
     <MESSAGE value="Added @WebMvcTest test for controller" />
     <MESSAGE value="Added @AutoConfigureMockMvc test for controller" />
     <MESSAGE value="Added mockito" />
@@ -1918,7 +1948,8 @@
     <MESSAGE value="Added thymeleaf for security" />
     <MESSAGE value="Added CORs" />
     <MESSAGE value="Added csrf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added csrf" />
+    <MESSAGE value="Added authorities &amp; roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added authorities &amp; roles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

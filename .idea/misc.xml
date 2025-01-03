@@ -95,6 +95,7 @@
         <option value="$PROJECT_DIR$/thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_8_cors/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_8_csrf/pom.xml" />
+        <option value="$PROJECT_DIR$/security/section_9_authorities_roles/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -14,6 +14,7 @@
         <module name="where_annotation" />
         <module name="dirty_context" />
         <module name="notnull_annotation_vs_column_nullable_false" />
+        <module name="section_9_authorities_roles" />
         <module name="conditional_on_property" />
         <module name="swagger" />
         <module name="liquibase" />
@@ -230,6 +231,7 @@
       <module name="section_7_thymeleaf" options="-parameters" />
       <module name="section_8_cors" options="-parameters" />
       <module name="section_8_csrf" options="-parameters" />
+      <module name="section_9_authorities_roles" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="slice_pagination" options="-parameters" />
       <module name="soft_delete" options="-parameters" />

@@ -68,6 +68,7 @@
     <file url="file://$PROJECT_DIR$/security/section_7_thymeleaf/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_8_cors/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_8_csrf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security/section_9_authorities_roles/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_jdbc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_profiles/src/main/java" charset="UTF-8" />
