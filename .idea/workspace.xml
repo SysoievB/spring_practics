@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added csrf">
-      <change afterPath="$PROJECT_DIR$/security/section_8_csrf/src/main/java/com/section_8_csrf/CsrfCookieFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_8_csrf/src/main/java/com/section_8_csrf/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_8_csrf/src/main/java/com/section_8_csrf/SecurityConfig.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1483,15 +1481,7 @@
       <workItem from="1735789427113" duration="2549000" />
       <workItem from="1735809005079" duration="1729000" />
       <workItem from="1735822445673" duration="601000" />
-      <workItem from="1735840759819" duration="3173000" />
-    </task>
-    <task id="LOCAL-00353" summary="Added changing default config security aaded controllers">
-      <option name="closed" value="true" />
-      <created>1735199486227</created>
-      <option name="number" value="00353" />
-      <option name="presentableId" value="LOCAL-00353" />
-      <option name="project" value="LOCAL" />
-      <updated>1735199486228</updated>
+      <workItem from="1735840759819" duration="3754000" />
     </task>
     <task id="LOCAL-00354" summary="Added changing default config security">
       <option name="closed" value="true" />
@@ -1877,7 +1867,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735841593931</updated>
     </task>
-    <option name="localTasksCounter" value="402" />
+    <task id="LOCAL-00402" summary="Added csrf">
+      <option name="closed" value="true" />
+      <created>1735846152714</created>
+      <option name="number" value="00402" />
+      <option name="presentableId" value="LOCAL-00402" />
+      <option name="project" value="LOCAL" />
+      <updated>1735846152714</updated>
+    </task>
+    <option name="localTasksCounter" value="403" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
