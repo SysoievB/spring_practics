@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added custom filter">
-      <change afterPath="$PROJECT_DIR$/security/section_10_custom_filter/src/main/java/com/section_10_custom_filter/CustomAfterFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_10_custom_filter/src/main/java/com/section_10_custom_filter/CustomBeforeFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_10_custom_filter/src/main/java/com/section_10_custom_filter/CustomFilterAt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_10_custom_filter/src/main/java/com/section_10_custom_filter/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_10_custom_filter/src/main/java/com/section_10_custom_filter/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_10_custom_filter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_10_custom_filter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_10_custom_filter/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_10_custom_filter/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -274,7 +264,7 @@
     "Spring Boot.QueryParamModifyingApplication.executor": "Run",
     "Spring Boot.RecordApplicationEventsApplication.executor": "Run",
     "Spring Boot.ScheduledApplication.executor": "Debug",
-    "Spring Boot.Section10CustomFilterApplication.executor": "Run",
+    "Spring Boot.Section10CustomFilterApplication.executor": "Debug",
     "Spring Boot.Section1StaticCredentialsApplication.executor": "Debug",
     "Spring Boot.Section2ChangingDefaultConfigApplication.executor": "Run",
     "Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication.executor": "Run",
@@ -1524,15 +1514,7 @@
       <workItem from="1735885225121" duration="138000" />
       <workItem from="1735895593222" duration="927000" />
       <workItem from="1735903289598" duration="3315000" />
-      <workItem from="1735961829564" duration="5550000" />
-    </task>
-    <task id="LOCAL-00358" summary="Added in memory user details manager">
-      <option name="closed" value="true" />
-      <created>1735275471329</created>
-      <option name="number" value="00358" />
-      <option name="presentableId" value="LOCAL-00358" />
-      <option name="project" value="LOCAL" />
-      <updated>1735275471330</updated>
+      <workItem from="1735961829564" duration="8432000" />
     </task>
     <task id="LOCAL-00359" summary="Added in memory user details manager">
       <option name="closed" value="true" />
@@ -1918,7 +1900,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735962949340</updated>
     </task>
-    <option name="localTasksCounter" value="407" />
+    <task id="LOCAL-00407" summary="Added custom filter">
+      <option name="closed" value="true" />
+      <created>1735971679215</created>
+      <option name="number" value="00407" />
+      <option name="presentableId" value="LOCAL-00407" />
+      <option name="project" value="LOCAL" />
+      <updated>1735971679215</updated>
+    </task>
+    <option name="localTasksCounter" value="408" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
