@@ -55,6 +55,7 @@
     <file url="file://$PROJECT_DIR$/data_jpa/where_annotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jackson_annotations/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/liquibase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security/section_10_custom_filter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_1_static_credentials/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_2_changing_default_config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java" charset="UTF-8" />
