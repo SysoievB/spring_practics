@@ -79,6 +79,7 @@
         <module name="inheritance_annotation" />
         <module name="data_jpa" />
         <module name="formula_annotation" />
+        <module name="section_11_jwt" />
         <module name="sql_annotations" />
         <module name="fetch_annotation" />
         <module name="many_to_one_uni" />
@@ -220,6 +221,7 @@
       <module name="record_application_events" options="-parameters" />
       <module name="scheduled" options="-parameters" />
       <module name="section_10_custom_filter" options="-parameters" />
+      <module name="section_11_jwt" options="-parameters" />
       <module name="section_1_static_credentials" options="-parameters" />
       <module name="section_2_changing_default_config" options="-parameters" />
       <module name="section_2_disable_form_login_and_httpbasic_auth" options="-parameters" />
