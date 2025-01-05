@@ -6,15 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jwt">
       <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/config/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/repository/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/resources/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/service/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_11_jwt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_11_jwt/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/section_11_jwt/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -1532,15 +1525,8 @@
       <workItem from="1735895593222" duration="927000" />
       <workItem from="1735903289598" duration="3315000" />
       <workItem from="1735961829564" duration="8432000" />
-      <workItem from="1735998212506" duration="2119000" />
-    </task>
-    <task id="LOCAL-00360" summary="Added in memory user details manager">
-      <option name="closed" value="true" />
-      <created>1735287002506</created>
-      <option name="number" value="00360" />
-      <option name="presentableId" value="LOCAL-00360" />
-      <option name="project" value="LOCAL" />
-      <updated>1735287002506</updated>
+      <workItem from="1735998212506" duration="2698000" />
+      <workItem from="1736056796782" duration="958000" />
     </task>
     <task id="LOCAL-00361" summary="Added in memory user details manager">
       <option name="closed" value="true" />
@@ -1926,7 +1912,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735998515774</updated>
     </task>
-    <option name="localTasksCounter" value="409" />
+    <task id="LOCAL-00409" summary="Added jwt">
+      <option name="closed" value="true" />
+      <created>1736000683578</created>
+      <option name="number" value="00409" />
+      <option name="presentableId" value="LOCAL-00409" />
+      <option name="project" value="LOCAL" />
+      <updated>1736000683578</updated>
+    </task>
+    <option name="localTasksCounter" value="410" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
