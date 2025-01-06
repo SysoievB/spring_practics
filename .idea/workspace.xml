@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jwt">
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/config/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/controller/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/controller/AuthenticationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/controller/AuthenticationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/controller/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/controller/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/service/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/model/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/java/com/section_11_jwt/service/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_11_jwt/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_11_jwt/src/main/resources/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_11_jwt/src/main/resources/create.sql" afterDir="false" />
-    </list>
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jwt" />
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1538,23 +1523,7 @@
       <workItem from="1735961829564" duration="8432000" />
       <workItem from="1735998212506" duration="2698000" />
       <workItem from="1736056796782" duration="1857000" />
-      <workItem from="1736073152824" duration="7572000" />
-    </task>
-    <task id="LOCAL-00362" summary="Added in memory user details manager">
-      <option name="closed" value="true" />
-      <created>1735287480235</created>
-      <option name="number" value="00362" />
-      <option name="presentableId" value="LOCAL-00362" />
-      <option name="project" value="LOCAL" />
-      <updated>1735287480235</updated>
-    </task>
-    <task id="LOCAL-00363" summary="Added in memory user details manager tests">
-      <option name="closed" value="true" />
-      <created>1735290026451</created>
-      <option name="number" value="00363" />
-      <option name="presentableId" value="LOCAL-00363" />
-      <option name="project" value="LOCAL" />
-      <updated>1735290026451</updated>
+      <workItem from="1736073152824" duration="7640000" />
     </task>
     <task id="LOCAL-00364" summary="Added managing users using a DB">
       <option name="closed" value="true" />
@@ -1932,7 +1901,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736059687818</updated>
     </task>
-    <option name="localTasksCounter" value="411" />
+    <task id="LOCAL-00411" summary="Added jwt">
+      <option name="closed" value="true" />
+      <created>1736081944752</created>
+      <option name="number" value="00411" />
+      <option name="presentableId" value="LOCAL-00411" />
+      <option name="project" value="LOCAL" />
+      <updated>1736081944753</updated>
+    </task>
+    <task id="LOCAL-00412" summary="Added jwt">
+      <option name="closed" value="true" />
+      <created>1736081963128</created>
+      <option name="number" value="00412" />
+      <option name="presentableId" value="LOCAL-00412" />
+      <option name="project" value="LOCAL" />
+      <updated>1736081963128</updated>
+    </task>
+    <option name="localTasksCounter" value="413" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
