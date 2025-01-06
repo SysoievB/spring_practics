@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @PreAuthorize &amp; @PostAuthorize">
-      <change afterPath="$PROJECT_DIR$/security/section_12_pre_post_authorize_annotations/src/main/java/com/section_12_pre_post_authorize_annotations/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_12_pre_post_authorize_annotations/src/main/java/com/section_12_pre_post_authorize_annotations/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_12_pre_post_authorize_annotations/src/main/java/com/section_12_pre_post_authorize_annotations/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -1540,15 +1534,7 @@
       <workItem from="1735998212506" duration="2698000" />
       <workItem from="1736056796782" duration="1857000" />
       <workItem from="1736073152824" duration="7640000" />
-      <workItem from="1736151289512" duration="2590000" />
-    </task>
-    <task id="LOCAL-00365" summary="Added managing users using a DB">
-      <option name="closed" value="true" />
-      <created>1735364793952</created>
-      <option name="number" value="00365" />
-      <option name="presentableId" value="LOCAL-00365" />
-      <option name="project" value="LOCAL" />
-      <updated>1735364793953</updated>
+      <workItem from="1736151289512" duration="3530000" />
     </task>
     <task id="LOCAL-00366" summary="Added managing users using a DB">
       <option name="closed" value="true" />
@@ -1934,7 +1920,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736151526740</updated>
     </task>
-    <option name="localTasksCounter" value="414" />
+    <task id="LOCAL-00414" summary="Added @PreAuthorize &amp; @PostAuthorize">
+      <option name="closed" value="true" />
+      <created>1736154225962</created>
+      <option name="number" value="00414" />
+      <option name="presentableId" value="LOCAL-00414" />
+      <option name="project" value="LOCAL" />
+      <updated>1736154225962</updated>
+    </task>
+    <option name="localTasksCounter" value="415" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
