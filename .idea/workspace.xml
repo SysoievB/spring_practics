@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added jwt" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @PreAuthorize &amp; @PostAuthorize">
+      <change afterPath="$PROJECT_DIR$/security/section_12_pre_post_authorize_annotations/src/main/java/com/section_12_pre_post_authorize_annotations/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_12_pre_post_authorize_annotations/src/main/java/com/section_12_pre_post_authorize_annotations/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_12_pre_post_authorize_annotations/src/main/java/com/section_12_pre_post_authorize_annotations/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,6 +272,7 @@
     "Spring Boot.ScheduledApplication.executor": "Debug",
     "Spring Boot.Section10CustomFilterApplication.executor": "Debug",
     "Spring Boot.Section11JwtApplication.executor": "Run",
+    "Spring Boot.Section12PrePostAuthorizeAnnotationsApplication.executor": "Run",
     "Spring Boot.Section1StaticCredentialsApplication.executor": "Debug",
     "Spring Boot.Section2ChangingDefaultConfigApplication.executor": "Run",
     "Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication.executor": "Run",
@@ -367,11 +376,11 @@
       <recent name="com.webflux.simple_web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.section_12_pre_post_authorize_annotations" />
       <recent name="com.section_10_custom_filter" />
       <recent name="com.section_9_authorities_roles" />
       <recent name="com.section_8_csrf" />
       <recent name="com.section_6_auth_event_listener.controller" />
-      <recent name="com.jackson.lombok" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -480,7 +489,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section11JwtApplication">
+  <component name="RunManager" selected="Spring Boot.Section12PrePostAuthorizeAnnotationsApplication">
     <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_5_authentication_provider" />
       <extension name="coverage">
@@ -974,6 +983,13 @@
     <configuration name="Section11JwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="section_11_jwt" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_11_jwt.Section11JwtApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Section12PrePostAuthorizeAnnotationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="section_12_pre_post_authorize_annotations" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_12_pre_post_authorize_annotations.Section12PrePostAuthorizeAnnotationsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1524,14 +1540,7 @@
       <workItem from="1735998212506" duration="2698000" />
       <workItem from="1736056796782" duration="1857000" />
       <workItem from="1736073152824" duration="7640000" />
-    </task>
-    <task id="LOCAL-00364" summary="Added managing users using a DB">
-      <option name="closed" value="true" />
-      <created>1735326298114</created>
-      <option name="number" value="00364" />
-      <option name="presentableId" value="LOCAL-00364" />
-      <option name="project" value="LOCAL" />
-      <updated>1735326298114</updated>
+      <workItem from="1736151289512" duration="2590000" />
     </task>
     <task id="LOCAL-00365" summary="Added managing users using a DB">
       <option name="closed" value="true" />
@@ -1917,7 +1926,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736081963128</updated>
     </task>
-    <option name="localTasksCounter" value="413" />
+    <task id="LOCAL-00413" summary="Added @PreAuthorize &amp; @PostAuthorize">
+      <option name="closed" value="true" />
+      <created>1736151526740</created>
+      <option name="number" value="00413" />
+      <option name="presentableId" value="LOCAL-00413" />
+      <option name="project" value="LOCAL" />
+      <updated>1736151526740</updated>
+    </task>
+    <option name="localTasksCounter" value="414" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1935,7 +1952,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added mockito" />
     <MESSAGE value="Added StepVerifier" />
     <MESSAGE value="Added ContextExpectations" />
     <MESSAGE value="Added publisherProbe" />
@@ -1960,7 +1976,8 @@
     <MESSAGE value="Added authorities &amp; roles" />
     <MESSAGE value="Added custom filter" />
     <MESSAGE value="Added jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jwt" />
+    <MESSAGE value="Added @PreAuthorize &amp; @PostAuthorize" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added @PreAuthorize &amp; @PostAuthorize" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

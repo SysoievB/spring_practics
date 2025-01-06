@@ -75,6 +75,7 @@
         <module name="spring_tests" />
         <module name="autowire_require_false" />
         <module name="spring-boot-test" />
+        <module name="section_12_pre_post_authorize_annotations" />
         <module name="bootstrapwith" />
         <module name="inheritance_annotation" />
         <module name="data_jpa" />
@@ -222,6 +223,7 @@
       <module name="scheduled" options="-parameters" />
       <module name="section_10_custom_filter" options="-parameters" />
       <module name="section_11_jwt" options="-parameters" />
+      <module name="section_12_pre_post_authorize_annotations" options="-parameters" />
       <module name="section_1_static_credentials" options="-parameters" />
       <module name="section_2_changing_default_config" options="-parameters" />
       <module name="section_2_disable_form_login_and_httpbasic_auth" options="-parameters" />
