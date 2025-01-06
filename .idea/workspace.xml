@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @PreAuthorize &amp; @PostAuthorize">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @PreFilter &amp; @PostFilter">
+      <change afterPath="$PROJECT_DIR$/security/section_12_pre_post_filter_annotations/src/main/java/com/section_12_pre_post_filter_annotations/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_12_pre_post_filter_annotations/src/main/java/com/section_12_pre_post_filter_annotations/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_12_pre_post_filter_annotations/src/main/java/com/section_12_pre_post_filter_annotations/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -41,6 +47,9 @@
     &quot;accountId&quot;: &quot;356a8206-52ef-4522-8c00-273170264343&quot;
   }
 }</component>
+  <component name="HttpClientEndpointsTabState">
+    <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;4de1531cf020b51be9e494c1a9be8cd4df4b12ad&quot; value=&quot;###&amp;#10;POST http://localhost:8080/pre&amp;#10;Content-Type: application/json&amp;#10;&amp;#10;[&amp;#10;  {&amp;#10;    &amp;quot;name&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;    &amp;quot;price&amp;quot;: 0&amp;#10;  }&amp;#10;]&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
+  </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
@@ -267,6 +276,7 @@
     "Spring Boot.Section10CustomFilterApplication.executor": "Debug",
     "Spring Boot.Section11JwtApplication.executor": "Run",
     "Spring Boot.Section12PrePostAuthorizeAnnotationsApplication.executor": "Run",
+    "Spring Boot.Section12PrePostFilterAnnotationsApplication.executor": "Run",
     "Spring Boot.Section1StaticCredentialsApplication.executor": "Debug",
     "Spring Boot.Section2ChangingDefaultConfigApplication.executor": "Run",
     "Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication.executor": "Run",
@@ -306,7 +316,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_6_auth_event_listener/src/main/java/com/section_6_auth_event_listener",
+    "last_opened_file_path": "C:/Users/Bogdan/IdeaProjects/spring_practics/security/section_12_pre_post_filter_annotations/src/main/java/com/section_12_pre_post_filter_annotations",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -316,7 +326,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "swagger",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -341,11 +351,11 @@
       <recent name="com.commit_rollback" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_12_pre_post_filter_annotations\src\main\java\com\section_12_pre_post_filter_annotations" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_6_auth_event_listener\src\main\java\com\section_6_auth_event_listener" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_6_session_timeout\src\main\java\com\section_6_session_timeout" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_5_authentication_provider\src\main\resources" />
       <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_5_authentication_provider\src\main\java\com\section_5_authentication_provider" />
-      <recent name="C:\Users\Bogdan\IdeaProjects\spring_practics\security\section_4_managing_users_with_db\src\main\java\com\section_4_managing_users_with_db" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -483,7 +493,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section12PrePostAuthorizeAnnotationsApplication">
+  <component name="RunManager" selected="Spring Boot.Section12PrePostFilterAnnotationsApplication">
     <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_5_authentication_provider" />
       <extension name="coverage">
@@ -984,6 +994,13 @@
     <configuration name="Section12PrePostAuthorizeAnnotationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="section_12_pre_post_authorize_annotations" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_12_pre_post_authorize_annotations.Section12PrePostAuthorizeAnnotationsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Section12PrePostFilterAnnotationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="section_12_pre_post_filter_annotations" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_12_pre_post_filter_annotations.Section12PrePostFilterAnnotationsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1535,14 +1552,7 @@
       <workItem from="1736056796782" duration="1857000" />
       <workItem from="1736073152824" duration="7640000" />
       <workItem from="1736151289512" duration="3530000" />
-    </task>
-    <task id="LOCAL-00366" summary="Added managing users using a DB">
-      <option name="closed" value="true" />
-      <created>1735364806963</created>
-      <option name="number" value="00366" />
-      <option name="presentableId" value="LOCAL-00366" />
-      <option name="project" value="LOCAL" />
-      <updated>1735364806963</updated>
+      <workItem from="1736158598091" duration="4785000" />
     </task>
     <task id="LOCAL-00367" summary="Added managing users using a DB">
       <option name="closed" value="true" />
@@ -1928,7 +1938,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736154225962</updated>
     </task>
-    <option name="localTasksCounter" value="415" />
+    <task id="LOCAL-00415" summary="Added @PreFilter &amp; @PostFilter">
+      <option name="closed" value="true" />
+      <created>1736158829102</created>
+      <option name="number" value="00415" />
+      <option name="presentableId" value="LOCAL-00415" />
+      <option name="project" value="LOCAL" />
+      <updated>1736158829103</updated>
+    </task>
+    <option name="localTasksCounter" value="416" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1946,7 +1964,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added StepVerifier" />
     <MESSAGE value="Added ContextExpectations" />
     <MESSAGE value="Added publisherProbe" />
     <MESSAGE value="Added static credentials security" />
@@ -1971,7 +1988,8 @@
     <MESSAGE value="Added custom filter" />
     <MESSAGE value="Added jwt" />
     <MESSAGE value="Added @PreAuthorize &amp; @PostAuthorize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added @PreAuthorize &amp; @PostAuthorize" />
+    <MESSAGE value="Added @PreFilter &amp; @PostFilter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added @PreFilter &amp; @PostFilter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
