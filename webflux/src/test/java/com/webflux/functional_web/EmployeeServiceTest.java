@@ -210,6 +210,7 @@ class EmployeeServiceTest {
 
         val result = service.createEmployee(dto);
 
+        // using usingRecursiveComparison().isEqualTo() we can compare the entire object, including nested fields with a single assertion
         StepVerifier.create(result)
                 .assertNext(emp -> assertThat(emp)
                         .usingRecursiveComparison()
