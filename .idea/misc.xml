@@ -100,6 +100,7 @@
         <option value="$PROJECT_DIR$/security/section_11_jwt/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_12_pre_post_authorize_annotations/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_12_pre_post_filter_annotations/pom.xml" />
+        <option value="$PROJECT_DIR$/security/section_13_oauth2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
