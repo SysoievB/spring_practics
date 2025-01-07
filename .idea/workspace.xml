@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added @PreFilter &amp; @PostFilter">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -1548,14 +1548,8 @@
       <workItem from="1736151289512" duration="3530000" />
       <workItem from="1736158598091" duration="4967000" />
       <workItem from="1736259718916" duration="49000" />
-    </task>
-    <task id="LOCAL-00368" summary="Added managing users using a DB">
-      <option name="closed" value="true" />
-      <created>1735369197927</created>
-      <option name="number" value="00368" />
-      <option name="presentableId" value="LOCAL-00368" />
-      <option name="project" value="LOCAL" />
-      <updated>1735369197928</updated>
+      <workItem from="1736260177863" duration="777000" />
+      <workItem from="1736270991510" duration="345000" />
     </task>
     <task id="LOCAL-00369" summary="Added managing users using a DB tests">
       <option name="closed" value="true" />
@@ -1941,7 +1935,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736163576287</updated>
     </task>
-    <option name="localTasksCounter" value="417" />
+    <task id="LOCAL-00417" summary="Added comment">
+      <option name="closed" value="true" />
+      <created>1736260359493</created>
+      <option name="number" value="00417" />
+      <option name="presentableId" value="LOCAL-00417" />
+      <option name="project" value="LOCAL" />
+      <updated>1736260359494</updated>
+    </task>
+    <option name="localTasksCounter" value="418" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1959,7 +1961,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added ContextExpectations" />
     <MESSAGE value="Added publisherProbe" />
     <MESSAGE value="Added static credentials security" />
     <MESSAGE value="Added changing default config security aaded controllers" />
@@ -1984,7 +1985,8 @@
     <MESSAGE value="Added jwt" />
     <MESSAGE value="Added @PreAuthorize &amp; @PostAuthorize" />
     <MESSAGE value="Added @PreFilter &amp; @PostFilter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added @PreFilter &amp; @PostFilter" />
+    <MESSAGE value="Added comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
