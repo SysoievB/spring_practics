@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added oauth2">
-      <change afterPath="$PROJECT_DIR$/security/section_13_oauth2/src/main/java/com/section_13_oauth2/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_13_oauth2/src/main/java/com/section_13_oauth2/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_13_oauth2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_13_oauth2/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added oauth2" />
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1564,15 +1556,7 @@
       <workItem from="1736259718916" duration="49000" />
       <workItem from="1736260177863" duration="777000" />
       <workItem from="1736270991510" duration="842000" />
-      <workItem from="1736271867793" duration="1510000" />
-    </task>
-    <task id="LOCAL-00370" summary="Added authentication provider">
-      <option name="closed" value="true" />
-      <created>1735448780347</created>
-      <option name="number" value="00370" />
-      <option name="presentableId" value="LOCAL-00370" />
-      <option name="project" value="LOCAL" />
-      <updated>1735448780347</updated>
+      <workItem from="1736271867793" duration="1543000" />
     </task>
     <task id="LOCAL-00371" summary="Added authentication provider">
       <option name="closed" value="true" />
@@ -1958,7 +1942,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736271496566</updated>
     </task>
-    <option name="localTasksCounter" value="419" />
+    <task id="LOCAL-00419" summary="Added oauth2">
+      <option name="closed" value="true" />
+      <created>1736273412691</created>
+      <option name="number" value="00419" />
+      <option name="presentableId" value="LOCAL-00419" />
+      <option name="project" value="LOCAL" />
+      <updated>1736273412691</updated>
+    </task>
+    <option name="localTasksCounter" value="420" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
