@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added oauth2" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added not null uuid">
+      <change afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/java/com/section_14_openid/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/java/com/section_14_openid/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/resources/templates/home-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/resources/templates/welcome-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/populate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/populate.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_14_openid/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_14_openid/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_14_openid/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +52,6 @@
     &quot;accountId&quot;: &quot;356a8206-52ef-4522-8c00-273170264343&quot;
   }
 }</component>
-  <component name="HttpClientEndpointsTabState">
-    <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;4de1531cf020b51be9e494c1a9be8cd4df4b12ad&quot; value=&quot;###&amp;#10;POST http://localhost:8080/pre&amp;#10;Content-Type: application/json&amp;#10;&amp;#10;[&amp;#10;  {&amp;#10;    &amp;quot;name&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;    &amp;quot;price&amp;quot;: 0&amp;#10;  }&amp;#10;]&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
-  </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
@@ -270,6 +280,7 @@
     &quot;Spring Boot.Section12PrePostAuthorizeAnnotationsApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.Section12PrePostFilterAnnotationsApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.Section13Oauth2Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Section14OpenidApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.Section1StaticCredentialsApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.Section2ChangingDefaultConfigApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.Section2DisableFormLoginAndHttpbasicAuthApplication.executor&quot;: &quot;Run&quot;,
@@ -436,6 +447,7 @@
               <option value="NamedEntityGraphApplication" />
               <option value="NoRepositoryBeanApplication" />
               <option value="NotnullAnnotationVsColumnNullableFalseApplication" />
+              <option value="ObjectProviderApplication" />
               <option value="OneToOnePrimarykeyjoincolumnApplication" />
               <option value="OneToOneWithFkApplication" />
               <option value="OptimisticLockExceptionApplication" />
@@ -444,6 +456,12 @@
               <option value="QueryParamModifyingApplication" />
               <option value="RecordApplicationEventsApplication" />
               <option value="ScheduledApplication" />
+              <option value="Section10CustomFilterApplication" />
+              <option value="Section11JwtApplication" />
+              <option value="Section12PrePostAuthorizeAnnotationsApplication" />
+              <option value="Section12PrePostFilterAnnotationsApplication" />
+              <option value="Section13Oauth2Application" />
+              <option value="Section14OpenidApplication" />
               <option value="Section1StaticCredentialsApplication" />
               <option value="Section2ChangingDefaultConfigApplication" />
               <option value="Section2DisableFormLoginAndHttpbasicAuthApplication" />
@@ -456,6 +474,7 @@
               <option value="Section7ThymeleafApplication" />
               <option value="Section8CorsApplication" />
               <option value="Section8CsrfApplication" />
+              <option value="Section9AuthoritiesRolesApplication" />
               <option value="SecurityApplication" />
               <option value="SlicePaginationApplication" />
               <option value="SoftDeleteApplication" />
@@ -486,7 +505,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section13Oauth2Application">
+  <component name="RunManager" selected="Spring Boot.Section14OpenidApplication">
     <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_5_authentication_provider" />
       <extension name="coverage">
@@ -1001,6 +1020,13 @@
     <configuration name="Section13Oauth2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="section_13_oauth2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_13_oauth2.Section13Oauth2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Section14OpenidApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="section_14_openid" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_14_openid.Section14OpenidApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1557,15 +1583,10 @@
       <workItem from="1736260177863" duration="777000" />
       <workItem from="1736270991510" duration="842000" />
       <workItem from="1736271867793" duration="1543000" />
-      <workItem from="1736311458484" duration="317000" />
-    </task>
-    <task id="LOCAL-00372" summary="Added authentication provider">
-      <option name="closed" value="true" />
-      <created>1735453634885</created>
-      <option name="number" value="00372" />
-      <option name="presentableId" value="LOCAL-00372" />
-      <option name="project" value="LOCAL" />
-      <updated>1735453634885</updated>
+      <workItem from="1736311458484" duration="5151000" />
+      <workItem from="1736338386260" duration="2078000" />
+      <workItem from="1736348822996" duration="2800000" />
+      <workItem from="1736396525938" duration="757000" />
     </task>
     <task id="LOCAL-00373" summary="Added authentication provider">
       <option name="closed" value="true" />
@@ -1951,7 +1972,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736311776073</updated>
     </task>
-    <option name="localTasksCounter" value="421" />
+    <task id="LOCAL-00421" summary="Added openId">
+      <option name="closed" value="true" />
+      <created>1736311920786</created>
+      <option name="number" value="00421" />
+      <option name="presentableId" value="LOCAL-00421" />
+      <option name="project" value="LOCAL" />
+      <updated>1736311920787</updated>
+    </task>
+    <option name="localTasksCounter" value="422" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1969,8 +1998,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added static credentials security" />
-    <MESSAGE value="Added changing default config security aaded controllers" />
     <MESSAGE value="Added changing default config security" />
     <MESSAGE value="Added changing default config security disable formlogin" />
     <MESSAGE value="Added in memory user details manager" />
@@ -1994,7 +2021,9 @@
     <MESSAGE value="Added @PreFilter &amp; @PostFilter" />
     <MESSAGE value="Added comment" />
     <MESSAGE value="Added oauth2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added oauth2" />
+    <MESSAGE value="Added openId" />
+    <MESSAGE value="Added not null uuid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added not null uuid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

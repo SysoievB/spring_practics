@@ -62,7 +62,9 @@
         </addColumn>
         <update tableName="book">
             <column name="book_uuid" valueComputed="UUID()"/>
+            <where>book_uuid is null</where>
         </update>
+        <addNotNullConstraint tableName="book" columnName="book_uuid" columnDataType="CHAR(36)"/>
     </changeSet>
 </databaseChangeLog>
 <!--if we set constraints nullable="false" we should also set defaultValue, or we can set constraints nullable="true"-->

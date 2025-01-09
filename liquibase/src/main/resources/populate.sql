@@ -9,3 +9,5 @@ VALUES ('The Great Gatsby', 'F. Scott Fitzgerald'),
        ('War and Peace', 'Leo Tolstoy'),
        ('The Odyssey', 'Homer'),
        ('Ulysses', 'James Joyce');
+
+SHOW CREATE TABLE book;
