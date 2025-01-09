@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added not null uuid">
-      <change afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/java/com/section_14_openid/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/java/com/section_14_openid/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/resources/templates/home-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/resources/templates/welcome-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added openId">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/db/changelog/db.book-changelog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquibase/src/main/resources/populate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/populate.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_14_openid/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_14_openid/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_14_openid/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_14_openid/src/main/java/com/section_14_openid/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_14_openid/src/main/java/com/section_14_openid/SecurityConfig.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1586,15 +1576,7 @@
       <workItem from="1736311458484" duration="5151000" />
       <workItem from="1736338386260" duration="2078000" />
       <workItem from="1736348822996" duration="2800000" />
-      <workItem from="1736396525938" duration="757000" />
-    </task>
-    <task id="LOCAL-00373" summary="Added authentication provider">
-      <option name="closed" value="true" />
-      <created>1735453781934</created>
-      <option name="number" value="00373" />
-      <option name="presentableId" value="LOCAL-00373" />
-      <option name="project" value="LOCAL" />
-      <updated>1735453781935</updated>
+      <workItem from="1736396525938" duration="2979000" />
     </task>
     <task id="LOCAL-00374" summary="Added authentication provider">
       <option name="closed" value="true" />
@@ -1980,7 +1962,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736311920787</updated>
     </task>
-    <option name="localTasksCounter" value="422" />
+    <task id="LOCAL-00422" summary="Added openId">
+      <option name="closed" value="true" />
+      <created>1736397504292</created>
+      <option name="number" value="00422" />
+      <option name="presentableId" value="LOCAL-00422" />
+      <option name="project" value="LOCAL" />
+      <updated>1736397504293</updated>
+    </task>
+    <option name="localTasksCounter" value="423" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2021,9 +2011,9 @@
     <MESSAGE value="Added @PreFilter &amp; @PostFilter" />
     <MESSAGE value="Added comment" />
     <MESSAGE value="Added oauth2" />
-    <MESSAGE value="Added openId" />
     <MESSAGE value="Added not null uuid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added not null uuid" />
+    <MESSAGE value="Added openId" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added openId" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
