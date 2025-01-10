@@ -23,6 +23,7 @@
         <module name="actuator" />
         <module name="context_configuration" />
         <module name="import_configuration" />
+        <module name="liquibase_mssql" />
         <module name="section_3_in_memory_user_details_manager" />
         <module name="optimistic_lock_exception" />
         <module name="test_configuration" />
@@ -210,6 +211,7 @@
       <module name="jackson_annotations" options="-parameters" />
       <module name="keyset_pagination" options="-parameters" />
       <module name="liquibase" options="-parameters" />
+      <module name="liquibase_mssql" options="-parameters" />
       <module name="many_to_one_uni" options="-parameters" />
       <module name="mapped_superclass" options="-parameters" />
       <module name="named_entity_graph" options="-parameters" />

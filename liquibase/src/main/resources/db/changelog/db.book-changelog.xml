@@ -66,5 +66,13 @@
         </update>
         <addNotNullConstraint tableName="book" columnName="book_uuid" columnDataType="CHAR(36)"/>
     </changeSet>
+
+    <changeSet id="subset-8-adding-new-field-and-populate-it-with-value" author="bs">
+        <addColumn tableName="book">
+            <column name="book_name" type="VARCHAR(255)" value="This is book">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
 </databaseChangeLog>
 <!--if we set constraints nullable="false" we should also set defaultValue, or we can set constraints nullable="true"-->

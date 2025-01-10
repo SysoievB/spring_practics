@@ -23,6 +23,9 @@ public class Book {
     @Column(name = "book_uuid", columnDefinition = "CHAR(36)")
     UUID bookUuid;
 
+    @Column(name = "book_name")
+    String bookName;
+
     String title;
 
     String author;
