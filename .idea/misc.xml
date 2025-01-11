@@ -110,6 +110,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/data_jpa/any_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/security/section_15_openid_keycloak/pom.xml" />
       </set>
     </option>
   </component>
