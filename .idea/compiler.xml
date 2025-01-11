@@ -97,6 +97,7 @@
         <module name="no_repository_bean" />
         <module name="entity_graph" />
         <module name="section_8_csrf" />
+        <module name="section_15_openid_keycloak" />
         <module name="application_events" />
         <module name="attribute_override" />
         <module name="keyset_pagination" />
@@ -153,13 +154,14 @@
         <module name="section_4_managing_users_with_db" />
         <module name="section_2_changing_default_config" />
       </profile>
-      <profile name="Annotation profile for thymeleaf" enabled="true">
+      <profile name="Annotation profile for test_containers" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
+        <module name="test_containers" />
         <module name="context_hierarchy" />
       </profile>
     </annotationProcessing>
@@ -232,6 +234,7 @@
       <module name="section_12_pre_post_filter_annotations" options="-parameters" />
       <module name="section_13_oauth2" options="-parameters" />
       <module name="section_14_openid" options="-parameters" />
+      <module name="section_15_openid_keycloak" options="-parameters" />
       <module name="section_1_static_credentials" options="-parameters" />
       <module name="section_2_changing_default_config" options="-parameters" />
       <module name="section_2_disable_form_login_and_httpbasic_auth" options="-parameters" />
@@ -260,6 +263,7 @@
       <module name="swagger" options="-parameters" />
       <module name="test_bean" options="-parameters" />
       <module name="test_configuration" options="-parameters" />
+      <module name="test_containers" options="-parameters" />
       <module name="test_execution_listener" options="-parameters" />
       <module name="test_property_source" options="-parameters" />
       <module name="thymeleaf" options="-parameters" />

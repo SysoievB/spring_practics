@@ -62,6 +62,7 @@
     <file url="file://$PROJECT_DIR$/security/section_12_pre_post_filter_annotations/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_13_oauth2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_14_openid/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security/section_15_openid_keycloak/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_1_static_credentials/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_2_changing_default_config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java" charset="UTF-8" />
@@ -91,6 +92,7 @@
     <file url="file://$PROJECT_DIR$/spring_tests/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_tests/test_bean/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_tests/test_configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_tests/test_containers/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_tests/test_execution_listener/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_tests/test_property_source/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_tests/web_app_configuration/src/main/java" charset="UTF-8" />
