@@ -18,7 +18,7 @@ import java.util.UUID;
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    Long id;
 
     @Column(name = "book_uuid", columnDefinition = "UUID")
     UUID bookUuid;
@@ -26,7 +26,5 @@ public class Book {
     String title;
 
     String author;
-
-    String publisher;
 }
 
