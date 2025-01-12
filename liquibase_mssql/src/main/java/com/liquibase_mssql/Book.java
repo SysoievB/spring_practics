@@ -20,7 +20,7 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
 
-    @Column(name = "book_uuid", columnDefinition = "CHAR(36)")
+    @Column(name = "book_uuid", columnDefinition = "UUID")
     UUID bookUuid;
 
     String title;
@@ -28,8 +28,5 @@ public class Book {
     String author;
 
     String publisher;
-
-    @Column(name = "is_last")
-    boolean last;
 }
 
