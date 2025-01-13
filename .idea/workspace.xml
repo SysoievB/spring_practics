@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added nullable uuid for ms sql">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added keykloack openId">
+      <change afterPath="$PROJECT_DIR$/security/section_15_keycloack_openid/src/main/java/com/section_15_keycloack_openid/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_15_keycloack_openid/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_15_keycloack_openid/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/section_15_keycloack_openid/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_15_keycloack_openid/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1030,6 +1036,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Section15KeycloackOpenidApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="section_15_keycloack_openid" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_15_keycloack_openid.Section15KeycloackOpenidApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Section15OpenidKeycloakApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="section_15_openid_keycloak" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_15_openid_keycloak.Section15OpenidKeycloakApplication" />
@@ -1606,14 +1619,7 @@
       <workItem from="1736577517546" duration="6072000" />
       <workItem from="1736669305050" duration="5168000" />
       <workItem from="1736744674980" duration="1142000" />
-    </task>
-    <task id="LOCAL-00381" summary="Added session timeout config">
-      <option name="closed" value="true" />
-      <created>1735574742449</created>
-      <option name="number" value="00381" />
-      <option name="presentableId" value="LOCAL-00381" />
-      <option name="project" value="LOCAL" />
-      <updated>1735574742449</updated>
+      <workItem from="1736791518570" duration="622000" />
     </task>
     <task id="LOCAL-00382" summary="Added auth event listener">
       <option name="closed" value="true" />
@@ -1999,7 +2005,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736674503216</updated>
     </task>
-    <option name="localTasksCounter" value="430" />
+    <task id="LOCAL-00430" summary="Added keykloack openId">
+      <option name="closed" value="true" />
+      <created>1736791688898</created>
+      <option name="number" value="00430" />
+      <option name="presentableId" value="LOCAL-00430" />
+      <option name="project" value="LOCAL" />
+      <updated>1736791688899</updated>
+    </task>
+    <option name="localTasksCounter" value="431" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2017,7 +2031,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added exception handling" />
     <MESSAGE value="Added session timeout config" />
     <MESSAGE value="Added auth event listener" />
     <MESSAGE value="Added thymeleaf" />
@@ -2042,7 +2055,8 @@
     <MESSAGE value="Added test-containers" />
     <MESSAGE value="Added fix for ms sql db through docker" />
     <MESSAGE value="Added nullable uuid for ms sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added nullable uuid for ms sql" />
+    <MESSAGE value="Added keykloack openId" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added keykloack openId" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
