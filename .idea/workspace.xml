@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added keykloack openId">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/section_15_keycloack_openid/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_15_keycloack_openid/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_15_keycloack_openid/src/main/java/com/section_15_keycloack_openid/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_15_keycloack_openid/src/main/java/com/section_15_keycloack_openid/SecurityConfig.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -377,11 +377,11 @@
       <recent name="com.webflux.simple_web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.section_15_keycloack_openid" />
       <recent name="com.section_12_pre_post_authorize_annotations" />
       <recent name="com.section_10_custom_filter" />
       <recent name="com.section_9_authorities_roles" />
       <recent name="com.section_8_csrf" />
-      <recent name="com.section_6_auth_event_listener.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1614,23 +1614,8 @@
       <workItem from="1736577517546" duration="6072000" />
       <workItem from="1736669305050" duration="5168000" />
       <workItem from="1736744674980" duration="1142000" />
-      <workItem from="1736791518570" duration="990000" />
-    </task>
-    <task id="LOCAL-00383" summary="Added auth event listener">
-      <option name="closed" value="true" />
-      <created>1735621617162</created>
-      <option name="number" value="00383" />
-      <option name="presentableId" value="LOCAL-00383" />
-      <option name="project" value="LOCAL" />
-      <updated>1735621617162</updated>
-    </task>
-    <task id="LOCAL-00384" summary="Added thymeleaf">
-      <option name="closed" value="true" />
-      <created>1735636072602</created>
-      <option name="number" value="00384" />
-      <option name="presentableId" value="LOCAL-00384" />
-      <option name="project" value="LOCAL" />
-      <updated>1735636072603</updated>
+      <workItem from="1736791518570" duration="1890000" />
+      <workItem from="1736827184749" duration="722000" />
     </task>
     <task id="LOCAL-00385" summary="Added thymeleaf">
       <option name="closed" value="true" />
@@ -2008,7 +1993,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736792274418</updated>
     </task>
-    <option name="localTasksCounter" value="432" />
+    <task id="LOCAL-00432" summary="Added keykloack openId">
+      <option name="closed" value="true" />
+      <created>1736792797066</created>
+      <option name="number" value="00432" />
+      <option name="presentableId" value="LOCAL-00432" />
+      <option name="project" value="LOCAL" />
+      <updated>1736792797066</updated>
+    </task>
+    <task id="LOCAL-00433" summary="Added keykloack openId">
+      <option name="closed" value="true" />
+      <created>1736792826826</created>
+      <option name="number" value="00433" />
+      <option name="presentableId" value="LOCAL-00433" />
+      <option name="project" value="LOCAL" />
+      <updated>1736792826826</updated>
+    </task>
+    <option name="localTasksCounter" value="434" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
