@@ -106,6 +106,7 @@
         <option value="$PROJECT_DIR$/security/section_15_openid_keycloak/pom.xml" />
         <option value="$PROJECT_DIR$/spring_tests/test_containers/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_15_keycloack_openid/pom.xml" />
+        <option value="$PROJECT_DIR$/security/section_16_spring_authorization_server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
