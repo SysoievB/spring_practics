@@ -22,7 +22,9 @@ public class DefaultSecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(authorize -> authorize
-                        .anyRequest().authenticated())
+                        .requestMatchers("/.well-known/openid-configuration").permitAll() // Allow access to OpenID configuration
+                        .anyRequest().authenticated()
+                )
                 .formLogin(withDefaults());
         return http.build();
     }
@@ -40,5 +42,4 @@ public class DefaultSecurityConfig {
     public PasswordEncoder passwordEncoder() {
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
-
 }

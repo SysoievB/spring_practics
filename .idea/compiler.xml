@@ -29,6 +29,7 @@
         <module name="constructor_binding" />
         <module name="attribute_converter" />
         <module name="section_16_resource_server_module" />
+        <module name="section_16_api_client_module" />
         <module name="generationtype_custom" />
         <module name="section_2_disable_form_login_and_httpbasic_auth" />
         <module name="bean_configuration" />
@@ -239,6 +240,7 @@
       <module name="section_14_openid" options="-parameters" />
       <module name="section_15_keycloack_openid" options="-parameters" />
       <module name="section_15_openid_keycloak" options="-parameters" />
+      <module name="section_16_api_client_module" options="-parameters" />
       <module name="section_16_authorization_server_module" options="-parameters" />
       <module name="section_16_resource_server_module" options="-parameters" />
       <module name="section_1_static_credentials" options="-parameters" />
