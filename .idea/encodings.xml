@@ -64,7 +64,8 @@
     <file url="file://$PROJECT_DIR$/security/section_14_openid/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_15_keycloack_openid/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_15_openid_keycloak/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/security/section_16_spring_authorization_server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security/section_16_authorization_server_module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security/section_16_resource_server_module/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_1_static_credentials/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_2_changing_default_config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security/section_2_disable_form_login_and_httpbasic_auth/src/main/java" charset="UTF-8" />

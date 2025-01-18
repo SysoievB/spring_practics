@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added spring authorization server">
-      <change afterPath="$PROJECT_DIR$/security/section_16_spring_authorization_server/src/main/java/com/section_16_spring_authorization_server/AuthorizationServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_16_spring_authorization_server/src/main/java/com/section_16_spring_authorization_server/DefaultSecurityConfig.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added resource server module">
+      <change afterPath="$PROJECT_DIR$/security/section_16_resource_server_module/src/main/java/com/section_16_resource_server_module/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -1047,8 +1049,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Section16ResourceServerModuleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="section_16_resource_server_module" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_16_resource_server_module.Section16ResourceServerModuleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Section16SpringAuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="section_16_spring_authorization_server" />
+      <module name="section_16_authorization_server_module" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.section_16_spring_authorization_server.Section16SpringAuthorizationServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1627,15 +1636,7 @@
       <workItem from="1736827184749" duration="8054000" />
       <workItem from="1736918086417" duration="1711000" />
       <workItem from="1737011819400" duration="38000" />
-      <workItem from="1737176306909" duration="644000" />
-    </task>
-    <task id="LOCAL-00391" summary="Added thymeleaf">
-      <option name="closed" value="true" />
-      <created>1735734973497</created>
-      <option name="number" value="00391" />
-      <option name="presentableId" value="LOCAL-00391" />
-      <option name="project" value="LOCAL" />
-      <updated>1735734973497</updated>
+      <workItem from="1737176306909" duration="989000" />
     </task>
     <task id="LOCAL-00392" summary="Added thymeleaf conditional">
       <option name="closed" value="true" />
@@ -2021,7 +2022,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736921365636</updated>
     </task>
-    <option name="localTasksCounter" value="440" />
+    <task id="LOCAL-00440" summary="Added resource server module">
+      <option name="closed" value="true" />
+      <created>1737177112424</created>
+      <option name="number" value="00440" />
+      <option name="presentableId" value="LOCAL-00440" />
+      <option name="project" value="LOCAL" />
+      <updated>1737177112424</updated>
+    </task>
+    <option name="localTasksCounter" value="441" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2039,7 +2048,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added auth event listener" />
     <MESSAGE value="Added thymeleaf" />
     <MESSAGE value="Added thymeleaf conditional" />
     <MESSAGE value="Added thymeleaf for each" />
@@ -2064,7 +2072,8 @@
     <MESSAGE value="Added nullable uuid for ms sql" />
     <MESSAGE value="Added keykloack openId" />
     <MESSAGE value="Added spring authorization server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added spring authorization server" />
+    <MESSAGE value="Added resource server module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added resource server module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

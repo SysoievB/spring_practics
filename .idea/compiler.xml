@@ -28,6 +28,7 @@
         <module name="generationtype_auto" />
         <module name="constructor_binding" />
         <module name="attribute_converter" />
+        <module name="section_16_resource_server_module" />
         <module name="generationtype_custom" />
         <module name="section_2_disable_form_login_and_httpbasic_auth" />
         <module name="bean_configuration" />
@@ -49,7 +50,6 @@
         <module name="section_8_csrf" />
         <module name="application_events" />
         <module name="web_headers_cookies" />
-        <module name="section_16_spring_authorization_server" />
         <module name="section_6_session_timeout" />
         <module name="section_13_oauth2" />
         <module name="stored_procedures" />
@@ -168,6 +168,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="21">
       <module name="section_15_openid_keycloak" target="21" />
+      <module name="section_16_authorization_server_module" target="21" />
       <module name="section_6_authentication_provider" target="21" />
     </bytecodeTargetLevel>
   </component>
@@ -238,7 +239,8 @@
       <module name="section_14_openid" options="-parameters" />
       <module name="section_15_keycloack_openid" options="-parameters" />
       <module name="section_15_openid_keycloak" options="-parameters" />
-      <module name="section_16_spring_authorization_server" options="-parameters" />
+      <module name="section_16_authorization_server_module" options="-parameters" />
+      <module name="section_16_resource_server_module" options="-parameters" />
       <module name="section_1_static_credentials" options="-parameters" />
       <module name="section_2_changing_default_config" options="-parameters" />
       <module name="section_2_disable_form_login_and_httpbasic_auth" options="-parameters" />
