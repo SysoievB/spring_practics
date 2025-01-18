@@ -9,18 +9,30 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com</groupId>
-	<artifactId>section_16_spring_authorization_server</artifactId>
+	<artifactId>section_16_resource_server_module</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>section_16_spring_authorization_server</name>
-	<description>section_16_spring_authorization_server</description>
-
+	<name>section_16_resource_server_module</name>
+	<description>section_16_resource_server_module</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
 	<properties>
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-authorization-server</artifactId>
+			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

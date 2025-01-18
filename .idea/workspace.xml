@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added keykloack openId">
-      <change afterPath="$PROJECT_DIR$/security/section_16_spring_authorization_server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_16_spring_authorization_server/src/main/java/com/section_16_spring_authorization_server/Section16SpringAuthorizationServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_16_spring_authorization_server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/section_16_spring_authorization_server/src/test/java/com/section_16_spring_authorization_server/Section16SpringAuthorizationServerApplicationTests.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added spring authorization server">
+      <change afterPath="$PROJECT_DIR$/security/section_16_spring_authorization_server/src/main/java/com/section_16_spring_authorization_server/AuthorizationServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/section_16_spring_authorization_server/src/main/java/com/section_16_spring_authorization_server/DefaultSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
@@ -1627,23 +1625,9 @@
       <workItem from="1736744674980" duration="1142000" />
       <workItem from="1736791518570" duration="1890000" />
       <workItem from="1736827184749" duration="8054000" />
-      <workItem from="1736918086417" duration="404000" />
-    </task>
-    <task id="LOCAL-00389" summary="Added thymeleaf">
-      <option name="closed" value="true" />
-      <created>1735732651383</created>
-      <option name="number" value="00389" />
-      <option name="presentableId" value="LOCAL-00389" />
-      <option name="project" value="LOCAL" />
-      <updated>1735732651383</updated>
-    </task>
-    <task id="LOCAL-00390" summary="Added thymeleaf">
-      <option name="closed" value="true" />
-      <created>1735734694704</created>
-      <option name="number" value="00390" />
-      <option name="presentableId" value="LOCAL-00390" />
-      <option name="project" value="LOCAL" />
-      <updated>1735734694704</updated>
+      <workItem from="1736918086417" duration="1711000" />
+      <workItem from="1737011819400" duration="38000" />
+      <workItem from="1737176306909" duration="644000" />
     </task>
     <task id="LOCAL-00391" summary="Added thymeleaf">
       <option name="closed" value="true" />
@@ -2021,7 +2005,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736837767375</updated>
     </task>
-    <option name="localTasksCounter" value="438" />
+    <task id="LOCAL-00438" summary="Added spring authorization server">
+      <option name="closed" value="true" />
+      <created>1736918529764</created>
+      <option name="number" value="00438" />
+      <option name="presentableId" value="LOCAL-00438" />
+      <option name="project" value="LOCAL" />
+      <updated>1736918529765</updated>
+    </task>
+    <task id="LOCAL-00439" summary="Added spring authorization server">
+      <option name="closed" value="true" />
+      <created>1736921365636</created>
+      <option name="number" value="00439" />
+      <option name="presentableId" value="LOCAL-00439" />
+      <option name="project" value="LOCAL" />
+      <updated>1736921365636</updated>
+    </task>
+    <option name="localTasksCounter" value="440" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2039,7 +2039,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added session timeout config" />
     <MESSAGE value="Added auth event listener" />
     <MESSAGE value="Added thymeleaf" />
     <MESSAGE value="Added thymeleaf conditional" />
@@ -2064,7 +2063,8 @@
     <MESSAGE value="Added fix for ms sql db through docker" />
     <MESSAGE value="Added nullable uuid for ms sql" />
     <MESSAGE value="Added keykloack openId" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added keykloack openId" />
+    <MESSAGE value="Added spring authorization server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added spring authorization server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
