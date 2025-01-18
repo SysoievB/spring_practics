@@ -34,6 +34,7 @@
         <module name="bean_configuration" />
         <module name="section_5_authentication_provider" />
         <module name="section_12_pre_post_filter_annotations" />
+        <module name="section_16_authorization_server_module" />
         <module name="element_collection" />
         <module name="object_provider" />
         <module name="immutable_annotation" />
@@ -168,7 +169,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="21">
       <module name="section_15_openid_keycloak" target="21" />
-      <module name="section_16_authorization_server_module" target="21" />
       <module name="section_6_authentication_provider" target="21" />
     </bytecodeTargetLevel>
   </component>
