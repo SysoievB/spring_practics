@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added CSRF Tokens vs Session Cookies in Spring Security comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/section_8_csrf/src/main/java/com/section_8_csrf/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/section_8_csrf/src/main/java/com/section_8_csrf/HelloController.java" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -502,7 +501,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Section16ApiClientModuleApplication">
+  <component name="RunManager" selected="Spring Boot.Section2ChangingDefaultConfigApplication">
     <configuration name="UserControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_5_authentication_provider" />
       <extension name="coverage">
@@ -1644,15 +1643,10 @@
       <workItem from="1736918086417" duration="1711000" />
       <workItem from="1737011819400" duration="38000" />
       <workItem from="1737176306909" duration="8275000" />
-      <workItem from="1737282436151" duration="576000" />
-    </task>
-    <task id="LOCAL-00395" summary="Added thymeleaf for each">
-      <option name="closed" value="true" />
-      <created>1735752914562</created>
-      <option name="number" value="00395" />
-      <option name="presentableId" value="LOCAL-00395" />
-      <option name="project" value="LOCAL" />
-      <updated>1735752914562</updated>
+      <workItem from="1737282436151" duration="1152000" />
+      <workItem from="1737298860431" duration="1734000" />
+      <workItem from="1737311021465" duration="297000" />
+      <workItem from="1737347105125" duration="3050000" />
     </task>
     <task id="LOCAL-00396" summary="Added thymeleaf for security">
       <option name="closed" value="true" />
@@ -2038,7 +2032,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737184738298</updated>
     </task>
-    <option name="localTasksCounter" value="444" />
+    <task id="LOCAL-00444" summary="Added CSRF Tokens vs Session Cookies in Spring Security comment">
+      <option name="closed" value="true" />
+      <created>1737283026508</created>
+      <option name="number" value="00444" />
+      <option name="presentableId" value="LOCAL-00444" />
+      <option name="project" value="LOCAL" />
+      <updated>1737283026509</updated>
+    </task>
+    <option name="localTasksCounter" value="445" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
