@@ -73,6 +73,7 @@
         <module name="association_override" />
         <module name="thymeleaf" />
         <module name="section_6_exception_handling" />
+        <module name="one_time_token" />
         <module name="created_modified_by_transient" />
         <module name="core" />
         <module name="one_to_one_with_fk" />
@@ -224,6 +225,7 @@
       <module name="no_repository_bean" options="-parameters" />
       <module name="notnull_annotation_vs_column_nullable_false" options="-parameters" />
       <module name="object_provider" options="-parameters" />
+      <module name="one_time_token" options="-parameters" />
       <module name="one_to_one_primarykeyjoincolumn" options="-parameters" />
       <module name="one_to_one_with_fk" options="-parameters" />
       <module name="optimistic_lock_exception" options="-parameters" />

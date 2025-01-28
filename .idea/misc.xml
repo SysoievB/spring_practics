@@ -110,6 +110,7 @@
         <option value="$PROJECT_DIR$/security/section_16_resource_server_module/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_16_authorization_server_module/pom.xml" />
         <option value="$PROJECT_DIR$/security/section_16_api_client_module/pom.xml" />
+        <option value="$PROJECT_DIR$/security/one_time_token/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
