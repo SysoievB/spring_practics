@@ -11,7 +11,11 @@ create table user
     username varchar(255),
     primary key (id)
 );
+DESCRIBE address;
 /*
+The id column in the address table serves as both the primary key and the foreign key.
+There is no separate foreign key column in the address table.
+
 The relationship may appear "less visible" than with @JoinColumn
 because there isn’t a separately labeled foreign key column,
 but it's directly defined in the schema.*/

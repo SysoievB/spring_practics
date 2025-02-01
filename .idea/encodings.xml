@@ -19,6 +19,7 @@
     <file url="file://$PROJECT_DIR$/data_jpa/association_override/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/attribute_converter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/attribute_override/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/cascade_type_and_orhpan_removal/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/column_updatable_insertable/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/created_modified_by_transient/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/dto_projection/src/main/java" charset="UTF-8" />

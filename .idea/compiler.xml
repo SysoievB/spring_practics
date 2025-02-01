@@ -14,6 +14,7 @@
         <module name="actuator" />
         <module name="liquibase_mssql" />
         <module name="section_3_in_memory_user_details_manager" />
+        <module name="cascade_type_and_orhpan_removal" />
         <module name="validation" />
         <module name="query_param_modifying" />
         <module name="spring_jdbc" />
@@ -186,6 +187,7 @@
       <module name="bean_configuration" options="-parameters" />
       <module name="boot" options="-parameters" />
       <module name="bootstrapwith" options="-parameters" />
+      <module name="cascade_type_and_orhpan_removal" options="-parameters" />
       <module name="column_updatable_insertable" options="-parameters" />
       <module name="commit_rollback" options="-parameters" />
       <module name="component_configuration" options="-parameters" />

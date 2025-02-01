@@ -11,3 +11,8 @@ create table user
     username varchar(255),
     primary key (id)
 );
+DESCRIBE address;
+/*
+The relationship may appear "less visible" than with @JoinColumn
+because there isn’t a separately labeled foreign key column,
+but it's directly defined in the schema.*/

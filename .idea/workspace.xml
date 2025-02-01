@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added one time token">
-      <change afterPath="$PROJECT_DIR$/security/one_time_token/src/main/java/com/one_time_token/OttSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/one_time_token/src/main/java/com/one_time_token/PageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/one_time_token/src/main/java/com/one_time_token/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/AddressRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/UserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/one_time_token/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/one_time_token/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/one_time_token/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security/one_time_token/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/OneToOnePrimarykeyjoincolumnApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/OneToOnePrimarykeyjoincolumnApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/OneToOnePrimarykeyjoincolumnApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/OneToOnePrimarykeyjoincolumnApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/create.sql" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +33,9 @@
         <option value="Exception" />
         <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -277,7 +282,7 @@
     "Spring Boot.NotnullAnnotationVsColumnNullableFalseApplication.executor": "Debug",
     "Spring Boot.ObjectProviderApplication.executor": "Run",
     "Spring Boot.OneTimeTokenApplication.executor": "Run",
-    "Spring Boot.OneToOnePrimarykeyjoincolumnApplication.executor": "Debug",
+    "Spring Boot.OneToOnePrimarykeyjoincolumnApplication.executor": "Run",
     "Spring Boot.OneToOneWithFkApplication.executor": "Debug",
     "Spring Boot.OptimisticLockExceptionApplication.executor": "Debug",
     "Spring Boot.PaginationApplication.executor": "Debug",
@@ -349,8 +354,8 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "mysql",
-      "sqlserver"
+      "sqlserver",
+      "mysql"
     ],
     "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
       "MySQL",
@@ -520,7 +525,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OneTimeTokenApplication">
+  <component name="RunManager" selected="Spring Boot.OneToOnePrimarykeyjoincolumnApplication">
     <configuration name="AccountControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_3_in_memory_user_details_manager" />
       <extension name="coverage">
@@ -672,6 +677,14 @@
     <configuration name="BootstrapwithApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="bootstrapwith" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bootstrapwith.BootstrapwithApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CascadeTypeAndOrhpanRemovalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="cascade_type_and_orhpan_removal" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cascade_type_and_orhpan_removal.CascadeTypeAndOrhpanRemovalApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1681,23 +1694,9 @@
       <workItem from="1737605072940" duration="648000" />
       <workItem from="1737792071270" duration="543000" />
       <workItem from="1738037687817" duration="1805000" />
-      <workItem from="1738039572018" duration="4725000" />
-    </task>
-    <task id="LOCAL-00399" summary="Added CORs">
-      <option name="closed" value="true" />
-      <created>1735810742426</created>
-      <option name="number" value="00399" />
-      <option name="presentableId" value="LOCAL-00399" />
-      <option name="project" value="LOCAL" />
-      <updated>1735810742427</updated>
-    </task>
-    <task id="LOCAL-00400" summary="Added csrf">
-      <option name="closed" value="true" />
-      <created>1735823053020</created>
-      <option name="number" value="00400" />
-      <option name="presentableId" value="LOCAL-00400" />
-      <option name="project" value="LOCAL" />
-      <updated>1735823053021</updated>
+      <workItem from="1738039572018" duration="5375000" />
+      <workItem from="1738083883324" duration="591000" />
+      <workItem from="1738395951081" duration="3652000" />
     </task>
     <task id="LOCAL-00401" summary="Added csrf">
       <option name="closed" value="true" />
@@ -2075,7 +2074,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738037956640</updated>
     </task>
-    <option name="localTasksCounter" value="448" />
+    <task id="LOCAL-00448" summary="Added one time token">
+      <option name="closed" value="true" />
+      <created>1738046285431</created>
+      <option name="number" value="00448" />
+      <option name="presentableId" value="LOCAL-00448" />
+      <option name="project" value="LOCAL" />
+      <updated>1738046285432</updated>
+    </task>
+    <task id="LOCAL-00449" summary="Added one time token">
+      <option name="closed" value="true" />
+      <created>1738046454047</created>
+      <option name="number" value="00449" />
+      <option name="presentableId" value="LOCAL-00449" />
+      <option name="project" value="LOCAL" />
+      <updated>1738046454047</updated>
+    </task>
+    <option name="localTasksCounter" value="450" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

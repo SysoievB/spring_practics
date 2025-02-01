@@ -10,6 +10,7 @@ import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "user")
@@ -22,6 +23,7 @@ public class User {
 
     private String username;
 
+    @Setter
     @OneToOne(cascade = CascadeType.ALL)
     @PrimaryKeyJoinColumn
     private Address address;
@@ -29,5 +31,9 @@ public class User {
     public User(String username, Address address) {
         this.username = username;
         this.address = address;
+    }
+
+    public User(String username) {
+        this.username = username;
     }
 }
