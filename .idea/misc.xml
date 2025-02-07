@@ -112,6 +112,7 @@
         <option value="$PROJECT_DIR$/security/section_16_api_client_module/pom.xml" />
         <option value="$PROJECT_DIR$/security/one_time_token/pom.xml" />
         <option value="$PROJECT_DIR$/data_jpa/cascade_type_and_orhpan_removal/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/secondary_table/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

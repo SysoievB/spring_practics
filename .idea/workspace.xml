@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added one time token">
-      <change afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/AddressRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/UserRepo.java" afterDir="false" />
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added PrimaryKeyJoinColumn description">
+      <change afterPath="$PROJECT_DIR$/data_jpa/secondary_table/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_jpa/secondary_table/src/main/java/com/secondary_table/SecondaryTableApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_jpa/secondary_table/src/main/java/com/secondary_table/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_jpa/secondary_table/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_jpa/secondary_table/src/main/resources/create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_jpa/secondary_table/src/test/java/com/secondary_table/SecondaryTableApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/OneToOnePrimarykeyjoincolumnApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/OneToOnePrimarykeyjoincolumnApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/java/com/one_to_one_primarykeyjoincolumn/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/OneToOnePrimarykeyjoincolumnApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/OneToOnePrimarykeyjoincolumnApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/com/one_to_one_primarykeyjoincolumn/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/one_to_one_primarykeyjoincolumn/target/classes/create.sql" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +30,8 @@
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -290,6 +286,7 @@
     "Spring Boot.QueryParamModifyingApplication.executor": "Run",
     "Spring Boot.RecordApplicationEventsApplication.executor": "Run",
     "Spring Boot.ScheduledApplication.executor": "Debug",
+    "Spring Boot.SecondaryTableApplication.executor": "Run",
     "Spring Boot.Section10CustomFilterApplication.executor": "Debug",
     "Spring Boot.Section11JwtApplication.executor": "Run",
     "Spring Boot.Section12PrePostAuthorizeAnnotationsApplication.executor": "Run",
@@ -525,7 +522,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OneToOnePrimarykeyjoincolumnApplication">
+  <component name="RunManager" selected="Spring Boot.SecondaryTableApplication">
     <configuration name="AccountControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_3_in_memory_user_details_manager" />
       <extension name="coverage">
@@ -1029,6 +1026,13 @@
     <configuration name="ScheduledApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="scheduled" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.scheduled.ScheduledApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecondaryTableApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="secondary_table" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.secondary_table.SecondaryTableApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1696,15 +1700,11 @@
       <workItem from="1738037687817" duration="1805000" />
       <workItem from="1738039572018" duration="5375000" />
       <workItem from="1738083883324" duration="591000" />
-      <workItem from="1738395951081" duration="3652000" />
-    </task>
-    <task id="LOCAL-00401" summary="Added csrf">
-      <option name="closed" value="true" />
-      <created>1735841593930</created>
-      <option name="number" value="00401" />
-      <option name="presentableId" value="LOCAL-00401" />
-      <option name="project" value="LOCAL" />
-      <updated>1735841593931</updated>
+      <workItem from="1738395951081" duration="3999000" />
+      <workItem from="1738563266121" duration="21000" />
+      <workItem from="1738851572204" duration="1271000" />
+      <workItem from="1738926364414" duration="23000" />
+      <workItem from="1738934166761" duration="1568000" />
     </task>
     <task id="LOCAL-00402" summary="Added csrf">
       <option name="closed" value="true" />
@@ -2090,7 +2090,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738046454047</updated>
     </task>
-    <option name="localTasksCounter" value="450" />
+    <task id="LOCAL-00450" summary="Added PrimaryKeyJoinColumn description">
+      <option name="closed" value="true" />
+      <created>1738400556213</created>
+      <option name="number" value="00450" />
+      <option name="presentableId" value="LOCAL-00450" />
+      <option name="project" value="LOCAL" />
+      <updated>1738400556214</updated>
+    </task>
+    <option name="localTasksCounter" value="451" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2108,7 +2116,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added CORs" />
     <MESSAGE value="Added csrf" />
     <MESSAGE value="Added authorities &amp; roles" />
     <MESSAGE value="Added custom filter" />
@@ -2133,7 +2140,8 @@
     <MESSAGE value="Added comment" />
     <MESSAGE value="Added restTemplate tests" />
     <MESSAGE value="Added one time token" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added one time token" />
+    <MESSAGE value="Added PrimaryKeyJoinColumn description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PrimaryKeyJoinColumn description" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

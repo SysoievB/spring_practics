@@ -48,6 +48,7 @@
     <file url="file://$PROJECT_DIR$/data_jpa/pagination/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/pessimistic_locking/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/query_param_modifying/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data_jpa/secondary_table/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/slice_pagination/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/soft_delete/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data_jpa/specifications/src/main/java" charset="UTF-8" />
