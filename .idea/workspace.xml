@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added SecondaryTable">
+    <list default="true" id="3418d77d-0024-4d5b-ab11-3dce892853f7" name="Changes" comment="Added SQLInsert">
+      <change afterPath="$PROJECT_DIR$/data_jpa/sql_insert_annotation/src/main/java/com/sql_insert_annotation/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_jpa/sql_insert_annotation/src/main/java/com/sql_insert_annotation/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_jpa/sql_insert_annotation/src/main/resources/create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_jpa/secondary_table/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/sql_insert_annotation/src/main/java/com/sql_insert_annotation/SqlInsertAnnotationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/sql_insert_annotation/src/main/java/com/sql_insert_annotation/SqlInsertAnnotationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_jpa/sql_insert_annotation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data_jpa/sql_insert_annotation/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="5843ff0e-883b-41c7-8701-6d5ea8edebed" name="Exclude" comment="Added jackson" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +26,8 @@
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -311,6 +315,7 @@
     &quot;Spring Boot.SpringProfilesApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.SpringTestsApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.SpringTransactionsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SqlInsertAnnotationApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.StoredProceduresApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.SwaggerApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.TestBeanApplication.executor&quot;: &quot;Debug&quot;,
@@ -514,7 +519,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SecondaryTableApplication">
+  <component name="RunManager" selected="Spring Boot.SqlInsertAnnotationApplication">
     <configuration name="AccountControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="section_3_in_memory_user_details_manager" />
       <extension name="coverage">
@@ -1704,15 +1709,8 @@
       <workItem from="1738851572204" duration="1271000" />
       <workItem from="1738926364414" duration="23000" />
       <workItem from="1738934166761" duration="2388000" />
-      <workItem from="1738988438167" duration="570000" />
-    </task>
-    <task id="LOCAL-00403" summary="Added authorities &amp; roles">
-      <option name="closed" value="true" />
-      <created>1735885353826</created>
-      <option name="number" value="00403" />
-      <option name="presentableId" value="LOCAL-00403" />
-      <option name="project" value="LOCAL" />
-      <updated>1735885353827</updated>
+      <workItem from="1738988438167" duration="1507000" />
+      <workItem from="1738990005825" duration="356000" />
     </task>
     <task id="LOCAL-00404" summary="Added authorities &amp; roles">
       <option name="closed" value="true" />
@@ -2098,7 +2096,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738936974810</updated>
     </task>
-    <option name="localTasksCounter" value="452" />
+    <task id="LOCAL-00452" summary="Added SQLInsert">
+      <option name="closed" value="true" />
+      <created>1738989380111</created>
+      <option name="number" value="00452" />
+      <option name="presentableId" value="LOCAL-00452" />
+      <option name="project" value="LOCAL" />
+      <updated>1738989380111</updated>
+    </task>
+    <option name="localTasksCounter" value="453" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2116,7 +2122,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added authorities &amp; roles" />
     <MESSAGE value="Added custom filter" />
     <MESSAGE value="Added jwt" />
     <MESSAGE value="Added @PreAuthorize &amp; @PostAuthorize" />
@@ -2141,7 +2146,8 @@
     <MESSAGE value="Added one time token" />
     <MESSAGE value="Added PrimaryKeyJoinColumn description" />
     <MESSAGE value="Added SecondaryTable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SecondaryTable" />
+    <MESSAGE value="Added SQLInsert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SQLInsert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
