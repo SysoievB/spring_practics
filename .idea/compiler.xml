@@ -160,7 +160,7 @@
         <module name="section_4_managing_users_with_db" />
         <module name="section_2_changing_default_config" />
       </profile>
-      <profile name="Annotation profile for secondary_table" enabled="true">
+      <profile name="Annotation profile for sql_insert_annotation" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -168,6 +168,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="secondary_table" />
+        <module name="sql_insert_annotation" />
         <module name="context_hierarchy" />
       </profile>
     </annotationProcessing>
@@ -273,6 +274,7 @@
       <module name="spring_tests" options="-parameters" />
       <module name="spring_transactions" options="-parameters" />
       <module name="sql_annotations" options="-parameters" />
+      <module name="sql_insert_annotation" options="-parameters" />
       <module name="stored_procedures" options="-parameters" />
       <module name="swagger" options="-parameters" />
       <module name="test_bean" options="-parameters" />

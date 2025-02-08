@@ -113,6 +113,7 @@
         <option value="$PROJECT_DIR$/security/one_time_token/pom.xml" />
         <option value="$PROJECT_DIR$/data_jpa/cascade_type_and_orhpan_removal/pom.xml" />
         <option value="$PROJECT_DIR$/data_jpa/secondary_table/pom.xml" />
+        <option value="$PROJECT_DIR$/data_jpa/sql_insert_annotation/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
